@@ -1,0 +1,55 @@
+# Inventaris Footage Ruma Dental
+
+Diperiksa: 15 November 2026.
+
+## Sumber (Google Drive)
+
+- Folder 1: https://drive.google.com/drive/folders/15Xs1BhtGWtNI_TqrjWECcp9Q8aTLRJLt
+  - Subfolder Behel/Ortho dan Scalling: **kosong** saat diperiksa.
+- Folder 2: https://drive.google.com/drive/folders/1h1NPD1Orp8nhD2tQ5oPUWCCDi3IdgPva
+  - Behel/Ortho, Bleaching: **kosong** saat diperiksa.
+  - Scalling (folder id `1ieZcNOggEojQsC2T4a-knJcgAIKurj79`): 17 klip .MOV.
+
+Semua klip: vertikal 1080×1920 (direkam iPhone), rekaman genggam, warna cenderung dingin.
+
+## Temuan Visual Interior
+
+- Dinding hijau sage dengan bentuk organik dan garis daun, panel kayu vertikal, lantai kayu terang, furnitur putih.
+- Papan logo Ruma di dinding resepsionis dengan lampu latar hangat.
+- Ruang tunggu: kursi putih, toples camilan, kotak tisu sage.
+- Rak sepatu di area masuk.
+- Seragam dokter bermotif ramai (biru, kuning, putih); asisten memakai seragam abu-abu polos.
+
+**Izin pasien:** semua footage di folder ini sudah atas izin pasien (dikonfirmasi Pak Dir, 15 Nov 2026). Klip scaling boleh dipakai; IMG_4327 tetap tidak untuk iklan karena alasan aturan Meta, bukan izin.
+
+## Penilaian Per Klip
+
+| File | Durasi | Isi | Status iklan |
+|---|---|---|---|
+| IMG_4420 | 6,1 dtk | Papan logo Ruma menyala | **Pakai: penutup utama** |
+| IMG_4422 | 6,4 dtk | Resepsionis, dinding sage, panel kayu, logo | **Pakai: bukti** |
+| IMG_4381 | 4,2 dtk | Toples camilan dan tisu, tanpa orang | **Pakai: bukti** |
+| IMG_4382 | 7,6 dtk | Toples camilan, staf membuka toples | Cadangan |
+| IMG_4427 | 11,8 dtk | Rak sepatu, pengunjung masuk, disambut resepsionis | Cadangan (terkait konfirmasi lepas alas kaki) |
+| IMG_4324 | 5,1 dtk | Ruang perawatan dari jauh | Cadangan, perlu koreksi warna |
+| IMG_4325 | 5,5 dtk | Ruang perawatan, staf membungkuk di belakang | Tidak dipakai (latar ramai) |
+| IMG_4326 | 15,7 dtk | Proses scaling, wajah pasien terlihat | Hanya dengan izin pasien; potong ke tangan/alat |
+| IMG_4337–4340 | 5–7 dtk | Proses scaling, dua operator, wajah pasien sebagian | Hanya dengan izin pasien; potong ke tangan/alat |
+| IMG_4341 | 5,2 dtk | Pasien berkumur, wajah jelas | Hanya dengan izin pasien |
+| IMG_4327 | 8,9 dtk | Close-up mulut dengan kaca mulut | **Tidak untuk iklan** (klinis, rawan ditolak Meta) |
+| IMG_4421 | 4,1 dtk | Helm warna-warni, jadwal tim bencana, APAR | Tidak dipakai |
+| IMG_4423 | 5,8 dtk | Papan pengaduan dan WiFi, **password WiFi terbaca** | Tidak dipakai; sarankan ganti password WiFi |
+| IMG_4380 | 0,1 dtk | — | Tidak bisa dipakai |
+
+## Susunan Bukti Sementara (tanpa wajah pasien)
+
+4422 (resepsionis) → 4381 (camilan ruang tunggu) → 4324 (ruang perawatan, warna dikoreksi). Penutup: 4420.
+
+## Syuting Tambahan yang Disarankan (30–60 menit, tanpa pasien)
+
+1. Tangan memakai sarung tangan dan menata alat di baki, close-up, tripod.
+2. Ruang perawatan kosong dan rapi, kamera mendekat pelan.
+3. Dinding sage dengan garis daun, kamera bergeser pelan (untuk jembatan dari miniatur).
+4. Tampak depan klinik dan papan nama dari luar.
+
+Ketentuan: seragam polos, tanpa atribut UPG, cahaya hangat, kamera stabil, vertikal 9:16.
