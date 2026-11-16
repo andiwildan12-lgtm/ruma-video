@@ -49,6 +49,10 @@ Sumber: prinsip "Before you create content, understand your value first" (dibagi
 
 Topik yang gagal di salah satu poin diganti atau dibingkai ulang, bukan dipaksakan. Tren boleh dipakai hanya sebagai **pintu masuk** ke value di atas.
 
+## 1c. Alur Editing [DISEPAKATI 16 Nov 2026]
+
+Editing **tetap dikerjakan Claude sampai video jadi** (animasi 3D, teks, SFX, transisi terkunci ke timing narasi per kata). Tidak memakai CapCut: tidak ada konektor CapCut, dan memindahkan timeline ke edit manual merusak sinkron. Paket bahan CapCut (video tanpa teks + audio terpisah + .srt + cue sheet) hanya dibuat bila Pak Dir minta.
+
 ## 2. Aturan Isi [WAJIB]
 
 1. **Tanpa ajakan ke klinik, tanpa "chat admin", tanpa harga.** Brand hanya hadir lewat kartu penutup logo Ruma + tagline, dan baris bio.
