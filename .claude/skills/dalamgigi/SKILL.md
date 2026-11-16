@@ -25,6 +25,30 @@ Skill pendamping (wajib dibaca bersama):
 | Platform utama | Instagram (agar penonton bisa di-retarget iklan Meta Ruma, filter lokasi Makassar); unggah ulang ke TikTok |
 | Fungsi | **TOFU murni**: Ruma dikenal dan diingat lewat edukasi |
 
+## 1b. Pegangan Utama: Value Dulu, Baru Konten [DISEPAKATI 16 Nov 2026]
+
+Sumber: prinsip "Before you create content, understand your value first" (dibagikan Pak Dir). Konten adalah wujud value akun. Tanpa value yang jelas, konten hanya ikut tren dan penonton tidak paham kenapa harus mengikuti akun ini.
+
+**Value @dalamgigi (satu kalimat):**
+> Membuat yang tidak terlihat di dalam mulut jadi kelihatan dan masuk akal. Dijelaskan dengan cara berpikir dokter gigi, akurat, dan langsung bisa dipraktikkan.
+
+| Pertanyaan | Jawaban @dalamgigi |
+|---|---|
+| Apa yang kita kuasai? | Pengetahuan klinis dokter gigi: proses di dalam gigi, gusi, dan rahang yang tidak dilihat pasien. |
+| Masalah apa yang kita bantu selesaikan? | Orang baru sadar ada masalah saat sudah sakit, percaya mitos, atau tahu anjurannya tapi tidak tahu caranya. |
+| Kenapa ini bernilai? | Dijelaskan dokter gigi (bukan konten asal), divisualkan 3D supaya langsung paham, selalu ada cara praktis, tanpa menakut-nakuti dan tanpa jualan. |
+
+**Yang ditunjukkan bukan sekadar tips, tapi cara berpikir dokter gigi:** sebab → proses yang tidak terlihat → akibat → cara mencegah. Penonton harus merasa "oh, ternyata begitu" sekaligus "aku bisa lakukan ini malam ini".
+
+**Uji Value (wajib sebelum menulis naskah; semua harus "ya"):**
+1. Apakah ini sesuatu yang dokter gigi tahu tapi pasien tidak lihat atau salah pahami?
+2. Apakah video menunjukkan prosesnya (sebab → akibat), bukan hanya daftar tips?
+3. Apakah setelah menonton, penonton bisa melakukan sesuatu (ada cara singkat)?
+4. Apakah tetap relevan kalau tren berubah (bukan sekadar ikut yang sedang ramai)?
+5. Apakah akurat, tenang, dan layak dikaitkan dengan nama Ruma (tanpa menakut-nakuti, tanpa jualan)?
+
+Topik yang gagal di salah satu poin diganti atau dibingkai ulang, bukan dipaksakan. Tren boleh dipakai hanya sebagai **pintu masuk** ke value di atas.
+
 ## 2. Aturan Isi [WAJIB]
 
 1. **Tanpa ajakan ke klinik, tanpa "chat admin", tanpa harga.** Brand hanya hadir lewat kartu penutup logo Ruma + tagline, dan baris bio.
@@ -78,7 +102,7 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 
 ## 7. Alur Kerja Konten Baru (cepat)
 
-1. Ambil topik berikutnya dari tabel di bagian 8, atau dari permintaan Pak Dir.
+1. Ambil topik berikutnya dari tabel di bagian 8, atau dari permintaan Pak Dir. **Lolos Uji Value (bagian 1b)** dulu; sertakan hasilnya singkat saat mengajukan naskah.
 2. Tulis **naskah** (narasi + adegan + angka pojok + subtitle) sesuai formula bagian 3 dan aturan bagian 2. Sertakan daftar fakta medis yang perlu divalidasi.
 3. Pak Dir validasi / OK.
 4. **Gerbang Audit 3 Lapis** (naskah/fakta → frame probe → sinkron teknis), tanpa saran baru; perbaiki sendiri.
