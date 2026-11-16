@@ -144,7 +144,7 @@ Tanpa musik (aturan semua brand saat ini). Suara latar ruangan mencegah hening m
 
 ## 7a. Efek Suara (SFX) [DISEPAKATI]
 
-Pak Dir minta setiap gerakan punya suara. Pustaka SFX (ElevenLabs `eleven_text_to_sound_v2`, 1 variasi per efek, ±19 kredit) ada di `scripts/sfx/`: `sikat`, `whoosh` (perpindahan kamera), `pop` (objek muncul/angka berganti), `floss`, `scaler` (alat scaling, pelan dan tidak menakutkan), `crack` (karang rontok). Pakai ulang; buat baru hanya bila gerakannya baru.
+Pak Dir minta setiap gerakan punya suara. Pustaka SFX (ElevenLabs `eleven_text_to_sound_v2`, 1 variasi per efek, ±19 kredit) ada di `scripts/sfx/`: `sikat`, `whoosh` (perpindahan kamera), `pop` (objek muncul/angka berganti), `floss`, `scaler` (alat scaling, pelan dan tidak menakutkan), `crack` (karang rontok), `click` (angka/label muncul), `fizz` (asam), `dive` (kamera menyelam/masuk), `pulse` (denyut saraf, lembut), `shimmer` (momen positif, kartu penutup). Pakai ulang; buat baru hanya bila gerakannya baru.
 - Penempatan: tepat di detik gerakan (bukan per kalimat). Whoosh di setiap perpindahan sudut kamera besar.
 - Level: narasi -16 LUFS; SFX -14 s/d -24 dB di bawahnya; suara latar ruangan tetap ada; `alimiter` di akhir. Tanpa musik.
 - Skrip mixing: lihat contoh di bagian 6 (daftar event `(file, detik, durasi, dB)` → `adelay` + `amix`).

@@ -57,6 +57,7 @@ Struktur baku ±60 detik:
 - **Angka besar** di pojok kanan atas (Outfit 200) + **subtitle per frasa** di tengah (Outfit 700, kata kunci berlatar teal).
 - **Narasi**: ElevenLabs Ricky (`2VMRgGhWXuHXWN2xNHM8`), eleven_v4, satu generasi mengalir, `[conversational] [warmly]`.
 - **SFX di setiap gerakan** (pustaka `produksi-video-klinik/scripts/sfx/`), suara latar ruangan pelan, **tanpa musik**.
+- SFX transisi (#02): whoosh tiap ganti kamera, **klik** tiap angka/label muncul, `dive` untuk masuk/menyelam, `fizz` asam, `pulse` denyut saraf, `shimmer` untuk momen positif/kartu.
 - Template adegan: `produksi-video-klinik/scripts/arch3.html` + `arch3_cfg.json` (lengkung gigi, 160 permukaan, plak/karang, sikat, benang huruf C, alat scaling, kartu logo).
 
 ## 5. Sampul (seragam di grid)
@@ -90,7 +91,7 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | # | Topik | Sampul (baris 1 / BARIS 2) | Inti cerita | Status |
 |---|---|---|---|---|
 | 01 | 160 permukaan gigi | 40% gigimu / NGGAK KESIKAT? | Hook 40% → 32×5=160 → 64 sela kelewat → plak/karang → benang gigi (cara) + scaling (definisi) | ✅ Terbit v3 |
-| 02 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Lubang kecil di lapisan luar melebar di lapisan dalam; sakit baru terasa dekat saraf | Berikutnya |
+| 02 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Enamel keras vs dentin lunak → asam (1×→5× ngemil) → pintu kecil gua besar → tanpa saraf/ngilu/sakit → 4 cara (cermin, fluoride, ngemil dikumpulkan, periksa 6 bulan) | 🎬 v1 dirender, menunggu review |
 | 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | Gigi sebelah miring ke celah, gigi lawan turun (tahun 1→3→5) | Ide |
 | 04 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" | Ide |
 | 05 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
@@ -104,6 +105,8 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | # | Tanggal | File | Sampul | Catatan |
 |---|---|---|---|---|
 | 01 | 16 Nov 2026 | `dalamgigi-01-160-permukaan-v3.mp4` (66 dtk) | `cover-160-a.png` | v2 diarsipkan. Validasi: benang ±40 cm huruf C, scaling = pembersihan karang oleh dokter gigi pakai alat bergetar, scaling tiap 6 bulan |
+
+#02: naskah + hasil audit di `ruma-dental-video/references/naskah-lubang-gua-02.md`; scene `produksi-video-klinik/scripts/gua.html` (penampang gigi enamel/dentin/pulpa + lubang tumbuh), mix `mix_gua.py`.
 
 Naskah dan caption #01 lengkap: `ruma-dental-video/references/naskah-scaling-160.md` dan `references/rencana-konten-dalamgigi.md`.
 
