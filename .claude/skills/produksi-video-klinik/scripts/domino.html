@@ -187,7 +187,7 @@ window.render=function(T){
   if(T>=K.kirikanan&&T<K.lawan)[nA,nB].forEach(t=>glow(t,0.35+0.15*Math.sin(T*6)));
   if(T>=K.lawan&&T<K.satucelah)glow(opp,0.4+0.15*Math.sin(T*6));
   if(T>=K.tigageser&&T<K.masalah)[nA,nB,opp].forEach((t,i)=>glow(t,0.55*P(T,K.tigageser+i*0.2,0.25)));
-  if(T>=K.ingat){const all=[...lower,...upper];all.forEach(t=>{const ph=(T-K.ingat)*1.6-(Math.atan2(wpos(t).x,wpos(t).z)+1.8)/3.6;glow(t,0.45*Math.max(0,Math.sin(Math.PI*Math.min(1,Math.max(0,ph)))));});}
+  if(T>=K.ingat){const all=[...lower,...upper];all.forEach(t=>{const ph=(T-K.ingat)*0.9-(Math.atan2(wpos(t).x,wpos(t).z)+1.8)/3.6;glow(t,0.7*Math.max(0,Math.sin(Math.PI*Math.min(1,Math.max(0,ph)))));});}
   ringM.opacity=0;
   if(T>=K.satucelah&&T<K.masalah)ringM.opacity=0.7*P(T,K.satucelah,0.3);
   if(T>=K.cabut+0.6&&T<K.tiga)ringM.opacity=0.6*P(T,K.cabut+0.6,0.3);
@@ -239,7 +239,7 @@ window.render=function(T){
    [K.isi-0.1,t=>{const k=P(t,K.isi,4.4);return side(8.2,1.3,1.0,cl(0.4,-0.3,k));}],
    [K.s3,t=>{const k=P(t,K.s3,2.2);const g=gNew[0];return [g.clone().addScaledVector(out,5.2).add(V(0,1.8,0)),g.clone().setY(-0.05)];}],
    [K.bersih-0.1,t=>{const g=gNew[0];const k=P(t,K.bersih,3.8);const tan=V(-out.z,0,out.x);return [g.clone().addScaledVector(out,4.6).add(V(0,1.5,0)).addScaledVector(tan,cl(0.8,-0.5,k)),g.clone().setY(-0.05)];}],
-   [K.ingat,t=>{const k=ease(P(t,K.ingat,5));const a=0.9-0.7*k;return [V(Math.sin(a)*12,cl(5.5,9,k),Math.cos(a)*12),V(0,-0.6,0)];}],
+   [K.ingat,t=>{const k=ease(P(t,K.ingat,5));const a=0.55-0.75*k;return [V(Math.sin(a)*17,cl(3.0,4.2,k),Math.cos(a)*17),V(0,0.1,0)];}],
   ];
   let si=0;for(let i=0;i<shots.length;i++)if(T>=shots[i][0])si=i;
   let [cp,lk]=shots[si][1](T);
@@ -263,7 +263,7 @@ window.render=function(T){
   if(T>=K.masalah&&T<K.good){tag(0,'celah baru',gNew[0].clone().setY(1.0),T,K.masalah+0.6,K.sisa-0.1,-40);
     if(T>=K.gigitan)tag(1,'gigitan berubah',wpos(opp).add(V(0,0.4,0)),T,K.gigitan+0.2,K.nggak-0.1,-60);}
   if(sec){tag(0,'saraf meradang',S(0,0.2,FZ),T,K.rawat,K.yaitu-0.1,-40);tag(1,'dibersihkan & diisi',S(0,-1.2,FZ),T,K.yaitu+0.6,K.pakai-0.1,-40);tag(2,'gigi tetap dipakai',S(0,2.8,FZ),T,K.pakai+0.5,K.s2-0.1,-40);}
-  if(T>=K.s2&&T<K.s3){tag(0,'gigi pengganti',lp.clone().setY(1.5),T,K.isi+1.3,K.s3-0.1,-30);if(T>=K.ruang)tag(1,'nggak ada ruang miring',lp.clone().setY(2.6),T,K.ruang+0.8,K.s3-0.1,-30);}
+  if(T>=K.s2&&T<K.s3){tag(0,'gigi pengganti',lp.clone().setY(0.1),T,K.isi+1.3,K.s3-0.1,10);if(T>=K.ruang)tag(1,'nggak ada ruang miring',lp.clone().setY(2.6),T,K.ruang+0.8,K.s3-0.1,-30);}
   if(T>=K.s3&&T<K.ingat)tag(0,'sikat sela gigi',gNew[0].clone().setY(1.0),T,K.bersih+0.2,K.ingat-0.1,-50);
   // numbers
   num.style.display=T<K.card?'block':'none';
