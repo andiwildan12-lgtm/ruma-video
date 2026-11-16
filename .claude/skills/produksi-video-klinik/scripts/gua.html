@@ -225,7 +225,7 @@ window.render=function(T){
   if(T>=K.ingat){ringM.opacity=0.85*P(T,K.ingat+0.6,0.5);pring.material.opacity=0.85*P(T,K.belum,0.5);}
   if(T>=K.karena&&T<K.ingat){pring.material.opacity=(0.6+0.3*Math.sin(T*6))*P(T,K.karena+1.0,0.4);}
   const ghost=T>=K.karena&&T<K.ingat+0.8?P(T,K.karena+0.6,0.6)*(1-P(T,K.ingat,0.8)):0;
-  nb.mat.transparent=ghost>0.001;nb.mat.opacity=1-0.88*ghost;nb.mat.depthWrite=ghost<0.5;nb.m.castShadow=ghost<0.5;
+  {const tr=ghost>0.001;if(nb.mat.transparent!==tr){nb.mat.transparent=tr;nb.mat.needsUpdate=true;}}nb.mat.opacity=1-0.88*ghost;nb.mat.depthWrite=ghost<0.5;nb.m.castShadow=ghost<0.5;
   pdot.visible=T>=K.karena+0.6;
   // brush
   brush.visible=false;const bA=K.s2+0.5,bD=2.8;
