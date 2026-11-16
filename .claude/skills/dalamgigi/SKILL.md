@@ -116,7 +116,7 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 |---|---|---|---|---|
 | 01 | 160 permukaan gigi | 40% gigimu / NGGAK KESIKAT? | Hook 40% → 32×5=160 → 64 sela kelewat → plak/karang → benang gigi (cara) + scaling (definisi) | ✅ Terbit v3 |
 | 02 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Enamel keras vs dentin lunak → asam (1×→5× ngemil) → pintu kecil gua besar → tanpa saraf/ngilu/sakit → 4 cara (cermin, fluoride, ngemil dikumpulkan, periksa 6 bulan) | 🎬 v1 dirender, menunggu review |
-| 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | Gigi sebelah miring ke celah, gigi lawan turun (tahun 1→3→5) | Ide |
+| 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | 1 dicabut → 3 terdampak; analogi rak buku; tetangga miring, lawan turun; 3 cara (jangan buru-buru cabut/saluran akar, gigi pengganti, sikat sela) | 🎬 v1 dirender, menunggu review |
 | 04 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" | Ide |
 | 05 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
 | 06 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
@@ -139,6 +139,9 @@ Naskah dan caption #01 lengkap: `ruma-dental-video/references/naskah-scaling-160
 Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, % selesai, **disimpan**, **dibagikan**. Views minggu pertama belum patokan; akun baru butuh 5–10 video.
 
 ## 11. Pelajaran yang Tidak Boleh Diulang
+
+- #02: material three.js yang diubah jadi transparan di tengah video wajib `needsUpdate=true` (kalau tidak, efek transparan tidak muncul di render penuh walau probe benar). Selalu cek lembar kontak dari render penuh, bukan hanya probe.
+- #03: sinkron gambar pakai **transkripsi Scribe (timestamp per kata)**, bukan tebakan dari jeda. Saat kamera menyorot rahang dari samping, sembunyikan gigi sisi seberang supaya tidak ramai. Objek utama di 15–50% tinggi layar, jangan di jalur subtitle (y 1035–1200).
 
 - v1 #01: hook lemah (layar kosong 4 detik), "benang gigi" tanpa cara, "scaling" tanpa penjelasan, "1 jam setahun" membingungkan, visual monoton (kotak-kotak, satu sudut kamera).
 - Narasi dipotong per kalimat + jeda panjang = kaku dan patah-patah (pelajaran iklan bleaching v1).
