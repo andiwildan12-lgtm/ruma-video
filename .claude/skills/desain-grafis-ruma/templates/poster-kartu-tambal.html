@@ -1,0 +1,91 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Konsep "Kartu Harga" (struktur terinspirasi referensi promo grid, disesuaikan panduan resmi Ruma):
+     foto hero menyatu ke latar mint -> headline -> pill -> kartu harga + kartu benefit -> CTA -> ketentuan -> aksen sudut.
+     URL: ?f=feed|story&img=<file di assets/foto>&s=<skala>&x=<px>&y=<px> -->
+<style>
+@font-face{font-family:Poppins;font-weight:500;src:url(../assets/fonts/poppins-latin-500-normal.woff2)}
+@font-face{font-family:Poppins;font-weight:600;src:url(../assets/fonts/poppins-latin-600-normal.woff2)}
+@font-face{font-family:Poppins;font-weight:700;src:url(../assets/fonts/poppins-latin-700-normal.woff2)}
+@font-face{font-family:'Open Sans';font-weight:400;src:url(../assets/fonts/open-sans-latin-400-normal.woff2)}
+@font-face{font-family:'Open Sans';font-weight:600;src:url(../assets/fonts/open-sans-latin-600-normal.woff2)}
+:root{--turq:#28CDBD;--mint:#E8F8F6;--deep:#354B49;--silver:#B3B3B3;--soft:#F4F5F4;--muted:#5F6E6C}
+*{box-sizing:border-box;margin:0;padding:0}
+.p{position:relative;width:1080px;overflow:hidden;color:var(--deep);font-family:'Open Sans',sans-serif;
+  background:linear-gradient(to bottom,var(--mint) 0%,#fff 62%)}
+.feed{height:1350px}.story{height:1920px}
+
+.hero{position:absolute;left:0;right:0;top:0;overflow:hidden;
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 62%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0,#000 62%,transparent 100%)}
+.feed .hero{height:700px}.story .hero{height:1000px;top:0}
+.hero img{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+
+.logo{position:absolute;left:48px;z-index:3}
+.feed .logo{top:48px}.story .logo{top:250px}
+.logo img{height:72px;display:block}
+.topfog{position:absolute;left:0;right:0;top:0;z-index:2;background:linear-gradient(to bottom,rgba(232,248,246,.92) 0%,rgba(232,248,246,.75) 45%,rgba(232,248,246,0) 100%)}
+.feed .topfog{height:220px}.story .topfog{height:520px;background:linear-gradient(to bottom,rgba(232,248,246,.95) 0%,rgba(232,248,246,.9) 55%,rgba(232,248,246,0) 100%)}
+.tagp{position:absolute;right:48px;background:var(--deep);color:#fff;font:600 26px/1 Poppins;padding:14px 24px;border-radius:999px;z-index:3}
+.feed .tagp{top:62px}.story .tagp{top:264px}
+
+.body{position:absolute;left:56px;right:56px;text-align:center;z-index:2}
+.feed .body{top:560px}.story .body{top:830px}
+h1{font:600 70px/1.1 Poppins;letter-spacing:-1px;color:var(--deep)}
+h1 span{background:linear-gradient(transparent 62%,rgba(40,205,189,.45) 62%);padding:0 6px}
+.pill{display:inline-block;margin-top:20px;background:var(--turq);color:var(--deep);font:600 28px/1 Poppins;padding:12px 30px 13px;border-radius:999px}
+
+.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;margin-top:30px;text-align:left}
+.card{background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 10px 30px rgba(53,75,73,.12)}
+.card .tab{background:var(--turq);color:var(--deep);font:600 28px/1 Poppins;padding:14px 26px;text-align:center}
+.card .in{padding:18px 26px 22px;text-align:center}
+.price .coret{font:500 28px/1 Poppins;color:var(--muted);text-decoration:line-through}
+.price .harga{font:700 66px/1.05 Poppins;letter-spacing:-1.5px;margin-top:6px;white-space:nowrap}
+.price .disk{display:inline-block;margin-top:8px;font:600 24px/1 Poppins;background:var(--mint);padding:7px 14px 8px;border-radius:8px}
+.stack{display:flex;flex-direction:column;gap:20px}
+.mini .tab{font-size:24px;padding:11px 18px}
+.mini .in{font:600 30px/1.15 Poppins;padding:14px 18px 16px}
+
+.cta{display:flex;align-items:center;justify-content:center;gap:26px;margin-top:28px}
+.btn{font:600 32px/1 Poppins;background:var(--deep);color:#fff;padding:20px 36px 21px;border-radius:999px}
+.wa{font:600 30px/1.2 Poppins;text-align:left}
+.wa small{display:block;font:400 20px/1.2 'Open Sans';color:var(--muted)}
+
+.ket{position:absolute;left:56px;right:240px;z-index:2;font:400 17px/1.45 'Open Sans';color:var(--muted)}
+.feed .ket{bottom:40px}.story .ket{bottom:430px}
+.ket li{margin-left:20px}
+.corner{position:absolute;right:-110px;width:330px;height:330px;border-radius:50%;background:var(--turq);z-index:1}
+.feed .corner{bottom:-170px}.story .corner{bottom:-170px}
+</style></head>
+<body>
+<div class="p" id="poster">
+  <div class="hero"><img id="bg" src="../assets/foto/tambal-baki-alat-steril-9820.jpg"></div>
+  <div class="topfog"></div>
+  <div class="logo"><img src="../../ruma-dental-video/assets/card_logo.png"></div>
+  <div class="tagp">Tambal Gigi</div>
+  <div class="body">
+    <h1>Tambal gigi rapi,<br><span>dikerjakan dokter gigi.</span></h1>
+    <div class="pill">Klinik Gigi Ruma Dental · Makassar</div>
+    <div class="grid">
+      <div class="card price"><div class="tab">Tambal Gigi</div><div class="in">
+        <div class="coret" style="text-decoration:none">mulai</div><div class="harga">Rp XXX.000</div><div class="disk">per gigi</div></div></div>
+      <div class="stack">
+        <div class="card mini"><div class="tab">Bahan</div><div class="in">Sewarna gigi</div></div>
+        <div class="card mini"><div class="tab">Sebelum mulai</div><div class="in">Dijelaskan dokter</div></div>
+      </div>
+    </div>
+    <div class="cta"><div class="btn">Jadwalkan Konsultasi</div><div class="wa"><small>Chat admin via WhatsApp</small>0898-7735-463</div></div>
+  </div>
+  <ul class="ket">
+    <li>Harga akhir tergantung ukuran dan kondisi gigi, ditentukan setelah pemeriksaan dokter gigi.</li>
+    <li>Jl. Rusa No. 65, Maricaya, Makassar.</li>
+  </ul>
+  <div class="corner"></div>
+</div>
+<script>
+const q=new URLSearchParams(location.search),P=document.getElementById('poster'),bg=document.getElementById('bg');
+P.classList.add(q.get('f')||'feed');
+if(q.get('img'))bg.src='../assets/foto/'+q.get('img');
+if(P.classList.contains('story')){const bd=document.querySelector('.body').getBoundingClientRect(),kt=document.querySelector('.ket');kt.style.bottom='auto';kt.style.top=(bd.bottom-P.getBoundingClientRect().top+26)+'px';kt.style.right='56px';}
+const k=+(q.get('s')||1);bg.style.width=1080*k+'px';bg.style.height=1920*k+'px';bg.style.left=(+q.get('x')||0)+'px';bg.style.top=(+q.get('y')||0)+'px';
+</script>
+</body></html>
