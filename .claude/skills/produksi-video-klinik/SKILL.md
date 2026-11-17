@@ -30,7 +30,7 @@ Tujuan: **tidak ada render dua kali dan tidak ada video cacat terkirim.** Render
 Aturan:
 - Setelah Pak Dir OK, **audit sendiri tanpa memberi saran atau ide baru**. Yang dicari hanya **kesalahan**, lalu langsung diperbaiki. Jangan membuka diskusi ulang.
 - Kalau ada temuan yang mengubah isi (fakta medis, data harga, naskah), **tanya Pak Dir dulu**. Selain itu, perbaiki sendiri.
-- Kalau naskah diubah saat audit, tampilkan tabel **"Sebelum → Sesudah → Alasan"** (Pak Dir suka melihatnya), lalu lanjut render.
+- Kalau naskah diubah saat audit (termasuk menambah CTA, memangkas, atau menjanjikan topik berikutnya), tampilkan tabel **"Sebelum → Sesudah → Alasan"** + narasi final, lalu **tunggu OK Pak Dir sebelum membuat narasi ElevenLabs dan render**. Persetujuan ide/cerita bukan persetujuan naskah final.
 - Lapor ringkas: "Audit 1–4: lulus, X hal diperbaiki".
 
 **Audit 1: Naskah dan fakta**

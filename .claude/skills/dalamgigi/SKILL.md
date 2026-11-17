@@ -163,6 +163,8 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 
 ## 11. Pelajaran yang Tidak Boleh Diulang
 
+- **#04 (17 Nov): render dimulai tanpa persetujuan naskah final.** Pak Dir OK cerita, lalu naskah diubah (CTA ditambah, kalimat dipindah, janji topik berikutnya) dan langsung dinarasikan + dirender. Aturan: **setiap perubahan naskah setelah OK → tampilkan tabel audit "Sebelum → Sesudah → Alasan" + narasi final → tunggu "OK/gas" Pak Dir → baru narasi ElevenLabs dan render.** Persetujuan cerita ≠ persetujuan naskah final.
+
 - QC pertama (17 Nov): `-shortest` saat encode membuang 1–3 frame → pakai `-frames:v` + `-t`. Suara latar fade-out hanya 0,5 dtk terakhir (1,2 dtk = hening mati di kartu). Kamera diam 1,7 dtk di #03 lolos dari mata → selalu jalankan `qc.sh`.
 - Label 3D (tag) harus menunjuk objek yang benar dan tidak di jalur subtitle; cek di lembar kontak (pelajaran #03 "gigi pengganti").
 
