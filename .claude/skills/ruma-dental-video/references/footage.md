@@ -100,3 +100,39 @@ Unduh cepat untuk pratinjau: ambil 12 MB awal + 3 MB akhir file (indeks MOV ada 
 | 9825, 9826 | Dokter bekerja, seragam polos mauve, dinding sage | Cadangan (wajah pasien terlihat terbalik) |
 | 9821, 9823, 9827, 9851, 9886 | Suasana tindakan, pasien bercermin | Cadangan |
 | Lainnya (5, 9824, 9835–9837, 9850, 9852–9884, 9892) | Close-up intraoral, bur, isolasi, sinar curing di mulut | **Tidak untuk iklan Meta** |
+
+# Folder Footage Kedua (Mei 2026)
+
+Sumber: https://drive.google.com/drive/folders/1RxeFOUuI11KFo_8T-qGRqDHLJjceUw5_
+Subfolder: Scalling, Foto, Fasilitas dan Suasana Klinik (±30 klip), Penyambutan Pasien, Behel, Cabut Gigi, Tambal Gigi (±30 klip), Gigi Palsu, Bleaching. **Tidak ada folder PSA.**
+
+Dicek 17 Nov 2026 (sampel): interior **cocok dengan Ruma** (dinding sage + garis daun, panel kayu, kursi unit putih).
+
+| File | Isi | Status iklan |
+|---|---|---|
+| Fasilitas IMG_9709 / 9779 | Ruang perawatan rapi, dinding sage | **Pakai** (bukti ruang) |
+| Fasilitas IMG_9777 | Dinding sage dengan garis daun | **Pakai** (jembatan/transisi) |
+| Fasilitas IMG_9721 | Meja alat, sarung tangan | Pakai (detail) |
+| Tambal IMG_9884 | Lampu sinar biru (light curing) di gigi | Pakai terbatas: visual menarik, tidak terlalu klinis |
+| Tambal IMG_9886 | Dokter menambal, pasien berbaring | Pakai bila izin pasien ada |
+| Tambal IMG_9892 | Pasien melihat hasil di cermin | **Pakai**: momen hasil (izin pasien) |
+| Tambal IMG_9867 / 9868 | Close-up mulut terbuka dengan alat | **Tidak untuk iklan Meta** (close-up klinis) |
+
+Catatan: lampu sinar biru menandakan tambalan **komposit (sewarna gigi)** — konfirmasi ke Pak Dir.
+
+---
+
+# Peta Folder Induk Footage (campuran UPG + Ruma)
+
+Induk: https://drive.google.com/drive/folders/1jlJEB6Wkhu8qou-HVzdTwoV4uS45nyLL
+
+| Folder | Pemilik | Klinik | Boleh untuk Ruma? |
+|---|---|---|---|
+| Footage Ruma-Baru (Agu 2026) | ptmarikisenyumsehat | **Ruma** | ✅ (folder Scalling: 17 klip, sudah dipakai iklan bleaching) |
+| Footage Ruma Dental (Jul 2026) | ptmarikisenyumsehat | **Ruma** | ✅ (subfolder Behel/Ortho, Scalling kosong saat dicek) |
+| Ruma Dental Care (Mei 2026) | upgdentalcare | **Ruma** | ✅ (Konten Mei/Juni 2026 + spreadsheet "Konten Ruma Dental Care") |
+| Footage per layanan (Mei 2026, folder `1RxeFOUu…`) | fadlymulya | **Ruma** (interior sage cocok) | ✅ Tambal, Fasilitas, Penyambutan, Behel, Cabut, Gigi Palsu, Bleaching |
+| UPG Hertasning | upgdentalcare | **UPG** | ❌ JANGAN |
+| Footage Hertasning / Hertasning - Agustus | upgdentalcare / ptmarikisenyumsehat | **UPG** | ❌ JANGAN |
+
+Aturan: sebelum memakai klip dari folder mana pun, cek visual interior (Ruma = dinding sage + garis daun + panel kayu). Ragu → tanya Pak Dir.
