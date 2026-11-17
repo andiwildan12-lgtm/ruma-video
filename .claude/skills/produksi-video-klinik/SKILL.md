@@ -63,25 +63,57 @@ Aturan:
 ## 2b. Alur Satu Konten
 
 1. **Ide dan funnel.** Pak Dir suka iklan **MOFU/BOFU**: edukasi yang menyatu dengan jualan.
-2. **Naskah** (narasi + teks layar + adegan). Audit sendiri: hook, logika medis, kapan brand disebut, alur perpindahan.
+2. **Naskah** dengan rumus 8 ketukan (bagian 3). Jalankan checklist 3a sendiri; kirim ke Pak Dir naskah + hasil audit + maks 4 hal yang perlu divalidasi.
 3. **Papan gambar** (HTML artifact): panel 9:16 per adegan, narasi, teks layar, bunyi, transisi, alur produksi.
 4. **Tes gaya** 5–9 detik untuk adegan baru.
 5. **Narasi ElevenLabs** (bagian 4).
 6. **Gerbang Audit 3 Lapis** (bagian 2), lalu **render** (bagian 6), komposisi, encode, buat cover.
 7. **Review Pak Dir → revisi.** Setelah di-ACC, perbarui skill brand: naskah final dan pelajaran baru.
 
-## 3. Pola Naskah Iklan MOFU/BOFU yang Di-ACC
+## 3. Rumus Naskah Iklan MOFU/BOFU (8 Ketukan) [WAJIB]
 
-1. **Hook angka/kebiasaan** yang dekat dengan target (contoh: "Setahun, bisa 365 cangkir kopi").
-2. **Edukasi proses** ringkas dan visual.
-3. **Momen sadar** yang netral, tanpa memancing rasa malu.
-4. **"Kabar baiknya…"** → solusi.
-5. **Brand disebut di tengah video** dengan nama lengkap klinik, supaya edukasi dan jualan menyatu. Jangan kuliah dulu lalu jualan di akhir.
-6. **Bukti di klinik**: footage asli (datang, ruang tunggu, dokter mengerjakan, pasien tersenyum).
-7. **Gambaran hasil yang positif**.
-8. **Tawaran jelas, harga diucapkan**, ajakan lembut ("Chat admin, konsultasi dulu, ya").
+Disusun dari iklan bleaching v2 dan tambal v2 serta koreksi Pak Dir. Tujuan: penonton **berhenti menggulir → paham masalahnya → percaya → chat admin.**
+Orang tidak membeli perawatan, mereka membeli **lega**. Skrip menjawab berurutan: *Ini soal saya? → Kalau dibiarkan kenapa? → Ada jalan keluar? → Kenapa di sini, dan langkah pertamanya apa?*
 
-Durasi ±50–60 detik; alur yang mengalir lebih penting daripada angka pas. Turunan: 15 detik (retarget) dan 4:5 (Feed) bila diminta.
+| # | Ketukan | Isi | Contoh (tambal) |
+|---|---|---|---|
+| 1 | Hook fakta (0–4 dtk) | Fakta mengejutkan / menggugurkan anggapan | "Lubang gigi itu nggak pernah nutup sendiri." |
+| 2 | "Itu saya" | Gejala/kebiasaan ringan yang umum | "Awalnya cuma ngilu sedikit… jadi dicuekin." |
+| 3 | Yang terjadi di dalam | Edukasi visual 1–2 kalimat | "Di dalam, lubangnya melebar, makin dekat ke saraf." |
+| 4 | Dua jalan | Taruhan jelas, nada tenang | "Kalau masih kecil, cukup ditambal. Sampai saraf, bisa sakit berdenyut." |
+| 5 | Solusi + brand (+ harga bila ada) | Nama perawatan tegas + nama lengkap klinik **di tengah video** | "Solusinya, perawatan tambal gigi. Di Klinik Gigi Ruma Dental, mulai…" |
+| 6 | Alasan percaya | Bukti nyata, bukan pujian | Footage dokter, "dicek dulu", "dikerjakan dokter gigi" |
+| 7 | Hasil yang diinginkan | Gambaran hidup sesudahnya, positif | "Es teh pun aman lagi." |
+| 8 | Ajakan ringan + pengaman | Langkah terkecil + penurun risiko | "Ada garansi setelah perawatan. Chat admin, cek dulu, ya." |
+
+**6 aturan:**
+1. Hook selalu **fakta**, bukan pertanyaan pribadi ("Gigimu berlubang?" ✗).
+2. Taruhan nyata, **nada tenang**: tanpa darah, bengkak, nanah, kata "parah".
+3. Brand disebut **di tengah**, menyatu dengan solusi.
+4. Hilangkan **hambatan terbesar** per layanan:
+   - Tambal: "nanti saja" → dua jalan sekarang vs nanti.
+   - PSA: takut dicabut/sakit → "nggak selalu harus dicabut", "bius lokal" (bila valid).
+   - Crown/veneer: mahal, ragu → "dicek dulu, dijelaskan pilihan dan biayanya".
+   - Bungsu/cabut: takut → "dicek dulu", "dikerjakan dokter gigi".
+   - Anak: takut trauma → "pengalaman pertama yang menyenangkan".
+5. Ajakan = **langkah terkecil** ("cek dulu", "konsultasi dulu").
+6. Klaim **hanya yang bisa dibuktikan**. Dilarang: "nyaris nggak kelihatan", "tanpa sakit", "pasti selamat", "permanen", "steril", "terbaik", "dikeraskan dengan sinar", foto sebelum-sesudah. Aman: "sewarna gigi", "dicek dulu", "dikerjakan dokter gigi", "garansi setelah perawatan", "tujuannya…".
+
+**Bahasa:** santai dan dekat ("dicuekin", "cek dulu", "ya"); satu ide per kalimat (±12 kata); angka konkret; benda sehari-hari jadi benang cerita (es teh, kopi). Solusi disebut dengan pola Pak Dir: **"Solusinya, perawatan …"**.
+
+Durasi ±50 detik (±105–115 kata narasi + kartu 3 dtk). Turunan: 15 detik (retarget) dan 4:5 bila diminta.
+
+### 3a. Checklist Naskah — DIJALANKAN SENDIRI, BUKAN DIKIRIM KE PAK DIR [WAJIB]
+Pak Dir: *"Itu checklist kau yang checklist sendiri."* Sebelum naskah dikirim, centang sendiri lalu laporkan **hasilnya** (tabel "draf awal → masalah → diganti jadi") dan **hanya hal yang butuh validasi Pak Dir** (maks 4).
+- [ ] Hook fakta, terbaca ≤3 detik
+- [ ] Ada momen "itu saya"
+- [ ] Ada dua jalan / taruhan, nada tenang
+- [ ] Solusi tegas + "Klinik Gigi Ruma Dental" (nama lengkap) di tengah
+- [ ] Bukti nyata (footage/fakta), bukan pujian
+- [ ] Gambaran hasil positif, tanpa janji
+- [ ] Ajakan ringan + pengaman yang benar-benar berlaku
+- [ ] Tidak ada klaim terlarang; fakta medis yang belum pasti ditandai ⚠️, bukan dicentang
+- [ ] Jumlah kata cocok dengan durasi; data resmi (alamat, WA, harga) sesuai skill brand
 
 **Batasan iklan kesehatan (Meta):** jangan menyiratkan tahu kondisi penonton, tanpa foto sebelum-sesudah, tanpa janji hasil tertentu, tanpa close-up klinis mulut asli, hindari kata "gratis" untuk layanan medis. Fakta medis harus benar; Pak Dir (dokter gigi) memvalidasi bila ragu.
 
