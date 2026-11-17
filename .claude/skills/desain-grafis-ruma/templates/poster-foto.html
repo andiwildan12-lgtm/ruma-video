@@ -45,16 +45,31 @@ h1{font:600 64px/1.12 Poppins;letter-spacing:-.8px;margin-top:26px}
 .btn{font:600 30px/1 Poppins;background:var(--turq);color:var(--deep);padding:20px 32px 21px;border-radius:999px;white-space:nowrap}
 .wa{font:600 24px/1 'Open Sans';margin-top:12px}
 .disc{font:400 17px/1.4 'Open Sans';color:var(--muted);margin-top:22px;border-top:2px solid var(--soft);padding-top:16px}
+.ben{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+.ben li{font:400 28px/1.25 'Open Sans';color:var(--deep);display:flex;align-items:center;gap:14px}
+.ben li b{font-weight:600}
+.ben em{font-style:normal;flex:none;width:36px;height:36px;border-radius:50%;background:var(--turq);color:var(--deep);font:700 20px/36px Poppins;text-align:center}
+.steps{position:absolute;left:48px;display:flex;align-items:center;gap:12px;z-index:2}
+.feed .steps{top:48px}
+.story .steps{top:auto;bottom:440px}
+.story.card-top .steps{bottom:440px}
+.steps span{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.88);color:var(--deep);font:600 26px/1 Poppins;padding:10px 20px 10px 10px;border-radius:999px}
+.steps span b{width:34px;height:34px;border-radius:50%;background:var(--turq);font:700 20px/34px Poppins;text-align:center}
+.steps i{font-style:normal;color:#fff;font:600 28px/1 Poppins;text-shadow:0 1px 6px rgba(0,0,0,.3)}
 </style></head>
 <body>
 <div class="p" id="poster">
   <img class="bg" src="../assets/foto/bleaching-C-cek-warna-4331.jpg">
   <div class="haze"></div>
   <div class="fade"></div>
+  <div class="steps"><span><b>1</b>Scaling</span><i>→</i><span><b>2</b>Bleaching</span></div>
   <div class="card">
     <div class="top"><img src="../../ruma-dental-video/assets/card_logo.png"><div class="label">Promo Bleaching</div></div>
-    <h1>Senyum lebih cerah,<br>dimulai dari bersih.</h1>
-    <div class="lay">Bleaching <span class="chip">sudah termasuk scaling</span></div>
+    <h1>Bleaching di klinik,<br>dikerjakan dokter gigi.</h1>
+    <ul class="ben">
+      <li><em>✓</em><b>Sudah termasuk scaling</b></li>
+      <li><em>✓</em>Cek warna gigi dulu sebelum mulai</li>
+    </ul>
     <div class="row">
       <div><div class="coret"><s>Rp1.700.000</s><small>diskon 10%</small></div><div class="harga">Rp1.530.000</div></div>
       <div class="cta"><div class="btn">Jadwalkan Konsultasi</div><div class="wa">WA 0898-7735-463</div></div>
@@ -68,6 +83,7 @@ const bg=document.querySelector('.bg');
 if(q.get('img'))bg.src='../assets/foto/'+q.get('img');
 if(q.get('s')){const k=+q.get('s');bg.style.width=1080*k+'px';bg.style.height=1920*k+'px';bg.style.left=(+q.get('x')||0)+'px';bg.style.top=(+q.get('y')||0)+'px';}
 if(q.get('card')==='top')P.classList.add('card-top');
+if(q.get('card')==='top'){const c=document.querySelector('.card').getBoundingClientRect(),st=document.querySelector('.steps');st.style.bottom='auto';st.style.top=(c.bottom-P.getBoundingClientRect().top+24)+'px';}
 if(q.get('haze')==='0')document.querySelector('.haze').style.display='none';
 </script>
 </body></html>
