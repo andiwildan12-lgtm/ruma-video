@@ -53,3 +53,34 @@ Semua klip: vertikal 1080×1920 (direkam iPhone), rekaman genggam, warna cenderu
 4. Tampak depan klinik dan papan nama dari luar.
 
 Ketentuan: seragam polos, tanpa atribut UPG, cahaya hangat, kamera stabil, vertikal 9:16.
+
+---
+
+## Koreksi dan Inventaris Folder Bleaching (17 Nov 2026)
+
+Catatan di atas yang menyebut folder Bleaching **kosong** ternyata **salah**. Folder Bleaching
+(id `1F8BP9Ltm4TR1cAidzySWLkrE7xWUxGj9`, di dalam Folder 2) berisi **52 file**: 7 foto HEIC + 45 video .MOV
+(IMG_4324–4372; sebagian sama dengan folder Scalling). Semua sudah diperiksa satu per satu.
+
+Cara unduh: file ≤10 MB lewat konektor Drive; file >10 MB lewat
+`https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t` (tautan dibagikan).
+
+### Layak untuk iklan Meta (frame diam tersimpan di `desain-grafis-ruma/assets/foto/`)
+
+| Kode | File | Isi | Catatan |
+|---|---|---|---|
+| A | IMG_4332 | Dokter cek warna dengan shade guide, pasien pegang cermin, dinding sage | Hangat, ada interaksi; seragam dokter bermotif ramai |
+| **B** | **IMG_4333** | Pasien tersenyum lepas, shade guide di samping gigi | **Paling kuat untuk iklan**: ekspresi asli, tidak klinis |
+| C | IMG_4331 | Cek warna gigi dengan shade guide, pasien tersenyum | Kuat, alternatif B |
+| D | IMG_4330 | Pasien melihat cermin (pantulan) | Cadangan |
+| E | IMG_4366 | Sinar biru bleaching, latar panel kayu | Ikonik "bleaching", wajah tertutup alat |
+| F | IMG_4368 | Sinar biru, dinding sage bergaris daun | Ikonik, suasana tenang |
+| G | IMG_4329 / 4328 / 4365 | Dokter menjelaskan dulu ke pasien | Cocok MOFU "kami jelaskan dulu" |
+| I | IMG_4335 | Ruang perawatan lebar, dua operator | Suasana klinik |
+
+### Tidak untuk iklan Meta
+
+- **7 foto HEIC (IMG_5660–5672):** close-up intraoral dengan retraktor dan barrier gusi biru. Klinis, dan berpotensi dibaca sebagai sebelum-sesudah. Hanya untuk dokumentasi klinis/edukasi internal.
+- **Close-up retraktor/gel:** 4336, 4348, 4351, 4352, 4355, 4356, 4360, 4363, 4364, 4370, 4371 (akhir).
+- **Layar kamera intraoral:** 4349, 4350, 4372.
+- **Gelap/terhalang/ramai:** 4353, 4357, 4362, 4342–4347, 4354, 4358, 4359.
