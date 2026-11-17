@@ -53,3 +53,24 @@ Semua klip: vertikal 1080×1920 (direkam iPhone), rekaman genggam, warna cenderu
 4. Tampak depan klinik dan papan nama dari luar.
 
 Ketentuan: seragam polos, tanpa atribut UPG, cahaya hangat, kamera stabil, vertikal 9:16.
+
+---
+
+# Folder Footage Kedua (Mei 2026)
+
+Sumber: https://drive.google.com/drive/folders/1RxeFOUuI11KFo_8T-qGRqDHLJjceUw5_
+Subfolder: Scalling, Foto, Fasilitas dan Suasana Klinik (±30 klip), Penyambutan Pasien, Behel, Cabut Gigi, Tambal Gigi (±30 klip), Gigi Palsu, Bleaching. **Tidak ada folder PSA.**
+
+Dicek 17 Nov 2026 (sampel): interior **cocok dengan Ruma** (dinding sage + garis daun, panel kayu, kursi unit putih).
+
+| File | Isi | Status iklan |
+|---|---|---|
+| Fasilitas IMG_9709 / 9779 | Ruang perawatan rapi, dinding sage | **Pakai** (bukti ruang) |
+| Fasilitas IMG_9777 | Dinding sage dengan garis daun | **Pakai** (jembatan/transisi) |
+| Fasilitas IMG_9721 | Meja alat, sarung tangan | Pakai (detail) |
+| Tambal IMG_9884 | Lampu sinar biru (light curing) di gigi | Pakai terbatas: visual menarik, tidak terlalu klinis |
+| Tambal IMG_9886 | Dokter menambal, pasien berbaring | Pakai bila izin pasien ada |
+| Tambal IMG_9892 | Pasien melihat hasil di cermin | **Pakai**: momen hasil (izin pasien) |
+| Tambal IMG_9867 / 9868 | Close-up mulut terbuka dengan alat | **Tidak untuk iklan Meta** (close-up klinis) |
+
+Catatan: lampu sinar biru menandakan tambalan **komposit (sewarna gigi)** — konfirmasi ke Pak Dir.
