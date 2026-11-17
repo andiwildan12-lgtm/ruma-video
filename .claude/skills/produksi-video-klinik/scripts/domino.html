@@ -30,6 +30,7 @@ canvas{display:block}
 import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import {kineticSub} from './kinetic.js';
 const W=1080,H=1920;
 const R=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});R.setPixelRatio(1);R.setSize(W,H);
 R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;R.toneMapping=THREE.ACESFilmicToneMapping;R.outputColorSpace=THREE.SRGBColorSpace;R.localClippingEnabled=true;
@@ -156,7 +157,7 @@ slab(-4.2,4.2,-0.75,0.3,'#E3A49B');slab(-4.2,4.2,-5.1,-0.75,'#EADFCB');
 // ================= OVERLAY =================
 const nv=document.getElementById('nv'),nl=document.getElementById('nl'),num=document.getElementById('num'),sub=document.getElementById('sub'),card=document.getElementById('card'),fade=document.getElementById('fade');
 const tg=[1,2,3].map(i=>document.getElementById('tg'+i));
-let K={},SUBS=[];window.setup=o=>{K=o.K;SUBS=o.subs;};
+let K={},SUBS=[],WORDS=[];window.setup=o=>{K=o.K;SUBS=o.subs;WORDS=o.words||[];};
 function setNum(v,l,T,t0){num.style.opacity=v===''?0:Math.min(1,P(T,t0,0.25));nv.textContent=v;nl.textContent=l;}
 const scr=v=>{const p=v.clone().project(cam);return [(p.x+1)/2*W,(1-p.y)/2*H];};
 function tag(i,html,world,T,t0,t1,dy=-30){const el=tg[i];if(T<t0||T>=t1){el.style.display='none';return;}el.style.display='block';el.innerHTML=html;const [x,y]=scr(world);
@@ -237,7 +238,7 @@ window.render=function(T){
    [K.pakai-0.1,t=>{const k=P(t,K.pakai,2.2);return [S(-0.8,2.0,12.5-1.2*k),S(0,0.8,1.2)];}],
    [K.s2,t=>{const k=P(t,K.s2,2.2);return side(9.0,1.6,1.0,cl(-0.6,0.2,k));}],
    [K.isi-0.1,t=>{const k=P(t,K.isi,4.4);return side(8.2,1.3,1.0,cl(0.4,-0.3,k));}],
-   [K.s3,t=>{const k=P(t,K.s3,2.2);const g=gNew[0];return [g.clone().addScaledVector(out,5.2).add(V(0,1.8,0)),g.clone().setY(-0.05)];}],
+   [K.s3,t=>{const k=ease(P(t,K.s3,2.3));const g=gNew[0];const tan=V(-out.z,0,out.x);return [g.clone().addScaledVector(out,cl(5.8,4.9,k)).add(V(0,cl(2.3,1.7,k),0)).addScaledVector(tan,cl(-0.7,0.5,k)),g.clone().setY(-0.05)];}],
    [K.bersih-0.1,t=>{const g=gNew[0];const k=P(t,K.bersih,3.8);const tan=V(-out.z,0,out.x);return [g.clone().addScaledVector(out,4.6).add(V(0,1.5,0)).addScaledVector(tan,cl(0.8,-0.5,k)),g.clone().setY(-0.05)];}],
    [K.ingat,t=>{const k=ease(P(t,K.ingat,5));const a=0.55-0.75*k;return [V(Math.sin(a)*17,cl(3.0,4.2,k),Math.cos(a)*17),V(0,0.1,0)];}],
   ];
@@ -277,7 +278,7 @@ window.render=function(T){
   else if(T<K.s3)setNum('2','isi celahnya',T,K.s2);
   else if(T<K.ingat)setNum('3','bersihkan sela',T,K.s3);
   else setNum('','',T,0);
-  const s=SUBS.find(x=>T>=x[0]&&T<x[1]);sub.innerHTML=s?s[2]:'';sub.style.opacity=s?Math.min(1,P(T,s[0],0.12)):0;
+  kineticSub(sub,T,SUBS,WORDS);
   card.style.display=T>=K.card?'flex':'none';card.style.opacity=P(T,K.card,0.5);
   // flashes at set changes
   let fo=T<0.3?1-P(T,0,0.3):0;

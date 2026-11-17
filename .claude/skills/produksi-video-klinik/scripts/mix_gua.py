@@ -30,7 +30,7 @@ e(W,K['s4']-0.15,-21);e(C,K['s4'],-17);e('dive',K['karena']-0.1,-15);e(C,K['kare
 e(W,K['ingat']-0.15,-21);e('shimmer',K['ingat']+0.6,-17);e('shimmer',K['belum'],-18)
 e('pop',K['card'],-18);e('shimmer',K['card']+0.1,-15)
 ins=['-i','take2.mp3','-f','lavfi','-i',f'anoisesrc=color=brown:amplitude=0.6:d={DUR},lowpass=f=420,highpass=f=60,volume=0.035']
-fl=['[0:a]adelay=300|300,loudnorm=I=-16:TP=-1.5:LRA=7,apad=whole_dur=%s[v]'%DUR,'[1:a]afade=t=in:d=0.6,afade=t=out:st=%s:d=1.2[amb]'%(DUR-1.2)]
+fl=['[0:a]adelay=300|300,loudnorm=I=-16:TP=-1.5:LRA=7,apad=whole_dur=%s[v]'%DUR,'[1:a]afade=t=in:d=0.6,afade=t=out:st=%s:d=0.5[amb]'%(DUR-0.5)]
 lab=['[v]','[amb]']
 for i,(f,t,db,d) in enumerate(E):
     ins+=['-i',f'sfx/sfx_{f}.mp3'];j=i+2;ms=int(max(0,t)*1000)

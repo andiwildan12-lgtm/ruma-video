@@ -40,6 +40,7 @@ canvas{display:block}
 import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import {kineticSub} from './kinetic.js';
 const W=1080,H=1920;
 const R=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});R.setPixelRatio(1);R.setSize(W,H);
 R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;R.toneMapping=THREE.ACESFilmicToneMapping;R.outputColorSpace=THREE.SRGBColorSpace;
@@ -164,7 +165,7 @@ const bub=[];for(let i=0;i<18;i++){const m=new THREE.Mesh(new THREE.SphereGeomet
 // ================= OVERLAY =================
 const nv=document.getElementById('nv'),nl=document.getElementById('nl'),num=document.getElementById('num'),sub=document.getElementById('sub'),card=document.getElementById('card'),fade=document.getElementById('fade'),lens=document.getElementById('lens'),day=document.getElementById('day'),dct=document.getElementById('dct');
 const tg=[document.getElementById('tg1'),document.getElementById('tg2')];
-let K={},SUBS=[];window.setup=o=>{K=o.K;SUBS=o.subs;};
+let K={},SUBS=[],WORDS=[];window.setup=o=>{K=o.K;SUBS=o.subs;WORDS=o.words||[];};
 function setNum(v,l,T,t0){num.style.opacity=v===''?0:Math.min(1,P(T,t0,0.25));nv.style.fontSize=(String(v).length>3?170:230)+'px';nv.textContent=v;nl.textContent=l;}
 const scr=(v)=>{const p=v.clone().project(cam);return [(p.x+1)/2*W,(1-p.y)/2*H];};
 function tag(i,html,world,T,t0,t1,dy=-30){const el=tg[i];if(T<t0||T>=t1){el.style.display='none';return;}el.style.display='block';el.innerHTML=html;const [x,y]=scr(world);
@@ -297,7 +298,7 @@ window.render=function(T){
   else setNum('','',T,0);
   if(T>=K.s3&&T<K.s4){num.style.display='none';}
   // subtitle
-  const s=SUBS.find(x=>T>=x[0]&&T<x[1]);sub.innerHTML=s?s[2]:'';sub.style.opacity=s?Math.min(1,P(T,s[0],0.12)):0;
+  kineticSub(sub,T,SUBS,WORDS);
   card.style.display=T>=K.card?'flex':'none';card.style.opacity=P(T,K.card,0.5);
   // transitions: dark dive & cream flash
   let fo=0,fc='#F4EFE6';

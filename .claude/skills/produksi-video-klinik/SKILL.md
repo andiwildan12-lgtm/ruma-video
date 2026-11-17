@@ -196,3 +196,19 @@ Kirim video dengan `SendUserFile` (display render), lalu jelaskan singkat:
 - Kredit yang terpakai.
 
 Ingatkan bahwa file di sesi cloud bersifat sementara dan perlu diunduh.
+
+## 11. Peningkatan dari Skill Nalarka [DISEPAKATI 17 Nov 2026]
+
+Diambil hanya bagian yang lebih unggul dari skill "motion-graphics-by-nalarka". Aturan brand kita (tanpa musik, 9:16, 50–70 detik, 3D) tetap berlaku.
+
+**A. Cek kualitas otomatis (wajib sebelum kirim)**
+`scripts/qc.sh video.mp4 <durasi> <detik_kartu>` → codec H.264+AAC, 1080×1920, 30 fps CFR, durasi persis, jumlah frame = durasi×30, tanpa frame hitam, tanpa frame beku tak disengaja (kartu penutup diabaikan), tanpa hening mati, puncak < -0,5 dB, loudness -18…-13 LUFS. Harus "LULUS" sebelum dikirim.
+- Encode **tanpa `-shortest`**: pakai `-map 0:v -map 1:a -frames:v <durasi×30> -t <durasi>` (pelajaran: `-shortest` membuang 1–3 frame).
+- Suara latar fade-out hanya 0,5 dtk terakhir (pelajaran: fade 1,2 dtk membuat hening mati di kartu penutup).
+- Temuan pertama QC (#03): kamera langkah 3 diam 1,7 dtk → setiap shot wajib punya gerak pelan (drift), walau singkat.
+
+**B. Subtitle kinetik per kata**
+`scripts/kinetic.js` → `kineticSub(subEl, T, SUBS, WORDS)`. Kata muncul tepat saat diucapkan (naik halus 0,18 dtk), kata kunci `<b>` pop dengan overshoot; posisi kalimat tidak bergeser. `WORDS` = timestamp Scribe + offset narasi (0,3), disimpan di cfg sebagai `"words":[[mulai,selesai,"kata"],...]`. Kata layar yang beda dari ucapan (mis. "2×") otomatis diinterpolasi.
+
+**C. Motion blur di gerakan cepat**
+`scripts/render_frames.js <page> <cfg> all|range A B|p t...` (+ `blend_blur.py`). Rentang di `cfg.blur=[[a,b],...]` dirender 3 sub-frame (shutter 180°) lalu dirata-rata. Pakai hanya di dive, whoosh, dan perpindahan kamera cepat (render 3× lebih lama di rentang itu).
