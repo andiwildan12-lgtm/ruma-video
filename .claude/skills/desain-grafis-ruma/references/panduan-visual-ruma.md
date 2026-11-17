@@ -139,7 +139,9 @@ Larangan: Orange bukan warna dominan Ruma; tidak mencampur font/palet brand lain
 
 ---
 
-## 14. Perbedaan dengan Catatan Lain di Repo [PERLU KEPUTUSAN PAK DIR]
+## 14. Perbedaan dengan Catatan Lain di Repo
+
+**KEPUTUSAN PAK DIR (17 Nov 2026): IKUT PANDUAN RESMI** untuk semua desain grafis Ruma (palet, font, rasa foto). Usulan "warm modern" krem dibatalkan. Kesan hangat hanya dari foto asli interior Ruma dengan grading clean-soft.
 
 | Aspek | Panduan resmi (Canva) | Skill video / draf desain sebelumnya |
 |---|---|---|
@@ -149,4 +151,4 @@ Larangan: Orange bukan warna dominan Ruma; tidak mencampur font/palet brand lain
 | Font grafis | Poppins + Open Sans | Outfit |
 | Rasa | Segar, tenang, elegan; grading clean, low contrast | Usulan "warm modern" (krem, kayu, grading hangat) |
 
-Usulan jalan tengah: palet dan font resmi tetap dipakai; kehangatan datang dari **foto asli interior Ruma** (dinding sage, panel kayu, lampu logo) dengan grading clean-soft, bukan dari mengganti latar menjadi krem.
+Jalan tengah yang dipakai: palet dan font resmi tetap dipakai; kehangatan datang dari **foto asli interior Ruma** (dinding sage, panel kayu, lampu logo) dengan grading clean-soft, bukan dari mengganti latar menjadi krem.
