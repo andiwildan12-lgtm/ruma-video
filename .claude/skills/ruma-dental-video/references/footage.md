@@ -74,3 +74,20 @@ Dicek 17 Nov 2026 (sampel): interior **cocok dengan Ruma** (dinding sage + garis
 | Tambal IMG_9867 / 9868 | Close-up mulut terbuka dengan alat | **Tidak untuk iklan Meta** (close-up klinis) |
 
 Catatan: lampu sinar biru menandakan tambalan **komposit (sewarna gigi)** — konfirmasi ke Pak Dir.
+
+---
+
+# Peta Folder Induk Footage (campuran UPG + Ruma)
+
+Induk: https://drive.google.com/drive/folders/1jlJEB6Wkhu8qou-HVzdTwoV4uS45nyLL
+
+| Folder | Pemilik | Klinik | Boleh untuk Ruma? |
+|---|---|---|---|
+| Footage Ruma-Baru (Agu 2026) | ptmarikisenyumsehat | **Ruma** | ✅ (folder Scalling: 17 klip, sudah dipakai iklan bleaching) |
+| Footage Ruma Dental (Jul 2026) | ptmarikisenyumsehat | **Ruma** | ✅ (subfolder Behel/Ortho, Scalling kosong saat dicek) |
+| Ruma Dental Care (Mei 2026) | upgdentalcare | **Ruma** | ✅ (Konten Mei/Juni 2026 + spreadsheet "Konten Ruma Dental Care") |
+| Footage per layanan (Mei 2026, folder `1RxeFOUu…`) | fadlymulya | **Ruma** (interior sage cocok) | ✅ Tambal, Fasilitas, Penyambutan, Behel, Cabut, Gigi Palsu, Bleaching |
+| UPG Hertasning | upgdentalcare | **UPG** | ❌ JANGAN |
+| Footage Hertasning / Hertasning - Agustus | upgdentalcare / ptmarikisenyumsehat | **UPG** | ❌ JANGAN |
+
+Aturan: sebelum memakai klip dari folder mana pun, cek visual interior (Ruma = dinding sage + garis daun + panel kayu). Ragu → tanya Pak Dir.
