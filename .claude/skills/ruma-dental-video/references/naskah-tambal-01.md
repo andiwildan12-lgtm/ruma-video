@@ -1,4 +1,9 @@
-# Iklan Tambal Gigi v1 (BOFU, 50 detik) — menunggu review Pak Dir
+# Iklan Tambal Gigi v2 (BOFU, 50 detik) — papan gambar di-ACC, dirender
+
+**v2 (17 Nov 2026):** ilustrasi diganti potongan geraham gaya buku pelajaran (email/dentin/saraf berlabel, dua akar) karena v1 (kapsul) tidak dikenali Pak Dir. Garansi: narasi "Ada garansi setelah perawatan.", teks layar "Garansi / setelah perawatan", kartu "garansi setelah perawatan · dokter gigi". File `iklan-tambal-ruma-v2.mp4`, papan gambar `papan-gambar-tambal-v2.png`. Scene gigi: `produksi-video-klinik/scripts/molar.js` (m_hook, m_slice, m_paths, m_fill).
+
+---
+Riwayat v1:
 
 File: `iklan-tambal-ruma-v1.mp4`. Pola mengikuti iklan bleaching (meja kerja/es teh sebagai benang cerita, 3D gigi, brand di tengah, footage klinik, kartu harga).
 

@@ -145,7 +145,8 @@ Tanpa musik (aturan semua brand saat ini). Suara latar ruangan mencegah hening m
 
 - Satu fokus per layar. Teks dua tingkat (label kecil + poin utama), singkat, di area aman (hindari ±15% atas dan ±35% bawah).
 - Gerakan kamera pelan dan berlanjut antar-adegan. Angka berjalan untuk hook.
-- Ilustrasi gigi: **senyum** (bibir + deretan gigi, tanpa wajah/mata), lalu zoom ke satu gigi untuk proses. Jangan satu gigi berdiri sendiri.
+- Ilustrasi gigi: **senyum** (bibir + deretan gigi, tanpa wajah/mata), lalu zoom ke satu gigi untuk proses.
+- **Potongan gigi wajib bergaya buku pelajaran** (`scripts/molar.js`): geraham dengan mahkota bertonjol + dua akar, dipotong tegak dari depan, lapisan email putih / dentin krem / saraf merah muda, boleh berlabel. Jangan bentuk kapsul atau balok (v1 iklan tambal ditolak Pak Dir karena tidak dikenali).
 - Logo tampil alami di dalam adegan, dari file resmi; tidak dibuat AI.
 - Casting footage: orang yang tampil sebagai pasien tidak boleh muncul juga sebagai admin dalam video yang sama.
 - Lihat hasil sendiri sebelum mengirim: buat lembar kontak 12–16 frame dan periksa.
