@@ -20,14 +20,16 @@
 .feed .hero{height:700px}.story .hero{height:1000px;top:0}
 .hero img{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
 
-.logo{position:absolute;left:48px;background:#fff;border-radius:20px;padding:14px 22px;box-shadow:0 6px 20px rgba(53,75,73,.12);z-index:3}
+.logo{position:absolute;left:48px;z-index:3}
 .feed .logo{top:48px}.story .logo{top:250px}
-.logo img{height:52px;display:block}
+.logo img{height:72px;display:block}
+.topfog{position:absolute;left:0;right:0;top:0;z-index:2;background:linear-gradient(to bottom,rgba(232,248,246,.92) 0%,rgba(232,248,246,.75) 45%,rgba(232,248,246,0) 100%)}
+.feed .topfog{height:220px}.story .topfog{height:520px;background:linear-gradient(to bottom,rgba(232,248,246,.95) 0%,rgba(232,248,246,.9) 55%,rgba(232,248,246,0) 100%)}
 .tagp{position:absolute;right:48px;background:var(--deep);color:#fff;font:600 26px/1 Poppins;padding:14px 24px;border-radius:999px;z-index:3}
 .feed .tagp{top:62px}.story .tagp{top:264px}
 
 .body{position:absolute;left:56px;right:56px;text-align:center;z-index:2}
-.feed .body{top:560px}.story .body{top:900px}
+.feed .body{top:560px}.story .body{top:830px}
 h1{font:600 70px/1.1 Poppins;letter-spacing:-1px;color:var(--deep)}
 h1 span{background:linear-gradient(transparent 62%,rgba(40,205,189,.45) 62%);padding:0 6px}
 .pill{display:inline-block;margin-top:20px;background:var(--turq);color:var(--deep);font:600 28px/1 Poppins;padding:12px 30px 13px;border-radius:999px}
@@ -57,6 +59,7 @@ h1 span{background:linear-gradient(transparent 62%,rgba(40,205,189,.45) 62%);pad
 <body>
 <div class="p" id="poster">
   <div class="hero"><img id="bg" src="../assets/foto/bleaching-S5-sinar-biru-4367-bersih.jpg"></div>
+  <div class="topfog"></div>
   <div class="logo"><img src="../../ruma-dental-video/assets/card_logo.png"></div>
   <div class="tagp">Promo Bleaching</div>
   <div class="body">
@@ -82,6 +85,7 @@ h1 span{background:linear-gradient(transparent 62%,rgba(40,205,189,.45) 62%);pad
 const q=new URLSearchParams(location.search),P=document.getElementById('poster'),bg=document.getElementById('bg');
 P.classList.add(q.get('f')||'feed');
 if(q.get('img'))bg.src='../assets/foto/'+q.get('img');
+if(P.classList.contains('story')){const bd=document.querySelector('.body').getBoundingClientRect(),kt=document.querySelector('.ket');kt.style.bottom='auto';kt.style.top=(bd.bottom-P.getBoundingClientRect().top+26)+'px';kt.style.right='56px';}
 const k=+(q.get('s')||1);bg.style.width=1080*k+'px';bg.style.height=1920*k+'px';bg.style.left=(+q.get('x')||0)+'px';bg.style.top=(+q.get('y')||0)+'px';
 </script>
 </body></html>
