@@ -155,6 +155,8 @@ Ikuti skill `produksi-video-klinik`. Nilai khusus Ruma yang dipakai di skrip:
 - Wipe 3D → footage: teal dengan tepi bawah berbentuk atap (dari logo).
 - Kartu penutup: logo, "Bleaching", chip "sudah termasuk scaling", ~~Rp1.700.000~~ Rp1.530.000, "diskon 10%", tagline, alamat singkat, WA 0898-7735-463 (teks ada di `extra.js` skill produksi; ganti sesuai layanan/promo).
 
+- **Standar kualitas (sejak 17 Nov 2026):** semua video Ruma, termasuk iklan MOFU/BOFU, wajib lulus `qc.sh` (bagian 11 skill produksi). Di iklan: teks dua tingkat muncul tepat saat kata kuncinya diucapkan (timestamp Scribe), harga dan "Klinik Gigi Ruma Dental" diberi pop; wipe atap 3D → footage diberi motion blur.
+
 ## 12. Footage
 
 Inventaris dan penilaian per klip: `references/footage.md`. Klip yang dipakai di contoh acuan ada di bagian 10. Klip yang **tidak** dipakai: 4327 (close-up mulut), 4421 (helm/APAR), 4423 (password WiFi terlihat), 4325 (latar ramai), 4422 (resepsionis = orang yang sama dengan pasien), 4380 (terlalu pendek).

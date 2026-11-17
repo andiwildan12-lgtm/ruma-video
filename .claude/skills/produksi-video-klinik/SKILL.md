@@ -8,7 +8,7 @@ description: Teknik produksi video iklan dan konten klinik gigi (UPG Dental Care
 Skill ini berisi **cara kerja dan teknik** yang sudah terbukti (iklan bleaching Ruma Dental v2, di-ACC 16 Nov 2026).
 **Identitas brand** (warna, logo, suara narator, data harga, aturan khusus) **tidak ada di sini**; ambil dari skill brand:
 - Ruma Dental → skill `ruma-dental-video`
-- UPG Dental Care → belum ada (buat `upg-video` saat dibutuhkan)
+- UPG Dental Care → skill `upg-video` (kerangka; data brand masih [TERBUKA])
 
 Kalau brand belum jelas, tanyakan dulu konten ini untuk klinik yang mana.
 
@@ -51,6 +51,10 @@ Aturan:
 - [ ] Jumlah frame footage cukup (`max` = jumlah file); server lokal hidup.
 - [ ] Durasi total sesuai target (TOFU 50–70 detik); kartu penutup benar.
 - [ ] Cover/thumbnail sudah disiapkan (bagian 9).
+
+**Audit 4: Cek kualitas file jadi (setelah encode, sebelum kirim) [WAJIB SEMUA BRAND]**
+- [ ] `scripts/qc.sh video.mp4 <durasi> <detik_kartu>` → hasil **LULUS** (detail bagian 11A). Kalau ada [CEK], perbaiki dulu; jangan kirim video yang belum lulus.
+- [ ] Lembar kontak dari **render penuh** (bukan probe) sudah dilihat.
 
 ## 2b. Alur Satu Konten
 
@@ -197,18 +201,32 @@ Kirim video dengan `SendUserFile` (display render), lalu jelaskan singkat:
 
 Ingatkan bahwa file di sesi cloud bersifat sementara dan perlu diunduh.
 
-## 11. Peningkatan dari Skill Nalarka [DISEPAKATI 17 Nov 2026]
+## 11. Standar Kualitas Semua Brand dan Format [DISEPAKATI 17 Nov 2026]
 
-Diambil hanya bagian yang lebih unggul dari skill "motion-graphics-by-nalarka". Aturan brand kita (tanpa musik, 9:16, 50–70 detik, 3D) tetap berlaku.
+Berlaku untuk **semua video**: konten TOFU (@dalamgigi), **iklan Ruma Dental (MOFU/BOFU)**, dan **video UPG Dental Care**. Asal: bagian terbaik skill "motion-graphics-by-nalarka" yang sudah diuji di #02/#03 dan di-ACC Pak Dir. Aturan identitas tiap brand (musik, durasi, rasio, gaya) tetap mengikuti skill brand masing-masing.
 
-**A. Cek kualitas otomatis (wajib sebelum kirim)**
+| Fitur | TOFU @dalamgigi | Iklan Ruma (MOFU/BOFU) | Video UPG |
+|---|---|---|---|
+| A. QC otomatis | Wajib | Wajib | Wajib |
+| B. Teks mengikuti kata | Subtitle kinetik per kata | Teks dua tingkat muncul tepat di kata kuncinya; harga/nama klinik pop | Subtitle dialog per kata (warna per karakter bila ada) |
+| C. Motion blur | Dive, whoosh, pindah kamera cepat | Wipe atap 3D → footage, zoom cepat | Transisi cepat / whip |
+
+**Penyesuaian per format**
+- **Footage asli** (iklan Ruma, UPG): footage diam yang disengaja (mis. papan logo) bisa terdeteksi "frame beku". Bila ≥1,5 dtk, beri zoom pelan (`scale ... 1+0.03*t`) supaya tidak beku; kalau memang disengaja, catat di laporan.
+- **Brand yang memakai musik** (bila skill brand mengizinkan, mis. UPG): QC loudness tetap -18…-13 LUFS; narasi/dialog harus dominan; hening mati tetap dilarang.
+- **Rasio lain** (4:5 Feed, 1:1): jalankan `qc.sh` lalu abaikan baris resolusi bila memang sengaja; jumlah frame dan durasi tetap harus persis.
+- Word timestamp: selalu transkripsi narasi/dialog final dengan **Scribe** (`creative_transcribe_audio`, gratis) lalu simpan ke cfg `"words"` (+ offset mulai narasi).
+
+### Rincian Teknis
+
+**11A. Cek kualitas otomatis (wajib sebelum kirim)**
 `scripts/qc.sh video.mp4 <durasi> <detik_kartu>` → codec H.264+AAC, 1080×1920, 30 fps CFR, durasi persis, jumlah frame = durasi×30, tanpa frame hitam, tanpa frame beku tak disengaja (kartu penutup diabaikan), tanpa hening mati, puncak < -0,5 dB, loudness -18…-13 LUFS. Harus "LULUS" sebelum dikirim.
 - Encode **tanpa `-shortest`**: pakai `-map 0:v -map 1:a -frames:v <durasi×30> -t <durasi>` (pelajaran: `-shortest` membuang 1–3 frame).
 - Suara latar fade-out hanya 0,5 dtk terakhir (pelajaran: fade 1,2 dtk membuat hening mati di kartu penutup).
 - Temuan pertama QC (#03): kamera langkah 3 diam 1,7 dtk → setiap shot wajib punya gerak pelan (drift), walau singkat.
 
-**B. Subtitle kinetik per kata**
+**11B. Subtitle/teks kinetik per kata**
 `scripts/kinetic.js` → `kineticSub(subEl, T, SUBS, WORDS)`. Kata muncul tepat saat diucapkan (naik halus 0,18 dtk), kata kunci `<b>` pop dengan overshoot; posisi kalimat tidak bergeser. `WORDS` = timestamp Scribe + offset narasi (0,3), disimpan di cfg sebagai `"words":[[mulai,selesai,"kata"],...]`. Kata layar yang beda dari ucapan (mis. "2×") otomatis diinterpolasi.
 
-**C. Motion blur di gerakan cepat**
+**11C. Motion blur di gerakan cepat**
 `scripts/render_frames.js <page> <cfg> all|range A B|p t...` (+ `blend_blur.py`). Rentang di `cfg.blur=[[a,b],...]` dirender 3 sub-frame (shutter 180°) lalu dirata-rata. Pakai hanya di dive, whoosh, dan perpindahan kamera cepat (render 3× lebih lama di rentang itu).
