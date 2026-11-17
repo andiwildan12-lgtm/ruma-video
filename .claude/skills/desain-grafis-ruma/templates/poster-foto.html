@@ -28,6 +28,8 @@
 .card{position:absolute;left:48px;right:48px;background:#fff;border-radius:36px;padding:40px 48px 34px;box-shadow:0 18px 50px rgba(53,75,73,.18)}
 .feed .card{bottom:48px}
 .story .card{bottom:420px}
+.story.card-top .card{bottom:auto;top:250px}
+.story.card-top .fade{top:0;bottom:auto;background:linear-gradient(to top,rgba(244,245,244,0),rgba(244,245,244,.6) 70%)}
 
 .top{display:flex;justify-content:space-between;align-items:center}
 .top img{height:50px}
@@ -60,5 +62,12 @@ h1{font:600 64px/1.12 Poppins;letter-spacing:-.8px;margin-top:26px}
     <div class="disc">Jl. Rusa No. 65, Maricaya, Makassar · Hasil berbeda pada tiap orang. Konsultasikan dengan dokter gigi.</div>
   </div>
 </div>
-<script>document.getElementById('poster').classList.add(new URLSearchParams(location.search).get('f')||'feed');</script>
+<script>
+const q=new URLSearchParams(location.search),P=document.getElementById('poster');P.classList.add(q.get('f')||'feed');
+const bg=document.querySelector('.bg');
+if(q.get('img'))bg.src='../assets/foto/'+q.get('img');
+if(q.get('s')){const k=+q.get('s');bg.style.width=1080*k+'px';bg.style.height=1920*k+'px';bg.style.left=(+q.get('x')||0)+'px';bg.style.top=(+q.get('y')||0)+'px';}
+if(q.get('card')==='top')P.classList.add('card-top');
+if(q.get('haze')==='0')document.querySelector('.haze').style.display='none';
+</script>
 </body></html>
