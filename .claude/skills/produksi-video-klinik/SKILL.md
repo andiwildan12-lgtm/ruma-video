@@ -28,6 +28,7 @@ Kalau brand belum jelas, tanyakan dulu konten ini untuk klinik yang mana.
 Tujuan: **tidak ada render dua kali.** Render hanya boleh dimulai setelah Pak Dir bilang OK **dan** tiga audit di bawah lulus.
 
 Aturan:
+- **Suara ElevenLabs, efek suara, dan render baru boleh dibuat SETELAH naskah di-OK Pak Dir** (pelajaran iklan tambal: suara terlanjur dibuat lalu naskah berubah).
 - Setelah Pak Dir OK, **audit sendiri tanpa memberi saran atau ide baru**. Yang dicari hanya **kesalahan**, lalu langsung diperbaiki. Jangan membuka diskusi ulang.
 - Kalau ada temuan yang mengubah isi (fakta medis, data harga, naskah), **tanya Pak Dir dulu**. Selain itu, perbaiki sendiri.
 - Lapor ke Pak Dir hanya ringkasan: "Audit 1/2/3: lulus, X hal diperbaiki", lalu render.
