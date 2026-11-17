@@ -8,7 +8,7 @@ description: Semua tentang akun TOFU @dalamgigi (Instagram + TikTok) milik Klini
 Panggil pengguna **"Pak Dir"** (dokter gigi, owner Ruma Dental & UPG Dental Care). Bahasa Indonesia tegas dan praktis. Kritis, audit sendiri sebelum mengirim.
 
 Skill pendamping (wajib dibaca bersama):
-- `produksi-video-klinik` → teknik render 3D, narasi ElevenLabs, SFX, audit 3 lapis, paket kirim, sampul.
+- `produksi-video-klinik` → teknik render 3D, narasi ElevenLabs, SFX, **Gerbang Audit 4 Lapis + QC otomatis**, teks kinetik, motion blur, paket kirim, sampul.
 - `ruma-dental-video` → identitas brand Ruma (warna, logo, suara Ricky, aturan iklan kesehatan).
 
 ---
@@ -81,12 +81,20 @@ Struktur baku ±60 detik:
 
 - 3D bersih: latar krem hangat #F4EFE6, gigi putih matte, gusi #E3A49B, **satu aksen teal #2CCDBD**, teks gelap #0F4F4B.
 - Gigi berbentuk dikenali (seri pipih, taring runcing, premolar 2 tonjol, geraham 4 tonjol). Ilustrasi senyum/lengkung gigi, **tanpa wajah dan tanpa mata**.
-- **Anti-monoton**: kamera berganti tiap 2–4 detik (atas → menyusur rendah → mengitari → masuk lorong sela gigi → close-up → naik), blend 0,6 detik + bunyi whoosh.
-- **Angka besar** di pojok kanan atas (Outfit 200) + **subtitle per frasa** di tengah (Outfit 700, kata kunci berlatar teal).
+- **Anti-monoton**: kamera berganti tiap 2–4 detik (atas → menyusur rendah → mengitari → masuk lorong sela gigi → close-up → naik), blend 0,75 detik + bunyi whoosh. **Setiap shot wajib bergerak pelan (drift)**, tidak boleh diam ≥1,5 detik (QC akan menandai).
+- **Angka besar** di pojok kanan atas (Outfit 200) + **subtitle kinetik** di tengah (Outfit 700): kata muncul tepat saat diucapkan, kata kunci berlatar teal pop (`kinetic.js`, sejak #04). Label kecil (tag) menempel ke objek 3D.
+- **Motion blur** di momen cepat: dive, whoosh, perpindahan kamera besar (`cfg.blur`).
 - **Narasi**: ElevenLabs Ricky (`2VMRgGhWXuHXWN2xNHM8`), eleven_v4, satu generasi mengalir, `[conversational] [warmly]`.
 - **SFX di setiap gerakan** (pustaka `produksi-video-klinik/scripts/sfx/`), suara latar ruangan pelan, **tanpa musik**.
-- SFX transisi (#02): whoosh tiap ganti kamera, **klik** tiap angka/label muncul, `dive` untuk masuk/menyelam, `fizz` asam, `pulse` denyut saraf, `shimmer` untuk momen positif/kartu.
-- Template adegan: `produksi-video-klinik/scripts/arch3.html` + `arch3_cfg.json` (lengkung gigi, 160 permukaan, plak/karang, sikat, benang huruf C, alat scaling, kartu logo).
+- Pustaka SFX: `whoosh` (ganti kamera), `click` (angka/label muncul), `pop` (objek muncul), `dive` (menyelam/masuk), `fizz` (asam), `pulse` (denyut saraf, lembut), `shimmer` (momen positif, kartu), `book` (rak buku), `snap` (benda pas masuk), `brush`, `floss`, `scaler`, `crack`.
+- Transisi antar-set adegan: kilau krem 0,3 dtk (atau gelap untuk "menyelam") + shimmer/whoosh.
+
+**Pustaka scene 3D (pakai ulang, di `produksi-video-klinik/scripts/`):**
+| File | Isi | Dipakai |
+|---|---|---|
+| `arch3.html` | Lengkung gigi atas-bawah dari atas, 160 permukaan, plak/karang, sikat, benang huruf C, alat scaling | #01 |
+| `gua.html` | Lengkung gigi + **penampang gigi** (enamel/dentin/pulpa), lubang tumbuh, asam, lensa cermin, panel sehari, gigi transparan | #02 |
+| `domino.html` | **Rahang atas-bawah tampak samping** (gigi miring, gigi lawan turun, gigi pengganti), **rak buku**, penampang + saluran akar, sikat sela gigi | #03 |
 
 ## 5. Sampul (seragam di grid)
 
@@ -109,19 +117,20 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 1. Ambil topik berikutnya dari tabel di bagian 8, atau dari permintaan Pak Dir. **Lolos Uji Value (bagian 1b)** dulu; sertakan hasilnya singkat saat mengajukan naskah.
 2. Tulis **naskah** (narasi + adegan + angka pojok + subtitle) sesuai formula bagian 3 dan aturan bagian 2. Sertakan daftar fakta medis yang perlu divalidasi.
 3. Pak Dir validasi / OK.
-4. **Gerbang Audit 3 Lapis** (naskah/fakta → frame probe → sinkron teknis), tanpa saran baru; perbaiki sendiri.
-5. Narasi ElevenLabs → deteksi jeda → kunci waktu adegan → render → mix SFX → encode.
-6. **Paket kirim**: video `dalamgigi-NN-topik-vN.mp4`, sampul, caption IG, caption TikTok, komentar pertama.
-7. Setelah terbit: perbarui **log unggahan** (bagian 9) dan status di tabel rencana.
+4. Narasi ElevenLabs (2 take, satu generasi) → pilih take → **transkripsi Scribe** (timestamp per kata, gratis) → kunci waktu adegan + `words` di cfg.
+5. **Gerbang Audit 4 Lapis** (naskah/fakta → frame probe → sinkron teknis → setelah encode: `qc.sh` harus LULUS), tanpa saran baru; perbaiki sendiri. Tampilkan ke Pak Dir tabel "sebelum → sesudah" bila naskah diubah.
+6. Render penuh di latar → lembar kontak render penuh → mix SFX → encode tanpa `-shortest` → `qc.sh` → sampul.
+7. **Paket kirim**: video `dalamgigi-NN-topik-vN.mp4`, sampul, caption IG, caption TikTok, komentar pertama (file `output/dalamgigi-NN-caption.md`).
+8. Setelah terbit: perbarui **log unggahan** (bagian 9) dan status di tabel rencana.
 
 ## 8. Rencana 9 Konten Pertama
 
 | # | Topik | Sampul (baris 1 / BARIS 2) | Inti cerita | Status |
 |---|---|---|---|---|
 | 01 | 160 permukaan gigi | 40% gigimu / NGGAK KESIKAT? | Hook 40% → 32×5=160 → 64 sela kelewat → plak/karang → benang gigi (cara) + scaling (definisi) | ✅ Terbit v3 |
-| 02 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Enamel keras vs dentin lunak → asam (1×→5× ngemil) → pintu kecil gua besar → tanpa saraf/ngilu/sakit → 4 cara (cermin, fluoride, ngemil dikumpulkan, periksa 6 bulan) | 🎬 v1 dirender, menunggu review |
-| 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | 1 dicabut → 3 terdampak; analogi rak buku; tetangga miring, lawan turun; 3 cara (jangan buru-buru cabut/saluran akar, gigi pengganti, sikat sela) | 🎬 v1 dirender, menunggu review |
-| 04 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" | Ide |
+| 02 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Enamel keras vs dentin lunak → asam (1×→5× ngemil) → pintu kecil gua besar → tanpa saraf/ngilu/sakit → 4 cara (cermin, fluoride, ngemil dikumpulkan, periksa 6 bulan) | 🎬 v1 jadi, QC lulus, siap unggah |
+| 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | 1 dicabut → 3 terdampak; analogi rak buku; tetangga miring, lawan turun; 3 cara (jangan buru-buru cabut/saluran akar, gigi pengganti, sikat sela) | 🎬 v1 jadi, QC lulus, siap unggah |
+| 04 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" | Berikutnya |
 | 05 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
 | 06 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
 | 07 | Gusi berdarah | Kenapa gusi / BERDARAH PAS SIKAT? | Tanda radang karena plak | Ide |
@@ -134,15 +143,20 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 |---|---|---|---|---|
 | 01 | 16 Nov 2026 | `dalamgigi-01-160-permukaan-v3.mp4` (66 dtk) | `cover-160-a.png` | v2 diarsipkan. Validasi: benang ±40 cm huruf C, scaling = pembersihan karang oleh dokter gigi pakai alat bergetar, scaling tiap 6 bulan |
 
-#02: naskah + hasil audit di `ruma-dental-video/references/naskah-lubang-gua-02.md`; scene `produksi-video-klinik/scripts/gua.html` (penampang gigi enamel/dentin/pulpa + lubang tumbuh), mix `mix_gua.py`.
+| 02 | (belum diunggah) | `dalamgigi-02-lubang-gua-v1.mp4` (72 dtk, QC lulus) | `cover-lubang-a.png` | Caption `output/dalamgigi-02-caption.md`. Validasi tambahan: "mulai ngilu saat sampai dentin" |
+| 03 | (belum diunggah) | `dalamgigi-03-efek-domino-v1.mp4` (69 dtk, QC lulus) | `cover-domino-a.png` | Caption `output/dalamgigi-03-caption.md`. Asumsi: definisi saluran akar, gigi pengganti tanpa sebut jenis |
 
-Naskah dan caption #01 lengkap: `ruma-dental-video/references/naskah-scaling-160.md` dan `references/rencana-konten-dalamgigi.md`.
+Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
+File video tidak masuk Git (sesi cloud sementara): selalu ingatkan Pak Dir mengunduh.
 
 ## 10. Ukuran Keberhasilan
 
 Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, % selesai, **disimpan**, **dibagikan**. Views minggu pertama belum patokan; akun baru butuh 5–10 video.
 
 ## 11. Pelajaran yang Tidak Boleh Diulang
+
+- QC pertama (17 Nov): `-shortest` saat encode membuang 1–3 frame → pakai `-frames:v` + `-t`. Suara latar fade-out hanya 0,5 dtk terakhir (1,2 dtk = hening mati di kartu). Kamera diam 1,7 dtk di #03 lolos dari mata → selalu jalankan `qc.sh`.
+- Label 3D (tag) harus menunjuk objek yang benar dan tidak di jalur subtitle; cek di lembar kontak (pelajaran #03 "gigi pengganti").
 
 - #02: material three.js yang diubah jadi transparan di tengah video wajib `needsUpdate=true` (kalau tidak, efek transparan tidak muncul di render penuh walau probe benar). Selalu cek lembar kontak dari render penuh, bukan hanya probe.
 - #03: sinkron gambar pakai **transkripsi Scribe (timestamp per kata)**, bukan tebakan dari jeda. Saat kamera menyorot rahang dari samping, sembunyikan gigi sisi seberang supaya tidak ramai. Objek utama di 15–50% tinggi layar, jangan di jalur subtitle (y 1035–1200).

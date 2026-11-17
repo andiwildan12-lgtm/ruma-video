@@ -5,11 +5,11 @@ description: Identitas dan pedoman brand untuk video Klinik Gigi Ruma Dental (Ma
 
 # Pedoman Video Ruma Dental
 
-Versi: **1.1 (16 November 2026)**.
+Versi: **1.3 (17 November 2026)**.
 Status:
 - **Iklan bleaching v2 di-ACC** → contoh acuan iklan MOFU/BOFU (bagian 10).
-- **Akun TOFU `@dalamgigi` aktif**; #01 "160 Permukaan Gigi" v3 terbit → contoh acuan konten TOFU (`references/naskah-scaling-160.md`, `references/rencana-konten-dalamgigi.md`).
-- Alur wajib: naskah → validasi Pak Dir → **Gerbang Audit 3 Lapis** → render → paket kirim (video, sampul, caption IG/TikTok, komentar pertama). Lihat skill `produksi-video-klinik` bagian 2, 9, 9b, 9c.
+- **Akun TOFU `@dalamgigi` aktif** (detail lengkap di skill `dalamgigi`): #01 "160 Permukaan Gigi" v3 terbit; #02 "Lubang Gua" dan #03 "Efek Domino" v1 jadi dan lulus QC (`references/naskah-lubang-gua-02.md`, `references/naskah-domino-03.md`).
+- Alur wajib (semua video Ruma, TOFU maupun iklan): naskah → validasi Pak Dir → **Gerbang Audit 4 Lapis** (3 sebelum render + QC otomatis setelah encode) → paket kirim. Lihat skill `produksi-video-klinik` bagian 2, 9, 9c, 11.
 
 Label status:
 - **[DISEPAKATI]**: sudah dipilih atau di-ACC Pak Dir.
@@ -127,10 +127,10 @@ File: `iklan-bleaching-ruma-v2.mp4` (51 detik, 9:16). Naskah final: `references/
 ## 10b. Konten TOFU [DISEPAKATI]
 
 - Konten TOFU = **edukasi murni**: tanpa ajakan ke klinik, tanpa "chat admin", tanpa harga. Brand cukup hadir lewat **kartu penutup logo + tagline** (seperti credit Studio AnakArsi).
-- Format yang disukai: gaya jktlagi "Bayangin…" (pengandaian → rantai angka → "sisanya?" → manfaat pribadi), angka besar di pojok kanan atas, subtitle per frasa. Contoh: `references/naskah-scaling-160.md`.
+- Format yang disukai: gaya jktlagi "Bayangin…" (pengandaian → rantai angka → "sisanya?" → manfaat pribadi), angka besar di pojok kanan atas, subtitle kinetik per kata. Pegangan isi: **"Value dulu, baru konten"** + Uji Value 5 poin (skill `dalamgigi` bagian 1b). Contoh: #01–#03 di `references/`.
 - Durasi 50–70 detik.
 
-## 10c. Akun TOFU Ruma [USULAN, 16 Nov 2026]
+## 10c. Akun TOFU Ruma [DISEPAKATI, 16 Nov 2026; detail terkini di skill `dalamgigi`]
 
 - **Platform utama: Instagram**, unggah ulang ke TikTok (dan YouTube Shorts bila sempat). Alasan: iklan Ruma berjalan di Meta, jadi penonton akun TOFU di IG bisa di-retarget ke iklan MOFU/BOFU (audiens interaksi IG, filter lokasi Makassar). Penonton TikTok tidak bisa di-retarget ke Meta.
 - **Niche tunggal:** "kenapa/gimana/bayangin" soal gigi dan mulut, dijelaskan dengan 3D bersih. Tidak ada promo, harga, atau ajakan ke klinik.
@@ -178,3 +178,4 @@ Inventaris dan penilaian per klip: `references/footage.md`. Klip yang dipakai di
 - [ ] Konten organik: tema "Di Sela Sibuk" belum dibahas lanjut.
 - [ ] Hook TOFU lama (Kalender/Snooze, `references/naskah-iklan-01.md`) belum diproduksi.
 - [ ] Footage behel dan bleaching (folder di Drive masih kosong).
+- [ ] Iklan MOFU/BOFU berikutnya (scaling, behel) belum dibuat; wajib pakai standar kualitas baru (QC, teks kinetik, motion blur).
