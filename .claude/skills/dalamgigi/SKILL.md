@@ -79,7 +79,8 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 
 1. Ambil topik berikutnya dari tabel di bagian 8, atau dari permintaan Pak Dir.
 2. Tulis **naskah** (narasi + adegan + angka pojok + subtitle) sesuai formula bagian 3 dan aturan bagian 2. Sertakan daftar fakta medis yang perlu divalidasi.
-3. Pak Dir validasi / OK.
+3. Pak Dir validasi / OK naskah.
+3b. **Papan gambar** (frame probe per adegan) dikirim → **ACC Pak Dir**. Tanpa ACC papan gambar: dilarang membuat suara atau render.
 4. **Gerbang Audit 3 Lapis** (naskah/fakta → frame probe → sinkron teknis), tanpa saran baru; perbaiki sendiri.
 5. Narasi ElevenLabs → deteksi jeda → kunci waktu adegan → render → mix SFX → encode.
 6. **Paket kirim**: video `dalamgigi-NN-topik-vN.mp4`, sampul, caption IG, caption TikTok, komentar pertama.

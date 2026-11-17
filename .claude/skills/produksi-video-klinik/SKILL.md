@@ -28,7 +28,14 @@ Kalau brand belum jelas, tanyakan dulu konten ini untuk klinik yang mana.
 Tujuan: **tidak ada render dua kali.** Render hanya boleh dimulai setelah Pak Dir bilang OK **dan** tiga audit di bawah lulus.
 
 Aturan:
-- **Suara ElevenLabs, efek suara, dan render baru boleh dibuat SETELAH naskah di-OK Pak Dir** (pelajaran iklan tambal: suara terlanjur dibuat lalu naskah berubah).
+- **URUTAN WAJIB, TIDAK BOLEH DILOMPATI:**
+  1. Naskah → **OK Pak Dir**
+  2. **Papan gambar** (gambar 9:16 per adegan dari frame probe, teks layar, narasi, footage yang dipakai) → kirim → **ACC Pak Dir**
+  3. Baru buat suara ElevenLabs + efek suara
+  4. Gerbang Audit 3 Lapis
+  5. Render penuh
+  (Pelajaran iklan tambal v1: papan gambar terlewat dan suara dibuat sebelum naskah OK.)
+- **Suara ElevenLabs, efek suara, dan render baru boleh dibuat SETELAH naskah DAN papan gambar di-ACC Pak Dir** (pelajaran iklan tambal: suara terlanjur dibuat lalu naskah berubah).
 - Setelah Pak Dir OK, **audit sendiri tanpa memberi saran atau ide baru**. Yang dicari hanya **kesalahan**, lalu langsung diperbaiki. Jangan membuka diskusi ulang.
 - Kalau ada temuan yang mengubah isi (fakta medis, data harga, naskah), **tanya Pak Dir dulu**. Selain itu, perbaiki sendiri.
 - Lapor ke Pak Dir hanya ringkasan: "Audit 1/2/3: lulus, X hal diperbaiki", lalu render.
