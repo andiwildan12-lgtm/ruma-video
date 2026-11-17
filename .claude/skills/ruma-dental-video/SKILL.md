@@ -34,7 +34,8 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 - Layanan dan segmen beririsan dengan UPG Dental Care. **Video Ruma harus terasa berbeda dari UPG** (UPG = serial karakter Ijal–Dinda, dialog, humor bersambung).
 - **Jangan mengarang keunggulan** atau menjanjikan pengalaman yang belum terverifikasi (cepat, tanpa antre, tidak sakit, dan sebagainya).
 - Tagline resmi: **"Tempat Nyaman untuk Kembali Tersenyum"**.
-- Layanan yang boleh dipromosikan [DISEPAKATI]: scaling, behel, bleaching. Camilan di ruang tunggu **selalu ada**.
+- Layanan yang tersedia dan boleh dipromosikan [DISEPAKATI, per 17 Nov 2026]: scaling, behel, bleaching (sudah termasuk scaling), tambal gigi (sewarna gigi, mulai Rp250.000, garansi setelah perawatan), perawatan saluran akar (PSA), crown, veneer, gigi palsu, perawatan gigi anak, cabut gigi, cabut gigi bungsu. Camilan di ruang tunggu **selalu ada**.
+- Layanan yang belum dikonfirmasi: implan. Jangan dipromosikan sebelum Pak Dir konfirmasi.
 
 ## 3. Aturan yang Tidak Boleh Dilanggar
 
