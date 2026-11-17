@@ -23,7 +23,7 @@ Kalau brand belum jelas, tanyakan dulu konten ini untuk klinik yang mana.
 - Naskah disimpan di folder skill brand (`references/`), menimpa file yang sama setiap revisi. **Jangan disimpan ke Google Drive.**
 - Fokus ke video. Jangan menawarkan hal di luar video (template admin dan sejenisnya) kecuali diminta.
 
-## 2. Gerbang Audit 3 Lapis Sebelum Render [WAJIB]
+## 2. Gerbang Audit 4 Lapis (3 sebelum render + 1 setelah encode) [WAJIB]
 
 Tujuan: **tidak ada render dua kali.** Render hanya boleh dimulai setelah Pak Dir bilang OK **dan** tiga audit di bawah lulus.
 
