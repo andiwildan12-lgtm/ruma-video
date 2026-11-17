@@ -12,8 +12,8 @@ Yang bisa dilakukan:
 3. Jangan tempel obat di gusi. Antibiotik tanpa resep juga nggak membersihkan sumbernya
 ⚠️ Bengkak menyebar ke pipi atau demam: segera cari pertolongan medis
 
-Kamu pernah ngalamin sakit gigi yang tiba-tiba hilang? Tulis PERNAH atau BELUM 👇
-Simpan & follow, episode berikutnya: kenapa gigi ngilu kena dingin.
+Mau dibahas apa lagi soal gigi? Tulis di komentar 👇
+Pertanyaan terbanyak kita jadikan video berikutnya. Simpan & follow @dalamgigi 🦷
 
 #dalamgigi #faktagigi #kesehatangigi #sakitgigi #gusibengkak #makassar
 
@@ -21,11 +21,11 @@ Simpan & follow, episode berikutnya: kenapa gigi ngilu kena dingin.
 Sama, hashtag: #dalamgigi #faktagigi #sakitgigi #gusibengkak #edukasigigi #faktaunik #makassar
 
 ## Komentar pertama (sematkan)
-Kamu pernah ngalamin sakit gigi yang tiba-tiba hilang? Tulis PERNAH atau BELUM 👇
+Mau dibahas apa lagi soal gigi? Tulis di komentar, pertanyaan terbanyak kita jadikan video 👇
 
 ## Balasan siap pakai (admin, ≤1 jam setelah unggah)
-- "PERNAH" → "Makasih sudah cerita 🙏 Kalau sakitnya pernah hilang sendiri, tetap bagus dicek ke dokter gigi ya, karena sumbernya bisa masih ada."
-- "BELUM" → "Semoga tetap begitu 😄 Kuncinya: lubang kecil ditambal sebelum sampai saraf."
+- Usulan topik → "Siap, masuk daftar! 🙏 Makasih idenya." (catat ke Daftar Request di skill dalamgigi)
+- Cerita pengalaman ("aku pernah…") → "Makasih sudah cerita 🙏 Kalau sakitnya pernah hilang sendiri, tetap bagus dicek ke dokter gigi ya, karena sumbernya bisa masih ada."
 - Tanya keluhan pribadi → "Gejalanya perlu dilihat langsung supaya tepat. Sebaiknya diperiksa ke dokter gigi ya 🙏" (tanpa harga/promo)
 
 ## Langkah unggah

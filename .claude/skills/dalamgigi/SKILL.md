@@ -63,9 +63,10 @@ Editing **tetap dikerjakan Claude sampai video jadi** (animasi 3D, teks, SFX, tr
 6. Fakta medis **divalidasi Pak Dir** sebelum render. Tanpa menakut-nakuti, tanpa memancing rasa minder, tanpa janji hasil, tanpa foto klinis mulut asli.
 7. Ajakan yang boleh: "simpan", "kirim ke teman", pertanyaan di komentar, **follow untuk episode berikutnya**. Tetap **tanpa** ajakan ke klinik.
 8. **Interaksi wajib di setiap video [DISEPAKATI 17 Nov 2026]** (alasan: views bagus tapi komentar 0 dan follow sedikit):
-   - **Akhir video (±4–5 dtk sebelum kartu logo):** narasi mengajak menjawab **pertanyaan 1 kata / pilihan** yang terkait isi ("Tulis PERNAH atau BELUM di komentar"), plus **open loop follow** ("Follow, berikutnya kita bahas …"). Di layar: gelembung komentar + 2 chip jawaban, bunyi `pop`/`click`.
+   - **Akhir video (±7 dtk sebelum kartu logo) [DISEPAKATI, versi #04]:** "Mau dibahas apa lagi soal gigi? Tulis di komentar, nanti kita jawab lewat video. Jangan lupa follow, ya." Di layar: gelembung komentar + **3 chip contoh topik** (memudahkan orang menjawab) + tombol "+ Follow @dalamgigi" + "Pertanyaanmu bisa jadi video berikutnya". Bunyi `pop`/`click`.
+   - **Jangan menjanjikan topik berikutnya secara spesifik** (keputusan Pak Dir 17 Nov 2026). Variasi lain yang boleh: pertanyaan 1 kata (PERNAH/BELUM) bila cocok dengan isi.
    - Pertanyaan harus **gampang dijawab tanpa mikir** (ya/tidak, A/B, angka, satu kata). Hindari pertanyaan terbuka yang berat atau yang membuat orang membuka kondisi kesehatan pribadi secara detail.
-   - **Caption** ditutup pertanyaan yang sama + ajakan simpan. **Komentar pertama** (disematkan) = pertanyaan yang sama dari akun.
+   - **Caption** ditutup pertanyaan yang sama + "Pertanyaan terbanyak kita jadikan video berikutnya" + ajakan simpan/follow. **Komentar pertama** (disematkan) = pertanyaan yang sama dari akun.
    - **Balas semua komentar ≤1 jam** setelah unggah (sinyal kuat ke algoritma); jawaban singkat, ramah, edukatif, tanpa jualan. Pertanyaan keluhan pribadi dijawab umum + "sebaiknya diperiksa langsung ke dokter gigi" (tanpa menyebut harga/promo).
    - Unggah sebagai **Collab** dengan akun utama Ruma bila memungkinkan, dan bagikan ke Story akun Ruma.
    - Dilarang komentar palsu/akun bodong; dorong interaksi asli.
@@ -137,13 +138,21 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | 01 | 160 permukaan gigi | 40% gigimu / NGGAK KESIKAT? | Hook 40% → 32×5=160 → 64 sela kelewat → plak/karang → benang gigi (cara) + scaling (definisi) | ✅ Terbit v3 |
 | 02 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Enamel keras vs dentin lunak → asam (1×→5× ngemil) → pintu kecil gua besar → tanpa saraf/ngilu/sakit → 4 cara (cermin, fluoride, ngemil dikumpulkan, periksa 6 bulan) | 🎬 v1 jadi, QC lulus, siap unggah |
 | 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | 1 dicabut → 3 terdampak; analogi rak buku; tetangga miring, lawan turun; 3 cara (jangan buru-buru cabut/saluran akar, gigi pengganti, sikat sela) | 🎬 v1 jadi, QC lulus, siap unggah |
-| 04 | Sakit gigi hilang | Sakit gigi hilang / BERARTI SEMBUH? | Lanjutan #02: 4 tahap (lubang → saraf radang, analogi jari terjepit cincin → saraf mati, dikira sembuh → nanah, gusi bengkak) → 3 cara + tanda bahaya → **CTA komentar PERNAH/BELUM + follow** | 🎬 v1 dirender |
-| 05 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Sudah dijanjikan di akhir #04 ("berikutnya") → wajib jadi konten berikutnya | Berikutnya |
-| 06 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" | Ide |
+| 04 | Sakit gigi hilang | Sakit gigi hilang / BERARTI SEMBUH? | Lanjutan #02: 4 tahap (lubang → saraf radang, analogi jari terjepit cincin → saraf mati, dikira sembuh → nanah, gusi bengkak) → 3 cara + tanda bahaya → **CTA "mau dibahas apa lagi?" + follow** | 🎬 produksi |
+| 05 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" | Ide (bisa didahului request penonton) |
+| 06 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
 | 07 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
 | 08 | Gusi berdarah | Kenapa gusi / BERDARAH PAS SIKAT? | Tanda radang karena plak | Ide |
 | 09 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
 | 10 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
+
+## 8b. Daftar Request Penonton [mulai #04]
+
+Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprioritaskan, **tetap wajib lolos Uji Value + validasi Pak Dir**. Admin membalas "Siap, masuk daftar! 🙏"; saat video tayang, balas komentar pengusul "Sudah kami jawab di video terbaru 🙌". Nama akun pengusul **tidak** disebut di video (privasi kesehatan).
+
+| Topik | Jumlah peminta | Sumber (video #) | Tanggal pertama | Status |
+|---|---|---|---|---|
+| (belum ada) | | | | |
 
 ## 9. Log Unggahan
 
