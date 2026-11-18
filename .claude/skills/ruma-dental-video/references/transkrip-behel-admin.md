@@ -15,3 +15,5 @@ Catatan: yang disebut adalah foto intra/ekstra oral, BUKAN rontgen.
 - ⚠️ Seragam admin (bicara ke kamera & resepsionis 4429–4432) bertuliskan **"UPG Dental Care"**. Solusi: klip bicara dibingkai rapat kepala–bahu (crop 740×1316 dari x170 y20, diskalakan ke 1080×1920); 4429 tidak dipakai, diganti papan logo 4420.
 - Harga behel mulai Rp6 jutaan, cicilan Rp2 jt/bln × 3 tanpa bunga: **masih berlaku (dikonfirmasi Pak Dir 18 Nov 2026)**.
 - Papan gambar Jenis B v1: `papan-gambar-behel-spil-harga-B-v1.png`, EDL: `edl-behel-spil-harga-B.json`.
+- Harga per rahang Rp3 jt; "mulai Rp6 jutaan" = atas & bawah (Pak Dir, 18 Nov 2026). Ditampilkan di kartu harga & kartu penutup.
+- Render Jenis B v1: `scripts/bicara/build.py` (potong per segmen + overlay PNG transparan + concat, loudnorm -16). Klip pembuka 4436 crop lebih rapat (720×1280 dari x180 y0) karena ikon bordir UPG mengintip.
