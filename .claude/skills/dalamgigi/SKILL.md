@@ -179,6 +179,7 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 - **Ilustrasi utama = geraham bawah (M1) dengan bentuk seperti M2** (keputusan Pak Dir 18 Nov, setelah mencoba versi 5-cusp anatomis): `sculpt()` 4 cusp + 1 kecil menyatu halus, leher menyempit. Kamera dipusatkan ke M1.
 - **Gusi harus menutupi semua gigi dan gigi berdiri di atasnya** (pelajaran #05 "offside"): tube gusi th −1,86…1,86, radius 0,7; shot lengkung dari atas harus **tegak lurus** (kamera tepat di atas), bukan miring dari depan.
 - **Gusi membungkus leher setiap gigi** (disukai Pak Dir, #05 v3): "kerah gusi" = salinan geometri gigi diperbesar ±12% berwarna gusi, dipotong (clipping) di y≈0,27, di atas tube gusi. Bentuk geraham/premolar dari `sculpt()` = standar (yang dilingkari Pak Dir).
+- **Gigi kiri & kanan wajib simetris (dicerminkan)** (pelajaran #05 v4): bentuk `sculpt()` tidak simetris, jadi mesh gigi sisi kanan (side=1) diberi `scale.z=-1` (juga kerah gusi & pita plak), bukan hanya diputar.
 
 - **#03 dilewati Pak Dir ("kurang materinya").** Sebelum naskah diajukan, pastikan isi cukup padat: ada fakta "wah" yang jarang diketahui, proses yang ditunjukkan bertahap, dan cara yang konkret (bukan sekadar "ke dokter gigi"). Bandingkan kepadatan dengan #02/#04 yang diterima.
 

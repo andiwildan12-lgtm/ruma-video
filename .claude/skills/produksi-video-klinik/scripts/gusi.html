@@ -118,12 +118,13 @@ const teeth=[];
   const gum=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),180,0.7,24,false),gumM);gum.scale.y=0.42;gum.receiveShadow=true;archG.add(gum);archG.userData.gum=gum;
 })();
 archG.updateMatrixWorld(true);
+teeth.filter(t=>t.side===1).forEach(t=>{t.g.children[0].scale.z=-1;});
 const collarM=gumM.clone();collarM.clippingPlanes=[new THREE.Plane(new THREE.Vector3(0,-1,0),0.27)];
-teeth.forEach(t=>{const c=new THREE.Mesh(t.g.children[0].geometry,collarM);c.scale.set(1.13,1,1.1);c.receiveShadow=true;t.g.add(c);});
+teeth.forEach(t=>{const c=new THREE.Mesh(t.g.children[0].geometry,collarM);c.scale.set(1.13,1,1.1*(t.side===1?-1:1));c.receiveShadow=true;t.g.add(c);});
 const front=teeth.filter(t=>t.side===1&&t.k>=4&&t.k<=6);
 // plaque/tartar bands on front teeth
 const bandM=new THREE.MeshStandardMaterial({color:'#E6C463',roughness:0.85,transparent:true,opacity:0,clippingPlanes:[new THREE.Plane(new THREE.Vector3(0,-1,0),0.42),new THREE.Plane(new THREE.Vector3(0,1,0),-0.22)]});
-const bands=front.map(t=>{const m=new THREE.Mesh(t.g.children[0].geometry,bandM);t.g.add(m);return m;});
+const bands=front.map(t=>{const m=new THREE.Mesh(t.g.children[0].geometry,bandM);t.g.add(m);m.userData.zs=t.side===1?-1:1;return m;});
 // tartar chunks
 const chunkM=new THREE.MeshStandardMaterial({color:'#A39C8E',roughness:1,flatShading:true});
 const chunks=[];front.forEach((t,ti)=>{for(let i=0;i<6;i++){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(0.05+0.02*((i+ti)%3),0),chunkM);const sx=(i%2?1:-1);m.position.set(sx*t.d*0.43,0.3+0.03*((i*3)%4),(i/5-0.5)*t.w*0.7);m.scale.setScalar(0.001);t.g.add(m);chunks.push(m);}});
@@ -198,7 +199,7 @@ window.render=function(T){
   else{tart=1.25*(1-ease(P(T,K.s3+0.8,2.2)));plaq=0.9*(1-ease(P(T,K.s1+0.6,1.5)));infl=1-ease(P(T,K.rutin,2.5));if(T>=K.ingat){tart=0;plaq=0;infl=0;}}
   bandM.opacity=Math.min(0.92,Math.max(plaq*0.8,tart>0?0.95:0));
   bandM.color.set('#E6C463').lerp(new THREE.Color('#A39C8E'),Math.min(1,tart));
-  bands.forEach(b=>{const s=1.035+0.05*Math.min(1.25,tart);b.scale.set(s,1,s);b.visible=bandM.opacity>0.01;});
+  bands.forEach(b=>{const s=1.035+0.05*Math.min(1.25,tart);b.scale.set(s,1,s*b.userData.zs);b.visible=bandM.opacity>0.01;});
   bandM.clippingPlanes[0].constant=0.4+0.06*Math.min(1.25,tart);
   chunks.forEach((c,i)=>{c.scale.setScalar(Math.max(0.001,Math.min(1.3,tart)*(0.8+0.4*((i*5)%3)/2)));});
   const gum=archG.userData.gum;gumM.color.set('#E3A49B').lerp(new THREE.Color('#D2585E'),infl);collarM.color.copy(gumM.color);gum.scale.y=0.42*(1+0.12*infl);collarM.clippingPlanes[0].constant=0.27+0.03*infl;
