@@ -7,7 +7,7 @@ description: Semua tentang akun TOFU @dalamgigi (Instagram + TikTok) milik Klini
 
 Panggil pengguna **"Pak Dir"** (dokter gigi, owner Ruma Dental & UPG Dental Care). Bahasa Indonesia tegas dan praktis. Kritis, audit sendiri sebelum mengirim.
 
-Strategi besar akun (tujuan, kanal, cara menang, fase): **`references/social-strategy.md`** — baca sebelum merencanakan konten.
+Strategi besar akun (tujuan, kanal, cara menang, fase): **`references/social-strategy.md`**. Siapa penontonnya (segmen, mitos, bank bahasa): **`references/audience.md`**. Baca keduanya sebelum merencanakan konten.
 
 Skill pendamping (wajib dibaca bersama):
 - `produksi-video-klinik` → teknik render 3D, narasi ElevenLabs, SFX, **Gerbang Audit 4 Lapis + QC otomatis**, teks kinetik, motion blur, paket kirim, sampul.
@@ -136,7 +136,7 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 9. **Kelola**: +1 jam cek & balas komentar (bagian 12b); +24 jam dan +72 jam tarik data, isi log (bagian 9) dan tabel evaluasi (bagian 13).
 10. Setelah terbit: perbarui **log unggahan** (bagian 9) dan status di tabel rencana. Pelajaran baru → bagian 11.
 
-**Ritme [DISEPAKATI 18 Nov 2026]: posting SETIAP HARI** 19.00–21.00 WITA, dengan campuran format (bagian 14) karena video 3D utama butuh ±2–3 hari/siklus. Selalu ada **stok ≥2 konten jadi** supaya jadwal tidak bolong. Fakta medis seminggu divalidasi Pak Dir **sekaligus** (satu kali per minggu).
+**Ritme [DISEPAKATI 19 Nov 2026, menggantikan "tiap hari"]: posting SELANG 1 HARI** (19 Nov, 21 Nov, 23 Nov, …) jam 19.00 WITA, ±15 Reel/30 hari, bergantian video utama ↔ Reel pendek (bagian 14b). Selalu ada **stok ≥2 konten jadi**. Fakta medis divalidasi Pak Dir **sekaligus seminggu sekali**.
 
 ## 8. Rencana Konten
 
@@ -203,6 +203,10 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 - Narasi dipotong per kalimat + jeda panjang = kaku dan patah-patah (pelajaran iklan bleaching v1).
 
 ## 12. SOP Unggah & Kelola Otomatis (Windsor.ai) [DISEPAKATI 18 Nov 2026]
+
+**Hak unggah tetap [DISEPAKATI Pak Dir 19 Nov 2026]:** setiap video @dalamgigi yang sudah lolos QC & naskahnya di-OK Pak Dir **langsung diunggah ke Drive dan diposting sesuai jadwal tanpa menunggu perintah lagi**. Pak Dir tidak memasukkan file ke Drive sendiri. Sesi produksi ("Konten Dalam Gigi") yang mengunggah ke Drive, lalu mengirim ID file ke sesi posting.
+
+**Windsor trial [DISEPAKATI]:** dipakai sampai habis; begitu posting otomatis gagal, langsung beri tahu Pak Dir (posting manual dari paket Drive).
 
 Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Media** (`instagram`, account id `17841463796300521`). TikTok **tidak** bisa diposting lewat Windsor → tetap manual.
 
@@ -281,22 +285,25 @@ Total jangkauan ±17 ribu → hanya **18 follower** (0,1%). Masalah utama akun =
 
 **Tujuan akun:** awareness. Orang Makassar kenal & ingat "Dalam Gigi oleh Ruma Dental". **KPI utama: Views, Like, Follow.** Indikator pendukung (penyebab): skip <3 dtk, rata-rata tonton, simpan, bagikan, komentar.
 
-### 14a. KPI 30 hari (19 Nov – 18 Des 2026)
+### 14a. KPI 30 hari (19 Nov – 18 Des 2026) — disesuaikan untuk ±15 Reel (selang 1 hari)
 Baseline: 3 video, ±19 rb views, rata-rata ±6 rb views/video 3D, 18 follower, like ±2,5% views.
 
 | KPI | Minimum | **Target** | Stretch |
 |---|---|---|---|
-| Total views / 30 hari | 100 rb | **200 rb** | 400 rb |
+| Total views / 30 hari | 60 rb | **100 rb** | 200 rb |
 | Median views video 3D utama | 3 rb | **5 rb** | 10 rb |
 | Like rate (like ÷ views) | 2,5% | **3%** | 4% |
-| Total like / 30 hari | 2.500 | **6.000** | 15.000 |
-| Follower (dari 18) | 500 | **1.000** | 2.000 |
+| Total like / 30 hari | 1.500 | **3.000** | 8.000 |
+| Follower (dari 18) | 250 | **500** | 1.000 |
 | Konversi follow (follower baru ÷ jangkauan) | 0,3% | **0,5%** | 1% |
 
-Mingguan: views ≥50 rb, follower +250. Catatan: API Windsor tidak memberi angka like langsung untuk reel → like = `media_reel_total_interactions` − simpan − bagikan − komentar (perkiraan); cocokkan dengan aplikasi bila selisih.
+Mingguan (3–4 Reel): views ≥25 rb, follower +120. Catatan: API Windsor tidak memberi angka like langsung untuk reel → like = `media_reel_total_interactions` − simpan − bagikan − komentar (perkiraan); cocokkan dengan aplikasi bila selisih.
 
-### 14b. Ritme Harian — FULL REELS motion 3D [DISEPAKATI 18 Nov 2026]
+### 14b. Format — FULL REELS motion 3D [DISEPAKATI 18 Nov 2026]
 Tanpa carousel/foto. Semua konten = Reel motion 3D gaya @dalamgigi (narasi Ricky, SFX, subtitle kinetik).
+
+**Jadwal selang 1 hari [DISEPAKATI 19 Nov 2026]:** urutan bergantian **Utama → Pendek → Utama → Pendek**. Tabel di bawah = menu format; hari diikuti tanggal tayang, bukan nama hari. Pendek dipilih bergilir: Mitos vs Fakta → Jawab Komentar → 1 Fakta 1 Visual → Tebak → Daur ulang.
+
 
 | Hari | Format Reel | Durasi | Biaya produksi |
 |---|---|---|---|
@@ -337,8 +344,8 @@ Tujuan: Pak Dir cukup **1 kali persetujuan per minggu**; sisanya (produksi, ungg
 | Jumat | Claude | Siapkan **paket minggu depan**: 7 naskah (sesuai 14b) + papan gambar + daftar fakta medis yang perlu divalidasi, dalam 1 pesan |
 | Sabtu/Minggu | **Pak Dir** (±15 menit) | Balas "OK semua" atau koreksi per nomor. Ini satu-satunya gerbang manusia (fakta medis & nama Ruma) |
 | Minggu–Senin | Claude | Narasi ElevenLabs, render, QC 4 lapis, sampul, caption (checklist 12d) → unggah ke Drive `Dalam Gigi/Siap Tayang` |
-| Tiap hari 19.00 WITA | Claude (jadwal otomatis) | Posting reel hari itu + komentar pertama → kirim ringkasan singkat |
-| Tiap hari 20.15 WITA | Claude (jadwal otomatis) | Cek komentar, balas yang ringan (12b), tahan yang sensitif untuk Pak Dir |
+| Selang 1 hari 19.00 WITA | Claude (jadwal otomatis) | Posting reel hari itu + komentar pertama → kirim ringkasan singkat |
+| Hari tayang 20.15 WITA | Claude (jadwal otomatis) | Cek komentar, balas yang ringan (12b), tahan yang sensitif untuk Pak Dir |
 | Senin 07.35 WITA | Claude (jadwal otomatis, AKTIF) | Laporan mingguan |
 | HP Pak Dir (±1 menit/hari) | **Pak Dir/admin** | Sematkan komentar pertama, tag lokasi (opsional), unggah ulang ke TikTok |
 

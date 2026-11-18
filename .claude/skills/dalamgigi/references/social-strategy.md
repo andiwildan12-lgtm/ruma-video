@@ -41,13 +41,13 @@ Versi 1 · 19 Nov 2026 · disetujui Pak Dir (alur & KPI). Dibaca bersama `SKILL.
 
 ## 4. Model Operasional
 
-**Ritme:** 1 Reel/hari, 19.00–21.00 WITA (Senin & Kamis video utama 40–60 dtk; hari lain Reel pendek 15–35 dtk). Rincian SKILL.md 14b.
+**Ritme:** 1 Reel **selang 1 hari**, 19.00 WITA (±15 Reel/bulan), bergantian video utama 40–60 dtk ↔ Reel pendek 15–35 dtk. Rincian SKILL.md 14b. Naik ke harian hanya di fase 2 bila stok & kualitas aman.
 
 **Mesin konten (sekali seminggu disetujui):**
 1. Jumat: Claude kirim paket 7 naskah + papan gambar + daftar fakta medis.
 2. Sabtu/Minggu: Pak Dir OK/koreksi (±15 menit), satu-satunya gerbang manusia.
 3. Claude produksi (narasi ElevenLabs, render 3D, QC 4 lapis, sampul, caption) → stok di Drive `Dalam Gigi/Siap Tayang`.
-4. Tiap hari: Claude posting 19.00, balas komentar ringan 20.15.
+4. Selang 1 hari: Claude posting 19.00, balas komentar ringan 20.15.
 5. Senin 07.35: laporan mingguan → keputusan minggu berikut.
 6. Admin (±1 menit/hari): sematkan komentar pertama, unggah ulang ke TikTok.
 
@@ -55,6 +55,7 @@ Versi 1 · 19 Nov 2026 · disetujui Pak Dir (alur & KPI). Dibaca bersama `SKILL.
 - ElevenLabs Creator: ±131 rb karakter/bulan (sisa ±74 rb per 19 Nov, reset ±14 Des). Kebutuhan ±30 rb/bulan untuk 30 Reel (2 take). Cukup.
 - Windsor: masih trial → putuskan berlangganan sebelum trial habis, kalau posting otomatis mau dipertahankan.
 - Waktu Pak Dir: ±15 menit/minggu + validasi bila ada koreksi.
+- Windsor trial: dipakai sampai habis; bila posting otomatis gagal, Pak Dir langsung diberi tahu.
 
 **Pembagian peran:** Claude = produksi, posting, balas ringan, laporan. Pak Dir = validasi fakta & keputusan. Admin = pin komentar, TikTok, menjawab komentar sensitif yang diteruskan.
 
@@ -62,11 +63,11 @@ Versi 1 · 19 Nov 2026 · disetujui Pak Dir (alur & KPI). Dibaca bersama `SKILL.
 
 | Fase | Waktu | Fokus | Syarat naik fase |
 |---|---|---|---|
-| **1. Bangun** | 19 Nov – 18 Des 2026 | Instagram saja, ritme harian, perbaiki konversi follow & durasi | ≥1.000 follower **atau** median views video utama ≥5 rb, dan ritme harian bisa dijaga tanpa turun kualitas |
+| **1. Bangun** | 19 Nov – 18 Des 2026 | Instagram saja, selang 1 hari, perbaiki konversi follow & durasi | ≥500 follower **atau** median views video utama ≥5 rb |
 | 2. Perluas | Jan 2027 | TikTok digarap serius (hook khusus TikTok), YouTube Shorts sebagai arsip; uji seri tematik | Konversi follow ≥0,5% stabil |
 | 3. Hubungkan | Feb 2027+ | Ukur dampak ke pasien Ruma (pertanyaan "tahu dari mana"); pertimbangkan ulang jembatan ke Ruma bila Pak Dir mau | Data pasien dari @dalamgigi ada |
 
-**Aturan berhenti:** kalau median views turun >30% selama 2 minggu karena ritme harian, kembali ke 4 Reel/minggu (kualitas > kuantitas).
+**Aturan ritme:** naik ke harian hanya bila stok ≥4 konten jadi dan median views stabil; turun lagi bila median views jatuh >30% selama 2 minggu.
 
 ## 6. Yang TIDAK Dilakukan
 - Ikut tren/joget/sound viral yang tidak membawa value gigi.
