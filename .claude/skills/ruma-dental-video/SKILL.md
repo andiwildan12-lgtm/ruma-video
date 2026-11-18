@@ -125,6 +125,20 @@ File: `iklan-bleaching-ruma-v2.mp4` (51 detik, 9:16). Naskah final: `references/
 | 37,4–41,3 | Papan logo menyala, "Bleaching diskon 10%" | IMG_4420 |
 | 41,3–51 | Kartu harga, tagline, alamat, WA | HTML |
 
+## 10a. Daftar Iklan Meta (MOFU/BOFU) dan Status [per 18 Nov 2026]
+
+Setiap iklan baru: rumus 8 ketukan (`produksi-video-klinik` bagian 3) → checklist 3a dijalankan sendiri → OK naskah → papan gambar → ACC → suara → audit → render.
+
+| Iklan | Harga | Status | File naskah | Yang ditunggu |
+|---|---|---|---|---|
+| Bleaching | Rp1.700.000 → Rp1.530.000 (diskon 10%), sudah termasuk scaling | ✅ ACC v2 | `naskah-bleaching-01.md` | – |
+| Tambal gigi | mulai Rp250.000, garansi setelah perawatan | Render v2, menunggu OK Pak Dir → paket kirim (15 dtk, sampul, teks Meta) | `naskah-tambal-01.md` | OK video v2 |
+| PSA | tanpa harga | Draf naskah v1 | `naskah-psa-01.md` | bius lokal, crown disebut/tidak, kunjungan & garansi, footage |
+| Scaling | belum ditentukan | Draf naskah v1 | `naskah-scaling-iklan-01.md` | harga, fakta gusi turun/mitos renggang, footage, penutup murni vs jembatan bleaching |
+| Crown, cabut gigi bungsu, cabut gigi, veneer, perawatan gigi anak, behel, gigi palsu | – | Antrean | – | data per layanan: harga, kunjungan, garansi, footage |
+
+Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
+
 ## 10b. Konten TOFU [DISEPAKATI]
 
 - Konten TOFU = **edukasi murni**: tanpa ajakan ke klinik, tanpa "chat admin", tanpa harga. Brand cukup hadir lewat **kartu penutup logo + tagline** (seperti credit Studio AnakArsi).
