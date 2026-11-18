@@ -53,6 +53,8 @@ Aturan:
 - [ ] Anti-monoton: kamera berganti tiap 2–4 detik, bentuk objek dikenali, suasana berubah per babak.
 - [ ] Logo dan identitas brand benar; tidak ada atribut brand lain.
 - [ ] Footage: casting benar (pasien ≠ admin), tanpa data sensitif (password, wajah tanpa izin).
+- [ ] **Setiap kata kerja di narasi terlihat di gambar pada detik yang sama** (pelajaran Kunjungan Pertama v1: "dokter gigi memeriksa" tanpa adegan pemeriksaan).
+- [ ] Tidak ada benda yang Pak Dir minta tidak ditampilkan (contoh: rak sepatu).
 
 **Audit 3: Teknis dan sinkron (terakhir sebelum render penuh)**
 - [ ] Kunci waktu adegan cocok dengan jeda suara; subtitle cocok dengan kata yang diucapkan.

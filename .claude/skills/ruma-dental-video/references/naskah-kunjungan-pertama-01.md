@@ -32,3 +32,9 @@ MOFU/BOFU, ±52 detik, tanpa harga, berlaku untuk semua layanan (iklan evergreen
 - Narasi: Ricky eleven_v4, versi B (46,9 dtk), 2 versi ±1.750 kredit + transkripsi waktu kata ±290 kredit + SFX notifikasi ±19 kredit.
 - Segmen (detik video): hook 0–5,96 · snooze –12,39 · geraham –16,9 · kalender+wipe –18,5 · logo 4420 –22,95 · 9648 –23,9 · 9650 –24,6 · 9667 –25,6 · 9673 –26,38 · 9676 –27,5 · 9712 –28,6 · 9717 –31,3 · 9716 –34,18 · 9719 –37,33 · 9767 –39,0 · 9643 –40,77 · kartu –49,5.
 - Audit render: 9644 diganti 9648 karena rak sepatu terlihat.
+
+## Revisi v2 (18 Nov 2026, koreksi Pak Dir: "tidak ada giginya diperiksa")
+- 26,38–34,18 dtk diganti footage folder Scaling (pasien yang sama): 9723 duduk di kursi, dokter bersiap → 9731 dokter memeriksa → 9743 pasien pegang cermin, dokter menunjukkan kondisi → 9747 → 9748 dokter menjelaskan.
+- Tidak dipakai: 9740–9742 (close-up mulut), klip alat scaling (narasi "sebelum tindakan").
+- 9719 tetap untuk "kamu yang putuskan" (arahan Pak Dir).
+- Pelajaran: kata kerja di narasi ("memeriksa") harus terlihat di gambar pada detik yang sama.

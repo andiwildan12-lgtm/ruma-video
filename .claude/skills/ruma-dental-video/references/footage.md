@@ -106,3 +106,15 @@ Aturan: sebelum memakai klip dari folder mana pun, cek visual interior (Ruma = d
 | 9664–9668, 9673 | Ruang tunggu sofa sage, toples camilan, pasien membaca/ngobrol dengan staf | **Pakai** |
 | 9676 / 9710 | Staf memanggil pasien, membuka pintu ruang dokter | **Pakai** |
 | 9712–9719 | Ruang konsultasi: dokter menjelaskan dan mencatat di meja, pasien duduk | **Pakai: bukti "dicek dulu, dijelaskan"** |
+
+## Folder "Scalling" Mei 2026 (id `1n4yV5HkHYZIl3zlAYbIVP058wFrijLU3`) — dicek 18 Nov 2026
+Pasien sama dengan folder Penyambutan Pasien. Dokter bergaun ungu, topi, masker; asisten seragam biru motif.
+| Klip | Isi | Status |
+|---|---|---|
+| 9723 | Pasien duduk di kursi, dokter memakai sarung tangan | **Pakai** (mulai pemeriksaan) |
+| 9731 | Dokter memeriksa di kursi (jarak sedang) | **Pakai** |
+| 9732–9739 | Tindakan scaling dengan alat | Iklan scaling saja |
+| 9740–9742 | Close-up mulut | **Tidak untuk iklan Meta** |
+| 9743 / 9744 | Pasien pegang cermin, dokter menunjukkan kondisi gigi | **Pakai** (9744 POV cermin: cadangan) |
+| 9746 | Asisten melepas celemek | Cadangan |
+| 9747 / 9748 | Dokter duduk menjelaskan ke pasien | **Pakai** |

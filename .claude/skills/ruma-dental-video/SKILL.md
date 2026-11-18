@@ -135,7 +135,7 @@ Setiap iklan baru: rumus 8 ketukan (`produksi-video-klinik` bagian 3) → checkl
 | Tambal gigi | mulai Rp250.000, garansi setelah perawatan | Render v2, menunggu OK Pak Dir → paket kirim (15 dtk, sampul, teks Meta) | `naskah-tambal-01.md` | OK video v2 |
 | PSA | tanpa harga | Draf naskah v1 | `naskah-psa-01.md` | bius lokal, crown disebut/tidak, kunjungan & garansi, footage |
 | Scaling | belum ditentukan | Draf naskah v1 | `naskah-scaling-iklan-01.md` | harga, fakta gusi turun/mitos renggang, footage, penutup murni vs jembatan bleaching |
-| Kunjungan pertama di Ruma (evergreen, semua layanan) | tanpa harga | Render v1 (49,5 dtk, `iklan-kunjungan-pertama-ruma-v1.mp4`), papan gambar ACC | `naskah-kunjungan-pertama-01.md` | OK video v1 → paket kirim |
+| Kunjungan pertama di Ruma (evergreen, semua layanan) | tanpa harga | Render v2 (49,5 dtk, `iklan-kunjungan-pertama-ruma-v2.mp4`): pemeriksaan di kursi dental ditambahkan | `naskah-kunjungan-pertama-01.md` | OK video v2 → paket kirim |
 | Crown, cabut gigi bungsu, cabut gigi, veneer, perawatan gigi anak, behel, gigi palsu | – | Antrean | – | data per layanan: harga, kunjungan, garansi, footage |
 
 Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
