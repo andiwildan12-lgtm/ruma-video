@@ -304,3 +304,29 @@ Berlaku untuk **semua video**: konten TOFU (@dalamgigi), **iklan Ruma Dental (MO
 
 **11C. Motion blur di gerakan cepat**
 `scripts/render_frames.js <page> <cfg> all|range A B|p t...` (+ `blend_blur.py`). Rentang di `cfg.blur=[[a,b],...]` dirender 3 sub-frame (shutter 180°) lalu dirata-rata. Pakai hanya di dive, whoosh, dan perpindahan kamera cepat (render 3× lebih lama di rentang itu).
+
+## 12. Jalur Produksi Tambahan [TERBUKTI 18 Nov 2026]
+
+Urutan wajib tetap sama: naskah OK → papan gambar ACC → (suara) → audit → render → QA frame + zona aman → kirim.
+
+### 12a. Transkripsi lokal (gratis)
+`python3 -I .claude/skills/produksi-video-klinik/scripts/stt.py medium <audio1.wav> [...]` → `stt.json` (waktu per kata) di folder audio pertama. Izin sudah ada di `.claude/settings.json`; jaringan huggingface sudah dibuka di lingkungan "Video Editing". Dipakai untuk rekaman asli (ucapan staf) dan narasi ElevenLabs (kunci waktu adegan + caption). ElevenLabs tidak bisa mengambil file langsung dari Drive (tipe file octet-stream).
+
+### 12b. Video orang bicara (admin/staf, suara asli) — `scripts/bicara/`
+1. Unduh klip dari Drive (`drive.usercontent.google.com/download?id=…&confirm=t`), transkripsi (12a), susun EDL dari waktu kata (buang salah ucap & ucapan berulang).
+2. Atribut brand lain di seragam → `blurlogo.py` (lacak mikrofon klip hitam → blur elips di kiri-bawahnya), sumber diproses ke 30 fps.
+3. Overlay per kondisi (`ov2.html` + `shot_states.js`/`shot_states_var.js`) → urutan per frame (`mkseq.py`, termasuk pudar kartu penutup) → `build2.py`/`build_var.py` (crossfade 0,24 dtk, zoom bergantian 1,00/1,08 + dorong 2%, whoosh/pop/ting, suara ruangan klinik asli, loudnorm -16).
+4. Hook "spil/tanya" → kotak "Balas komentar" di atas gestur tunjuk (tanpa nama akun). Subtitle 2–4 kata di atas kepala.
+5. Varian A/B dari satu rekaman: B (bicara + bukti klinik), C (dibuka cuplikan klinik 2,6 dtk).
+
+### 12c. Iklan footage + narasi + caption kinetik + stiker — `scripts/kinetik/`
+1. Narasi Ricky (2 versi) → pilih jeda terapi → transkripsi lokal → `plan.json` (EDL per kata, potongan caption, waktu stiker/kartu langkah/tombol).
+2. Data pasien di film rontgen → `filmdet.py` (deteksi lembar film per frame, blur label). Cek ≥6 titik per klip.
+3. `mkstates.py` (kondisi per frame + animasi pop) → `shotu.js` (render unik) → `build_k.py` (crossfade, zoom bergantian, whoosh tiap potongan, pop tiap stiker, suara ruangan, mix).
+4. Caption gaya label (kotak putih, teks Deep Teal, kata kunci Turquoise), stiker ikon (bukan emoji wajah).
+
+### 12d. Poster/desain statis
+Pakai skill `desain-grafis-ruma` (template resmi Poppins + Open Sans). Video tetap Montserrat.
+
+### 12e. Konektor
+Nama konektor ElevenLabs bisa berubah setelah masuk ulang (mis. `ElevenLabs-56894adb`). Bila konektor ditolak/kedaluwarsa: minta Pak Dir masuk ulang di claude.ai/customize/connectors; jangan memakai suara pengganti.

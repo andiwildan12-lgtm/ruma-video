@@ -58,8 +58,18 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 | Alamat singkat (video) | Jl. Rusa No. 65, Maricaya, Makassar |
 | Nomor admin | WA 0898-7735-463 |
 | Bleaching | Rp1.700.000, diskon 10% = **Rp1.530.000**, **sudah termasuk scaling**, tanpa batas waktu |
+| Tambal gigi | sewarna gigi, **mulai Rp250.000**, garansi setelah perawatan, dikerjakan dokter gigi |
+| Behel | **mulai Rp6 jutaan untuk rahang atas & bawah**, **Rp3 jt per rahang**, **cicilan Rp2 jt/bln × 3, tanpa bunga** (dikonfirmasi 18 Nov 2026). Sudah termasuk: pemasangan atas & bawah, scaling, cetak gigi, foto intra & ekstra oral, konsultasi dokter gigi, ortho kit |
+| SOP kunjungan | Biaya **selalu dijelaskan sebelum tindakan**; pasien boleh pulang tanpa tindakan (dikonfirmasi 18 Nov 2026) |
 
 Bahasa paket: **"bleaching sudah termasuk scaling"**. Hindari "free/gratis scaling" dan istilah "included".
+Bahasa harga Ruma: tenang dan jelas ("Behel dengan tenang, cicilan tanpa bunga"). **Hindari** "tanpa harus lunas", "murah", "promo gila" (terkesan murah, tidak sesuai positioning premium).
+
+**Aturan orang di visual Ruma [DISEPAKATI 18 Nov 2026]:**
+- Poster/desain: **wajah dokter tidak ditampilkan** (pakai dari belakang/bahu, tangan bekerja, atau close-up gigi berbehel); MOFU menonjolkan dokter **sedang bekerja/konsul**.
+- Staf berseragam bertuliskan UPG di footage Ruma → **blur lokal logo** (bukan pita); syuting berikutnya pakai seragam Ruma/polos.
+- Data pasien di footage (label film rontgen, layar, rekam medis) → **wajib blur per frame**.
+- Wajah orang di desain tidak boleh terpotong elemen (kartu, teks).
 
 ## 5. Logo
 

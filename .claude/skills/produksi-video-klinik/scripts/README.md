@@ -25,3 +25,12 @@ ffmpeg -framerate 30 -i frames/%04d.jpg -i track.wav -map 0:v -map 1:a -frames:v
 bash qc.sh out.mp4 <dur> <detik_kartu>
 node cover_make.js scene.html cfg.json <detik> "Baris satu" "BARIS DUA?" cover.png
 ```
+
+
+## Tambahan 18 Nov 2026
+- `stt.py` — transkripsi lokal faster-whisper (waktu per kata).
+- `bicara/` — video orang bicara: `blurlogo.py`, `ov2.html`, `shot_states*.js`, `mkseq.py`, `build2.py`, `build_var.py`, `mux.py`, font Montserrat.
+- `kinetik/` — iklan caption kinetik + stiker: `kin.html`, `mkstates.py`, `shotu.js`, `build_k.py`, `plan.json` (contoh behel), `filmdet.py` (blur label rontgen), `filmblur.py`.
+- `kp.js`, `compose_kp*.py` — iklan Kunjungan Pertama (3D meja/HP + footage).
+- `poster/` — poster foto lama (Outfit); untuk desain baru pakai skill `desain-grafis-ruma`.
+- `sfx/sfx_notif.mp3` — ting notifikasi HP.
