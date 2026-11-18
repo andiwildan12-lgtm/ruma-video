@@ -66,7 +66,7 @@ Aturan:
   - Lapisan teks dirender per frame (`ovseq/%04d.png`), bukan concat gambar diam (pernah terpotong di detik 32). Kartu penutup masuk dengan pudar ±0,3 dtk.
 - [ ] **Zona aman iklan Meta 9:16 (Reels/Story)**: semua teks, logo, harga, kotak komentar, kartu penutup, DAN wajah/mulut pembicara di area y 270–1250, x 65–1015 (atas 14% & bawah 35% tertutup UI Meta). Cek dengan frame + kotak merah zona sebelum kirim. Kartu penutup disusun mulai y≈310, selesai ≤1250.
 - [ ] **Video orang bicara: subtitle di atas kepala, jangan menutupi wajah** (arahan Pak Dir, behel Spil Harga). Hook "spil/tanya" → kotak "Balas komentar" diam di dekat gestur tunjuk.
-- [ ] **Cek seragam/atribut brand lain di footage** (pelajaran behel: seragam bertuliskan UPG di konten Ruma → bingkai rapat/ganti klip).
+- [ ] **Cek seragam/atribut brand lain di footage** (pelajaran behel: seragam bertuliskan UPG di konten Ruma). Solusi yang disetujui Pak Dir: **blur hanya area logo**, dilacak per frame (`scripts/bicara/blurlogo.py`: lacak mikrofon klip hitam → blur elips lembut di kiri-bawahnya). **Jangan pakai pita/gradasi yang menutup bagian bawah video** (dikira video blur). Klip lain yang memperlihatkan logo jelas (mis. resepsionis 4429) tidak dipakai.
 - [ ] **Setiap kata kerja di narasi terlihat di gambar pada detik yang sama** (pelajaran Kunjungan Pertama v1: "dokter gigi memeriksa" tanpa adegan pemeriksaan).
 - [ ] Tidak ada benda yang Pak Dir minta tidak ditampilkan (contoh: rak sepatu).
 

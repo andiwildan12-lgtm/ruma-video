@@ -26,7 +26,7 @@ for i,r in enumerate(rows):
     p=1.0 if k_adm%2==0 else 1.08;k_adm+=1
     # face-centred punch + slow push 2%
     zf=f"scale=w='trunc(1080*{p}*(1+0.02*t/{L})/2)*2':h=-2:eval=frame,crop=1080:1920:(iw-1080)/2:(ih-1920)*0.42"
-    run(['ffmpeg','-v','error','-y','-ss',str(r['ai']-pre),'-t',str(L),'-i',f"{B}/{r['v']}.mov",'-vf',f'scale=1080:1920,crop=720:1280:180:220,scale=1080:1920,{zf},{GR},fps={FPS},format=yuv420p','-an','-c:v','libx264','-crf','17',o])
+    run(['ffmpeg','-v','error','-y','-ss',str(r['ai']-pre),'-t',str(L),'-i',f"/tmp/claude-0/-home-user/a9206803-5d8e-5be7-be23-40a6dfe89f1c/scratchpad/test3d/bh/blurmov/{r['v']}.mp4",'-vf',f'scale=1080:1920,crop=720:1280:180:220,scale=1080:1920,{zf},{GR},fps={FPS},format=yuv420p','-an','-c:v','libx264','-crf','17',o])
   vids.append((o,r))
 # xfade chain
 inp=[];fc=[];last='0:v'

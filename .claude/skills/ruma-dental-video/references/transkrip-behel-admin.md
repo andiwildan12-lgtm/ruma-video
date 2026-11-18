@@ -18,3 +18,4 @@ Catatan: yang disebut adalah foto intra/ekstra oral, BUKAN rontgen.
 - Harga per rahang Rp3 jt; "mulai Rp6 jutaan" = atas & bawah (Pak Dir, 18 Nov 2026). Ditampilkan di kartu harga & kartu penutup.
 - Render Jenis B v1: `scripts/bicara/build.py` (potong per segmen + overlay PNG transparan + concat, loudnorm -16). Klip pembuka 4436 crop lebih rapat (720×1280 dari x180 y0) karena ikon bordir UPG mengintip.
 - Revisi zona aman Meta (18 Nov 2026): crop admin 720×1280 dari x180 y220 (wajah naik ke area aman), pita krem gradasi 420 px di bawah (menutup bordir UPG, area itu tertutup UI Meta), subtitle bottom 1300 px, kartu harga top 300, kotak komentar right 80/bottom 1345, subtitle di adegan harga dihapus (kartu harga sudah memuatnya), kartu penutup y 310–≈1200.
+- Revisi Pak Dir: pita krem/mint di bawah DIHAPUS; bordir UPG di-blur lokal per frame (`blurlogo.py`, sumber diproses ke 30 fps). Video B v2 dirender ulang dengan cara ini.
