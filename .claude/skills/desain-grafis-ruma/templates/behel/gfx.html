@@ -37,8 +37,8 @@ function price(c){if(c)return `<div class=pr><div class=m>Behel mulai</div><div 
 function steps(){return `<div class=steps>${[['1','Konsultasi + foto gigi','dengan dokter gigi'],['2','Dijelaskan sebelum dipasang','jenis behel · lama perawatan · biaya'],['3','Kontrol rutin','sampai perawatan selesai']].map(s=>`<div class=s><div class=n>${s[0]}</div><div><b>${s[1]}</b><span>${s[2]}</span></div></div>`).join('')}</div>`}
 const V={
  B:{img:'adm_2.2.jpg',pos:'50% 18%',posS:'50% 43%',kick:'Spil harga behel',h1:'Pasang behel',h2:'bisa dicicil.',sub:'Tanpa bunga, sudah termasuk paket lengkap.',body:price,cm:true,cta:'Chat admin'},
- C:{img:'klinik.jpg',pos:'50% 45%',posS:'50% 42%',kick:'Behel di Ruma Dental',h1:'Rapikan gigi,',h2:'tanpa harus lunas.',sub:'Dicek dulu, dijelaskan dulu, dikerjakan dokter gigi.',body:price,cta:'Chat admin'},
- M:{img:'konsul.jpg',pos:'40% 50%',kick:'Kenapa behel?',h1:'Gigi berjejal,',h2:'susah dibersihkan.',sub:'Behel menggeser gigi pelan-pelan ke posisi yang lebih rapi. Alurnya di Ruma:',body:steps,cta:'Chat admin, konsultasi dulu'}};
+ C:{img:'c_4403.jpg',pos:'38% 40%',posS:'50% 38%',kick:'Behel di Ruma Dental',h1:'Behel dengan tenang,',h2:'cicilan tanpa bunga.',sub:'Dicek dulu, dijelaskan dulu, dikerjakan dokter gigi.',body:price,cta:'Chat admin'},
+ M:{img:'c_4392.jpg',pos:'70% 40%',posS:'50% 44%',kick:'Kenapa behel?',h1:'Gigi berjejal,',h2:'susah dibersihkan.',sub:'Behel menggeser gigi pelan-pelan ke posisi yang lebih rapi. Alurnya di Ruma:',body:steps,cta:'Chat admin, konsultasi dulu'}};
 window.go=(k,fmt)=>{const v=V[k],S=fmt=='story';
  document.body.style.cssText=S?'--H:1920px;--top:150px;--fs:84px;--fs2:72px;--fb:300px;--mint:900px':'--H:1350px;--top:44px;--fs:70px;--fs2:58px;--fb:40px;--mint:430px';
  let h='<div class=bgm></div>'+`<div class=hd><img src="card_logo.png"><div class=loc>Klinik Gigi · Makassar</div></div>`;

@@ -15,3 +15,4 @@ Aturan sementara: render hanya setelah teks di-OK Pak Dir.
 
 ## Template resmi pertama yang dipakai (18 Nov 2026): `templates/behel/gfx.html`
 Feed 4:5 + Story 9:16, **palet & font resmi** (Poppins judul, Open Sans isi, Deep Teal #354B49, Turquoise #28CDBD blok, putih + Mint White). Tiga varian: B (admin + "balas komentar" + harga), C (foto perawatan + harga), M (MOFU tanpa harga, 3 langkah). Story: teks penting di y 270–1620 (zona aman), isi paket diringkas satu baris. Foto dari footage dengan blur logo UPG/label rontgen. Hasil: `ruma-dental-video/desain-behel/`.
+- Revisi Pak Dir (18 Nov 2026): **foto tanpa wajah dokter** (pakai close-up gigi berbehel 4403, dari belakang/bahu dokter 4402/4406, atau pasien saja 4392). **Hindari bahasa "tanpa harus lunas"** (terkesan murah, tidak sesuai Ruma) → "Behel dengan tenang, cicilan tanpa bunga."
