@@ -4,9 +4,10 @@
 @font-face{font-family:M;src:url(../fonts/montserrat-latin-800-normal.woff2);font-weight:800}
 *{box-sizing:border-box;margin:0}body{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:M;color:#354B49;background:#000}
 #bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+body.ov{background:transparent}body.ov #bg{display:none}
 .cap{position:absolute;left:70px;right:70px;top:1090px;text-align:center}
-.cap span{display:inline-block;font:800 68px/1.15 M;white-space:nowrap;color:#fff;text-shadow:0 4px 14px rgba(0,0,0,.45),0 0 2px rgba(0,0,0,.6)}
-.cap b{display:inline-block;background:#28CDBD;color:#354B49;padding:2px 18px 10px;border-radius:14px;text-shadow:none;transform:rotate(-2deg)}
+.cap span{display:inline-block;font:800 64px/1.15 M;white-space:nowrap;color:#354B49;background:rgba(255,255,255,.96);padding:12px 26px 18px;border-radius:20px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.cap b{display:inline-block;background:#28CDBD;color:#354B49;padding:0 14px 6px;border-radius:12px;transform:rotate(-2deg)}
 .st{position:absolute;width:190px;height:190px;background:#fff;border-radius:40px;box-shadow:0 12px 30px rgba(0,0,0,.25);display:grid;place-items:center}
 .st svg{width:130px;height:130px}
 .chip{position:absolute;left:70px;right:70px;top:330px;background:#fff;border-radius:26px;padding:26px 30px;box-shadow:0 10px 30px rgba(0,0,0,.2);display:flex;gap:24px;align-items:center}
@@ -26,11 +27,11 @@ sparkle:`<svg viewBox="0 0 100 100" fill="#28CDBD"><path d="M50 8l8 30 30 8-30 8
 xray:`<svg viewBox="0 0 100 100" fill="none" stroke="#354B49" stroke-width="5"><rect x="12" y="20" width="76" height="60" rx="8" fill="#354B49"/><path d="M26 56c8-14 40-14 48 0" stroke="#E8F8F6"/><path d="M30 44v12M40 42v14M50 41v15M60 42v14M70 44v12" stroke="#E8F8F6" stroke-width="4"/></svg>`,
 cal:`<svg viewBox="0 0 100 100" fill="none" stroke="#354B49" stroke-width="5" stroke-linejoin="round"><rect x="14" y="20" width="72" height="66" rx="10"/><path d="M14 38h72" /><path d="M32 12v16M68 12v16" stroke-linecap="round"/><path d="M36 60l10 10 20-20" stroke="#28CDBD" stroke-width="7" stroke-linecap="round"/></svg>`,
 chat:`<svg viewBox="0 0 100 100" fill="#354B49"><path d="M50 12c22 0 38 14 38 32S72 76 50 76c-5 0-10-1-14-2L18 84l5-15C16 63 12 54 12 44c0-18 16-32 38-32z"/><g fill="#28CDBD"><circle cx="34" cy="44" r="6"/><circle cx="50" cy="44" r="6"/><circle cx="66" cy="44" r="6"/></g></svg>`};
-window.setS=(o)=>{document.getElementById('bg').src=o.bg||'';let h='';
-(o.st||[]).forEach(s=>{h+=`<div class=st style="left:${s.x}px;top:${s.y}px;transform:rotate(${s.r||0}deg)">${I[s.i]}</div>`});
-if(o.chip)h+=`<div class=chip><div class=n>${o.chip[0]}</div><div><div class=t>${o.chip[1]}</div>${o.chip[2]?`<div class=s>${o.chip[2]}</div>`:''}</div></div>`;
-if(o.cap)h+=`<div class=cap style="${o.capTop?"top:"+o.capTop+"px":""}"><span>${o.cap}</span></div>`;
-if(o.btn)h+=`<div class=btn>${I.chat.replace('<svg','<svg width="64" height="64"')}${o.btn}</div>`;
-if(o.card)h+=`<div id=card><img src="../../card_logo.png" style="width:320px"><div style="font:800 84px/1.05 M;margin-top:44px">Konsultasi Behel</div><div style="font:700 40px M;background:#28CDBD;padding:12px 28px 16px;border-radius:14px;margin-top:28px">dicek dulu · dijelaskan dulu</div><div style="font:600 34px/1.5 M;color:#5E6B67;margin-top:34px">Tempat Nyaman untuk Kembali Tersenyum</div><div style="font:700 38px/1.45 M;margin-top:30px">Jl. Rusa No. 65, Maricaya, Makassar<br>WA 0898-7735-463</div></div>`;
+window.setS=(o)=>{document.body.className=o.bg?'':'ov';if(o.bg)document.getElementById('bg').src=o.bg;let h='';
+(o.st||[]).forEach(s=>{h+=`<div class=st style="left:${s.x}px;top:${s.y}px;transform:rotate(${s.r||0}deg) scale(${s.s??1})">${I[s.i]}</div>`});
+if(o.chip)h+=`<div class=chip style="transform:scale(${o.chipS??1});transform-origin:50% 50%"><div class=n>${o.chip[0]}</div><div><div class=t>${o.chip[1]}</div>${o.chip[2]?`<div class=s>${o.chip[2]}</div>`:''}</div></div>`;
+if(o.cap)h+=`<div class=cap style="${o.capTop?"top:"+o.capTop+"px":""}"><span style="transform:scale(${o.capS??1})">${o.cap}</span></div>`;
+if(o.btn)h+=`<div class=btn style="transform:translateX(-50%) scale(${o.btnS??1})">${I.chat.replace('<svg','<svg width="64" height="64"')}${o.btn}</div>`;
+if(o.card)h+=`<div id=card style="opacity:${o.cardA??1}"><img src="../../card_logo.png" style="width:320px"><div style="font:800 84px/1.05 M;margin-top:44px">Konsultasi Behel</div><div style="font:700 40px M;background:#28CDBD;padding:12px 28px 16px;border-radius:14px;margin-top:28px">dicek dulu · dijelaskan dulu</div><div style="font:600 34px/1.5 M;color:#5E6B67;margin-top:34px">Tempat Nyaman untuk Kembali Tersenyum</div><div style="font:700 38px/1.45 M;margin-top:30px">Jl. Rusa No. 65, Maricaya, Makassar<br>WA 0898-7735-463</div></div>`;
 document.getElementById('root').innerHTML=h;}
 </script></body></html>

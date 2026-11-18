@@ -137,7 +137,7 @@ Setiap iklan baru: rumus 8 ketukan (`produksi-video-klinik` bagian 3) → checkl
 | Scaling | belum ditentukan | Draf naskah v1 | `naskah-scaling-iklan-01.md` | harga, fakta gusi turun/mitos renggang, footage, penutup murni vs jembatan bleaching |
 | Kunjungan pertama di Ruma (evergreen, semua layanan) | tanpa harga | Render v2 (49,5 dtk, `iklan-kunjungan-pertama-ruma-v2.mp4`): pemeriksaan di kursi dental ditambahkan | `naskah-kunjungan-pertama-01.md` | OK video v2 → paket kirim |
 | Behel "Spil Harga" (admin bicara, 1 rekaman → 3 jenis edit) | mulai Rp6 jutaan, cicilan Rp2 jt/bln × 3 tanpa bunga | Jenis C v1 dirender (`iklan-behel-spil-harga-C-v1.mp4`, dibuka cuplikan 4416); Jenis A dilewati (arahan Pak Dir). Render Jenis B v2 (36,8 dtk, `iklan-behel-spil-harga-B-v2.mp4`): transisi halus, SFX, suara ruangan, subtitle pendek, Montserrat + warna resmi | `transkrip-behel-admin.md` | OK video → Jenis A & C |
-| Behel MOFU caption kinetik + stiker (narasi Ricky, tanpa harga) | – | Papan gambar v1 dikirim | `naskah-behel-kinetik-01.md` | ACC papan gambar → suara Ricky → render |
+| Behel MOFU caption kinetik + stiker (narasi Ricky, tanpa harga) | – | Render v1 (40,8 dtk, `iklan-behel-mofu-kinetik-v1.mp4`), suara Ricky versi B ±717 kredit/versi | `naskah-behel-kinetik-01.md` | ACC papan gambar → suara Ricky → render |
 | Crown, cabut gigi bungsu, cabut gigi, veneer, perawatan gigi anak, behel, gigi palsu | – | Antrean | – | data per layanan: harga, kunjungan, garansi, footage |
 
 Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
