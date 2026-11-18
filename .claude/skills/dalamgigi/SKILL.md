@@ -139,10 +139,10 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | 02 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Enamel keras vs dentin lunak → asam (1×→5× ngemil) → pintu kecil gua besar → tanpa saraf/ngilu/sakit → 4 cara (cermin, fluoride, ngemil dikumpulkan, periksa 6 bulan) | ✅ Terbit |
 | 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | 1 dicabut → 3 terdampak; analogi rak buku; tetangga miring, lawan turun; 3 cara (jangan buru-buru cabut/saluran akar, gigi pengganti, sikat sela) | ⏭️ Dilewati (kurang materi), arsip; bisa diolah ulang |
 | 04 | Sakit gigi hilang | Sakit gigi hilang / BERARTI SEMBUH? | Lanjutan #02: 4 tahap (lubang → saraf radang, analogi jari terjepit cincin → saraf mati, dikira sembuh → nanah, gusi bengkak) → 3 cara + tanda bahaya → **CTA "mau dibahas apa lagi?" + follow** | ✅ Terbit 18 Nov |
-| 05 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" | Ide (bisa didahului request penonton) |
-| 06 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
-| 07 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
-| 08 | Gusi berdarah | Kenapa gusi / BERDARAH PAS SIKAT? | Tanda radang karena plak | Ide |
+| 05 | Gusi berdarah | Gusi berdarah / BERHENTI SIKAT? | Sisa makanan → plak (jam) → mineral air liur → karang (analogi kerak teko) → karang kasar, gusi meradang, berdarah → sikat miring, benang, scaling, 1–2 minggu → CTA | 🎬 produksi |
+| 06 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" (tulang dibongkar di satu sisi, dibangun di sisi lain) | Ide (berikutnya bila tak ada request) |
+| 07 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
+| 08 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
 | 09 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
 | 10 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
 
