@@ -23,6 +23,10 @@ Lihat tabel di skill `upg-antang-video` bagian 0. Satu video = satu cabang. Foot
 - Desain Hertasning: "belum termasuk foto rontgen (Rp500 rb) & biaya kontrol".
 - Desain lama memuat "Alat steril" → jangan dipakai lagi (klaim terlarang).
 
+## 2b. Promo lain (dari desain Nov 2026)
+- Happy Hour Scaling: Rp200.000 (normal Rp250–350 rb), Senin–Jumat 10.00–14.00 WITA, wajib booking WA. Badge "ada garansi setelah perawatan".
+- Tambal gigi: mulai Rp250 rb-an, harga tergantung kondisi gigi, untuk dewasa & anak.
+
 ## 3. Iklan yang sudah ada
 Drive: Konten Iklan UPG Dental Care / November 2026 (`1qK7sbrflTnv6qx0nnyYL63Ie0N9tts0v`):
 `upg-tambal-keluarga-V3.mp4`, `upg-happy-hour-scaling-V6.mp4`, `upg-behel-cicilan-V3.mp4`, `Behel_Feed_1080x1350.png`, `Behel_Story_1080x1920.png`.
