@@ -57,6 +57,8 @@ Aturan:
 - [ ] Anti-monoton: kamera berganti tiap 2–4 detik, bentuk objek dikenali, suasana berubah per babak.
 - [ ] Logo dan identitas brand benar; tidak ada atribut brand lain.
 - [ ] Footage: casting benar (pasien ≠ admin), tanpa data sensitif (password, wajah tanpa izin).
+- [ ] **Video orang bicara: subtitle di atas kepala, jangan menutupi wajah** (arahan Pak Dir, behel Spil Harga). Hook "spil/tanya" → kotak "Balas komentar" diam di dekat gestur tunjuk.
+- [ ] **Cek seragam/atribut brand lain di footage** (pelajaran behel: seragam bertuliskan UPG di konten Ruma → bingkai rapat/ganti klip).
 - [ ] **Setiap kata kerja di narasi terlihat di gambar pada detik yang sama** (pelajaran Kunjungan Pertama v1: "dokter gigi memeriksa" tanpa adegan pemeriksaan).
 - [ ] Tidak ada benda yang Pak Dir minta tidak ditampilkan (contoh: rak sepatu).
 
