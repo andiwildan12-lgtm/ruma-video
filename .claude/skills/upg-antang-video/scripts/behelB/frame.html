@@ -1,0 +1,84 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--o:#E8771E;--d:#262626;--c:#F7EEE3}
+body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#111;color:var(--d)}
+.bg{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
+.bl{filter:blur(26px) brightness(.75);transform:scale(1.1)}
+.sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 60%,rgba(0,0,0,.45) 100%)}
+/* comment box */
+.cm{position:absolute;left:90px;right:90px;top:330px;background:#fff;border-radius:30px;padding:26px 34px 30px;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.cm .h{display:flex;align-items:center;gap:14px;font-size:26px;color:#777;font-weight:600}
+.cm .av{width:44px;height:44px;border-radius:50%;background:#ddd}
+.cm .tx{font-size:52px;font-weight:800;line-height:1.15;margin-top:12px}
+.cm .tx b{color:var(--o)}
+.cm.sm{left:60px;right:auto;width:560px;top:300px;padding:14px 20px 16px;border-radius:20px;transform:rotate(-2deg)}
+.cm.sm .h{font-size:16px}.cm.sm .av{width:26px;height:26px}.cm.sm .tx{font-size:26px;margin-top:6px}
+/* price */
+.price{position:absolute;left:90px;right:90px;top:520px;background:#fff;border-radius:34px;padding:56px 30px 30px;text-align:center;transform:rotate(-1.5deg);box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.mul{position:absolute;left:-10px;top:-34px;background:var(--d);color:#fff;font-weight:900;font-size:48px;padding:8px 28px;border-radius:14px;transform:rotate(-5deg)}
+.pr{display:flex;align-items:flex-end;justify-content:center;gap:12px;color:var(--o);font-weight:900}
+.pr .rp{font-size:84px;margin-bottom:24px}.pr .n{font-size:200px;line-height:.85;letter-spacing:-6px}.pr .u{font-size:60px;color:#8a3f0a;margin-bottom:24px}
+.pill{display:inline-block;background:var(--o);color:#fff;font-weight:900;font-size:50px;padding:14px 40px;border-radius:60px;margin-top:26px}
+.fn{font-size:26px;color:#8a3f0a;font-weight:600;margin-top:16px}
+/* checklist */
+.ck{position:absolute;left:70px;right:70px;top:300px;background:rgba(247,238,227,.96);border-radius:30px;padding:26px 30px;box-shadow:0 12px 36px rgba(0,0,0,.3)}
+.ck .tt{font-size:34px;font-weight:900;color:#8a3f0a;letter-spacing:2px;margin-bottom:12px}
+.row{display:flex;align-items:center;gap:20px;font-size:44px;font-weight:800;padding:9px 0;color:#9a8f84}
+.row .bx{width:58px;height:58px;border-radius:14px;border:5px solid #c9bcae;flex:none;display:flex;align-items:center;justify-content:center;font-size:40px;color:#fff;font-weight:900}
+.row.on{color:var(--d)}.row.on .bx{background:var(--o);border-color:var(--o)}
+.row.cur{transform:scale(1.04);transform-origin:left}
+.opts{display:flex;gap:14px;margin:6px 0 0 78px}
+.opts span{background:var(--d);color:#fff;font-size:30px;font-weight:800;padding:8px 20px;border-radius:30px}
+.ftpr{margin-top:14px;padding-top:14px;border-top:3px dashed #d6c6b5;font-size:40px;font-weight:900;color:var(--o)}
+.ftpr small{font-size:28px;color:#8a3f0a;font-weight:700}
+/* big text */
+.big{position:absolute;left:60px;right:60px;top:330px;text-align:center}
+.big .a{display:inline-block;background:var(--o);color:#fff;font-size:76px;font-weight:900;padding:14px 40px;border-radius:24px}
+.big .b{display:inline-block;margin-top:18px;background:#fff;color:var(--d);font-size:46px;font-weight:800;padding:12px 34px;border-radius:40px}
+/* cta */
+.bub{position:absolute;left:170px;right:170px;top:760px;background:#fff;border-radius:40px 40px 40px 8px;padding:30px 36px;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.bub .h{font-size:26px;color:#777;font-weight:600}
+.bub .tx{font-size:92px;font-weight:900;letter-spacing:6px;color:var(--d)}
+.bub .tx i{display:inline-block;width:8px;height:84px;background:var(--o);vertical-align:-8px;margin-left:8px}
+.ctat{position:absolute;left:0;right:0;top:330px;text-align:center}
+.arw{position:absolute;left:0;right:0;top:1010px;text-align:center;color:#fff;font-size:140px;font-weight:900;text-shadow:0 6px 20px rgba(0,0,0,.5);line-height:1}
+.arwt{position:absolute;left:0;right:0;top:1160px;text-align:center}
+.arwt span{background:var(--o);color:#fff;font-size:44px;font-weight:900;padding:12px 34px;border-radius:40px}
+/* end */
+.end{position:absolute;inset:0;background:var(--c);display:flex;flex-direction:column;align-items:center;padding-top:330px;text-align:center}
+.end img{width:380px}
+.end .an{color:#fff;font-weight:800;letter-spacing:12px;font-size:40px;background:var(--o);padding:6px 20px 7px 32px;border-radius:10px;margin-top:10px}
+.end .t1{font-size:70px;font-weight:900;margin-top:50px}
+.end .t2{font-size:120px;font-weight:900;color:var(--o);line-height:1;letter-spacing:-3px}
+.end .t2 small{font-size:52px;color:#8a3f0a}
+.end .t3{font-size:42px;font-weight:800;background:var(--d);color:#fff;padding:10px 30px;border-radius:40px;margin-top:20px}
+.end .t4{font-size:56px;font-weight:900;margin-top:46px}
+.end .t5{font-size:34px;font-weight:700;margin-top:10px;line-height:1.5}
+.brandtag{position:absolute;top:150px;left:60px;display:flex;align-items:center;gap:12px}
+.brandtag img{width:120px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
+.brandtag span{background:var(--o);color:#fff;font-weight:800;font-size:24px;letter-spacing:6px;padding:4px 12px 5px 18px;border-radius:6px}
+</style></head><body><div id="r"></div>
+<script>
+const P=+new URLSearchParams(location.search).get('p');
+const items=['Konsultasi dokter gigi','Cetak gigi','Scaling','Dipasang dokter gigi'];
+function ck(n,opts,full){let h='<div class="ck"><div class="tt">SUDAH TERMASUK</div>';
+ items.forEach((t,i)=>{const on=i<n;h+=`<div class="row ${on?'on':''} ${i==n-1&&!full?'cur':''}"><div class="bx">${on?'✓':''}</div>${t}</div>`;if(i==3&&opts)h+='<div class="opts"><span>Metal</span><span>Keramik</span><span>Self&#8209;ligating</span></div>'});
+ if(full)h+='<div class="ftpr">Mulai Rp3 jt/rahang <small>· DP 50%, cicil 2×</small></div>';return h+'</div>'}
+const cm=(s)=>`<div class="cm ${s||''}"><div class="h"><div class="av"></div>Balas komentar</div><div class="tx">Behel <b>3 juta</b> di UPG Antang, udah dapat apa aja?</div></div>`;
+const bg=(f,b)=>`<img class="bg ${b?'bl':''}" src="${f}"><div class="sh"></div>`;
+const tag='<div class="brandtag"><img src="../logo_upg_putih.png"><span>ANTANG</span></div>';
+const S={
+1:bg('s3739.jpg')+cm(),
+2:bg('s3739.jpg',1)+cm('sm')+`<div class="price"><div class="mul">MULAI</div><div class="pr"><span class="rp">Rp</span><span class="n">3 jt</span><span class="u">/rahang</span></div><div class="pill">DP 50% · cicil 2×</div><div class="fn">*behel metal per rahang · S&amp;K berlaku</div></div>`,
+3:bg('s3739.jpg',1)+ck(0),
+4:bg('s4741.jpg')+ck(1),
+5:bg('s4743.jpg')+ck(2),
+6:bg('s3690.jpg')+ck(3),
+7:bg('s3746.jpg')+ck(4,1),
+8:bg('s3744.jpg',0)+ck(4,0,1),
+9:bg('s3525.jpg')+`<div class="big"><div class="a">⏰ Buka setiap hari</div><br><div class="b">sampai jam 22.00 · bisa pulang kerja</div></div>`,
+10:bg('s3517.jpg')+`<div class="ctat"><div class="big" style="position:static"><div class="a">Klik tombol chat</div></div></div><div class="bub"><div class="h">Ketik:</div><div class="tx">BEHEL<i></i></div></div><div class="arw">↓</div>`,
+11:bg('snewA.jpg')+`<div class="big" style="top:900px"><div class="a">📍 Lt. 2 Apotek Wahdah</div><br><div class="b">UPG Dental Care Antang</div></div>`,
+12:`<div class="end"><img src="../logo_upg_oranye.png" onerror="this.src='../logo_upg_putih.png';this.style.filter='invert(1)'"><div class="an">ANTANG</div><div class="t1">Pasang Behel</div><div class="t2">Rp3 jt<small>/rahang</small></div><div class="t3">DP 50% · cicil 2×</div><div class="t4">💬 0895-1013-2102</div><div class="t5">📍 Lt. 2 Apotek Wahdah Antang<br>⏰ Setiap hari 10.00–22.00 WITA</div></div>`};
+document.getElementById('r').innerHTML=S[P]+(P>1&&P<12&&P!=2?'':'' );
+</script></body></html>

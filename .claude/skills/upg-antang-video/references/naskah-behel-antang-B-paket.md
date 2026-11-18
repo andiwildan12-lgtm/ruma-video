@@ -1,4 +1,4 @@
-# Naskah Iklan Behel Antang — Jenis B "Dapat Apa Aja?" (checklist paket) v1 (draf, menunggu OK Pak Dir)
+# Naskah Iklan Behel Antang — Jenis B "Dapat Apa Aja?" (checklist paket) v1.1 (hook opsi 2: kotak komentar, dipilih Pak Dir)
 
 Acuan pola: Ruma "selang-seling infografis" (kartu checklist ✅ diselingi footage asli).
 Beda dari behel v1 (3D explainer): **dominan footage Antang + kartu checklist**, harga di depan.
@@ -7,8 +7,9 @@ Level: BOFU (harga + cicilan + CTA kata kunci).
 
 ## A. Narasi (ElevenLabs)
 ```
-[conversational] Pasang behel di U-Pe-Ge Dental Care Antang, mulai tiga juta per rahang. Bisa dicicil, DP lima puluh persen, sisanya dua kali.
-Dan dengan harga itu, ini yang sudah kamu dapat.
+[curious] Behel tiga juta, udah dapat apa aja?
+[conversational] Ini rinciannya. Pasang behel di U-Pe-Ge Dental Care Antang, mulai tiga juta per rahang. Bisa dicicil, DP lima puluh persen, sisanya dua kali.
+Dan dengan harga itu, sudah termasuk:
 Satu, konsultasi dengan dokter gigi. Kondisi gigimu dicek dan dijelaskan dulu, sebelum dipasang.
 Dua, cetak gigi. Supaya rencana perawatannya sesuai bentuk gigimu.
 Tiga, scaling. Gigi dibersihkan dulu dari karang.
@@ -18,13 +19,14 @@ Kliniknya buka setiap hari sampai jam sepuluh malam, jadi bisa datang sepulang k
 Klik tombol chat, ketik BEHEL, admin bantu atur jadwal konsultasinya.
 U-Pe-Ge Dental Care Antang, lantai dua Apotek Wahdah.
 ```
-±108 kata ≈ 44–46 dtk.
+±112 kata ≈ 46–48 dtk. Detik adegan 3 dst. bergeser ±1 dtk; final mengikuti jeda suara.
 
 ## B. Skrip per adegan
 | # | Detik | Narasi | Visual | Teks layar | SFX |
 |---|---|---|---|---|---|
-| 1 Hook harga | 0–7 | Pasang behel… mulai 3 juta per rahang. Bisa dicicil… | 🎥 3744 pasien senyum lihat behel di cermin → kartu harga putih miring "MULAI **Rp3 jt**/rahang" meledak masuk, pil oranye **DP 50% · cicil 2×** | **Rp3 jt**/rahang · DP 50% · cicil 2× (*metal per rahang) | pop + cling |
-| 2 Jembatan | 7–10 | Dan dengan harga itu, ini yang sudah kamu dapat. | Kartu krem: daftar 4 kotak kosong ☐ muncul berurutan | **Sudah termasuk:** | whoosh |
+| 1 Hook komentar | 0–3 | Behel tiga juta, udah dapat apa aja? | 🎥 3744 pasien senyum lihat behel di cermin (zoom pelan); **kotak "Balas komentar"** pop di atas: *"Behel 3 juta di UPG Antang, udah dapat apa aja?"* | (isi kotak komentar) | ting notifikasi |
+| 1b Harga | 3–9 | Ini rinciannya… mulai 3 juta per rahang. Bisa dicicil… | Kotak komentar mengecil ke pojok → kartu harga putih miring "MULAI **Rp3 jt**/rahang" meledak masuk, pil oranye **DP 50% · cicil 2×** | **Rp3 jt**/rahang · DP 50% · cicil 2× (*metal per rahang) | pop + cling |
+| 2 Jembatan | 9–11 | Dan dengan harga itu, sudah termasuk: | Kartu krem: daftar 4 kotak kosong ☐ muncul berurutan | **Sudah termasuk:** | whoosh |
 | 3 ✅1 Konsultasi | 10–15 | Satu, konsultasi dengan dokter gigi… | 🎥 4741 pasien di meja konsultasi, tangan dokter menjelaskan; chip ✅1 di atas | ✅ **Konsultasi dokter gigi** | centang "tik" |
 | 4 ✅2 Cetak | 15–19 | Dua, cetak gigi… | 🎥 4743 model cetakan di tangan bersarung → 3742 | ✅ **Cetak gigi** | tik |
 | 5 ✅3 Scaling | 19–23 | Tiga, scaling… | 🎥 3690 dokter + asisten scaling | ✅ **Scaling** | tik + scaler pelan |
@@ -38,7 +40,7 @@ U-Pe-Ge Dental Care Antang, lantai dua Apotek Wahdah.
 ## C. Audit naskah (3a)
 | Potensi masalah | Keputusan |
 |---|---|
-| Hook pertanyaan ("Dapat apa aja?") | Diganti pernyataan harga; pertanyaan tidak dipakai |
+| Hook pertanyaan | **Opsi 2 dipilih Pak Dir (18 Nov 2026)**: pertanyaan datang dari kotak "Balas komentar" (pola Ruma Spil Harga), bukan menuduh penonton → aman |
 | Janji hasil ("pasti rapi", "cepat") | "Tujuannya, gigi lebih rapi dan lebih gampang dirawat" |
 | Rontgen | Tidak disebut; klip 4738–4740 tidak dipakai |
 | Harga keramik/self-ligating beda | Teks kecil "*metal per rahang"; detail lewat admin |
