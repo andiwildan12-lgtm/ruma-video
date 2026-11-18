@@ -180,6 +180,7 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 - **Gusi harus menutupi semua gigi dan gigi berdiri di atasnya** (pelajaran #05 "offside"): tube gusi th −1,86…1,86, radius 0,7; shot lengkung dari atas harus **tegak lurus** (kamera tepat di atas), bukan miring dari depan.
 - **Gusi membungkus leher setiap gigi** (disukai Pak Dir, #05 v3): "kerah gusi" = salinan geometri gigi diperbesar ±12% berwarna gusi, dipotong (clipping) di y≈0,27, di atas tube gusi. Bentuk geraham/premolar dari `sculpt()` = standar (yang dilingkari Pak Dir).
 - **Gigi kiri & kanan wajib simetris (dicerminkan)** (pelajaran #05 v4): bentuk `sculpt()` tidak simetris, jadi mesh gigi sisi kanan (side=1) diberi `scale.z=-1` (juga kerah gusi & pita plak), bukan hanya diputar.
+- **Gusi standar = satu massa bergelombang (`gumRidge` di `gusi.html`)** (referensi Pak Dir 18 Nov, gaya ilustrasi 3D gigi profesional; hanya prinsip, bukan stok): papila meruncing di sela gigi, melengkung di leher gigi, material mengilap (clearcoat), pink sehat #F4BDB6; radang = merah #C7404A **terlokalisasi** di sekitar gigi bermasalah (vertex color) + papila sedikit membengkak. Gantikan tube + kerah gusi.
 
 - **#03 dilewati Pak Dir ("kurang materinya").** Sebelum naskah diajukan, pastikan isi cukup padat: ada fakta "wah" yang jarang diketahui, proses yang ditunjukkan bertahap, dan cara yang konkret (bukan sekadar "ke dokter gigi"). Bandingkan kepadatan dengan #02/#04 yang diterima.
 
