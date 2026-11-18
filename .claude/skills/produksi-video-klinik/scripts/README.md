@@ -2,6 +2,8 @@
 
 | File | Fungsi |
 |---|---|
+| `gusi.html` (+ `gusi_cfg.json`) | **Geraham realistis** (`sculpt()`), plak/karang mengikuti kontur (clipping), sisa makanan, kuman, mineral, teko kerak, sikat miring, benang, scaling, kalender, panel CTA |
+| `sakit.html` (+ `sakit_cfg.json`) | Penampang gigi 4 tahap (lubang → saraf radang → mati → nanah/gusi bengkak), jari bercincin, panel tanda bahaya, panel CTA |
 | `gua.html`, `domino.html`, `arch3.html` (+ `*_cfg.json`) | Template scene 3D satu halaman (#02, #03, #01). Kamera = array `shots`; subtitle via `kinetic.js` |
 | `kinetic.js` | Subtitle/teks kinetik per kata (`kineticSub`) |
 | `render_frames.js` + `blend_blur.py` | Render frame deterministik (all / range / probe) + motion blur dari `cfg.blur` |

@@ -174,6 +174,7 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 ## 11. Pelajaran yang Tidak Boleh Diulang
 
 - **#05: Pak Dir minta proses plak/karang/gusi ditunjukkan di gigi geraham** (lebih jelas & paling sering terjadi di sana). Default untuk topik gusi/karang/lubang: tampak samping geraham bawah, gigi sisi seberang disembunyikan.
+- **#05: Pak Dir minta bentuk geraham dibuat betul-betul seperti asli.** Pakai fungsi `sculpt()` di `gusi.html` (mahkota menggembung, leher menyempit, 4–5 cusp menyatu + fisur; premolar 2 cusp). Plak/karang = salinan geometri gigi yang diperbesar sedikit dan dipotong (clipping) di tepi gusi, bukan kotak.
 
 - **#03 dilewati Pak Dir ("kurang materinya").** Sebelum naskah diajukan, pastikan isi cukup padat: ada fakta "wah" yang jarang diketahui, proses yang ditunjukkan bertahap, dan cara yang konkret (bukan sekadar "ke dokter gigi"). Bandingkan kepadatan dengan #02/#04 yang diterima.
 

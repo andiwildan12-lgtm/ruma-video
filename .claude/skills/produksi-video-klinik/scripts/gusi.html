@@ -61,7 +61,7 @@ import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import {kineticSub} from './kinetic.js';
 const W=1080,H=1920;
 const R=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});R.setPixelRatio(1);R.setSize(W,H);
-R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;R.toneMapping=THREE.ACESFilmicToneMapping;R.outputColorSpace=THREE.SRGBColorSpace;
+R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;R.toneMapping=THREE.ACESFilmicToneMapping;R.outputColorSpace=THREE.SRGBColorSpace;R.localClippingEnabled=true;
 document.getElementById('wrap').prepend(R.domElement);const cvs=R.domElement;
 const scene=new THREE.Scene();scene.background=new THREE.Color('#F4EFE6');
 const cam=new THREE.PerspectiveCamera(32,W/H,0.05,300);
@@ -79,12 +79,26 @@ const V=(x,y,z)=>new THREE.Vector3(x,y,z);
 const archG=new THREE.Group();scene.add(archG);
 const gumM=new THREE.MeshStandardMaterial({color:'#E3A49B',roughness:0.7});
 const WID=[0.82,0.66,0.78,0.7,0.7,1.02,0.98,0.92],DEP=[0.62,0.6,0.78,0.86,0.86,1.06,1.0,0.94],HT=[0.95,0.9,1.0,0.85,0.85,0.8,0.78,0.74];
-function toothShape(k,d,h,w){const parts=[];let hb;
+function sculpt(d,h,w,cusps,neck=0.2){
+  const g=new THREE.SphereGeometry(1,96,64);const p=g.attributes.position;const v=new THREE.Vector3();
+  for(let i=0;i<p.count;i++){v.fromBufferAttribute(p,i);let {x,y,z}=v;
+    const a=Math.atan2(z,x),n=3.0;const se=1/Math.pow(Math.pow(Math.abs(Math.cos(a)),n)+Math.pow(Math.abs(Math.sin(a)),n),1/n);
+    const hr=Math.pow(Math.max(0,1-Math.pow(Math.abs(y),3.2)),1/3.2);
+    let prof=1;if(y<0.25)prof=1-neck*Math.pow((0.25-y)/1.25,1.3);if(y>0.25)prof=1-0.08*Math.pow((y-0.25)/0.75,2);
+    const len=Math.hypot(x,z)||1;let X=x/len*se*hr*prof,Z=z/len*se*hr*prof;
+    let Y=(y+1)/2*h;
+    if(y>0.2){const k=Math.min(1,(y-0.2)/0.6);let bump=0;cusps.forEach(([cx,cz,ch,cr])=>{bump+=ch*Math.exp(-((X-cx)**2+(Z-cz)**2)/cr);});
+      const fis=0.06*Math.exp(-(X*X)/0.012)*(1-Math.exp(-(Z*Z)/0.5))+0.05*Math.exp(-(Z*Z)/0.012)*Math.exp(-(X*X)/0.3);
+      Y+=k*k*(bump-fis*1.2)*h;}
+    p.setXYZ(i,X*d/2,Y,Z*w/2);}
+  g.computeVertexNormals();return g;}
+function toothShape(k,d,h,w){let hb;
+  if(k>=5){return sculpt(d,h*0.82,w,[[-0.42,-0.42,0.22,0.16],[0.42,-0.42,0.2,0.16],[-0.42,0.42,0.2,0.16],[0.42,0.42,0.18,0.15],[0.0,0.72,0.1,0.06]],0.24);}
+  if(k>=3){return sculpt(d,h*0.85,w*0.95,[[-0.4,0,0.26,0.2],[0.42,0,0.16,0.18]],0.22);}
+  const parts=[];
   const box=(dd,hh)=>{const g=new RoundedBoxGeometry(dd,hh,w*0.94,4,Math.min(0.12,dd*0.3));g.translate(0,hh/2,0);parts.push(g);};
-  if(k<2){box(d*0.62,h);hb=h;}
-  else if(k===2){hb=h*0.78;box(d*0.82,hb);const c=new THREE.ConeGeometry(Math.min(d,w)*0.4,h*0.42,24);c.translate(0,hb+h*0.18,0);parts.push(c);}
-  else if(k<5){hb=h*0.72;box(d,hb);const r=w*0.36;[-1,1].forEach(sx=>{const c=new THREE.SphereGeometry(r,20,14);c.scale(1,0.75,1);c.translate(sx*d*0.22,hb,0);parts.push(c)});}
-  else{hb=h*0.7;box(d,hb);const r=Math.min(d,w)*0.28;[[-1,-1],[-1,1],[1,-1],[1,1]].forEach(([sx,sz])=>{const c=new THREE.SphereGeometry(r,20,14);c.scale(1,0.72,1);c.translate(sx*d*0.23,hb,sz*w*0.22);parts.push(c)});}
+  if(k<2){box(d*0.62,h);}
+  else{hb=h*0.78;box(d*0.82,hb);const c=new THREE.ConeGeometry(Math.min(d,w)*0.4,h*0.42,24);c.translate(0,hb+h*0.18,0);parts.push(c);}
   return mergeGeometries(parts.map(g=>g.toNonIndexed()));}
 const teeth=[];
 (function(){const a=3.0,b=3.5,G=0.1,cz=-0.4;
@@ -103,16 +117,16 @@ const teeth=[];
 })();
 const front=teeth.filter(t=>t.side===1&&t.k>=4&&t.k<=6);
 // plaque/tartar bands on front teeth
-const bandM=new THREE.MeshStandardMaterial({color:'#E6C463',roughness:0.85,transparent:true,opacity:0});
-const bands=front.map(t=>{const m=new THREE.Mesh(new RoundedBoxGeometry(t.d*1.05,0.14,t.w*0.96,3,0.05),bandM);m.position.y=0.27;t.g.add(m);return m;});
+const bandM=new THREE.MeshStandardMaterial({color:'#E6C463',roughness:0.85,transparent:true,opacity:0,clippingPlanes:[new THREE.Plane(new THREE.Vector3(0,-1,0),0.36),new THREE.Plane(new THREE.Vector3(0,1,0),-0.1)]});
+const bands=front.map(t=>{const m=new THREE.Mesh(t.g.children[0].geometry,bandM);t.g.add(m);return m;});
 // tartar chunks
 const chunkM=new THREE.MeshStandardMaterial({color:'#A39C8E',roughness:1,flatShading:true});
-const chunks=[];front.forEach((t,ti)=>{for(let i=0;i<6;i++){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(0.05+0.02*((i+ti)%3),0),chunkM);const sx=(i%2?1:-1);m.position.set(sx*t.d*0.53,0.24+0.04*((i*3)%4),(i/5-0.5)*t.w*0.8);m.scale.setScalar(0.001);t.g.add(m);chunks.push(m);}});
+const chunks=[];front.forEach((t,ti)=>{for(let i=0;i<6;i++){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(0.05+0.02*((i+ti)%3),0),chunkM);const sx=(i%2?1:-1);m.position.set(sx*t.d*0.42,0.2+0.04*((i*3)%4),(i/5-0.5)*t.w*0.7);m.scale.setScalar(0.001);t.g.add(m);chunks.push(m);}});
 // food bits, bacteria, minerals, blood
 const mid=teeth.filter(t=>t.side===1&&(t.k===5||t.k===6)).map(t=>t.p).reduce((a,b)=>a.clone().add(b).multiplyScalar(0.5));
 const outN=V(mid.x,0,mid.z).sub(V(0,0,-0.4)).normalize();
 const nrmOf=t=>V(t.p.x,0,t.p.z).sub(V(0,0,-0.4)).normalize();
-const gumEdge=(i,n)=>{const t=front[i%front.length];return t.p.clone().addScaledVector(nrmOf(t),t.d*0.5+0.06).setY(0.27);};
+const gumEdge=(i,n)=>{const t=front[i%front.length];return t.p.clone().addScaledVector(nrmOf(t),t.d*0.42+0.05).setY(0.24);};
 const foodM=new THREE.MeshStandardMaterial({color:'#D9C3A0',roughness:0.9});
 const food=[];for(let i=0;i<9;i++){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(0.045+0.015*(i%3),0),foodM);m.visible=false;m.userData={tgt:i<3?mid.clone().addScaledVector(outN,0.3).setY(0.42+0.07*i):gumEdge(i).add(V(Math.sin(i*1.7)*0.2,0.02,0.04)),d:i*0.12};archG.add(m);food.push(m);}
 const bacM=new THREE.MeshStandardMaterial({color:'#8C7A2E',roughness:0.6});
@@ -179,7 +193,8 @@ window.render=function(T){
   else{tart=1.25*(1-ease(P(T,K.s3+0.8,2.2)));plaq=0.9*(1-ease(P(T,K.s1+0.6,1.5)));infl=1-ease(P(T,K.rutin,2.5));if(T>=K.ingat){tart=0;plaq=0;infl=0;}}
   bandM.opacity=Math.min(0.92,Math.max(plaq*0.8,tart>0?0.95:0));
   bandM.color.set('#E6C463').lerp(new THREE.Color('#A39C8E'),Math.min(1,tart));
-  bands.forEach(b=>{const s=1+0.08*Math.min(1.25,tart);b.scale.set(s,1+0.35*Math.min(1.25,tart),s);b.visible=bandM.opacity>0.01;});
+  bands.forEach(b=>{const s=1.035+0.05*Math.min(1.25,tart);b.scale.set(s,1,s);b.visible=bandM.opacity>0.01;});
+  bandM.clippingPlanes[0].constant=0.34+0.06*Math.min(1.25,tart);
   chunks.forEach((c,i)=>{c.scale.setScalar(Math.max(0.001,Math.min(1.3,tart)*(0.8+0.4*((i*5)%3)/2)));});
   const gum=archG.userData.gum;gumM.color.set('#E3A49B').lerp(new THREE.Color('#D2585E'),infl);gum.scale.y=0.42*(1+0.12*infl);
   // food
