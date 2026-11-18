@@ -5,15 +5,14 @@ Alur: masalah sela sempit → akibat → hambatan biaya → solusi + harga → b
 
 | # | Detik | Narasi | Footage | Stiker / teks |
 |---|---|---|---|---|
-| 1 Hook (masalah) | 0–4 | Gigi yang berjejal punya sela-sela sempit yang susah dijangkau sikat. | 4389 dokter menunjuk foto rontgen gigi | ikon gigi berjejal + sikat (mentok); **susah dijangkau** |
-| 2 Akibat | 4–10 | Sisa makanan gampang nyelip di situ, lama-lama jadi plak dan karang. | 4392 pasien mendengarkan di meja konsultasi | ikon remah → ikon karang; **plak**, **karang** |
-| 3 Itu saya + hambatan | 10–17 | Banyak yang sebenarnya pengin merapikan, tapi nunda bertahun-tahun karena mikir biayanya harus langsung lunas. | 9667 pasien di ruang tunggu | ikon kalender berganti, dompet; **bertahun-tahun**, **lunas** |
-| 4 Solusi + brand + harga | 17–29 | Solusinya, perawatan behel di Klinik Gigi Ruma Dental. Mulai enam jutaan untuk rahang atas dan bawah, atau tiga juta per rahang. Bisa dicicil dua juta per bulan, tiga kali, tanpa bunga. | 4420 logo → 4390 konsultasi → 4414 pemasangan | kartu **Rp6 jutaan · atas & bawah**, chip **Rp3 jt/rahang**, chip **cicil Rp2 jt × 3 · tanpa bunga** |
-| 5 Alasan percaya | 29–39 | Sudah termasuk konsultasi dokter gigi, foto gigi, cetak gigi, scaling, pemasangan, dan satu paket ortho kit. | potongan cepat 4395 → 4398 → 4404 → 4416 → 4414 | centang ✅ per item |
-| 6 Hasil | 39–43 | Tujuannya, gigi lebih rapi dan lebih gampang dibersihkan. | 4417 pasien bercermin | kilau ✨; **lebih gampang dibersihkan** |
-| 7 Ajakan | 43–48 | Chat admin, konsultasi dulu, ya. | 9650 resepsionis menyapa → kartu penutup | tombol **Chat admin** + kartu Ruma |
+| 1 Masalah (hook) | 0–4 | Gigi yang berjejal punya sela-sela sempit yang susah dijangkau sikat. | 4389 dokter menunjuk foto rontgen gigi | ikon gigi berjejal + sikat mentok; **susah dijangkau** |
+| 2 Akibat | 4–9 | Sisa makanan gampang nyelip di situ, lama-lama jadi plak dan karang. | 4392 pasien mendengarkan di meja konsultasi | ikon remah → karang; **plak**, **karang** |
+| 3 Solusi | 9–17 | Solusinya, perawatan behel. Behel menggeser gigi pelan-pelan ke posisi yang lebih rapi, jadi selanya lebih gampang dibersihkan. | 4414 pemasangan → 4416 perawatan | ikon gigi berjejal → rapi; **lebih gampang dibersihkan** |
+| 4 Brand + penawaran | 17–28 | Di Klinik Gigi Ruma Dental, mulai enam jutaan untuk rahang atas dan bawah, atau tiga juta per rahang. Dan nggak harus langsung lunas, bisa dicicil dua juta per bulan, tiga kali, tanpa bunga. | 4420 logo → 4390 konsultasi | kartu **Rp6 jutaan · atas & bawah**, chip **Rp3 jt/rahang**, chip **cicil Rp2 jt × 3 · tanpa bunga** |
+| 5 Bukti | 28–38 | Sudah termasuk konsultasi dokter gigi, foto gigi, cetak gigi, scaling, pemasangan, dan satu paket ortho kit. | potongan cepat 4395 → 4398 → 4404 → 4413 → 4417 | centang ✅ per item |
+| 6 Ajakan | 38–43 | Mau tahu gigimu cocok pakai behel atau nggak? Chat admin, konsultasi dulu, ya. | 9650 resepsionis menyapa → kartu penutup | tombol **Chat admin** + kartu Ruma |
 
-±108 kata ≈ 45–48 dtk. Revisi v1.1: dibuka dari MASALAH (arahan Pak Dir), hambatan biaya pindah ke ketukan 3; hasil ditutup kembali ke masalah awal ("lebih gampang dibersihkan").
+±106 kata ≈ 43–46 dtk. Revisi v1.2 (arahan Pak Dir): masalah → langsung SOLUSI (cara kerja behel singkat) → brand + penawaran (hambatan biaya dijawab di sini: "nggak harus langsung lunas") → bukti → ajakan. Ketukan "hasil" melebur ke solusi.
 
 ## Audit sendiri (sudah diperbaiki)
 - Hook "Mau pasang behel tapi uangnya belum cukup?" → pertanyaan pribadi (menyiratkan kondisi keuangan penonton) → fakta "nggak harus nunggu tabungan cukup".
@@ -23,5 +22,6 @@ Alur: masalah sela sempit → akibat → hambatan biaya → solusi + harga → b
 - Admin (seragam UPG) dan close-up mulut (4400–4412) tidak dipakai.
 
 ## ⚠️ Validasi Pak Dir
+0. Kalimat medis: "behel menggeser gigi pelan-pelan ke posisi yang lebih rapi, jadi selanya lebih gampang dibersihkan" — tepat?
 1. "Foto gigi" sebagai penyederhanaan "foto intra & ekstra oral", OK?
 2. Resepsionis 9650 (folder Penyambutan, seragam abu-abu) untuk penutup, OK? (bukan admin berseragam UPG)
