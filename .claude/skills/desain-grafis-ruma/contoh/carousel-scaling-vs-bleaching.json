@@ -1,0 +1,20 @@
+{
+  "nama": "carousel-scaling-vs-bleaching",
+  "format": "feed",
+  "funnel": "MOFU",
+  "slides": [
+    { "tipe": "sampul", "label": "Sering ketuker", "judul": "Bersihin karang atau mutihin gigi:", "aksen": "beda, lho.", "sub": "Scaling dan bleaching itu dua perawatan yang berbeda. Ini bedanya dalam 1 menit." },
+    { "tipe": "poin", "nomor": "01", "label": "Scaling", "judul": "Membersihkan **karang dan noda** di permukaan gigi.", "isi": "Dokter gigi memakai alat bergetar untuk merontokkan karang yang sudah mengeras dan tidak bisa hilang dengan sikat gigi." },
+    { "tipe": "poin", "nomor": "02", "label": "Bleaching", "judul": "Mencerahkan **warna gigi** dari dalam.", "isi": "Gel khusus dioleskan dokter gigi untuk memudarkan noda yang sudah meresap ke lapisan gigi, misalnya dari kopi dan teh.", "tema": "gelap" },
+    { "tipe": "banding", "label": "Singkatnya", "judul": "Dua langkah, beda tugas.", "kolom": [
+        { "nama": "Scaling", "baris": ["Fokus: kebersihan", "Mengangkat karang & noda luar", "Disarankan tiap 6 bulan"] },
+        { "nama": "Bleaching", "baris": ["Fokus: warna", "Memudarkan noda yang meresap", "Sesuai kebutuhan"] } ],
+      "catatan": "Hasil bleaching berbeda pada tiap orang. Konsultasikan dulu dengan dokter gigi." },
+    { "tipe": "langkah", "label": "Urutan yang tepat", "judul": "Kenapa scaling dulu?", "daftar": [
+        ["Permukaan gigi bersih", "Karang dan plak diangkat lebih dulu."],
+        ["Gel menempel merata", "Tidak terhalang lapisan karang."],
+        ["Warna lebih rata", "Hasil bleaching lebih maksimal."] ] },
+    { "tipe": "promo", "label": "Klinik Gigi Ruma Dental", "layanan": "Bleaching", "chip": "sudah termasuk scaling", "coret": "Rp1.700.000", "harga": "Rp1.530.000", "diskon": "diskon 10%", "ketentuan": "Konsultasi dulu dengan dokter gigi sebelum perawatan." },
+    { "tipe": "penutup", "ajakan": "Chat admin, konsultasi dulu, ya.", "tema": "gelap" }
+  ]
+}

@@ -56,6 +56,51 @@ Ketentuan: seragam polos, tanpa atribut UPG, cahaya hangat, kamera stabil, verti
 
 ---
 
+## Koreksi dan Inventaris Folder Bleaching (17 Nov 2026)
+
+Catatan di atas yang menyebut folder Bleaching **kosong** ternyata **salah**. Folder Bleaching
+(id `1F8BP9Ltm4TR1cAidzySWLkrE7xWUxGj9`, di dalam Folder 2) berisi **52 file**: 7 foto HEIC + 45 video .MOV
+(IMG_4324–4372; sebagian sama dengan folder Scalling). Semua sudah diperiksa satu per satu.
+
+Cara unduh: file ≤10 MB lewat konektor Drive; file >10 MB lewat
+`https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t` (tautan dibagikan).
+
+### Layak untuk iklan Meta (frame diam tersimpan di `desain-grafis-ruma/assets/foto/`)
+
+| Kode | File | Isi | Catatan |
+|---|---|---|---|
+| A | IMG_4332 | Dokter cek warna dengan shade guide, pasien pegang cermin, dinding sage | Hangat, ada interaksi; seragam dokter bermotif ramai |
+| **B** | **IMG_4333** | Pasien tersenyum lepas, shade guide di samping gigi | **Paling kuat untuk iklan**: ekspresi asli, tidak klinis |
+| C | IMG_4331 | Cek warna gigi dengan shade guide, pasien tersenyum | Kuat, alternatif B |
+| D | IMG_4330 | Pasien melihat cermin (pantulan) | Cadangan |
+| E | IMG_4366 | Sinar biru bleaching, latar panel kayu | Ikonik "bleaching", wajah tertutup alat |
+| F | IMG_4368 | Sinar biru, dinding sage bergaris daun | Ikonik, suasana tenang |
+| G | IMG_4329 / 4328 / 4365 | Dokter menjelaskan dulu ke pasien | Cocok MOFU "kami jelaskan dulu" |
+| I | IMG_4335 | Ruang perawatan lebar, dua operator | Suasana klinik |
+
+### Tidak untuk iklan Meta
+
+- **7 foto HEIC (IMG_5660–5672):** close-up intraoral dengan retraktor dan barrier gusi biru. Klinis, dan berpotensi dibaca sebagai sebelum-sesudah. Hanya untuk dokumentasi klinis/edukasi internal.
+- **Close-up retraktor/gel:** 4336, 4348, 4351, 4352, 4355, 4356, 4360, 4363, 4364, 4370, 4371 (akhir).
+- **Layar kamera intraoral:** 4349, 4350, 4372.
+- **Gelap/terhalang/ramai:** 4353, 4357, 4362, 4342–4347, 4354, 4358, 4359.
+
+## Inventaris Folder Tambal Gigi (17 Nov 2026)
+
+Sumber: Drive "Ruma Dental Raw Footage" (id `1RxeFOUuI11KFo_8T-qGRqDHLJjceUw5_`) → "Tambal Gigi"
+(id `19wd9WDEvfUZhAKg3V9_0yVNMC3JtLqM6`), 30 video IMG_9818–9892, **4K (2160×3840)**, pasien laki-laki berkacamata.
+Folder "Perawatan Ruma / Tambal gigi" masih kosong. Folder "Perawatan UPG" = milik UPG, **jangan dipakai untuk Ruma**.
+
+Unduh cepat untuk pratinjau: ambil 12 MB awal + 3 MB akhir file (indeks MOV ada di akhir), gabung, lalu ambil frame.
+
+| File | Isi | Status iklan |
+|---|---|---|
+| **9818–9820** | Baki alat steril, sarung tangan, kapas, tisu sage. Tanpa orang | **Pakai: hero poster tambal** (frame di `desain-grafis-ruma/assets/foto/tambal-baki-alat-steril-9820.jpg`) |
+| 9822 | Dokter menjelaskan ke pasien, dinding sage | Pakai MOFU (wajah pasien terlihat) |
+| 9825, 9826 | Dokter bekerja, seragam polos mauve, dinding sage | Cadangan (wajah pasien terlihat terbalik) |
+| 9821, 9823, 9827, 9851, 9886 | Suasana tindakan, pasien bercermin | Cadangan |
+| Lainnya (5, 9824, 9835–9837, 9850, 9852–9884, 9892) | Close-up intraoral, bur, isolasi, sinar curing di mulut | **Tidak untuk iklan Meta** |
+
 # Folder Footage Kedua (Mei 2026)
 
 Sumber: https://drive.google.com/drive/folders/1RxeFOUuI11KFo_8T-qGRqDHLJjceUw5_

@@ -1,0 +1,73 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Poster promo Ruma Dental. Mengikuti references/panduan-visual-ruma.md (palet & font resmi).
+     Render: node scripts/poster.js <spec.json>. Format lewat ?f=feed|story. -->
+<style>
+@font-face{font-family:Poppins;font-weight:500;src:url(../assets/fonts/poppins-latin-500-normal.woff2)}
+@font-face{font-family:Poppins;font-weight:600;src:url(../assets/fonts/poppins-latin-600-normal.woff2)}
+@font-face{font-family:Poppins;font-weight:700;src:url(../assets/fonts/poppins-latin-700-normal.woff2)}
+@font-face{font-family:'Open Sans';font-weight:400;src:url(../assets/fonts/open-sans-latin-400-normal.woff2)}
+@font-face{font-family:'Open Sans';font-weight:600;src:url(../assets/fonts/open-sans-latin-600-normal.woff2)}
+:root{--turq:#28CDBD;--mint:#E8F8F6;--deep:#354B49;--silver:#B3B3B3;--soft:#F4F5F4;--muted:#5F6E6C}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff}
+.p{position:relative;width:1080px;overflow:hidden;background:#fff;color:var(--deep);font-family:'Open Sans',sans-serif}
+.feed{height:1350px}
+.story{height:1920px}
+
+.foto{position:absolute;left:0;right:0;top:0;overflow:hidden}
+.foto img{width:100%;height:100%;object-fit:cover;object-position:50% 54%}
+.story .foto img{object-position:50% 50%}
+.feed .foto{height:600px}
+.story .foto{height:880px}
+
+.panel{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:44px 44px 0 0;display:flex;flex-direction:column}
+.feed .panel{top:560px;padding:52px 72px 40px}
+.story .panel{top:800px;padding:60px 72px 0}
+
+.label{align-self:flex-start;font:600 28px/1 Poppins;color:var(--deep);background:var(--mint);padding:12px 22px 11px;border-radius:999px;letter-spacing:.2px}
+.label i{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--turq);margin-right:12px;vertical-align:2px}
+h1{font:600 72px/1.12 Poppins;letter-spacing:-1px;margin-top:24px;color:var(--deep)}
+.story h1{font-size:84px}
+
+.offer{margin-top:34px;display:flex;align-items:stretch;gap:0;border:2px solid var(--mint);border-radius:28px;overflow:hidden}
+.offer .l{flex:1;padding:24px 30px 24px}
+.offer .lay{font:600 40px/1.1 Poppins;color:var(--deep)}
+.offer .ben{font:400 26px/1.35 'Open Sans';color:var(--muted);margin-top:8px}
+.offer .ben b{font-weight:600;color:var(--deep)}
+.offer .r{background:var(--turq);padding:20px 30px 22px;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;min-width:390px}
+.offer .coret{font:500 26px/1 Poppins;color:var(--deep);opacity:.7;text-decoration:line-through}
+.offer .harga{font:700 56px/1.1 Poppins;color:var(--deep);letter-spacing:-1px;margin-top:6px}
+.offer .disk{font:600 24px/1 Poppins;color:var(--deep);margin-top:6px}
+
+.cta{margin-top:30px;display:flex;align-items:center;gap:28px}
+.btn{font:600 40px/1 Poppins;color:var(--deep);background:var(--turq);padding:22px 40px 24px;border-radius:999px}
+.wa{font:600 30px/1.3 'Open Sans';color:var(--deep)}
+.wa span{display:block;font:600 34px/1.2 Poppins;color:var(--deep)}
+.wa small{display:block;font:400 22px/1.3 'Open Sans';color:var(--muted);margin-bottom:4px}
+
+.foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;border-top:2px solid var(--soft);padding-top:24px}
+.foot img{height:58px}
+.disc{font:400 18px/1.4 'Open Sans';color:var(--muted);text-align:right;max-width:560px}
+.story .foot{margin-top:40px}
+.story .cta{margin-top:40px}
+</style></head>
+<body>
+<div class="p" id="poster">
+  <div class="foto"><img id="foto" src="../assets/foto/papan-logo-4420.jpg"></div>
+  <div class="panel">
+    <div class="label"><i></i><span id="label">Promo Bleaching</span></div>
+    <h1 id="judul">Gigi lebih cerah,<br>dimulai dari bersih.</h1>
+    <div class="offer">
+      <div class="l"><div class="lay" id="layanan">Bleaching</div><div class="ben" id="benefit"><b>Sudah termasuk scaling</b>, gigi dibersihkan dulu sebelum dicerahkan.</div></div>
+      <div class="r"><div class="coret" id="coret">Rp1.700.000</div><div class="harga" id="harga">Rp1.530.000</div><div class="disk" id="diskon">diskon 10%</div></div>
+    </div>
+    <div class="cta"><div class="btn" id="btn">Jadwalkan Konsultasi</div><div class="wa"><small>Chat admin via WhatsApp</small><span id="wa">WA 0898-7735-463</span></div></div>
+    <div class="foot"><img src="../../ruma-dental-video/assets/card_logo.png"><div class="disc" id="disc">Jl. Rusa No. 65, Maricaya, Makassar<br>Hasil berbeda pada tiap orang. Konsultasikan dengan dokter gigi.</div></div>
+  </div>
+</div>
+<script>
+const f=new URLSearchParams(location.search).get('f')||'feed';
+document.getElementById('poster').classList.add(f);
+</script>
+</body></html>
