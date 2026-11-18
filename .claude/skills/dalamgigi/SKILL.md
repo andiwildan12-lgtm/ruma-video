@@ -7,6 +7,8 @@ description: Semua tentang akun TOFU @dalamgigi (Instagram + TikTok) milik Klini
 
 Panggil pengguna **"Pak Dir"** (dokter gigi, owner Ruma Dental & UPG Dental Care). Bahasa Indonesia tegas dan praktis. Kritis, audit sendiri sebelum mengirim.
 
+Strategi besar akun (tujuan, kanal, cara menang, fase): **`references/social-strategy.md`** — baca sebelum merencanakan konten.
+
 Skill pendamping (wajib dibaca bersama):
 - `produksi-video-klinik` → teknik render 3D, narasi ElevenLabs, SFX, **Gerbang Audit 4 Lapis + QC otomatis**, teks kinetik, motion blur, paket kirim, sampul.
 - `ruma-dental-video` → identitas brand Ruma (warna, logo, suara Ricky, aturan iklan kesehatan).
@@ -326,7 +328,7 @@ Semua format tetap lolos Uji Value (1b), aturan isi (2), dan validasi fakta Pak 
 - **Senin 07.35 WITA: laporan mingguan** [AKTIF, jadwal otomatis `trig_015b45txWH6yDG6PUv3nFFNR`, masuk ke sesi "Audit akun dan upload otomatis"] (views, like, follow vs target, 3 video terbaik/terburuk + penyebab, keputusan minggu ini).
 - Akhir 30 hari: evaluasi apakah ritme harian dipertahankan (kualitas > kuantitas bila median views turun >30%).
 
-## 15. Mesin Produksi Mingguan Otomatis [USULAN 18 Nov 2026]
+## 15. Mesin Produksi Mingguan Otomatis [DISEPAKATI 19 Nov 2026]
 
 Tujuan: Pak Dir cukup **1 kali persetujuan per minggu**; sisanya (produksi, unggah, posting, balas komentar ringan, laporan) jalan sendiri.
 
