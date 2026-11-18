@@ -114,14 +114,10 @@ const teeth=[];
       let d=DEP[k];const h=HT[k];const m=new THREE.Mesh(toothShape(k,d,h,w),new THREE.MeshPhysicalMaterial({color:'#F7F1E4',roughness:0.35,clearcoat:0.4}));m.castShadow=true;m.receiveShadow=true;g.add(m);
       if(k<2)d=d*0.62;else if(k===2)d=d*0.82;
       teeth.push({g,w,d,h,k,side,p:p.clone()});s+=side*(w/2+G);}}
-  const pts=[];for(let i=0;i<=60;i++)pts.push(pt(-1.62+3.24*i/60).setY(0.05));
-  const gum=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),160,0.62,24,false),gumM);gum.scale.y=0.42;gum.receiveShadow=true;archG.add(gum);archG.userData.gum=gum;
+  const pts=[];for(let i=0;i<=60;i++)pts.push(pt(-1.86+3.72*i/60).setY(0.05));
+  const gum=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),180,0.7,24,false),gumM);gum.scale.y=0.42;gum.receiveShadow=true;archG.add(gum);archG.userData.gum=gum;
 })();
 archG.updateMatrixWorld(true);
-teeth.filter(t=>t.k===5).forEach(t=>{const out=V(t.p.x,0,t.p.z).sub(V(0,0,-0.4)).normalize();const px=t.g.localToWorld(V(0.3,0,0)).sub(t.p).normalize();const b=px.dot(out)>0?1:-1;
-  const d=0.98,w=1.12,h=0.8;t.d=d;t.w=w;
-  const geo=sculpt(d,h,w,[[0.45*b,-0.5,0.2,0.12],[0.45*b,0.12,0.18,0.11],[0.33*b,0.72,0.12,0.06],[-0.45*b,-0.42,0.25,0.1],[-0.45*b,0.38,0.23,0.1]],0.26,b);
-  t.g.children[0].geometry.dispose();t.g.children[0].geometry=geo;});
 const front=teeth.filter(t=>t.side===1&&t.k>=4&&t.k<=6);
 // plaque/tartar bands on front teeth
 const bandM=new THREE.MeshStandardMaterial({color:'#E6C463',roughness:0.85,transparent:true,opacity:0,clippingPlanes:[new THREE.Plane(new THREE.Vector3(0,-1,0),0.36),new THREE.Plane(new THREE.Vector3(0,1,0),-0.1)]});
@@ -254,7 +250,7 @@ window.render=function(T){
    [K.s2-0.1,t=>{const k=P(t,K.s2,2.8);return [at(0,1.0,cl(3.6,3.2,k),cl(-0.3,0.2,k)),L(0.55)];}],
    [K.s3-0.1,t=>{const k=P(t,K.s3,3);return [at(0,0.9,cl(3.8,3.4,k),cl(0.6,-0.4,k)),L(0.4)];}],
    [K.rutin-0.1,t=>{const k=P(t,K.rutin,4);return [at(0,1.4,5.6,cl(-0.6,0.6,k)),L(0.45)];}],
-   [K.ingat-0.1,t=>{const k=ease(P(t,K.ingat,9));const a=-0.3+0.6*k;return [V(Math.sin(a)*5,cl(19,21,k),6.5+Math.cos(a)*2),V(0,0,-0.3)];}],
+   [K.ingat-0.1,t=>{const k=ease(P(t,K.ingat,9));const a=-0.25+0.5*k;return [V(Math.sin(a)*0.5,cl(24,26,k),-0.1+Math.cos(a)*0.5),V(0,0,-0.4)];}],
   ];
   let si=0;for(let i=0;i<shots.length;i++)if(T>=shots[i][0])si=i;
   let [cp,lk]=shots[si][1](T);
