@@ -89,6 +89,7 @@ Induk: https://drive.google.com/drive/folders/1jlJEB6Wkhu8qou-HVzdTwoV4uS45nyLL
 | Footage per layanan (Mei 2026, folder `1RxeFOUu…`) | fadlymulya | **Ruma** (interior sage cocok) | ✅ Tambal, Fasilitas, Penyambutan, Behel, Cabut, Gigi Palsu, Bleaching |
 | UPG Hertasning | upgdentalcare | **UPG** | ❌ JANGAN |
 | Footage Hertasning / Hertasning - Agustus | upgdentalcare / ptmarikisenyumsehat | **UPG** | ❌ JANGAN |
+| Footage Konten UPG Antang (+ Antang - Agustus) | upgdentalcareantang | **UPG Antang** | ❌ JANGAN |
 
 Aturan: sebelum memakai klip dari folder mana pun, cek visual interior (Ruma = dinding sage + garis daun + panel kayu). Ragu → tanya Pak Dir.
 
