@@ -54,12 +54,12 @@ Konektor Drive hanya bisa mengunduh file < 10 MB. Klip > 10 MB perlu dikompres/d
 
 | Klip | Isi | Catatan |
 |---|---|---|
-| 4738–4741 | Dokter (jas hitam) menjelaskan foto panoramik ke pasien, ruang konsultasi panel kayu + rak lampu kuning | Rontgen terlihat; jangan disebut di narasi |
-| 4743 | Pasien (blazer putih) mendengarkan, tangan dokter menjelaskan | Pakai (dicek dulu, dijelaskan) |
-| 4752 | Tangan bersarung memegang model cetakan gigi | Pakai (cetak gigi) |
-| 4754 / 9263 | Dokter + asisten di kursi unit, pasien rebah | Pakai (dikerjakan dokter gigi) |
-| 4756 | Close-up dokter bermasker bekerja | Pakai |
-| 9274 | Staf berlanyard UPG bicara ke kamera | Cek audio; kandidat hook/penutup |
+| 4738–4740 | Dokter (jas hitam) menjelaskan foto panoramik ke pasien, ruang konsultasi panel kayu + rak lampu kuning | 4740 detik ±4,9 (foto sudah diturunkan) dipakai; rontgen jangan disebut |
+| 4741 | Pasien (blazer putih) duduk di meja konsultasi, tangan dokter menjelaskan | **Pakai** (ketukan "itu saya") |
+| 4743 | Tangan bersarung memegang model cetakan gigi | **Pakai** (cetak gigi) |
+| 4752 / 4756 | Dokter + asisten di kursi unit, pasien rebah | Cadangan |
+| 4754 | Close-up dokter bermasker bekerja | Cadangan |
+| 9263 / 9274 | Staf berlanyard UPG bicara ke kamera | Cek audio; kandidat konten lain |
 
 ### Folder "Footage Konten UPG Antang" (Jul 2026, `1fb1aTkFMUy-TZ0MbekcMWZVO4cwJbtyW`) — dicek 18 Nov 2026
 Subfolder: Behel/Ortho (`1_Rjzxz8MfZtX-53ldrGA35gWVXzwCFl6`, 21 klip), Suasana Klinik (8), Scalling, Tambal Gigi, Bleaching, + folder Agustus di atas.
@@ -79,4 +79,5 @@ Satu pasien behel yang sama (jilbab mauve). Seragam UPG = jas hitam logo oranye.
 Belum ada: tampak luar Apotek Wahdah + tangga lt. 2.
 
 ## 5. Naskah
-- Behel Antang: `references/naskah-behel-antang-01.md`
+- Behel Antang: `references/naskah-behel-antang-01.md`, papan gambar `references/papan-gambar-behel-antang-v1.png`
+- Pengucapan dipilih: **Versi A "U-Pe-Ge Dental Care"** (menyambung).
