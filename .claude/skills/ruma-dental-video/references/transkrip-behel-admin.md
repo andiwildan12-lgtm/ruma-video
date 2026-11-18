@@ -10,3 +10,8 @@
 
 ⚠️ Validasi Pak Dir: harga mulai 6 jutaan + cicilan 2 jt/bln × 3 tanpa bunga masih berlaku? (rekaman Agustus)
 Catatan: yang disebut adalah foto intra/ekstra oral, BUKAN rontgen.
+
+## Temuan audit (18 Nov 2026)
+- ⚠️ Seragam admin (bicara ke kamera & resepsionis 4429–4432) bertuliskan **"UPG Dental Care"**. Solusi: klip bicara dibingkai rapat kepala–bahu (crop 740×1316 dari x170 y20, diskalakan ke 1080×1920); 4429 tidak dipakai, diganti papan logo 4420.
+- Harga behel mulai Rp6 jutaan, cicilan Rp2 jt/bln × 3 tanpa bunga: **masih berlaku (dikonfirmasi Pak Dir 18 Nov 2026)**.
+- Papan gambar Jenis B v1: `papan-gambar-behel-spil-harga-B-v1.png`, EDL: `edl-behel-spil-harga-B.json`.

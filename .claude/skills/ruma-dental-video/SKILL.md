@@ -136,6 +136,7 @@ Setiap iklan baru: rumus 8 ketukan (`produksi-video-klinik` bagian 3) → checkl
 | PSA | tanpa harga | Draf naskah v1 | `naskah-psa-01.md` | bius lokal, crown disebut/tidak, kunjungan & garansi, footage |
 | Scaling | belum ditentukan | Draf naskah v1 | `naskah-scaling-iklan-01.md` | harga, fakta gusi turun/mitos renggang, footage, penutup murni vs jembatan bleaching |
 | Kunjungan pertama di Ruma (evergreen, semua layanan) | tanpa harga | Render v2 (49,5 dtk, `iklan-kunjungan-pertama-ruma-v2.mp4`): pemeriksaan di kursi dental ditambahkan | `naskah-kunjungan-pertama-01.md` | OK video v2 → paket kirim |
+| Behel "Spil Harga" (admin bicara, 1 rekaman → 3 jenis edit) | mulai Rp6 jutaan, cicilan Rp2 jt/bln × 3 tanpa bunga | Papan gambar Jenis B v1 dikirim | `transkrip-behel-admin.md` | ACC papan gambar → render |
 | Crown, cabut gigi bungsu, cabut gigi, veneer, perawatan gigi anak, behel, gigi palsu | – | Antrean | – | data per layanan: harga, kunjungan, garansi, footage |
 
 Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
