@@ -139,7 +139,7 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | 02 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Enamel keras vs dentin lunak → asam (1×→5× ngemil) → pintu kecil gua besar → tanpa saraf/ngilu/sakit → 4 cara (cermin, fluoride, ngemil dikumpulkan, periksa 6 bulan) | ✅ Terbit |
 | 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | 1 dicabut → 3 terdampak; analogi rak buku; tetangga miring, lawan turun; 3 cara (jangan buru-buru cabut/saluran akar, gigi pengganti, sikat sela) | ⏭️ Dilewati (kurang materi), arsip; bisa diolah ulang |
 | 04 | Sakit gigi hilang | Sakit gigi hilang / BERARTI SEMBUH? | Lanjutan #02: 4 tahap (lubang → saraf radang, analogi jari terjepit cincin → saraf mati, dikira sembuh → nanah, gusi bengkak) → 3 cara + tanda bahaya → **CTA "mau dibahas apa lagi?" + follow** | ✅ Terbit 18 Nov |
-| 05 | Gusi berdarah | Gusi berdarah / BERHENTI SIKAT? | Sisa makanan → plak (jam) → mineral air liur → karang (analogi kerak teko) → karang kasar, gusi meradang, berdarah → sikat miring, benang, scaling, 1–2 minggu → CTA | 🎬 produksi |
+| 05 | Gusi berdarah | Gusi berdarah / BERHENTI SIKAT? | Sisa makanan → plak (jam) → mineral air liur → karang (analogi kerak teko) → karang kasar, gusi meradang, berdarah → sikat miring, benang, scaling, 1–2 minggu → CTA. Ilustrasi M1 bawah | 🎬 v1 jadi (74,6 dtk), QC lulus |
 | 06 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" (tulang dibongkar di satu sisi, dibangun di sisi lain) | Ide (berikutnya bila tak ada request) |
 | 07 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
 | 08 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
@@ -163,8 +163,9 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 | 02 | ±17 Nov 2026 (terbit) | `dalamgigi-02-lubang-gua-v1.mp4` (72 dtk, QC lulus) | `cover-lubang-a.png` | Caption `output/dalamgigi-02-caption.md`. Validasi tambahan: "mulai ngilu saat sampai dentin" |
 | 03 | ⏭️ DILEWATI (keputusan Pak Dir 18 Nov: "kurang materinya") | `dalamgigi-03-efek-domino-v1.mp4` (69 dtk, QC lulus) | `cover-domino-a.png` | Caption `output/dalamgigi-03-caption.md`. Asumsi: definisi saluran akar, gigi pengganti tanpa sebut jenis |
 | 04 | 18 Nov 2026 (terbit) | `dalamgigi-04-sakit-hilang-v1.mp4` (75,5 dtk, QC lulus) | `cover-sakit-a.png` | Caption `output/dalamgigi-04-caption.md` (+ balasan admin). CTA request topik |
+| 05 | (belum diunggah) | `dalamgigi-05-gusi-berdarah-v1.mp4` (74,6 dtk, QC lulus) | `cover-gusi-a.png` | Caption `output/dalamgigi-05-caption.md` (+ balasan admin). Ilustrasi M1 bawah |
 
-Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`, #04 `naskah-sakit-04.md`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
+Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`, #04 `naskah-sakit-04.md`, #05 `naskah-gusi-05.md`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
 File video tidak masuk Git (sesi cloud sementara): selalu ingatkan Pak Dir mengunduh.
 
 ## 10. Ukuran Keberhasilan
