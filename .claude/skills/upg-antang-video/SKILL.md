@@ -84,6 +84,12 @@ Satu pasien behel yang sama (jilbab mauve). Seragam UPG = jas hitam logo oranye.
 | 3525 | Ruang perawatan luas, dental unit | Pakai (bukti ruang) |
 Belum ada: tampak luar Apotek Wahdah + tangga lt. 2.
 
+## 4b. Produksi behel v1 (18 Nov 2026) — status: menunggu review Pak Dir
+- Skrip render di `scripts/`: `upg.html` (3D senyum berjejal, sela+karang, rapi + overlay teks UPG + kartu), `jobs.py` (timeline per adegan dari jeda suara), `render.js` (Playwright, port 8766), `compose.py` (crossfade 5 frame, potongan cepat tanpa crossfade), `mix.py` (narasi -16 LUFS + ambience + SFX), `cover.html/js`.
+- Narasi dipakai: versi B (jeda paling rapi), `scripts/narasi-behel-antang-v1.mp3`.
+- Pelajaran audit: adegan sela pakai zoom ke senyum yang sama (bukan gigi kapsul besar); klip konsultasi 4740 diambil setelah foto rontgen diturunkan; teks "Self‑ligating" pakai tanda hubung tak-putus; 3517 di-crop agar papan Pepsodent tidak tampil; blur nama pasien di 3726 (kotak 500x620 @ 410,1000).
+- Kredit ElevenLabs: tes suara ±1.250 + narasi 2 versi ±1.850 + transkrip ±310 = ±3.400.
+
 ## 5. Naskah
 - Behel Antang: `references/naskah-behel-antang-01.md`, papan gambar `references/papan-gambar-behel-antang-v1.png`
 - Pengucapan dipilih: **Versi A "U-Pe-Ge Dental Care"** (menyambung).
