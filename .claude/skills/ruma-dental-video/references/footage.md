@@ -91,3 +91,18 @@ Induk: https://drive.google.com/drive/folders/1jlJEB6Wkhu8qou-HVzdTwoV4uS45nyLL
 | Footage Hertasning / Hertasning - Agustus | upgdentalcare / ptmarikisenyumsehat | **UPG** | ❌ JANGAN |
 
 Aturan: sebelum memakai klip dari folder mana pun, cek visual interior (Ruma = dinding sage + garis daun + panel kayu). Ragu → tanya Pak Dir.
+
+## Folder "Penyambutan Pasien" (Mei 2026, id `1qeE4luUMJc8qpN36QuzVyjvkcz0FwWPM`) — dicek 18 Nov 2026
+
+32 klip (2,7–29,7 dtk), vertikal, interior Ruma. **Satu pasien yang sama** (jilbab krem muda, rok motif bunga pink) menjalani alur lengkap; staf berseragam abu-abu = admin/perawat; dokter = jas putih, jilbab pink, kacamata. Casting aman (pasien ≠ admin).
+
+| Klip | Isi | Status |
+|---|---|---|
+| 9643 | Pasien turun/di samping mobil, depan klinik | Pakai (pulang/datang) |
+| 9644 / 9645 | Masuk pintu kaca ("TUTUP/CLOSED" terlihat di 9645) | 9644 pakai; 9645 cek tulisan |
+| 9647 | Lepas alas kaki di rak sepatu | **Tidak dipakai** (arahan Pak Dir) |
+| 9648–9657, 9763–9767 | Resepsionis di depan papan logo menyala, menyapa/mencatat | **Pakai** (sambutan; 9765/9767 = pamit) |
+| 9660 / 9661 / 9670 | Pasien lain (baju hitam motif) | Cadangan, jangan dicampur dalam satu alur |
+| 9664–9668, 9673 | Ruang tunggu sofa sage, toples camilan, pasien membaca/ngobrol dengan staf | **Pakai** |
+| 9676 / 9710 | Staf memanggil pasien, membuka pintu ruang dokter | **Pakai** |
+| 9712–9719 | Ruang konsultasi: dokter menjelaskan dan mencatat di meja, pasien duduk | **Pakai: bukti "dicek dulu, dijelaskan"** |
