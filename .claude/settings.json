@@ -3,5 +3,18 @@
     "allow": [
       "Bash(python3 -I .claude/skills/produksi-video-klinik/scripts/stt.py:*)"
     ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/sinkron-skill.sh\"",
+            "timeout": 180
+          }
+        ]
+      }
+    ]
   }
 }
