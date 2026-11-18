@@ -204,7 +204,18 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 
 ## 12. SOP Unggah & Kelola Otomatis (Windsor.ai) [DISEPAKATI 18 Nov 2026]
 
-**Hak unggah tetap [DISEPAKATI Pak Dir 19 Nov 2026]:** setiap video @dalamgigi yang sudah lolos QC & naskahnya di-OK Pak Dir **langsung diunggah ke Drive dan diposting sesuai jadwal tanpa menunggu perintah lagi**. Pak Dir tidak memasukkan file ke Drive sendiri. Sesi produksi ("Konten Dalam Gigi") yang mengunggah ke Drive, lalu mengirim ID file ke sesi posting.
+**Hak unggah tetap [DISEPAKATI Pak Dir 19 Nov 2026]:** setiap video @dalamgigi yang sudah lolos QC & naskahnya di-OK Pak Dir **langsung diunggah ke Drive dan diposting sesuai jadwal tanpa menunggu perintah lagi**. Pak Dir tidak memasukkan file ke Drive sendiri. Mulai #06, produksi **dan** posting dikerjakan di sesi "Audit akun dan upload otomatis" (punya Windsor, Drive, ElevenLabs, repo); sesi "Konten Dalam Gigi #02" hanya menyerahkan #05 lewat Drive.
+
+**Semua otomatis [DISEPAKATI Pak Dir 19 Nov 2026]:** Claude menjalankan seluruh siklus tanpa menunggu perintah. Pak Dir hanya dihubungi lewat **PushNotification** bila perlu ACC (paket naskah mingguan, komentar sensitif) atau ada masalah (stok kosong, Windsor gagal, ElevenLabs putus).
+
+**Jadwal otomatis aktif (semua masuk ke sesi ini, zona Asia/Makassar):**
+| Jadwal | ID | Kapan |
+|---|---|---|
+| Paket naskah mingguan → notifikasi ACC | `trig_01RVnpTZLs6KoojaJQKqn7UA` | Kamis 10.13 |
+| Posting Reel | `trig_01Y5Drz2z5yXBaVX7W2Rx12a` | Tanggal ganjil 19.07 |
+| Balas komentar | `trig_01TnPm9nDRoJYfowrQurgcZY` | Tanggal ganjil 20.22 |
+| Laporan mingguan | `trig_015b45txWH6yDG6PUv3nFFNR` | Senin 07.35 |
+Catatan: tanggal 31 → tanggal 1 tayang dua hari berturut-turut (wajar).
 
 **Windsor trial [DISEPAKATI]:** dipakai sampai habis; begitu posting otomatis gagal, langsung beri tahu Pak Dir (posting manual dari paket Drive).
 
