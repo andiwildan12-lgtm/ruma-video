@@ -57,6 +57,7 @@ Aturan:
 - [ ] Anti-monoton: kamera berganti tiap 2–4 detik, bentuk objek dikenali, suasana berubah per babak.
 - [ ] Logo dan identitas brand benar; tidak ada atribut brand lain.
 - [ ] Footage: casting benar (pasien ≠ admin), tanpa data sensitif (password, wajah tanpa izin).
+- [ ] **Zona aman iklan Meta 9:16 (Reels/Story)**: semua teks, logo, harga, kotak komentar, kartu penutup, DAN wajah/mulut pembicara di area y 270–1250, x 65–1015 (atas 14% & bawah 35% tertutup UI Meta). Cek dengan frame + kotak merah zona sebelum kirim. Kartu penutup disusun mulai y≈310, selesai ≤1250.
 - [ ] **Video orang bicara: subtitle di atas kepala, jangan menutupi wajah** (arahan Pak Dir, behel Spil Harga). Hook "spil/tanya" → kotak "Balas komentar" diam di dekat gestur tunjuk.
 - [ ] **Cek seragam/atribut brand lain di footage** (pelajaran behel: seragam bertuliskan UPG di konten Ruma → bingkai rapat/ganti klip).
 - [ ] **Setiap kata kerja di narasi terlihat di gambar pada detik yang sama** (pelajaran Kunjungan Pertama v1: "dokter gigi memeriksa" tanpa adegan pemeriksaan).

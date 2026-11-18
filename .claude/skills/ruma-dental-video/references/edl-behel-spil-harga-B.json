@@ -12,7 +12,8 @@
   "lab": "Hook · admin",
   "crop": true,
   "cm": "Spil harga pasang behel di Ruma Dental, dong!",
-  "img": "f01.jpg"
+  "img": "f01.jpg",
+  "fb": true
  },
  {
   "no": 2,
@@ -26,7 +27,8 @@
   "ov": "",
   "lab": "Keberatan · admin",
   "crop": true,
-  "img": "f02.jpg"
+  "img": "f02.jpg",
+  "fb": true
  },
  {
   "no": 3,
@@ -40,7 +42,8 @@
   "ov": "",
   "lab": "Belokan · admin",
   "crop": true,
-  "img": "f03.jpg"
+  "img": "f03.jpg",
+  "fb": true
  },
  {
   "no": 4,
@@ -54,7 +57,8 @@
   "ov": "",
   "lab": "Brand · papan logo",
   "src": "ft/4420.mov",
-  "img": "f04.jpg"
+  "img": "f04.jpg",
+  "fb": false
  },
  {
   "no": 5,
@@ -64,11 +68,12 @@
   "ao": 5.3,
   "t0": 8.1,
   "t1": 9.6,
-  "sub": "harga mulai 6 jutaan,",
+  "sub": "",
   "ov": "Behel mulai Rp6 jutaan|atas & bawah · Rp3 jt per rahang",
   "lab": "Harga · admin + teks diam",
   "crop": true,
-  "img": "f05.jpg"
+  "img": "f05.jpg",
+  "fb": true
  },
  {
   "no": 6,
@@ -78,12 +83,13 @@
   "ao": 11.05,
   "t0": 9.6,
   "t1": 15.35,
-  "sub": "atau cicilan mulai 2 juta per bulan selama 3 bulan, tanpa bunga.",
+  "sub": "",
   "ov": "Behel mulai Rp6 jutaan|atas & bawah · Rp3 jt per rahang|Cicilan Rp2 jt/bln × 3 · tanpa bunga",
   "lab": "Harga · admin + teks diam",
   "crop": true,
   "img": "f05.jpg",
-  "ovhold": true
+  "ovhold": true,
+  "fb": true
  },
  {
   "no": 7,
@@ -97,7 +103,8 @@
   "ov": "",
   "lab": "Jembatan · admin",
   "crop": true,
-  "img": "f06.jpg"
+  "img": "f06.jpg",
+  "fb": true
  },
  {
   "no": 8,
@@ -110,7 +117,8 @@
   "sub": "pemasangan behel rahang atas dan bawah,",
   "ov": "",
   "lab": "Bukti · pemasangan",
-  "img": "f07.jpg"
+  "img": "f07.jpg",
+  "fb": false
  },
  {
   "no": 9,
@@ -123,7 +131,8 @@
   "sub": "scaling, cetak gigi,",
   "ov": "",
   "lab": "Bukti · di kursi",
-  "img": "f08.jpg"
+  "img": "f08.jpg",
+  "fb": false
  },
  {
   "no": 10,
@@ -137,7 +146,8 @@
   "ov": "",
   "lab": "Isi paket · admin",
   "crop": true,
-  "img": "f09.jpg"
+  "img": "f09.jpg",
+  "fb": true
  },
  {
   "no": 11,
@@ -150,7 +160,8 @@
   "sub": "konsultasi dengan dokter gigi,",
   "ov": "",
   "lab": "Bukti · konsultasi",
-  "img": "f10.jpg"
+  "img": "f10.jpg",
+  "fb": false
  },
  {
   "no": 12,
@@ -164,7 +175,8 @@
   "ov": "",
   "lab": "Isi paket · admin",
   "crop": true,
-  "img": "f11.jpg"
+  "img": "f11.jpg",
+  "fb": true
  },
  {
   "no": 13,
@@ -178,7 +190,8 @@
   "ov": "",
   "lab": "Ajakan · admin",
   "crop": true,
-  "img": "f12.jpg"
+  "img": "f12.jpg",
+  "fb": true
  },
  {
   "no": 14,
@@ -191,6 +204,7 @@
   "sub": "",
   "ov": "",
   "lab": "Kartu penutup",
-  "img": null
+  "img": null,
+  "fb": false
  }
 ]
