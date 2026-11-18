@@ -134,7 +134,7 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 9. **Kelola**: +1 jam cek & balas komentar (bagian 12b); +24 jam dan +72 jam tarik data, isi log (bagian 9) dan tabel evaluasi (bagian 13).
 10. Setelah terbit: perbarui **log unggahan** (bagian 9) dan status di tabel rencana. Pelajaran baru → bagian 11.
 
-**Ritme [USULAN, validasi Pak Dir]:** 2 video/minggu (mis. Selasa & Jumat 19.00 WITA). Selalu ada **1 video cadangan jadi** di stok supaya jadwal tidak bolong. Satu siklus produksi (naskah → papan → narasi → render → QC) ±2–3 hari termasuk waktu tunggu validasi.
+**Ritme [DISEPAKATI 18 Nov 2026]: posting SETIAP HARI** 19.00–21.00 WITA, dengan campuran format (bagian 14) karena video 3D utama butuh ±2–3 hari/siklus. Selalu ada **stok ≥2 konten jadi** supaya jadwal tidak bolong. Fakta medis seminggu divalidasi Pak Dir **sekaligus** (satu kali per minggu).
 
 ## 8. Rencana Konten
 
@@ -200,7 +200,7 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 - v1 #01: hook lemah (layar kosong 4 detik), "benang gigi" tanpa cara, "scaling" tanpa penjelasan, "1 jam setahun" membingungkan, visual monoton (kotak-kotak, satu sudut kamera).
 - Narasi dipotong per kalimat + jeda panjang = kaku dan patah-patah (pelajaran iklan bleaching v1).
 
-## 12. SOP Unggah & Kelola Otomatis (Windsor.ai) [USULAN 18 Nov 2026, menunggu OK Pak Dir]
+## 12. SOP Unggah & Kelola Otomatis (Windsor.ai) [DISEPAKATI 18 Nov 2026]
 
 Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Media** (`instagram`, account id `17841463796300521`). TikTok **tidak** bisa diposting lewat Windsor → tetap manual.
 
@@ -271,8 +271,57 @@ Total jangkauan ±17 ribu → hanya **18 follower** (0,1%). Masalah utama akun =
 
 **Keputusan dari audit:**
 1. Ajakan follow wajib di video **dan** caption (sudah sejak #04/#05).
-2. **Uji durasi:** #06 dibuat versi **40–45 dtk** (satu proses inti + 2 cara). Bandingkan rata-rata tonton & % selesai dengan #01/#02 sebelum mengubah aturan durasi 50–70 dtk di bagian 2.
+2. **Uji durasi [DISEPAKATI]:** #06 (Behel menggeser gigi) dibuat versi **40–45 dtk** (satu proses inti + 2 cara). Bandingkan rata-rata tonton & % selesai dengan #01/#02 sebelum mengubah aturan durasi 50–70 dtk di bagian 2.
 3. Semua video tayang **19.00–21.00 WITA** (belum pernah terpenuhi di #01–#04).
 4. Pola #02 (benda kecil → ternyata besar di dalam) paling banyak dibagikan → prioritaskan topik yang punya "pembalikan" serupa.
-5. Profil: ganti nama tampilan jadi **"Dalam Gigi | Fakta Gigi 3D"** (kolom nama ikut dicari di IG) [USULAN, eksekusi manual Pak Dir].
+5. Profil: ganti nama tampilan jadi **"Dalam Gigi | Fakta Gigi 3D"** (kolom nama ikut dicari di IG) [DISEPAKATI, eksekusi manual Pak Dir].
 6. Setiap evaluasi ditulis ringkas di log (bagian 9) + pelajaran baru di bagian 11.
+
+## 14. Strategi Pertumbuhan & KPI (TOFU / Awareness) [USULAN 18 Nov 2026]
+
+**Tujuan akun:** awareness. Orang Makassar kenal & ingat "Dalam Gigi oleh Ruma Dental". **KPI utama: Views, Like, Follow.** Indikator pendukung (penyebab): skip <3 dtk, rata-rata tonton, simpan, bagikan, komentar.
+
+### 14a. KPI 30 hari (19 Nov – 18 Des 2026)
+Baseline: 3 video, ±19 rb views, rata-rata ±6 rb views/video 3D, 18 follower, like ±2,5% views.
+
+| KPI | Minimum | **Target** | Stretch |
+|---|---|---|---|
+| Total views / 30 hari | 100 rb | **200 rb** | 400 rb |
+| Median views video 3D utama | 3 rb | **5 rb** | 10 rb |
+| Like rate (like ÷ views) | 2,5% | **3%** | 4% |
+| Total like / 30 hari | 2.500 | **6.000** | 15.000 |
+| Follower (dari 18) | 500 | **1.000** | 2.000 |
+| Konversi follow (follower baru ÷ jangkauan) | 0,3% | **0,5%** | 1% |
+
+Mingguan: views ≥50 rb, follower +250. Catatan: API Windsor tidak memberi angka like langsung untuk reel → like = `media_reel_total_interactions` − simpan − bagikan − komentar (perkiraan); cocokkan dengan aplikasi bila selisih.
+
+### 14b. Ritme Harian (campuran format)
+| Hari | Format | Biaya produksi | Otomatis? |
+|---|---|---|---|
+| Senin | **Video 3D utama** 40–60 dtk (Kenapa/Gimana) | Tinggi | ✅ |
+| Selasa | **Carousel Mitos vs Fakta** 5–7 slide | Rendah | ✅ (`create_carousel_post`, JPEG 4:5) |
+| Rabu | **Short 3D 15–25 dtk** "1 fakta 1 visual", pakai ulang scene pustaka | Sedang | ✅ |
+| Kamis | **Video 3D utama** | Tinggi | ✅ |
+| Jumat | **Jawab Komentar** (pertanyaan penonton → video pendek 3D) | Sedang | ✅ |
+| Sabtu | **Carousel kuis/tebak** ("Gigi mana yang paling sering berlubang?") | Rendah | ✅ |
+| Minggu | **Daur ulang pemenang**: video terbaik minggu lalu dengan hook baru sebagai **Trial Reel** (non-follower) | Rendah | ✅ |
+
+Semua format tetap lolos Uji Value (1b), aturan isi (2), dan validasi fakta Pak Dir.
+
+### 14c. Mesin Follow (masalah utama: 0,1%)
+1. Identitas seri: label kecil "DALAM GIGI #NN" di pojok kiri atas tiap video/sampul; grid seragam (bagian 5).
+2. Ajakan follow dengan alasan: "Follow, tiap hari satu hal soal gigi yang jarang dibahas."
+3. Profil: 3 postingan disematkan di grid (#01, #02, terbaik terbaru); Sorotan Story "Mulai di sini".
+4. Siklus komentar → video: request penonton dijawab tiap Jumat, pengusul dibalas "Sudah kami jawab 🙌".
+5. Collab dengan @rumadentalmks + share ke Story Ruma tiap video utama.
+
+### 14d. Distribusi & Uji
+- **Trial Reel**: uji 2 hook untuk topik yang sama; hook pemenang (skip lebih rendah) jadi versi utama.
+- TikTok: unggah ulang manual tiap video (format yang sama, hashtag TikTok).
+- Opsional berbayar: boost video terbaik Rp 50–100 rb/hari, 3 hari, Makassar, tujuan "kunjungan profil", hanya bila organik sudah ≥5 rb views (bukan menyelamatkan video lemah).
+- Jembatan ke Ruma (bukan isi akun ini): audiens "berinteraksi dengan @dalamgigi 60 hari" dipakai untuk retarget iklan Meta Ruma (akun harus terhubung ke Business Manager Ruma).
+
+### 14e. Laporan
+- Harian (setelah unggah +1 jam): balas komentar, ringkasan singkat.
+- **Senin pagi: laporan mingguan** (views, like, follow vs target, 3 video terbaik/terburuk + penyebab, keputusan minggu ini).
+- Akhir 30 hari: evaluasi apakah ritme harian dipertahankan (kualitas > kuantitas bila median views turun >30%).
