@@ -15,13 +15,14 @@
 .cm .hd{display:flex;align-items:center;gap:14px;font:500 28px M;color:#7A8784}
 .cm .av{width:44px;height:44px;border-radius:50%;background:#D9E3E1}
 .cm .tx{font:700 46px/1.25 M;color:#354B49;margin-top:10px}
+.cm.nt:after{display:none}
 .cm:after{content:'';position:absolute;right:120px;bottom:-26px;border-left:22px solid transparent;border-right:22px solid transparent;border-top:28px solid #fff}
 #card{position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:310px;text-align:center}
 </style></head><body><div id=root></div>
 <script>
 window.setState=(o)=>{let h='';
 if(o.fb)h+='<div class=fb></div>';
-if(o.cm)h+=`<div class=cm><div class=hd><div class=av></div>Balas komentar</div><div class=tx>${o.cm}</div></div>`;
+if(o.cm)h+=`<div class="cm${o.nt?" nt":""}" style="${o.cmTop?"top:"+o.cmTop+"px;bottom:auto;right:80px;left:80px;width:auto":""}"><div class=hd><div class=av></div>Balas komentar</div><div class=tx>${o.cm}</div></div>`;
 if(o.ov)h+='<div class=ov>'+o.ov.split('|').map((x,i)=>`<div class=${i?'b':'a'}>${x}</div>`).join('')+'</div>';
 if(o.sub){let t=o.sub;if(o.key)t=t.replace(o.key,`<b>${o.key}</b>`);h+=`<div class=sub><span>${t}</span></div>`;}
 if(o.card)h+=`<div id=card><img src="../card_logo.png" style="width:300px">
