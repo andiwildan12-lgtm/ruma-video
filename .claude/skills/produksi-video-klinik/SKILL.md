@@ -8,7 +8,9 @@ description: Teknik produksi video iklan dan konten klinik gigi (UPG Dental Care
 Skill ini berisi **cara kerja dan teknik** yang sudah terbukti: iklan bleaching Ruma Dental v2 (di-ACC 16 Nov 2026) dan konten TOFU @dalamgigi #01–#03 (16–17 Nov 2026). Versi skill: **1.3 (17 Nov 2026)**.
 **Identitas brand** (warna, logo, suara narator, data harga, aturan khusus) **tidak ada di sini**; ambil dari skill brand:
 - Ruma Dental → skill `ruma-dental-video`
-- UPG Dental Care → skill `upg-video` (kerangka; data brand masih [TERBUKA])
+- UPG Dental Care → skill di **repo `upg-video`** (bukan di repo ini): `upg-video` (umum), `upg-antang-video` (cabang Antang), `upg-hertasning-video` (cabang Hertasning).
+
+Satu video = satu klinik/cabang; data, WA, logo, dan footage tidak boleh tertukar. Materi UPG tidak disimpan di repo `ruma-video`.
 
 Kalau brand belum jelas, tanyakan dulu konten ini untuk klinik yang mana.
 
