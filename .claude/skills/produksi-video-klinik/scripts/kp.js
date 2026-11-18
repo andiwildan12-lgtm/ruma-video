@@ -33,5 +33,5 @@ window.renderScene=function(name,t,D){const ph=D?t/D:0;phone.rotation.y=name.sta
     molState(molA,{open:1,grow:0.12});molState(molB,{open:1,grow:cl(0.3,1,ease(ph/0.7)),pain:ph>0.6?0.5+0.5*Math.sin(t*9):0});
     camera.position.set(0,0.3,8.2);camera.lookAt(0,0.3,0);mSplitL.style.display=mSplitR.style.display='block';
     pills2('Padahal, kalau dicek lebih awal,','pilihannya lebih ringan',t,0.2);renderer.render(scene,camera);return;}
-  if(name==='kp_sched'){molA.visible=molB.visible=false;mSplitL.style.display=mSplitR.style.display='none';return _rs4('c8',t,D);}
+  if(name==='kp_sched'){molA.visible=molB.visible=false;mSplitL.style.display=mSplitR.style.display='none';return _rs4('c8',t*1.5,D);}
   return _rs4(name,t,D);};

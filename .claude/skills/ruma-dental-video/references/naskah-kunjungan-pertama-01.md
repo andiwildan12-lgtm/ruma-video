@@ -27,3 +27,8 @@ MOFU/BOFU, ±52 detik, tanpa harga, berlaku untuk semua layanan (iklan evergreen
 2. Biaya pemeriksaan: **tidak disebut** di iklan.
 3. ✅ Footage: pakai folder "Penyambutan Pasien" (sudah ada adegan dokter menjelaskan).
 4. Rak sepatu/lepas alas kaki: **tidak dibahas, tidak ditampilkan** (9647 tidak dipakai).
+
+## Produksi v1 (18 Nov 2026)
+- Narasi: Ricky eleven_v4, versi B (46,9 dtk), 2 versi ±1.750 kredit + transkripsi waktu kata ±290 kredit + SFX notifikasi ±19 kredit.
+- Segmen (detik video): hook 0–5,96 · snooze –12,39 · geraham –16,9 · kalender+wipe –18,5 · logo 4420 –22,95 · 9648 –23,9 · 9650 –24,6 · 9667 –25,6 · 9673 –26,38 · 9676 –27,5 · 9712 –28,6 · 9717 –31,3 · 9716 –34,18 · 9719 –37,33 · 9767 –39,0 · 9643 –40,77 · kartu –49,5.
+- Audit render: 9644 diganti 9648 karena rak sepatu terlihat.
