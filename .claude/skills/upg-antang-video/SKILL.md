@@ -107,6 +107,15 @@ Belum ada: tangga lt. 2.
 - Rumus: foto asli Antang di atas (gradasi ke krem #F7EEE3) → logo UPG + label oranye ANTANG → judul putih tebal + pita gelap → pil oranye syarat cicilan → kartu harga putih miring "MULAI" → lencana pilihan → 2 pil centang (isi paket, dikerjakan dokter gigi) → tombol WA oranye → lokasi & jam.
 - Tanpa "alat steril", tanpa hook pertanyaan, tanpa rontgen/biaya kontrol.
 
+
+## 4d. Behel Jenis B "Dapat Apa Aja?" (18 Nov 2026) — status: render v1, menunggu review Pak Dir
+- Naskah `references/naskah-behel-antang-B-paket.md`, papan gambar `references/papan-gambar-behel-antang-B-v1.png` (ACC).
+- Hook kotak "Balas komentar" (opsi 2 pilihan Pak Dir), harga + **cicil 2× per bulan tanpa bunga** (dikonfirmasi Pak Dir), checklist isi paket dengan footage, CTA kata kunci **BEHEL**.
+- Data: scaling dalam paket dikerjakan **sebelum** behel dipasang (Pak Dir).
+- Pipeline tanpa 3D: `scripts/behelB/ov.html` (latar frame footage + overlay animasi per waktu, fungsi `R(t)`), `rend.js` (render frame paralel), `mix.py`. Narasi Tio versi A (`narasi-behel-B-v1.mp3`, 49,6 dtk).
+- Pelajaran audit: latar blur jangan dari klip gelap (3744) → pakai 3739/3735/3738/3737; klip 3744 (senyum di cermin) dipotong 900x1600 dari y330 detik 4,3+ dan kartu checklist digeser ke bawah agar wajah terlihat; gelembung chat di bawah wajah resepsionis (top 960).
+- Kredit: narasi 2 versi ±1.864 + transkrip 0.
+
 ## 5. Naskah
 - Scaling Antang: `references/naskah-scaling-antang-01.md` (v2 fokus konversi), papan gambar `references/papan-gambar-scaling-antang-v1.png`, render 3D `scripts/sc.html`
 - Behel Antang: `references/naskah-behel-antang-01.md`, papan gambar `references/papan-gambar-behel-antang-v1.png`

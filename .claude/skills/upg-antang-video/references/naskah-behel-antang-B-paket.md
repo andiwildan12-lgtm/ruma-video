@@ -8,7 +8,7 @@ Level: BOFU (harga + cicilan + CTA kata kunci).
 ## A. Narasi (ElevenLabs)
 ```
 [curious] Behel tiga juta, udah dapat apa aja?
-[conversational] Ini rinciannya. Pasang behel di U-Pe-Ge Dental Care Antang, mulai tiga juta per rahang. Bisa dicicil, DP lima puluh persen, sisanya dua kali.
+[conversational] Ini rinciannya. Pasang behel di U-Pe-Ge Dental Care Antang, mulai tiga juta per rahang. Bisa dicicil, DP lima puluh persen, sisanya dua kali, tanpa bunga.
 Dan dengan harga itu, sudah termasuk:
 Satu, konsultasi dengan dokter gigi. Kondisi gigimu dicek dan dijelaskan dulu, sebelum dipasang.
 Dua, cetak gigi. Supaya rencana perawatannya sesuai bentuk gigimu.
@@ -49,7 +49,7 @@ U-Pe-Ge Dental Care Antang, lantai dua Apotek Wahdah.
 | Close-up klinis | 3745 tidak dipakai; footage lebar saja |
 | Nama pasien di model 3726 | 3726 tidak dipakai (pakai 4743/3742) |
 
-## D. Validasi Pak Dir
+## D. Validasi Pak Dir — DIJAWAB 18 Nov 2026: (1) scaling sebelum pasang: ya; (2) cicilan per bulan, tanpa bunga: ya, boleh ditulis; (3) kata kunci BEHEL: OK. Papan gambar v1 ACC → render.
 1. Scaling dalam paket dikerjakan **sebelum** behel dipasang? (narasi: "gigi dibersihkan dulu dari karang")
 2. Cicilan 2× → dibayar per bulan? Boleh ditambah "tanpa bunga"?
 3. Kata kunci chat **"BEHEL"** OK? Admin Antang harus siap membalas template behel + pilihan jadwal konsultasi.
