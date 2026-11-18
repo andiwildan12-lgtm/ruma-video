@@ -175,6 +175,7 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 
 - **#05: Pak Dir minta proses plak/karang/gusi ditunjukkan di gigi geraham** (lebih jelas & paling sering terjadi di sana). Default untuk topik gusi/karang/lubang: tampak samping geraham bawah, gigi sisi seberang disembunyikan.
 - **#05: Pak Dir minta bentuk geraham dibuat betul-betul seperti asli.** Pakai fungsi `sculpt()` di `gusi.html` (mahkota menggembung, leher menyempit, 4–5 cusp menyatu + fisur; premolar 2 cusp). Plak/karang = salinan geometri gigi yang diperbesar sedikit dan dipotong (clipping) di tepi gusi, bukan kotak.
+- **Ilustrasi utama = geraham pertama bawah (M1)** (arahan Pak Dir 18 Nov): 5 cusp (3 bukal: MB terbesar, DB, D kecil; 2 lingual lebih tinggi/runcing), mesiodistal > bukolingual, alur bukal + distobukal di dinding samping, kontur terbesar di sepertiga servikal bukal, leher menyempit. Kamera dipusatkan ke M1, premolar & M2 sebagai konteks.
 
 - **#03 dilewati Pak Dir ("kurang materinya").** Sebelum naskah diajukan, pastikan isi cukup padat: ada fakta "wah" yang jarang diketahui, proses yang ditunjukkan bertahap, dan cara yang konkret (bukan sekadar "ke dokter gigi"). Bandingkan kepadatan dengan #02/#04 yang diterima.
 
