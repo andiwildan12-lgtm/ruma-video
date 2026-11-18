@@ -32,6 +32,7 @@ Aturan:
 - Kalau ada temuan yang mengubah isi (fakta medis, data harga, naskah), **tanya Pak Dir dulu**. Selain itu, perbaiki sendiri.
 - Kalau naskah diubah saat audit (termasuk menambah CTA, memangkas, atau menjanjikan topik berikutnya), tampilkan tabel **"Sebelum → Sesudah → Alasan"** + narasi final, lalu **tunggu OK Pak Dir sebelum membuat narasi ElevenLabs dan render**. Persetujuan ide/cerita bukan persetujuan naskah final.
 - Lapor ringkas: "Audit 1–4: lulus, X hal diperbaiki".
+- **Papan gambar wajib dikirim ke Pak Dir sebelum render penuh, termasuk setiap kali visual diubah** (arahan Pak Dir 18 Nov): lembar 20–24 frame probe berlabel waktu + narasi (`output/papan-NN-topik.jpg`). Render penuh hanya setelah Pak Dir OK papan.
 
 **Audit 1: Naskah dan fakta**
 - [ ] Fakta medis dan angka benar, atau sudah divalidasi Pak Dir.
