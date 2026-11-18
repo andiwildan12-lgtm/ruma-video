@@ -82,7 +82,18 @@ Satu pasien behel yang sama (jilbab mauve). Seragam UPG = jas hitam logo oranye.
 | 3746 | Dokter memasang kawat, logo UPG di jas jelas | **Pakai** |
 | 3517 | Pintu "This clinic is OPEN" → resepsionis menyapa | **Pakai** (penutup/sambutan) |
 | 3525 | Ruang perawatan luas, dental unit | Pakai (bukti ruang) |
-Belum ada: tampak luar Apotek Wahdah + tangga lt. 2.
+Belum ada: tangga lt. 2.
+
+### Folder "Footage antang" (milik Pak Dir, `1Rdnyvy44TSXJeT_jtVwxoz3_tfShUMh5`, 18 Nov 2026)
+- 2 klip MP4 (±12 dtk): **tampak depan Apotek Wahdah Antang** sore hari (papan nama jelas di detik ±1 dan ±11). Resolusi rendah 464×832 → pakai singkat.
+
+### Folder Scalling Antang (`1A3M2bbN9dKU5uoT1_n1IsRSgbUd0yeU0`, 25 klip)
+| Klip | Isi |
+|---|---|
+| 3690 | Dokter + asisten scaling, scaler & suction jelas (9:16 bagus) |
+| 3703 | Close-up scaler bekerja |
+| 3707 | Dokter bermasker menjelaskan di meja konsultasi ("dicek dulu") |
+| 3693 / 3696 / 3697 / 3700 / 3701 / 3704 / 3706 | Variasi sudut scaling, pasien jilbab krem |
 
 ## 4b. Produksi behel v1 (18 Nov 2026) — status: **ACC Pak Dir** (pelafalan OK, klip rontgen dibiarkan, siap tayang)
 - Skrip render di `scripts/`: `upg.html` (3D senyum berjejal, sela+karang, rapi + overlay teks UPG + kartu), `jobs.py` (timeline per adegan dari jeda suara), `render.js` (Playwright, port 8766), `compose.py` (crossfade 5 frame, potongan cepat tanpa crossfade), `mix.py` (narasi -16 LUFS + ambience + SFX), `cover.html/js`.
@@ -97,5 +108,6 @@ Belum ada: tampak luar Apotek Wahdah + tangga lt. 2.
 - Tanpa "alat steril", tanpa hook pertanyaan, tanpa rontgen/biaya kontrol.
 
 ## 5. Naskah
+- Scaling Antang: `references/naskah-scaling-antang-01.md` (v2 fokus konversi), papan gambar `references/papan-gambar-scaling-antang-v1.png`, render 3D `scripts/sc.html`
 - Behel Antang: `references/naskah-behel-antang-01.md`, papan gambar `references/papan-gambar-behel-antang-v1.png`
 - Pengucapan dipilih: **Versi A "U-Pe-Ge Dental Care"** (menyambung).
