@@ -31,6 +31,12 @@ Versi 0.1 (18 Nov 2026). Status: [USULAN] kecuali ditandai lain.
 - Jam buka: **setiap hari 10.00–22.00 WITA**
 - Dokter: drg umum → di iklan tulis **"dokter gigi"** (jangan "spesialis"/"ortodontis").
 
+## 1b. Suara narator Antang [DISEPAKATI 18 Nov 2026]
+- **Tio – Persuasive & Convincing** (voice_id `5U7QzveIXT8fIoBXaoUC`), model eleven_v4. Ciri khas Antang: lugas, energik, meyakinkan (beda dari Ricky/Ruma yang lembut).
+- Pengucapan **UPG = "U-Pe-Ge"** (huruf Indonesia). Di teks narasi tulis fonetik `U-Pe-Ge`, jangan "UPG" (dibaca salah). Versi final A/B menunggu pilihan Pak Dir.
+- Kandidat ditolak: Macazzart (logat Makassar), Zulsyifah (wanita).
+- Catatan: cek supaya tidak sama dengan suara iklan Hertasning.
+
 ## 2. Harga behel (Pak Dir: sama dengan Hertasning) [DISEPAKATI]
 - Mulai **Rp3 juta per rahang** (metal), **DP 50%, sisanya cicil 2x**.
 - 3 pilihan: metal, keramik, self-ligating.
