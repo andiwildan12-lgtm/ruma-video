@@ -14,7 +14,9 @@ Lihat tabel di skill `upg-antang-video` bagian 0. Satu video = satu cabang. Foot
 - Nama di iklan: **UPG Dental Care Hertasning**
 - WA admin: **0896-7341-5806** (dari desain Behel_Feed / Behel_Story)
 - Jam buka: 10.00–22.00 WITA setiap hari (dari panduan balasan admin)
-- Alamat lengkap: [TERBUKA]
+- Alamat: **Jl. Letjen Hertasning No.50, Makassar** (dari Frame Story UPG Dental)
+- Instagram: @upg.dentalcare
+- Logo: sama dengan Antang (`../upg-antang-video/assets/logo_upg_putih.png`)
 
 ## 2. Harga behel
 - Mulai Rp3 juta per rahang (metal), DP 50%, sisanya cicil 2x; pilihan metal, keramik, self-ligating.

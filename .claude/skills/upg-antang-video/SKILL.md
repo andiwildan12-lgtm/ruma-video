@@ -11,9 +11,10 @@ UPG Antang, UPG Hertasning, dan Ruma Dental adalah **tiga identitas terpisah**. 
 | | **UPG Antang** (skill ini) | UPG Hertasning | Ruma Dental |
 |---|---|---|---|
 | Skill | `upg-antang-video` | `upg-hertasning-video` | `ruma-dental-video` |
-| Alamat | Lt. 2 Apotek Wahdah Antang | Hertasning | (lihat skill Ruma) |
+| Alamat | Lt. 2 Apotek Wahdah Antang | Jl. Letjen Hertasning No.50 | (lihat skill Ruma) |
 | WA | **0895-1013-2102** | 0896-7341-5806 | (lihat skill Ruma) |
 | Nama di iklan | UPG Dental Care **Antang** | UPG Dental Care **Hertasning** | Klinik Gigi Ruma Dental |
+| Logo | Logo UPG (sama) + label ANTANG | Logo UPG | Logo Ruma |
 | Footage | Hanya folder milik upgdentalcareantang | Hanya folder Hertasning | Hanya folder Ruma |
 | Ciri interior | Panel kayu, rak lampu kuning (ruang konsultasi), kursi unit biru navy, gorden abu | (cek di skill Hertasning) | Dinding sage + garis daun |
 
@@ -30,6 +31,11 @@ Versi 0.1 (18 Nov 2026). Status: [USULAN] kecuali ditandai lain.
 - WA admin: **0895-1013-2102**
 - Jam buka: **setiap hari 10.00–22.00 WITA**
 - Dokter: drg umum → di iklan tulis **"dokter gigi"** (jangan "spesialis"/"ortodontis").
+
+## 1a. Logo & warna [DISEPAKATI 18 Nov 2026]
+- **Logo UPG Antang = sama dengan Hertasning** (gigi garis + "UPG Dental Care"). File: `assets/logo_upg_putih.png` (putih transparan, untuk latar gelap), `assets/logo_upg_oranye.png`. Diekstrak dari Behel_Story Hertasning (resolusi sedang; minta file vektor bila perlu cetak besar).
+- **Pembeda cabang di video**: label **ANTANG** di bawah logo + WA & alamat Antang. Jangan pakai frame story Hertasning (ada alamat Jl. Letjen Hertasning No.50).
+- Warna UPG: oranye `#E8771E`, gelap `#262626`, krem `#F7EEE3`, putih.
 
 ## 1b. Suara narator Antang [DISEPAKATI 18 Nov 2026]
 - **Tio – Persuasive & Convincing** (voice_id `5U7QzveIXT8fIoBXaoUC`), model eleven_v4. Ciri khas Antang: lugas, energik, meyakinkan (beda dari Ricky/Ruma yang lembut).
