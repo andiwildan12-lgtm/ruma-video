@@ -57,6 +57,13 @@ Aturan:
 - [ ] Anti-monoton: kamera berganti tiap 2–4 detik, bentuk objek dikenali, suasana berubah per babak.
 - [ ] Logo dan identitas brand benar; tidak ada atribut brand lain.
 - [ ] Footage: casting benar (pasien ≠ admin), tanpa data sensitif (password, wajah tanpa izin).
+- [ ] **Video orang bicara harus terasa natural (koreksi Pak Dir, behel Spil Harga v1 → v2):**
+  - Transisi: crossfade 0,24 dtk di semua potongan (xfade, handle 0,12 dtk per sisi), zoom bergantian 1,00/1,08 antar-kalimat admin + dorong pelan 2%, footage bukti dengan zoom pelan 4%.
+  - Bunyi transisi: whoosh pelan di setiap perpindahan ke/dari footage dan kartu; pop saat kartu harga/baris baru/kartu penutup; ting notifikasi saat kotak komentar muncul.
+  - Pengganti musik: suara asli ruangan klinik (klip footage tanpa bicara, volume ±0,09, lowpass) sebagai latar terus-menerus + suara asli footage bukti ±0,18. Jangan hening mati.
+  - Subtitle **pendek 2–4 kata per potongan**, mengikuti waktu kata (transkripsi), satu kata kunci berlatar Turquoise.
+  - Font & warna video Ruma **ikut panduan resmi Canva**: Montserrat (Neue Montreal belum ada filenya), teks Deep Teal #354B49, blok Turquoise #28CDBD, latar putih/Mint White #E8F8F6. Bukan Outfit/krem.
+  - Lapisan teks dirender per frame (`ovseq/%04d.png`), bukan concat gambar diam (pernah terpotong di detik 32). Kartu penutup masuk dengan pudar ±0,3 dtk.
 - [ ] **Zona aman iklan Meta 9:16 (Reels/Story)**: semua teks, logo, harga, kotak komentar, kartu penutup, DAN wajah/mulut pembicara di area y 270–1250, x 65–1015 (atas 14% & bawah 35% tertutup UI Meta). Cek dengan frame + kotak merah zona sebelum kirim. Kartu penutup disusun mulai y≈310, selesai ≤1250.
 - [ ] **Video orang bicara: subtitle di atas kepala, jangan menutupi wajah** (arahan Pak Dir, behel Spil Harga). Hook "spil/tanya" → kotak "Balas komentar" diam di dekat gestur tunjuk.
 - [ ] **Cek seragam/atribut brand lain di footage** (pelajaran behel: seragam bertuliskan UPG di konten Ruma → bingkai rapat/ganti klip).
