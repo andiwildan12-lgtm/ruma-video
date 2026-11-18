@@ -101,17 +101,18 @@ const teeth=[];
   const pts=[];for(let i=0;i<=60;i++)pts.push(pt(-1.62+3.24*i/60).setY(0.05));
   const gum=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),160,0.62,24,false),gumM);gum.scale.y=0.42;gum.receiveShadow=true;archG.add(gum);archG.userData.gum=gum;
 })();
-const front=teeth.filter(t=>t.k<=2);
+const front=teeth.filter(t=>t.side===1&&t.k>=4&&t.k<=6);
 // plaque/tartar bands on front teeth
 const bandM=new THREE.MeshStandardMaterial({color:'#E6C463',roughness:0.85,transparent:true,opacity:0});
-const bands=front.map(t=>{const m=new THREE.Mesh(new RoundedBoxGeometry(t.d*1.08,0.24,t.w*0.98,3,0.08),bandM);m.position.y=0.36;t.g.add(m);return m;});
+const bands=front.map(t=>{const m=new THREE.Mesh(new RoundedBoxGeometry(t.d*1.05,0.14,t.w*0.96,3,0.05),bandM);m.position.y=0.27;t.g.add(m);return m;});
 // tartar chunks
 const chunkM=new THREE.MeshStandardMaterial({color:'#A39C8E',roughness:1,flatShading:true});
-const chunks=[];front.forEach((t,ti)=>{for(let i=0;i<6;i++){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(0.05+0.02*((i+ti)%3),0),chunkM);const sx=(i%2?1:-1);m.position.set(sx*t.d*0.54,0.3+0.06*((i*3)%4),(i/5-0.5)*t.w*0.8);m.scale.setScalar(0.001);t.g.add(m);chunks.push(m);}});
+const chunks=[];front.forEach((t,ti)=>{for(let i=0;i<6;i++){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(0.05+0.02*((i+ti)%3),0),chunkM);const sx=(i%2?1:-1);m.position.set(sx*t.d*0.53,0.24+0.04*((i*3)%4),(i/5-0.5)*t.w*0.8);m.scale.setScalar(0.001);t.g.add(m);chunks.push(m);}});
 // food bits, bacteria, minerals, blood
-const mid=teeth.filter(t=>t.k===0).map(t=>t.p).reduce((a,b)=>a.clone().add(b).multiplyScalar(0.5));
+const mid=teeth.filter(t=>t.side===1&&(t.k===5||t.k===6)).map(t=>t.p).reduce((a,b)=>a.clone().add(b).multiplyScalar(0.5));
 const outN=V(mid.x,0,mid.z).sub(V(0,0,-0.4)).normalize();
-const gumEdge=(i,n)=>{const t=front[i%front.length];return t.p.clone().addScaledVector(outN,0.42).setY(0.33);};
+const nrmOf=t=>V(t.p.x,0,t.p.z).sub(V(0,0,-0.4)).normalize();
+const gumEdge=(i,n)=>{const t=front[i%front.length];return t.p.clone().addScaledVector(nrmOf(t),t.d*0.5+0.06).setY(0.27);};
 const foodM=new THREE.MeshStandardMaterial({color:'#D9C3A0',roughness:0.9});
 const food=[];for(let i=0;i<9;i++){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(0.045+0.015*(i%3),0),foodM);m.visible=false;m.userData={tgt:i<3?mid.clone().addScaledVector(outN,0.3).setY(0.42+0.07*i):gumEdge(i).add(V(Math.sin(i*1.7)*0.2,0.02,0.04)),d:i*0.12};archG.add(m);food.push(m);}
 const bacM=new THREE.MeshStandardMaterial({color:'#8C7A2E',roughness:0.6});
@@ -167,6 +168,7 @@ function tag(i,html,world,T,t0,t1,dy=-30){const el=tg[i];if(T<t0||T>=t1){el.styl
 
 window.render=function(T){
   const pot=T>=K.teko&&T<K.sikatkarang;
+  const closeShot=T<K.ingat;teeth.forEach(t=>{t.g.visible=!(closeShot&&(t.side!==1||t.k<3));});
   potG.visible=pot;archG.visible=!pot;
   const C=mid.clone();
   // ---------- states ----------
@@ -177,7 +179,7 @@ window.render=function(T){
   else{tart=1.25*(1-ease(P(T,K.s3+0.8,2.2)));plaq=0.9*(1-ease(P(T,K.s1+0.6,1.5)));infl=1-ease(P(T,K.rutin,2.5));if(T>=K.ingat){tart=0;plaq=0;infl=0;}}
   bandM.opacity=Math.min(0.92,Math.max(plaq*0.8,tart>0?0.95:0));
   bandM.color.set('#E6C463').lerp(new THREE.Color('#A39C8E'),Math.min(1,tart));
-  bands.forEach(b=>{const s=1+0.08*Math.min(1.25,tart);b.scale.set(s,1+0.25*Math.min(1.25,tart),s);b.visible=bandM.opacity>0.01;});
+  bands.forEach(b=>{const s=1+0.08*Math.min(1.25,tart);b.scale.set(s,1+0.35*Math.min(1.25,tart),s);b.visible=bandM.opacity>0.01;});
   chunks.forEach((c,i)=>{c.scale.setScalar(Math.max(0.001,Math.min(1.3,tart)*(0.8+0.4*((i*5)%3)/2)));});
   const gum=archG.userData.gum;gumM.color.set('#E3A49B').lerp(new THREE.Color('#D2585E'),infl);gum.scale.y=0.42*(1+0.12*infl);
   // food
@@ -193,19 +195,19 @@ window.render=function(T){
   blood.forEach((m,i)=>{const t0=K.darah+0.5+i*0.15;const vis=(T>=t0&&T<K.masalah)||(T<K.kok&&T>0.8+i*0.15);m.visible=vis&&!pot;if(!vis)return;const k=back(P(T,T<K.kok?0.8+i*0.15:t0,0.35));m.position.copy(m.userData.tgt).add(V(0,-0.06*P(T,(T<K.kok?0.8:t0)+0.5,1.5),0));m.scale.set(Math.max(0.001,k),Math.max(0.001,k*1.2),Math.max(0.001,k));});
   // brush passes
   brush.visible=false;
-  const fr=front.slice().sort((a,b)=>a.p.x-b.p.x);
+  const fr=front.slice();
   const pass=(a,d,tilt,y,avoid=false)=>{if(T<a||T>a+d)return;const k=(T-a)/d;const t=fr[Math.min(fr.length-1,Math.floor(k*fr.length))];const nrm=V(t.p.x,0,t.p.z).sub(V(0,0,-0.4)).normalize();
-    brush.visible=true;const off=avoid?1.1+0.25*Math.sin(T*3):0.6;brush.position.copy(t.p).addScaledVector(nrm,off).setY(y+0.04*Math.sin(T*30));brush.rotation.set(0,Math.atan2(nrm.x,nrm.z),0);brush.rotateX(-tilt);};
+    brush.visible=true;const off=(avoid?0.9+0.25*Math.sin(T*3):0.38)+t.d*0.5;brush.position.copy(t.p).addScaledVector(nrm,off).setY(y+0.04*Math.sin(T*30));brush.rotation.set(0,Math.atan2(nrm.x,nrm.z),0);brush.rotateX(-tilt);};
   if(T<K.kok)pass(0.0,1.2,0.0,0.75);
   pass(K.sikatkarang+0.1,2.0,0.0,0.7);
   pass(K.darah,0.6,0.0,0.55);
   pass(K.masalah+0.3,2.2,0.0,0.95,true);
   pass(K.s1+0.2,2.6,0.75,0.45);
   // floss
-  floss.visible=T>=K.s2+0.2&&T<K.s3;if(floss.visible){const k=ease(P(T,K.s2+0.2,0.6));floss.position.copy(C).addScaledVector(outN,0.12).setY(cl(2.2,1.05,k)+0.16*Math.sin((T-K.s2)*8)*P(T,K.s2+0.9,0.2));floss.rotation.set(0,0,0);}
+  floss.visible=T>=K.s2+0.2&&T<K.s3;if(floss.visible){const k=ease(P(T,K.s2+0.2,0.6));floss.position.copy(C).addScaledVector(outN,0.3).setY(cl(2.2,1.05,k)+0.16*Math.sin((T-K.s2)*8)*P(T,K.s2+0.9,0.2));floss.rotation.set(0,0,0);}
   // scaler + crumbs
   scaler.visible=T>=K.s3&&T<K.rutin;if(scaler.visible){const tt=fr[2];const nrm=V(tt.p.x,0,tt.p.z).sub(V(0,0,-0.4)).normalize();const k=ease(P(T,K.s3,0.7));const sweep=P(T,K.s3+0.8,2.2);
-    const tp=fr[Math.min(fr.length-1,Math.floor(sweep*fr.length))].p;scaler.position.copy(tp).addScaledVector(nrm,0.5+(1-k)*1.5).setY(0.36+0.012*Math.sin(T*160)+(1-k)*1.0);const dir=V(0,1,0).multiplyScalar(0.85).addScaledVector(nrm,0.45).add(V(0.25,0,0)).normalize();scaler.quaternion.setFromUnitVectors(V(0,1,0),dir);}
+    const tp=fr[Math.min(fr.length-1,Math.floor(sweep*fr.length))].p;scaler.position.copy(tp).addScaledVector(nrm,0.55+(1-k)*1.5).setY(0.36+0.012*Math.sin(T*160)+(1-k)*1.0);const dir=V(0,1,0).multiplyScalar(0.85).addScaledVector(nrm,0.45).add(V(0.25,0,0)).normalize();scaler.quaternion.setFromUnitVectors(V(0,1,0),dir);}
   crumbs.forEach((c,i)=>{const t0=K.s3+0.9+c.userData.d;if(T<t0||T>t0+1.6){c.visible=false;return;}c.visible=true;const u=T-t0;const v=c.userData.v;c.position.copy(fr[i%fr.length].p).addScaledVector(outN,0.5).add(V(v.x*u,0.35+v.y*u-2.0*u*u,v.z*u));});
   // teapot crust & specks
   if(pot){const g=ease(P(T,K.teko+0.2,1.8));crust.forEach(m=>{m.scale.setScalar(Math.max(0.001,back(P(g,m.userData.d*0.7,0.3))));});

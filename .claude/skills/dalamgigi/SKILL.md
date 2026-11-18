@@ -173,6 +173,8 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 
 ## 11. Pelajaran yang Tidak Boleh Diulang
 
+- **#05: Pak Dir minta proses plak/karang/gusi ditunjukkan di gigi geraham** (lebih jelas & paling sering terjadi di sana). Default untuk topik gusi/karang/lubang: tampak samping geraham bawah, gigi sisi seberang disembunyikan.
+
 - **#03 dilewati Pak Dir ("kurang materinya").** Sebelum naskah diajukan, pastikan isi cukup padat: ada fakta "wah" yang jarang diketahui, proses yang ditunjukkan bertahap, dan cara yang konkret (bukan sekadar "ke dokter gigi"). Bandingkan kepadatan dengan #02/#04 yang diterima.
 
 - **#04 (17 Nov): render dimulai tanpa persetujuan naskah final.** Pak Dir OK cerita, lalu naskah diubah (CTA ditambah, kalimat dipindah, janji topik berikutnya) dan langsung dinarasikan + dirender. Aturan: **setiap perubahan naskah setelah OK → tampilkan tabel audit "Sebelum → Sesudah → Alasan" + narasi final → tunggu "OK/gas" Pak Dir → baru narasi ElevenLabs dan render.** Persetujuan cerita ≠ persetujuan naskah final.

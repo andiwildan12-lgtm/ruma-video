@@ -18,7 +18,7 @@ Masalahnya, banyak orang malah berhenti menyikat bagian itu, jadi kumannya makin
 ## Alur Adegan
 | Detik | Adegan |
 |---|---|
-| 0–5 | Tampak depan gigi + gusi merah, karang, titik darah; "~~berhenti sikat~~?" |
+| 0–5 | **Geraham bawah tampak samping** (permintaan Pak Dir: pakai geraham) + gusi merah, karang, titik darah; "~~berhenti sikat~~?" |
 | 5–16 | Tahap 1: remah makanan jatuh ke tepi gusi, kuman berkumpul, pita plak kuning, jam "beberapa jam" |
 | 16–21,7 | Tahap 2: butir mineral putih jatuh, plak berubah abu-abu keras (karang) + bongkahan |
 | 21,7–24 | Analogi teko bening, kerak putih tumbuh di dasar |
