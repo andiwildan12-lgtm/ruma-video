@@ -68,7 +68,7 @@ Editing **tetap dikerjakan Claude sampai video jadi** (animasi 3D, teks, SFX, tr
    - Pertanyaan harus **gampang dijawab tanpa mikir** (ya/tidak, A/B, angka, satu kata). Hindari pertanyaan terbuka yang berat atau yang membuat orang membuka kondisi kesehatan pribadi secara detail.
    - **Caption** ditutup pertanyaan yang sama + "Pertanyaan terbanyak kita jadikan video berikutnya" + ajakan simpan/follow. **Komentar pertama** (disematkan) = pertanyaan yang sama dari akun.
    - **Balas semua komentar ≤1 jam** setelah unggah (sinyal kuat ke algoritma); jawaban singkat, ramah, edukatif, tanpa jualan. Pertanyaan keluhan pribadi dijawab umum + "sebaiknya diperiksa langsung ke dokter gigi" (tanpa menyebut harga/promo).
-   - Unggah sebagai **Collab** dengan akun utama Ruma bila memungkinkan, dan bagikan ke Story akun Ruma.
+   - ~~Collab dengan akun Ruma & share ke Story Ruma~~ **tidak dipakai** (keputusan Pak Dir 18 Nov 2026: @dalamgigi berdiri sendiri).
    - Dilarang komentar palsu/akun bodong; dorong interaksi asli.
 
 ## 3. Formula Video
@@ -130,7 +130,7 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 5. **Gerbang Audit 4 Lapis** (naskah/fakta → frame probe → sinkron teknis → setelah encode: `qc.sh` harus LULUS), tanpa saran baru; perbaiki sendiri. Tampilkan ke Pak Dir tabel "sebelum → sesudah" bila naskah diubah.
 6. Render penuh di latar → lembar kontak render penuh → mix SFX → encode tanpa `-shortest` → `qc.sh` → sampul.
 7. **Paket kirim**: video `dalamgigi-NN-topik-vN.mp4`, sampul, caption IG, caption TikTok, komentar pertama (file `output/dalamgigi-NN-caption.md`). Caption wajib lolos **Checklist Caption** (bagian 12d).
-8. **Unggah**: Pak Dir unggah video ke Google Drive (link publik) → Claude jadwalkan & posting IG via Windsor sesuai **SOP Unggah** (bagian 12). TikTok tetap manual.
+8. **Unggah otomatis**: Claude sendiri mengunggah MP4 + sampul ke Google Drive (konektor Drive, folder `Dalam Gigi/Siap Tayang`, link publik) → posting IG via Windsor pada jadwal (bagian 12 & 15). Pak Dir tidak perlu kirim link. TikTok tetap manual.
 9. **Kelola**: +1 jam cek & balas komentar (bagian 12b); +24 jam dan +72 jam tarik data, isi log (bagian 9) dan tabel evaluasi (bagian 13).
 10. Setelah terbit: perbarui **log unggahan** (bagian 9) dan status di tabel rencana. Pelajaran baru → bagian 11.
 
@@ -211,9 +211,7 @@ Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Me
 | Posting Reel + caption + sampul (`create_video_post`) | ✅ | |
 | Jadwal tayang 19.00–21.00 WITA (`send_later` ke sesi ini) | ✅ | |
 | Komentar pertama dari akun (`create_comment`) | ✅ | **Sematkan (pin)** |
-| Undang Collab @rumadentalmks | | ✅ (API tidak mendukung) |
 | Tag lokasi Makassar, atur crop sampul di grid | | ✅ (edit postingan) |
-| Bagikan ke Story Ruma | | ✅ |
 | Unggah ulang ke TikTok | | ✅ |
 | Balas komentar (`reply_to_comment`), sembunyikan spam (`hide_comment`) | ✅ sesuai 12b | Keluhan kesehatan pribadi → cek dulu |
 | Tarik data performa (+24 jam, +72 jam) | ✅ | |
@@ -229,7 +227,7 @@ Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Me
 
 ### 12c. Langkah Teknis Unggah
 
-1. Pak Dir unggah MP4 + sampul ke Google Drive, akses **"Siapa saja yang memiliki link"**, kirim link ke Claude.
+1. Claude unggah MP4 + sampul ke Google Drive lewat konektor (`create_file`, `base64Content` = referensi file `sha256:<hash>:<path>`, `disableConversionToGoogleType: true`, folder `Dalam Gigi/Siap Tayang`), lalu `share_file` `permissionId: "anyoneWithLink"`, role reader. (Cadangan: Pak Dir kirim link Drive manual.)
 2. Claude ubah ke link unduhan langsung (`https://drive.google.com/uc?export=download&id=<ID>`), cek dengan `curl -sIL` bahwa yang terambil `video/mp4` (bukan halaman HTML peringatan virus). Bila gagal (file besar / halaman peringatan) → minta Pak Dir posting manual, atau cari hosting publik lain; **jangan memaksa**.
 3. Sampul untuk `cover_url` harus **JPEG** publik. PNG dikonversi dulu (`ffmpeg -i cover.png -q:v 2 cover.jpg`). Tanpa sampul publik → pakai `thumb_offset` (ms) pada frame terbaik.
 4. Spesifikasi IG: MP4/MOV, ≤1 GB, 3 dtk–15 menit, 9:16; caption ≤2.200 karakter; `share_to_feed: true`.
@@ -277,7 +275,7 @@ Total jangkauan ±17 ribu → hanya **18 follower** (0,1%). Masalah utama akun =
 5. Profil: ganti nama tampilan jadi **"Dalam Gigi | Fakta Gigi 3D"** (kolom nama ikut dicari di IG) [DISEPAKATI, eksekusi manual Pak Dir].
 6. Setiap evaluasi ditulis ringkas di log (bagian 9) + pelajaran baru di bagian 11.
 
-## 14. Strategi Pertumbuhan & KPI (TOFU / Awareness) [USULAN 18 Nov 2026]
+## 14. Strategi Pertumbuhan & KPI (TOFU / Awareness) [DISEPAKATI 18 Nov 2026]
 
 **Tujuan akun:** awareness. Orang Makassar kenal & ingat "Dalam Gigi oleh Ruma Dental". **KPI utama: Views, Like, Follow.** Indikator pendukung (penyebab): skip <3 dtk, rata-rata tonton, simpan, bagikan, komentar.
 
@@ -295,16 +293,20 @@ Baseline: 3 video, ±19 rb views, rata-rata ±6 rb views/video 3D, 18 follower, 
 
 Mingguan: views ≥50 rb, follower +250. Catatan: API Windsor tidak memberi angka like langsung untuk reel → like = `media_reel_total_interactions` − simpan − bagikan − komentar (perkiraan); cocokkan dengan aplikasi bila selisih.
 
-### 14b. Ritme Harian (campuran format)
-| Hari | Format | Biaya produksi | Otomatis? |
+### 14b. Ritme Harian — FULL REELS motion 3D [DISEPAKATI 18 Nov 2026]
+Tanpa carousel/foto. Semua konten = Reel motion 3D gaya @dalamgigi (narasi Ricky, SFX, subtitle kinetik).
+
+| Hari | Format Reel | Durasi | Biaya produksi |
 |---|---|---|---|
-| Senin | **Video 3D utama** 40–60 dtk (Kenapa/Gimana) | Tinggi | ✅ |
-| Selasa | **Carousel Mitos vs Fakta** 5–7 slide | Rendah | ✅ (`create_carousel_post`, JPEG 4:5) |
-| Rabu | **Short 3D 15–25 dtk** "1 fakta 1 visual", pakai ulang scene pustaka | Sedang | ✅ |
-| Kamis | **Video 3D utama** | Tinggi | ✅ |
-| Jumat | **Jawab Komentar** (pertanyaan penonton → video pendek 3D) | Sedang | ✅ |
-| Sabtu | **Carousel kuis/tebak** ("Gigi mana yang paling sering berlubang?") | Rendah | ✅ |
-| Minggu | **Daur ulang pemenang**: video terbaik minggu lalu dengan hook baru sebagai **Trial Reel** (non-follower) | Rendah | ✅ |
+| Senin | **Video 3D utama** (Kenapa/Gimana) | 40–60 dtk | Tinggi |
+| Selasa | **Mitos vs Fakta** (1 mitos → "faktanya…" → 1 visual proses) | 15–25 dtk | Sedang |
+| Rabu | **1 Fakta 1 Visual**, pakai ulang scene pustaka | 15–25 dtk | Rendah |
+| Kamis | **Video 3D utama** | 40–60 dtk | Tinggi |
+| Jumat | **Jawab Komentar** (pertanyaan penonton) | 20–35 dtk | Sedang |
+| Sabtu | **Tebak/kuis** ("Menurutmu gigi mana…?" jeda 2 dtk → jawaban) | 15–20 dtk | Rendah |
+| Minggu | **Daur ulang pemenang**: potongan video terbaik + hook baru, sebagai Trial Reel | 15–30 dtk | Rendah |
+
+Reel pendek (15–35 dtk) tetap lolos Uji Value (1b) versi ringkas: 1 proses + 1 cara. Aturan durasi 50–70 dtk (bagian 2) hanya untuk video utama, dan sedang diuji turun ke 40–45 dtk (bagian 13).
 
 Semua format tetap lolos Uji Value (1b), aturan isi (2), dan validasi fakta Pak Dir.
 
@@ -313,15 +315,33 @@ Semua format tetap lolos Uji Value (1b), aturan isi (2), dan validasi fakta Pak 
 2. Ajakan follow dengan alasan: "Follow, tiap hari satu hal soal gigi yang jarang dibahas."
 3. Profil: 3 postingan disematkan di grid (#01, #02, terbaik terbaru); Sorotan Story "Mulai di sini".
 4. Siklus komentar → video: request penonton dijawab tiap Jumat, pengusul dibalas "Sudah kami jawab 🙌".
-5. Collab dengan @rumadentalmks + share ke Story Ruma tiap video utama.
 
 ### 14d. Distribusi & Uji
 - **Trial Reel**: uji 2 hook untuk topik yang sama; hook pemenang (skip lebih rendah) jadi versi utama.
 - TikTok: unggah ulang manual tiap video (format yang sama, hashtag TikTok).
-- Opsional berbayar: boost video terbaik Rp 50–100 rb/hari, 3 hari, Makassar, tujuan "kunjungan profil", hanya bila organik sudah ≥5 rb views (bukan menyelamatkan video lemah).
-- Jembatan ke Ruma (bukan isi akun ini): audiens "berinteraksi dengan @dalamgigi 60 hari" dipakai untuk retarget iklan Meta Ruma (akun harus terhubung ke Business Manager Ruma).
+- **Tidak dipakai** (keputusan Pak Dir 18 Nov 2026): Collab/Story Ruma, boost berbayar, retarget iklan Ruma. Pertumbuhan murni organik.
 
 ### 14e. Laporan
 - Harian (setelah unggah +1 jam): balas komentar, ringkasan singkat.
-- **Senin pagi: laporan mingguan** (views, like, follow vs target, 3 video terbaik/terburuk + penyebab, keputusan minggu ini).
+- **Senin 07.35 WITA: laporan mingguan** [AKTIF, jadwal otomatis `trig_015b45txWH6yDG6PUv3nFFNR`, masuk ke sesi "Audit akun dan upload otomatis"] (views, like, follow vs target, 3 video terbaik/terburuk + penyebab, keputusan minggu ini).
 - Akhir 30 hari: evaluasi apakah ritme harian dipertahankan (kualitas > kuantitas bila median views turun >30%).
+
+## 15. Mesin Produksi Mingguan Otomatis [USULAN 18 Nov 2026]
+
+Tujuan: Pak Dir cukup **1 kali persetujuan per minggu**; sisanya (produksi, unggah, posting, balas komentar ringan, laporan) jalan sendiri.
+
+| Kapan | Siapa | Apa |
+|---|---|---|
+| Jumat | Claude | Siapkan **paket minggu depan**: 7 naskah (sesuai 14b) + papan gambar + daftar fakta medis yang perlu divalidasi, dalam 1 pesan |
+| Sabtu/Minggu | **Pak Dir** (±15 menit) | Balas "OK semua" atau koreksi per nomor. Ini satu-satunya gerbang manusia (fakta medis & nama Ruma) |
+| Minggu–Senin | Claude | Narasi ElevenLabs, render, QC 4 lapis, sampul, caption (checklist 12d) → unggah ke Drive `Dalam Gigi/Siap Tayang` |
+| Tiap hari 19.00 WITA | Claude (jadwal otomatis) | Posting reel hari itu + komentar pertama → kirim ringkasan singkat |
+| Tiap hari 20.15 WITA | Claude (jadwal otomatis) | Cek komentar, balas yang ringan (12b), tahan yang sensitif untuk Pak Dir |
+| Senin 07.35 WITA | Claude (jadwal otomatis, AKTIF) | Laporan mingguan |
+| HP Pak Dir (±1 menit/hari) | **Pak Dir/admin** | Sematkan komentar pertama, tag lokasi (opsional), unggah ulang ke TikTok |
+
+Syarat teknis:
+- **Satu sesi produksi + posting** (sesi "Audit akun dan upload otomatis") karena sesi ini yang memegang konektor Windsor, Drive, dan repo. Sesi lain tidak bisa saling ambil file (container terpisah); file video hanya bisa dipindah lewat Drive.
+- File video tidak masuk Git; stok tayang ada di Drive `Dalam Gigi/Siap Tayang`, nama `dalamgigi-NN-topik-vN.mp4` + `-caption.md`. Setelah tayang → pindah ke `Dalam Gigi/Sudah Tayang`.
+- Konektor ElevenLabs sering minta masuk ulang; bila putus, produksi narasi berhenti dan Pak Dir diberi tahu (tanpa suara pengganti).
+- Windsor paket TRIAL: bila habis, posting otomatis berhenti → paket kirim tetap tersedia di Drive untuk diunggah manual.
