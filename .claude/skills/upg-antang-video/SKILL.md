@@ -90,6 +90,12 @@ Belum ada: tampak luar Apotek Wahdah + tangga lt. 2.
 - Pelajaran audit: adegan sela pakai zoom ke senyum yang sama (bukan gigi kapsul besar); klip konsultasi 4740 diambil setelah foto rontgen diturunkan; teks "Self‑ligating" pakai tanda hubung tak-putus; 3517 di-crop agar papan Pepsodent tidak tampil; blur nama pasien di 3726 (kotak 500x620 @ 410,1000).
 - Kredit ElevenLabs: tes suara ±1.250 + narasi 2 versi ±1.850 + transkrip ±310 = ±3.400.
 
+## 4c. Poster [DISUKAI Pak Dir 18 Nov 2026]
+- Konsep poster behel Antang disukai → jadikan acuan poster layanan Antang lain.
+- Template: `scripts/poster/poster.html` + `shot.js` (Story 1080x1920 & Feed 1080x1350 dari satu HTML, variabel CSS per ukuran).
+- Rumus: foto asli Antang di atas (gradasi ke krem #F7EEE3) → logo UPG + label oranye ANTANG → judul putih tebal + pita gelap → pil oranye syarat cicilan → kartu harga putih miring "MULAI" → lencana pilihan → 2 pil centang (isi paket, dikerjakan dokter gigi) → tombol WA oranye → lokasi & jam.
+- Tanpa "alat steril", tanpa hook pertanyaan, tanpa rontgen/biaya kontrol.
+
 ## 5. Naskah
 - Behel Antang: `references/naskah-behel-antang-01.md`, papan gambar `references/papan-gambar-behel-antang-v1.png`
 - Pengucapan dipilih: **Versi A "U-Pe-Ge Dental Care"** (menyambung).
