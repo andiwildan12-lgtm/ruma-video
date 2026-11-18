@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -I .claude/skills/produksi-video-klinik/scripts/stt.py:*)"
+    ]
+  }
+}
