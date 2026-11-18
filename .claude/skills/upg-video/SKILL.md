@@ -39,5 +39,22 @@ Konektor Drive hanya bisa mengunduh file < 10 MB. Klip > 10 MB perlu dikompres/d
 | 4756 | Close-up dokter bermasker bekerja | Pakai |
 | 9274 | Staf berlanyard UPG bicara ke kamera | Cek audio; kandidat hook/penutup |
 
+### Folder "Footage Konten UPG Antang" (Jul 2026, `1fb1aTkFMUy-TZ0MbekcMWZVO4cwJbtyW`) — dicek 18 Nov 2026
+Subfolder: Behel/Ortho (`1_Rjzxz8MfZtX-53ldrGA35gWVXzwCFl6`, 21 klip), Suasana Klinik (8), Scalling, Tambal Gigi, Bleaching, + folder Agustus di atas.
+Satu pasien behel yang sama (jilbab mauve). Seragam UPG = jas hitam logo oranye.
+
+| Klip | Isi | Status |
+|---|---|---|
+| 3726 | Baki alat ortho + model cetakan | Pakai; **nama pasien tertulis di model → crop/blur** |
+| 3735 / 3737 / 3738 / 3739 | Dokter + asisten memasang behel, pasien pegang cermin | **Pakai** (dikerjakan dokter gigi) |
+| 3740 / 3741 | Dokter berdiri pakai alat, cek gigi | Pakai |
+| 3742 | Model cetakan dipegang di samping pasien | Pakai (cetak gigi), 1,1 dtk |
+| 3744 | Pasien **tersenyum lihat behel di cermin** | **Pakai** (ketukan hasil) |
+| 3745 | Close-up senyum pasien dengan bracket | Pakai singkat (hindari close-up klinis lama) |
+| 3746 | Dokter memasang kawat, logo UPG di jas jelas | **Pakai** |
+| 3517 | Pintu "This clinic is OPEN" → resepsionis menyapa | **Pakai** (penutup/sambutan) |
+| 3525 | Ruang perawatan luas, dental unit | Pakai (bukti ruang) |
+Belum ada: tampak luar Apotek Wahdah + tangga lt. 2.
+
 ## Naskah
 - Behel Antang: `references/naskah-behel-antang-01.md`
