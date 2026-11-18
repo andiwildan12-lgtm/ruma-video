@@ -1,16 +1,16 @@
 # Rencana Konten @dalamgigi (TOFU)
 
-Status per 16 Nov 2026: akun `@dalamgigi` (Kreator) aktif. **#01 "160 Permukaan Gigi" v3 terbit** di Instagram dan TikTok (v2 diarsipkan). Sampul: `cover-160-a.png`.
+Status per 17 Nov 2026: akun `@dalamgigi` (Kreator) aktif. **#01 "160 Permukaan Gigi" v3 terbit** (sampul `cover-160-a.png`). **#02 dan #03 v1 jadi, lulus QC, siap unggah.** Rencana, status, dan log terkini dipegang skill `dalamgigi` (bagian 8–9); file ini menyimpan caption #01 dan arsip rencana awal.
 
-Aturan: edukasi murni, tanpa ajakan ke klinik dan tanpa harga; 50–70 detik; pola "Kenapa / Gimana / Bayangin"; cover seragam (baris 1 putih, baris 2 mint HURUF BESAR); fakta medis divalidasi Pak Dir; Gerbang Audit 3 Lapis sebelum render.
+Aturan: edukasi murni, tanpa ajakan ke klinik dan tanpa harga; 50–70 detik; pola "Kenapa / Gimana / Bayangin"; cover seragam (baris 1 putih, baris 2 mint HURUF BESAR); fakta medis divalidasi Pak Dir; Uji Value; Gerbang Audit 4 Lapis + QC otomatis.
 
 ## 9 Konten Pertama (grid 3×3)
 
 | # | Topik | Cover (baris 1 / BARIS 2) | Inti cerita | Status |
 |---|---|---|---|---|
 | 1 | 160 permukaan gigi | 40% gigimu / NGGAK KESIKAT? | Hook 40% → hitung 32×5=160 → 64 sela kelewat → plak/karang → benang gigi (cara) + scaling (definisi) | ✅ Terbit v3 (66 dtk) |
-| 2 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Lubang kecil di lapisan luar melebar di lapisan dalam, sakit baru terasa dekat saraf | Usulan berikutnya |
-| 3 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | Gigi sebelah miring ke celah, gigi lawan turun, transformasi tahun 1→3→5 | Ide |
+| 2 | Lubang kecil "gua" | Lubang sekecil ini / KOK BISA SAKIT? | Lubang kecil di lapisan luar melebar di lapisan dalam, sakit baru terasa dekat saraf | 🎬 v1 jadi (72 dtk) |
+| 3 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | Gigi sebelah miring ke celah, gigi lawan turun | 🎬 v1 jadi (69 dtk) |
 | 4 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" | Ide |
 | 5 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide (aset sudah ada) |
 | 6 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam, penyebab bisa macam-macam | Ide |
