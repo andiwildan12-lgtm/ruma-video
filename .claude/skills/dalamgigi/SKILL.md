@@ -194,3 +194,8 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 
 - v1 #01: hook lemah (layar kosong 4 detik), "benang gigi" tanpa cara, "scaling" tanpa penjelasan, "1 jam setahun" membingungkan, visual monoton (kotak-kotak, satu sudut kamera).
 - Narasi dipotong per kalimat + jeda panjang = kaku dan patah-patah (pelajaran iklan bleaching v1).
+
+## 13. Unggah ke Drive (Siap Tayang) [DISEPAKATI 19 Nov 2026]
+
+Pak Dir: setiap video @dalamgigi yang naskahnya di-OK dan lolos `qc.sh` langsung diunggah (mp4 + sampul) ke Google Drive folder **Dalam Gigi/Siap Tayang** (ID `1yOvrc91wT-5wzd5JXix7oVdp8OwfRyVW`), lalu ID-nya dikirim ke sesi "Audit akun dan upload otomatis" yang memposting ke IG. Sesi produksi **tidak** memposting ke IG.
+Kendala teknis (19 Nov): konektor Drive dari sesi ini maksimal ±3 MB per panggilan (video 9–14 MB tidak bisa); share "anyoneWithLink" dan pesan antar-sesi butuh izin tambahan di pengaturan sesi. Sampul (<3 MB) bisa diunggah.
