@@ -170,7 +170,7 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 | 02 | ±17 Nov 2026 (terbit) | `dalamgigi-02-lubang-gua-v1.mp4` (72 dtk, QC lulus) | `cover-lubang-a.png` | Caption `output/dalamgigi-02-caption.md`. Validasi tambahan: "mulai ngilu saat sampai dentin" |
 | 03 | ⏭️ DILEWATI (keputusan Pak Dir 18 Nov: "kurang materinya") | `dalamgigi-03-efek-domino-v1.mp4` (69 dtk, QC lulus) | `cover-domino-a.png` | Caption `output/dalamgigi-03-caption.md`. Asumsi: definisi saluran akar, gigi pengganti tanpa sebut jenis |
 | 04 | 18 Nov 2026 (terbit 11.50 WITA, di luar jam utama) | `dalamgigi-04-sakit-hilang-v1.mp4` (75,5 dtk, QC lulus) | `cover-sakit-a.png` | Caption `output/dalamgigi-04-caption.md` (+ balasan admin). CTA request topik. Caption terbit tanpa #makassar & tanpa ajakan simpan/follow |
-| 05 | (belum diunggah) | `dalamgigi-05-gusi-berdarah-v2.mp4` (74,6 dtk, QC lulus; v1 diganti: geraham simetris, gusi bergelombang, papan v5 di-OK) | `cover-gusi-a.png` | Caption `output/dalamgigi-05-caption.md` (+ balasan admin). Ilustrasi M1 bawah |
+| 05 | 19 Nov 2026 19.11 WITA (posting otomatis Windsor) | `dalamgigi-05-gusi-berdarah-v2.mp4` (74,6 dtk) | sampul: frame 1,5 dtk (`thumb_offset`), PNG tidak bisa dipakai | https://www.instagram.com/reel/Df68RvBDpuV/ · media_id 18042968876907330 · komentar pertama 18119640761114393. Video diunggah manual ke Drive oleh Pak Dir |
 
 Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`, #04 `naskah-sakit-04.md`, #05 `naskah-gusi-05.md`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
 File video tidak masuk Git (sesi cloud sementara): selalu ingatkan Pak Dir mengunduh.
@@ -251,6 +251,12 @@ Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Me
 5. Jadwalkan dengan `send_later` pada jam tayang (zona `Asia/Makassar`); saat terpicu → `create_video_post` → tunggu selesai → ambil `media_id` & permalink lewat `get_data` → `create_comment` (komentar pertama) → kirim checklist manual 12a ke Pak Dir.
 6. **Trial Reel** (`trial_params`, hanya tampil ke non-follower) dipakai hanya untuk uji A/B atas izin Pak Dir (mis. dua versi hook).
 7. Windsor masih **paket TRIAL** (18 Nov 2026): data bisa tertunda (cache, tanpa `force_refresh`) dan koneksi bisa putus saat trial habis. Kalau aksi gagal → laporkan, Pak Dir unggah manual dari paket kirim.
+
+### 12c-2. Pelajaran Teknis Posting #05 (19 Nov 2026) [WAJIB]
+- **Konektor Drive Claude hanya bisa mengunggah ±3 MB per file** → video (10–15 MB) TIDAK bisa diunggah Claude ke Drive. Video harus diunggah manual ke `Dalam Gigi/Siap Tayang` (atau pakai hosting lain, mis. repo publik + GitHub Pages bila Pak Dir buat).
+- Link yang terbukti diterima Instagram: `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t` (file `anyoneWithLink` reader). Container ini tidak bisa mengecek link Drive (proxy memblokir), jadi cek izin dengan `get_file_permissions`.
+- `create_video_post` bisa **timeout 60 dtk padahal berhasil**. JANGAN ulang. Cek `media_count` (user_info, data segar) lalu ambil media_id dengan `get_data` `date_from`=hari ini (field berbeda dari tarikan sebelumnya supaya tidak kena cache).
+- Sampul `cover_url` harus JPEG publik; PNG di Drive tidak bisa → pakai `thumb_offset` (ms) atau unggah sampul JPEG (<3 MB, bisa lewat konektor).
 
 ### 12d. Checklist Caption (sebelum tayang)
 
