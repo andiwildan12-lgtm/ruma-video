@@ -44,5 +44,22 @@ Catatan: video > 10 MB tidak bisa diunduh lewat konektor Drive.
 - Footage Hertasning - Agustus (`1PzkgDi_4MjtgTdDU8y9EP-TqUd-QDH6k`)
 Dicek 19 Nov 2026 lewat konektor Drive: subfolder Behel/Ortho (`1sVGv_szB3nWFQPzPgG90S8qNNLEcdJYi`) & Scalling tampak **kosong/tidak terbaca**; hanya 1 klip bleaching (IMG_4710, 19 MB) di folder Agustus. **Belum ada** rekaman admin bicara ke kamera, pojok baca, camilan, es krim → perlu rekam baru (daftar shot di `references/naskah-behel-hertasning-bicara-01.md`).
 
+### Inventaris (19 Nov 2026, diunduh lewat `embeddedfolderview` + drive.usercontent; kecil 1280p di scratchpad `hert/v/`)
+**Suasana Klinik** (`1tjD4iBPaU1k47UXqMSRcMZxayycwawl_`, 22 klip):
+| Klip | Isi |
+|---|---|
+| 3215, 3478 | Meja camilan & minuman, papan "IT'S FREE! snacks, drinks & ice cream" (tampil sekilas/crop; teks iklan tanpa "gratis") |
+| 3475, 3476, 3479 | **Freezer es krim dibuka**, tangan mengambil es krim |
+| 3469, 3473 | **Pojok baca** (rak buku, kartu "READ ME! Enjoy reading") |
+| 3474 | **Pojok bermain anak** (meja lego, kursi kuning) |
+| 3216, 3217, 3480, 3481 | Ruang tunggu sofa abu, lorong |
+| 3482 | Dinding logo UPG kayu |
+| 3500 | Pasien berjalan masuk (POV) |
+| 3501–3504 | Pasien di resepsionis, admin menyambut |
+| 3505–3507 | Pasien diantar lewat lorong ke ruang perawatan |
+**Behel/Ortho** (17 klip, seragam mauve/abu): pakai 3483/3486 (meja alat), 3484 (staf + pasien), 3485/3488/3489/3497/3498 (dokter + pasien di kursi, lebar), **3496 pasien berkaca dengan behel**. Hindari close-up mulut 3487, 3490–3495, 3499.
+**Foto** (`1EOvmc4i-jqA0OnYiZINYRn8E89RbvGkC`, 56 JPG): freezer es krim + papan "Buka setiap hari 10.00–22.00", rak "Baca aku", **mushola**, logo, resepsionis, pintu depan & papan nama, ruang perawatan.
+Belum diunduh: Scalling Hertasning (`1zY_xRIKdMUMNMhqjuQ5EWAabQc9z8GRR`, 20 klip), Bleaching, Tambal.
+
 ## 5. Naskah
 - `references/naskah-behel-hertasning-bicara-01.md` — v2: 3 konsep beda dari Ruma (Tebak Harga, POV tur "Ikut Aku", 3 Pertanyaan Chat WA).
