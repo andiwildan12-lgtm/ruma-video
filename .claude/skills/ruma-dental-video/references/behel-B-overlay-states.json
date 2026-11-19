@@ -1,0 +1,217 @@
+[
+ {
+  "t0": 0,
+  "t1": 2.6,
+  "fb": true,
+  "card": false,
+  "cm": "Spil harga pasang behel di Ruma Dental, dong!"
+ },
+ {
+  "t0": 2.6,
+  "t1": 2.75,
+  "fb": true,
+  "card": false
+ },
+ {
+  "t0": 2.75,
+  "t1": 3.99,
+  "fb": true,
+  "card": false,
+  "sub": "Memang pasang behel",
+  "key": "behel"
+ },
+ {
+  "t0": 3.99,
+  "t1": 5.34,
+  "fb": true,
+  "card": false,
+  "sub": "harus mahal?",
+  "key": "mahal?"
+ },
+ {
+  "t0": 5.34,
+  "t1": 6.74,
+  "fb": true,
+  "card": false,
+  "sub": "Eits, tunggu dulu.",
+  "key": ""
+ },
+ {
+  "t0": 6.74,
+  "t1": 8.1,
+  "fb": true,
+  "card": false,
+  "sub": "Di Ruma Dental,",
+  "key": "Ruma Dental,"
+ },
+ {
+  "t0": 8.1,
+  "t1": 9.6,
+  "fb": true,
+  "card": false,
+  "ov": "Behel mulai Rp6 jutaan|atas & bawah · Rp3 jt per rahang"
+ },
+ {
+  "t0": 9.6,
+  "t1": 15.35,
+  "fb": true,
+  "card": false,
+  "ov": "Behel mulai Rp6 jutaan|atas & bawah · Rp3 jt per rahang|Cicilan Rp2 jt/bln × 3 · tanpa bunga"
+ },
+ {
+  "t0": 15.35,
+  "t1": 15.47,
+  "fb": true,
+  "card": false
+ },
+ {
+  "t0": 15.47,
+  "t1": 16.59,
+  "fb": true,
+  "card": false,
+  "sub": "Terus, sudah dapat",
+  "key": ""
+ },
+ {
+  "t0": 16.59,
+  "t1": 17.89,
+  "fb": true,
+  "card": false,
+  "sub": "apa aja, sih?",
+  "key": ""
+ },
+ {
+  "t0": 17.89,
+  "t1": 19.03,
+  "fb": true,
+  "card": false,
+  "sub": "Pastinya sudah termasuk",
+  "key": ""
+ },
+ {
+  "t0": 19.03,
+  "t1": 19.87,
+  "fb": true,
+  "card": false,
+  "sub": "pemasangan behel",
+  "key": "behel"
+ },
+ {
+  "t0": 19.87,
+  "t1": 21.79,
+  "fb": true,
+  "card": false,
+  "sub": "rahang atas & bawah,",
+  "key": ""
+ },
+ {
+  "t0": 21.79,
+  "t1": 22.37,
+  "fb": true,
+  "card": false,
+  "sub": "scaling,",
+  "key": "scaling,"
+ },
+ {
+  "t0": 22.37,
+  "t1": 23.43,
+  "fb": true,
+  "card": false,
+  "sub": "cetak gigi,",
+  "key": "cetak gigi,"
+ },
+ {
+  "t0": 23.43,
+  "t1": 24.25,
+  "fb": true,
+  "card": false,
+  "sub": "foto intra oral",
+  "key": "intra oral"
+ },
+ {
+  "t0": 24.25,
+  "t1": 25.83,
+  "fb": true,
+  "card": false,
+  "sub": "& ekstra oral,",
+  "key": "ekstra oral,"
+ },
+ {
+  "t0": 25.83,
+  "t1": 26.47,
+  "fb": true,
+  "card": false,
+  "sub": "konsultasi",
+  "key": "konsultasi"
+ },
+ {
+  "t0": 26.47,
+  "t1": 27.75,
+  "fb": true,
+  "card": false,
+  "sub": "dengan dokter gigi,",
+  "key": "dokter gigi,"
+ },
+ {
+  "t0": 27.75,
+  "t1": 28.39,
+  "fb": true,
+  "card": false,
+  "sub": "dan sudah dapat",
+  "key": ""
+ },
+ {
+  "t0": 28.39,
+  "t1": 30.02,
+  "fb": true,
+  "card": false,
+  "sub": "satu paket ortho kit.",
+  "key": "ortho kit."
+ },
+ {
+  "t0": 30.02,
+  "t1": 30.66,
+  "fb": true,
+  "card": false,
+  "sub": "Masih ada yang",
+  "key": ""
+ },
+ {
+  "t0": 30.66,
+  "t1": 31.98,
+  "fb": true,
+  "card": false,
+  "sub": "mau ditanyakan?",
+  "key": ""
+ },
+ {
+  "t0": 31.98,
+  "t1": 32.78,
+  "fb": true,
+  "card": false,
+  "sub": "Yuk, klik nomor",
+  "key": "nomor"
+ },
+ {
+  "t0": 32.78,
+  "t1": 33.8,
+  "fb": true,
+  "card": false,
+  "sub": "yang ada di bawah.",
+  "key": ""
+ },
+ {
+  "t0": 33.8,
+  "t1": 34.38,
+  "fb": false,
+  "card": true,
+  "sub": "yang ada di bawah.",
+  "key": ""
+ },
+ {
+  "t0": 34.38,
+  "t1": 36.8,
+  "fb": false,
+  "card": true
+ }
+]

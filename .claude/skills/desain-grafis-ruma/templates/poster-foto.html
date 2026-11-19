@@ -1,0 +1,89 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Konsep 1 "Senyum Nyata": foto asli penuh + kartu putih mengambang. Palet & font resmi (references/panduan-visual-ruma.md).
+     Format lewat ?f=feed|story. Posisi foto diatur lewat --y-feed / --y-story (geser ke atas, px). -->
+<style>
+@font-face{font-family:Poppins;font-weight:500;src:url(../assets/fonts/poppins-latin-500-normal.woff2)}
+@font-face{font-family:Poppins;font-weight:600;src:url(../assets/fonts/poppins-latin-600-normal.woff2)}
+@font-face{font-family:Poppins;font-weight:700;src:url(../assets/fonts/poppins-latin-700-normal.woff2)}
+@font-face{font-family:'Open Sans';font-weight:400;src:url(../assets/fonts/open-sans-latin-400-normal.woff2)}
+@font-face{font-family:'Open Sans';font-weight:600;src:url(../assets/fonts/open-sans-latin-600-normal.woff2)}
+:root{--turq:#28CDBD;--mint:#E8F8F6;--deep:#354B49;--silver:#B3B3B3;--soft:#F4F5F4;--muted:#5F6E6C;--y-feed:300px;--y-story:0px}
+*{box-sizing:border-box;margin:0;padding:0}
+.p{position:relative;width:1080px;overflow:hidden;background:var(--soft);color:var(--deep);font-family:'Open Sans',sans-serif}
+.feed{height:1350px}.story{height:1920px}
+.bg{position:absolute;left:0;width:1080px;height:1920px;object-fit:cover}
+.feed .bg{top:calc(-1 * var(--y-feed))}
+.story .bg{top:calc(-1 * var(--y-story))}
+/* redam latar ramai di atas (seragam bermotif): blur + kabut putih lembut */
+.soft{position:absolute;left:0;width:1080px;height:1920px;object-fit:cover;filter:blur(14px) saturate(.55) brightness(1.08);
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 var(--m1),transparent var(--m2));mask-image:linear-gradient(to bottom,#000 0,#000 var(--m1),transparent var(--m2))}
+.feed .soft{top:calc(-1 * var(--y-feed));--m1:520px;--m2:760px}
+.story .soft{top:calc(-1 * var(--y-story));--m1:780px;--m2:1060px}
+.haze{position:absolute;left:0;right:0;top:0;background:linear-gradient(to bottom,rgba(232,248,246,.55),rgba(232,248,246,0))}
+.feed .haze{height:220px}.story .haze{height:420px}
+/* lapisan lembut di bawah agar kartu menyatu */
+.fade{position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(to bottom,rgba(244,245,244,0),rgba(244,245,244,.85) 70%)}
+
+.card{position:absolute;left:48px;right:48px;background:#fff;border-radius:36px;padding:40px 48px 34px;box-shadow:0 18px 50px rgba(53,75,73,.18)}
+.feed .card{bottom:48px}
+.story .card{bottom:420px}
+.story.card-top .card{bottom:auto;top:250px}
+.story.card-top .fade{top:0;bottom:auto;background:linear-gradient(to top,rgba(244,245,244,0),rgba(244,245,244,.6) 70%)}
+
+.top{display:flex;justify-content:space-between;align-items:center}
+.top img{height:50px}
+.label{font:600 24px/1 Poppins;color:var(--deep);background:var(--mint);padding:10px 20px 9px;border-radius:999px}
+h1{font:600 64px/1.12 Poppins;letter-spacing:-.8px;margin-top:26px}
+.lay{display:flex;align-items:center;gap:16px;margin-top:22px;font:600 32px/1 Poppins}
+.chip{font:600 24px/1 Poppins;background:var(--turq);color:var(--deep);padding:9px 18px 10px;border-radius:10px}
+.row{display:flex;align-items:flex-end;justify-content:space-between;margin-top:24px;gap:24px}
+.coret{font:500 26px/1 Poppins;color:var(--muted);display:flex;align-items:center;gap:12px;white-space:nowrap}
+.coret small{font:600 22px/1 Poppins;color:var(--deep);background:var(--mint);padding:6px 12px 7px;border-radius:8px}
+.harga{font:700 56px/1.05 Poppins;letter-spacing:-1px;margin-top:8px;white-space:nowrap}
+.cta{text-align:center}
+.btn{font:600 30px/1 Poppins;background:var(--turq);color:var(--deep);padding:20px 32px 21px;border-radius:999px;white-space:nowrap}
+.wa{font:600 24px/1 'Open Sans';margin-top:12px}
+.disc{font:400 17px/1.4 'Open Sans';color:var(--muted);margin-top:22px;border-top:2px solid var(--soft);padding-top:16px}
+.ben{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+.ben li{font:400 28px/1.25 'Open Sans';color:var(--deep);display:flex;align-items:center;gap:14px}
+.ben li b{font-weight:600}
+.ben em{font-style:normal;flex:none;width:36px;height:36px;border-radius:50%;background:var(--turq);color:var(--deep);font:700 20px/36px Poppins;text-align:center}
+.steps{position:absolute;left:48px;display:flex;align-items:center;gap:12px;z-index:2}
+.feed .steps{top:48px}
+.story .steps{top:auto;bottom:440px}
+.story.card-top .steps{bottom:440px}
+.steps span{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.88);color:var(--deep);font:600 26px/1 Poppins;padding:10px 20px 10px 10px;border-radius:999px}
+.steps span b{width:34px;height:34px;border-radius:50%;background:var(--turq);font:700 20px/34px Poppins;text-align:center}
+.steps i{font-style:normal;color:#fff;font:600 28px/1 Poppins;text-shadow:0 1px 6px rgba(0,0,0,.3)}
+</style></head>
+<body>
+<div class="p" id="poster">
+  <img class="bg" src="../assets/foto/bleaching-C-cek-warna-4331.jpg">
+  <div class="haze"></div>
+  <div class="fade"></div>
+  <div class="steps"><span><b>1</b>Scaling</span><i>→</i><span><b>2</b>Bleaching</span></div>
+  <div class="card">
+    <div class="top"><img src="../../ruma-dental-video/assets/card_logo.png"><div class="label">Promo Bleaching</div></div>
+    <h1>Bleaching di klinik,<br>dikerjakan dokter gigi.</h1>
+    <ul class="ben">
+      <li><em>✓</em><b>Sudah termasuk scaling</b></li>
+      <li><em>✓</em>Cek warna gigi dulu sebelum mulai</li>
+    </ul>
+    <div class="row">
+      <div><div class="coret"><s>Rp1.700.000</s><small>diskon 10%</small></div><div class="harga">Rp1.530.000</div></div>
+      <div class="cta"><div class="btn">Jadwalkan Konsultasi</div><div class="wa">WA 0898-7735-463</div></div>
+    </div>
+    <div class="disc">Jl. Rusa No. 65, Maricaya, Makassar · Hasil berbeda pada tiap orang. Konsultasikan dengan dokter gigi.</div>
+  </div>
+</div>
+<script>
+const q=new URLSearchParams(location.search),P=document.getElementById('poster');P.classList.add(q.get('f')||'feed');
+const bg=document.querySelector('.bg');
+if(q.get('img'))bg.src='../assets/foto/'+q.get('img');
+if(q.get('s')){const k=+q.get('s');bg.style.width=1080*k+'px';bg.style.height=1920*k+'px';bg.style.left=(+q.get('x')||0)+'px';bg.style.top=(+q.get('y')||0)+'px';}
+if(q.get('card')==='top')P.classList.add('card-top');
+if(q.get('card')==='top'){const c=document.querySelector('.card').getBoundingClientRect(),st=document.querySelector('.steps');st.style.bottom='auto';st.style.top=(c.bottom-P.getBoundingClientRect().top+24)+'px';}
+if(q.get('haze')==='0')document.querySelector('.haze').style.display='none';
+</script>
+</body></html>

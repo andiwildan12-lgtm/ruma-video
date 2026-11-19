@@ -5,11 +5,11 @@ description: Identitas dan pedoman brand untuk video Klinik Gigi Ruma Dental (Ma
 
 # Pedoman Video Ruma Dental
 
-Versi: **1.1 (16 November 2026)**.
+Versi: **1.3 (17 November 2026)**.
 Status:
 - **Iklan bleaching v2 di-ACC** → contoh acuan iklan MOFU/BOFU (bagian 10).
-- **Akun TOFU `@dalamgigi` aktif**; #01 "160 Permukaan Gigi" v3 terbit → contoh acuan konten TOFU (`references/naskah-scaling-160.md`, `references/rencana-konten-dalamgigi.md`).
-- Alur wajib: naskah → validasi Pak Dir → **Gerbang Audit 3 Lapis** → render → paket kirim (video, sampul, caption IG/TikTok, komentar pertama). Lihat skill `produksi-video-klinik` bagian 2, 9, 9b, 9c.
+- **Akun TOFU `@dalamgigi` aktif** (detail lengkap di skill `dalamgigi`): #01 "160 Permukaan Gigi" v3 terbit; #02 "Lubang Gua" dan #03 "Efek Domino" v1 jadi dan lulus QC (`references/naskah-lubang-gua-02.md`, `references/naskah-domino-03.md`).
+- Alur wajib (semua video Ruma, TOFU maupun iklan): naskah → validasi Pak Dir → **Gerbang Audit 4 Lapis** (3 sebelum render + QC otomatis setelah encode) → paket kirim. Lihat skill `produksi-video-klinik` bagian 2, 9, 9c, 11.
 
 Label status:
 - **[DISEPAKATI]**: sudah dipilih atau di-ACC Pak Dir.
@@ -58,8 +58,18 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 | Alamat singkat (video) | Jl. Rusa No. 65, Maricaya, Makassar |
 | Nomor admin | WA 0898-7735-463 |
 | Bleaching | Rp1.700.000, diskon 10% = **Rp1.530.000**, **sudah termasuk scaling**, tanpa batas waktu |
+| Tambal gigi | sewarna gigi, **mulai Rp250.000**, garansi setelah perawatan, dikerjakan dokter gigi |
+| Behel | **mulai Rp6 jutaan untuk rahang atas & bawah**, **Rp3 jt per rahang**, **cicilan Rp2 jt/bln × 3, tanpa bunga** (dikonfirmasi 18 Nov 2026). Sudah termasuk: pemasangan atas & bawah, scaling, cetak gigi, foto intra & ekstra oral, konsultasi dokter gigi, ortho kit |
+| SOP kunjungan | Biaya **selalu dijelaskan sebelum tindakan**; pasien boleh pulang tanpa tindakan (dikonfirmasi 18 Nov 2026) |
 
 Bahasa paket: **"bleaching sudah termasuk scaling"**. Hindari "free/gratis scaling" dan istilah "included".
+Bahasa harga Ruma: tenang dan jelas ("Behel dengan tenang, cicilan tanpa bunga"). **Hindari** "tanpa harus lunas", "murah", "promo gila" (terkesan murah, tidak sesuai positioning premium).
+
+**Aturan orang di visual Ruma [DISEPAKATI 18 Nov 2026]:**
+- Poster/desain: **wajah dokter tidak ditampilkan** (pakai dari belakang/bahu, tangan bekerja, atau close-up gigi berbehel); MOFU menonjolkan dokter **sedang bekerja/konsul**.
+- Staf berseragam bertuliskan UPG di footage Ruma → **blur lokal logo** (bukan pita); syuting berikutnya pakai seragam Ruma/polos.
+- Data pasien di footage (label film rontgen, layar, rekam medis) → **wajib blur per frame**.
+- Wajah orang di desain tidak boleh terpotong elemen (kartu, teks).
 
 ## 5. Logo
 
@@ -136,6 +146,8 @@ Setiap iklan baru: rumus 8 ketukan (`produksi-video-klinik` bagian 3) → checkl
 | PSA | tanpa harga | Draf naskah v1 | `naskah-psa-01.md` | bius lokal, crown disebut/tidak, kunjungan & garansi, footage |
 | Scaling | belum ditentukan | Draf naskah v1 | `naskah-scaling-iklan-01.md` | harga, fakta gusi turun/mitos renggang, footage, penutup murni vs jembatan bleaching |
 | Kunjungan pertama di Ruma (evergreen, semua layanan) | tanpa harga | Render v2 (49,5 dtk, `iklan-kunjungan-pertama-ruma-v2.mp4`): pemeriksaan di kursi dental ditambahkan | `naskah-kunjungan-pertama-01.md` | OK video v2 → paket kirim |
+| Behel "Spil Harga" (admin bicara, 1 rekaman → 3 jenis edit) | mulai Rp6 jutaan, cicilan Rp2 jt/bln × 3 tanpa bunga | Jenis C v1 dirender (`iklan-behel-spil-harga-C-v1.mp4`, dibuka cuplikan 4416); Jenis A dilewati (arahan Pak Dir). Render Jenis B v2 (36,8 dtk, `iklan-behel-spil-harga-B-v2.mp4`): transisi halus, SFX, suara ruangan, subtitle pendek, Montserrat + warna resmi | `transkrip-behel-admin.md` | OK video → Jenis A & C |
+| Behel MOFU caption kinetik + stiker (narasi Ricky, tanpa harga) | – | Render v1 (40,8 dtk, `iklan-behel-mofu-kinetik-v1.mp4`), suara Ricky versi B ±717 kredit/versi | `naskah-behel-kinetik-01.md` | ACC papan gambar → suara Ricky → render |
 | Crown, cabut gigi bungsu, cabut gigi, veneer, perawatan gigi anak, behel, gigi palsu | – | Antrean | – | data per layanan: harga, kunjungan, garansi, footage |
 
 Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
@@ -143,10 +155,10 @@ Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
 ## 10b. Konten TOFU [DISEPAKATI]
 
 - Konten TOFU = **edukasi murni**: tanpa ajakan ke klinik, tanpa "chat admin", tanpa harga. Brand cukup hadir lewat **kartu penutup logo + tagline** (seperti credit Studio AnakArsi).
-- Format yang disukai: gaya jktlagi "Bayangin…" (pengandaian → rantai angka → "sisanya?" → manfaat pribadi), angka besar di pojok kanan atas, subtitle per frasa. Contoh: `references/naskah-scaling-160.md`.
+- Format yang disukai: gaya jktlagi "Bayangin…" (pengandaian → rantai angka → "sisanya?" → manfaat pribadi), angka besar di pojok kanan atas, subtitle kinetik per kata. Pegangan isi: **"Value dulu, baru konten"** + Uji Value 5 poin (skill `dalamgigi` bagian 1b). Contoh: #01–#03 di `references/`.
 - Durasi 50–70 detik.
 
-## 10c. Akun TOFU Ruma [USULAN, 16 Nov 2026]
+## 10c. Akun TOFU Ruma [DISEPAKATI, 16 Nov 2026; detail terkini di skill `dalamgigi`]
 
 - **Platform utama: Instagram**, unggah ulang ke TikTok (dan YouTube Shorts bila sempat). Alasan: iklan Ruma berjalan di Meta, jadi penonton akun TOFU di IG bisa di-retarget ke iklan MOFU/BOFU (audiens interaksi IG, filter lokasi Makassar). Penonton TikTok tidak bisa di-retarget ke Meta.
 - **Niche tunggal:** "kenapa/gimana/bayangin" soal gigi dan mulut, dijelaskan dengan 3D bersih. Tidak ada promo, harga, atau ajakan ke klinik.
@@ -171,6 +183,8 @@ Ikuti skill `produksi-video-klinik`. Nilai khusus Ruma yang dipakai di skrip:
 - Wipe 3D → footage: teal dengan tepi bawah berbentuk atap (dari logo).
 - Kartu penutup: logo, "Bleaching", chip "sudah termasuk scaling", ~~Rp1.700.000~~ Rp1.530.000, "diskon 10%", tagline, alamat singkat, WA 0898-7735-463 (teks ada di `extra.js` skill produksi; ganti sesuai layanan/promo).
 
+- **Standar kualitas (sejak 17 Nov 2026):** semua video Ruma, termasuk iklan MOFU/BOFU, wajib lulus `qc.sh` (bagian 11 skill produksi). Di iklan: teks dua tingkat muncul tepat saat kata kuncinya diucapkan (timestamp Scribe), harga dan "Klinik Gigi Ruma Dental" diberi pop; wipe atap 3D → footage diberi motion blur.
+
 ## 12. Footage
 
 Inventaris dan penilaian per klip: `references/footage.md`. Klip yang dipakai di contoh acuan ada di bagian 10. Klip yang **tidak** dipakai: 4327 (close-up mulut), 4421 (helm/APAR), 4423 (password WiFi terlihat), 4325 (latar ramai), 4422 (resepsionis = orang yang sama dengan pasien), 4380 (terlalu pendek).
@@ -192,3 +206,4 @@ Inventaris dan penilaian per klip: `references/footage.md`. Klip yang dipakai di
 - [ ] Konten organik: tema "Di Sela Sibuk" belum dibahas lanjut.
 - [ ] Hook TOFU lama (Kalender/Snooze, `references/naskah-iklan-01.md`) belum diproduksi.
 - [ ] Footage behel dan bleaching (folder di Drive masih kosong).
+- [ ] Iklan MOFU/BOFU berikutnya (scaling, behel) belum dibuat; wajib pakai standar kualitas baru (QC, teks kinetik, motion blur).

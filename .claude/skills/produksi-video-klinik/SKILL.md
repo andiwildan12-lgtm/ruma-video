@@ -5,13 +5,12 @@ description: Teknik produksi video iklan dan konten klinik gigi (UPG Dental Care
 
 # Produksi Video Klinik
 
-Skill ini berisi **cara kerja dan teknik** yang sudah terbukti (iklan bleaching Ruma Dental v2, di-ACC 16 Nov 2026).
+Skill ini berisi **cara kerja dan teknik** yang sudah terbukti: iklan bleaching Ruma Dental v2 (di-ACC 16 Nov 2026) dan konten TOFU @dalamgigi #01–#03 (16–17 Nov 2026). Versi skill: **1.3 (17 Nov 2026)**.
 **Identitas brand** (warna, logo, suara narator, data harga, aturan khusus) **tidak ada di sini**; ambil dari skill brand:
 - Ruma Dental → skill `ruma-dental-video`
-- UPG Dental Care **Antang** → skill `upg-antang-video`
-- UPG Dental Care **Hertasning** → skill `upg-hertasning-video`
+- UPG Dental Care → skill `upg-antang-video` (cabang Antang) dan `upg-hertasning-video` (cabang Hertasning). Rumah resminya repo **`upg-video`**; salinan di repo ini sementara sampai dipindahkan (akses repo `upg-video` belum dibuka di sesi 19 Nov 2026).
 
-Antang dan Hertasning dipisah seperti Ruma vs UPG: satu video = satu cabang, data dan footage tidak boleh tertukar.
+Satu video = satu klinik/cabang; data, WA, logo, dan footage tidak boleh tertukar (Antang ≠ Hertasning ≠ Ruma).
 
 Kalau brand belum jelas, tanyakan dulu konten ini untuk klinik yang mana.
 
@@ -26,9 +25,9 @@ Kalau brand belum jelas, tanyakan dulu konten ini untuk klinik yang mana.
 - Naskah disimpan di folder skill brand (`references/`), menimpa file yang sama setiap revisi. **Jangan disimpan ke Google Drive.**
 - Fokus ke video. Jangan menawarkan hal di luar video (template admin dan sejenisnya) kecuali diminta.
 
-## 2. Gerbang Audit 3 Lapis Sebelum Render [WAJIB]
+## 2. Gerbang Audit 4 Lapis (3 sebelum render + 1 setelah encode) [WAJIB]
 
-Tujuan: **tidak ada render dua kali.** Render hanya boleh dimulai setelah Pak Dir bilang OK **dan** tiga audit di bawah lulus.
+Tujuan: **tidak ada render dua kali dan tidak ada video cacat terkirim.** Render penuh hanya boleh dimulai setelah Pak Dir bilang OK **dan** Audit 1–3 lulus; video hanya boleh dikirim setelah Audit 4 lulus.
 
 Aturan:
 - **URUTAN WAJIB, TIDAK BOLEH DILOMPATI:**
@@ -41,7 +40,9 @@ Aturan:
 - **Suara ElevenLabs, efek suara, dan render baru boleh dibuat SETELAH naskah DAN papan gambar di-ACC Pak Dir** (pelajaran iklan tambal: suara terlanjur dibuat lalu naskah berubah).
 - Setelah Pak Dir OK, **audit sendiri tanpa memberi saran atau ide baru**. Yang dicari hanya **kesalahan**, lalu langsung diperbaiki. Jangan membuka diskusi ulang.
 - Kalau ada temuan yang mengubah isi (fakta medis, data harga, naskah), **tanya Pak Dir dulu**. Selain itu, perbaiki sendiri.
-- Lapor ke Pak Dir hanya ringkasan: "Audit 1/2/3: lulus, X hal diperbaiki", lalu render.
+- Kalau naskah diubah saat audit (termasuk menambah CTA, memangkas, atau menjanjikan topik berikutnya), tampilkan tabel **"Sebelum → Sesudah → Alasan"** + narasi final, lalu **tunggu OK Pak Dir sebelum membuat narasi ElevenLabs dan render**. Persetujuan ide/cerita bukan persetujuan naskah final.
+- Lapor ringkas: "Audit 1–4: lulus, X hal diperbaiki".
+- **Papan gambar wajib dikirim ke Pak Dir sebelum render penuh, termasuk setiap kali visual diubah** (arahan Pak Dir 18 Nov): lembar 20–24 frame probe berlabel waktu + narasi (`output/papan-NN-topik.jpg`). Render penuh hanya setelah Pak Dir OK papan.
 
 **Audit 1: Naskah dan fakta**
 - [ ] Fakta medis dan angka benar, atau sudah divalidasi Pak Dir.
@@ -56,14 +57,31 @@ Aturan:
 - [ ] Anti-monoton: kamera berganti tiap 2–4 detik, bentuk objek dikenali, suasana berubah per babak.
 - [ ] Logo dan identitas brand benar; tidak ada atribut brand lain. **Logo tanpa kotak/latar putih** (lihat aturan logo di skill brand).
 - [ ] Footage: casting benar (pasien ≠ admin), tanpa data sensitif (password, wajah tanpa izin).
+- [ ] **Video orang bicara harus terasa natural (koreksi Pak Dir, behel Spil Harga v1 → v2):**
+  - Transisi: crossfade 0,24 dtk di semua potongan (xfade, handle 0,12 dtk per sisi), zoom bergantian 1,00/1,08 antar-kalimat admin + dorong pelan 2%, footage bukti dengan zoom pelan 4%.
+  - Bunyi transisi: whoosh pelan di setiap perpindahan ke/dari footage dan kartu; pop saat kartu harga/baris baru/kartu penutup; ting notifikasi saat kotak komentar muncul.
+  - Pengganti musik: suara asli ruangan klinik (klip footage tanpa bicara, volume ±0,09, lowpass) sebagai latar terus-menerus + suara asli footage bukti ±0,18. Jangan hening mati.
+  - Subtitle **pendek 2–4 kata per potongan**, mengikuti waktu kata (transkripsi), satu kata kunci berlatar Turquoise.
+  - Font & warna video Ruma **ikut panduan resmi Canva**: Montserrat (Neue Montreal belum ada filenya), teks Deep Teal #354B49, blok Turquoise #28CDBD, latar putih/Mint White #E8F8F6. Bukan Outfit/krem.
+  - Lapisan teks dirender per frame (`ovseq/%04d.png`), bukan concat gambar diam (pernah terpotong di detik 32). Kartu penutup masuk dengan pudar ±0,3 dtk.
+- [ ] **Data pasien di footage** (label film rontgen: nama, tgl lahir; layar monitor; rekam medis) → wajib di-blur per frame. Film rontgen: `scripts/kinetik/filmdet.py` (deteksi lembar film per frame lewat warna hitam-netral HSV, blur 42%×30% pojok kiri atas; pelacakan pola tulisan TIDAK andal karena film berputar/tertutup tangan). Cek ≥6 titik per klip. Pelajaran behel MOFU: film rontgen 4389–4393 memuat nama pasien.
+- [ ] **Caption kinetik di atas footage**: pakai gaya label (kotak putih 96%, teks Deep Teal, kata kunci Turquoise), BUKAN teks putih + bayangan (tak terbaca di dinding klinik putih). Potongan 2–4 kata mengikuti waktu kata, masuk dengan pop skala; stiker ikon pop + bunyi pop (`scripts/kinetik/`).
+- [ ] **Zona aman iklan Meta 9:16 (Reels/Story)**: semua teks, logo, harga, kotak komentar, kartu penutup, DAN wajah/mulut pembicara di area y 270–1250, x 65–1015 (atas 14% & bawah 35% tertutup UI Meta). Cek dengan frame + kotak merah zona sebelum kirim. Kartu penutup disusun mulai y≈310, selesai ≤1250.
+- [ ] **Video orang bicara: subtitle di atas kepala, jangan menutupi wajah** (arahan Pak Dir, behel Spil Harga). Hook "spil/tanya" → kotak "Balas komentar" diam di dekat gestur tunjuk.
+- [ ] **Cek seragam/atribut brand lain di footage** (pelajaran behel: seragam bertuliskan UPG di konten Ruma). Solusi yang disetujui Pak Dir: **blur hanya area logo**, dilacak per frame (`scripts/bicara/blurlogo.py`: lacak mikrofon klip hitam → blur elips lembut di kiri-bawahnya). **Jangan pakai pita/gradasi yang menutup bagian bawah video** (dikira video blur). Klip lain yang memperlihatkan logo jelas (mis. resepsionis 4429) tidak dipakai.
 - [ ] **Setiap kata kerja di narasi terlihat di gambar pada detik yang sama** (pelajaran Kunjungan Pertama v1: "dokter gigi memeriksa" tanpa adegan pemeriksaan).
 - [ ] Tidak ada benda yang Pak Dir minta tidak ditampilkan (contoh: rak sepatu).
 
 **Audit 3: Teknis dan sinkron (terakhir sebelum render penuh)**
-- [ ] Kunci waktu adegan cocok dengan jeda suara; subtitle cocok dengan kata yang diucapkan.
+- [ ] Kunci waktu adegan dari **timestamp per kata (Scribe)**; subtitle cocok dengan kata yang diucapkan; `words` sudah di cfg.
 - [ ] Jumlah frame footage cukup (`max` = jumlah file); server lokal hidup.
-- [ ] Durasi total sesuai target (TOFU 50–70 detik); kartu penutup benar.
+- [ ] Durasi total sesuai target (TOFU 50–70 detik, iklan ±50–60); kartu penutup benar.
+- [ ] Setiap shot punya gerak pelan (tidak diam ≥1,5 dtk); rentang `blur` untuk gerakan cepat sudah diisi.
 - [ ] Cover/thumbnail sudah disiapkan (bagian 9).
+
+**Audit 4: Cek kualitas file jadi (setelah encode, sebelum kirim) [WAJIB SEMUA BRAND]**
+- [ ] `scripts/qc.sh video.mp4 <durasi> <detik_kartu>` → hasil **LULUS** (detail bagian 11A). Kalau ada [CEK], perbaiki dulu; jangan kirim video yang belum lulus.
+- [ ] Lembar kontak dari **render penuh** (bukan probe) sudah dilihat.
 
 ## 2b. Alur Satu Konten
 
@@ -71,8 +89,8 @@ Aturan:
 2. **Naskah** dengan rumus 8 ketukan (bagian 3). Jalankan checklist 3a sendiri; kirim ke Pak Dir naskah + hasil audit + maks 4 hal yang perlu divalidasi.
 3. **Papan gambar** (HTML artifact): panel 9:16 per adegan, narasi, teks layar, bunyi, transisi, alur produksi.
 4. **Tes gaya** 5–9 detik untuk adegan baru.
-5. **Narasi ElevenLabs** (bagian 4).
-6. **Gerbang Audit 3 Lapis** (bagian 2), lalu **render** (bagian 6), komposisi, encode, buat cover.
+5. **Narasi ElevenLabs** (bagian 4) → **transkripsi Scribe** (bagian 5).
+6. **Gerbang Audit 1–3** (bagian 2), lalu **render penuh di latar** (bagian 6), lembar kontak render penuh, mix, encode, **Audit 4 (`qc.sh`)**, buat cover.
 7. **Review Pak Dir → revisi.** Setelah di-ACC, perbarui skill brand: naskah final dan pelajaran baru.
 
 ## 3. Rumus Naskah Iklan MOFU/BOFU (8 Ketukan) [WAJIB]
@@ -128,15 +146,19 @@ Pak Dir: *"Itu checklist kau yang checklist sendiri."* Sebelum naskah dikirim, c
 - **Seluruh narasi dibuat dalam SATU generasi yang mengalir.** Jangan pakai `[long pause]` dan jangan memotong per kalimat lalu menempelkan per adegan. Cara itu terbukti membuat narasi kaku, terlalu banyak jeda, dan perpindahan adegan tidak nyambung (pelajaran iklan v1).
 - Tag nada di awal kalimat: `[conversational] [warmly]`, `[cheerfully]` untuk "kabar baiknya", `[warmly]` untuk gambaran hasil.
 - Bahasa santai dan sopan ("kamu", "nempel", "pas lihat foto", "ya"). Angka dan harga ditulis dengan kata.
-- Default 2 versi (±950 kredit per versi untuk ±50 detik). Unduh keduanya, pilih yang jedanya paling rapi.
+- Default 2 versi (±950 kredit per versi untuk ±50 detik; ±1.250–1.350 untuk ±65 detik). Unduh keduanya, pilih yang jedanya paling rapi.
+- Target naskah TOFU ±150–170 kata ≈ 62–68 detik suara (Ricky ±2,5 kata/detik).
 - Panggil `creative_get_flow_run_status` sampai selesai, lalu unduh `content_url` dengan curl.
 
 ## 5. Gambar Mengikuti Suara
 
-1. Ubah audio ke WAV mono, hitung RMS per 20 ms, cari jeda ≥0,18 detik (ambang ±28 dB di bawah persentil 95).
-2. Cocokkan jeda dengan akhir kalimat di naskah. Untuk jeda di tengah kalimat, perkirakan proporsional dari jumlah kata.
-3. Narasi mulai di detik 0,3. **Batas adegan = jeda antar-kalimat + 0,3.**
-4. Akhiri dengan kartu penutup yang tampil 2–3 detik setelah narasi selesai.
+**Cara utama (sejak #03): transkripsi Scribe, timestamp per kata.**
+1. `creative_add_flow_asset_node` (modality audio, `generation_id` take terpilih, flow yang sama) → `creative_transcribe_audio` (`eleven_scribe_v1`, gratis) → `creative_get_flow_run_status` → ambil `words` (atau unduh `words_download_url`; tautan kedaluwarsa, panggil status lagi untuk tautan baru).
+2. Buang token tag (`[conversational]` dll.), tambahkan offset mulai narasi (0,3) → simpan ke cfg `"words":[[mulai,selesai,"kata"],...]`.
+3. Kunci waktu adegan (`K`) = waktu kata pertama tiap kalimat/frasa. Subtitle per frasa ditulis di `subs`; `kinetic.js` mengatur kemunculan per kata.
+4. Akhiri dengan kartu penutup yang tampil ±0,8 detik setelah kata terakhir, durasi kartu ±3 detik.
+
+**Cadangan (tanpa Scribe):** RMS per 20 ms, jeda ≥0,18 dtk (±28 dB di bawah persentil 95) = batas kalimat; kata di tengah kalimat diperkirakan proporsional. Skrip: `gaps.py`.
 
 ## 6. Render dan Komposisi
 
@@ -163,7 +185,13 @@ ffmpeg -ss <mulai> -t <durasi> -i klip.mov -vf "crop=...,scale=1080:1920,colorba
 Zoom pelan: `scale=w='trunc(1080*(1+0.03*t)/2)*2':h=-2:eval=frame,crop=1080:1920`.
 Pastikan `max` di job sama dengan jumlah frame yang ada, karena gambar yang tidak ada membuat render macet.
 
-**Job dan komposisi**
+**Scene satu halaman (TOFU @dalamgigi, sejak #02)**
+- Satu HTML berisi beberapa "set" (mis. lengkung gigi, penampang, rak buku) yang ditampilkan bergantian; transisi antar-set dengan kilau krem/gelap 0,3 dtk.
+- Kamera = array `shots` `[waktuMulai, fungsi(t) → [posisi, target]]`, blend 0,75 dtk; label (tag) diproyeksikan dari titik 3D.
+- Template: `gua.html`, `domino.html` (+ `*_cfg.json`), `arch3.html`. Render: `node render_frames.js <page> <cfg> all|range A B|p t...` (PORT env, motion blur dari `cfg.blur`). Probe dulu, lalu render penuh di latar (±0,4 dtk/frame; 70 dtk ≈ 15 menit).
+- Material yang diubah transparan di tengah video: set `needsUpdate=true` (atau transparan sejak awal).
+
+**Job dan komposisi (iklan dengan footage)**
 - `jobs.json`: per adegan `name`, `n` (frame + 8 cadangan), `D` (durasi detik), `out`, opsi `dir` / `max` / `opt` (teks `p`, `p0`, `wipe`, `s1`, `s2`).
 - `node render2.js jobs.json` (±0,15–0,5 detik per frame). Untuk proses panjang, jalankan di latar dan tunggu notifikasi.
 - `python3 compose.py`: segmen digabung dengan **crossfade 8 frame**. Perpindahan 3D → footage memakai **wipe** (misalnya wipe atap Ruma), tanpa crossfade.
@@ -174,9 +202,12 @@ Pastikan `max` di job sama dengan jumlah frame yang ada, karena gambar yang tida
 ffmpeg -i narasi.mp3 -f lavfi -i "anoisesrc=color=brown:amplitude=0.6:d=<dur>,lowpass=f=420,highpass=f=60,volume=0.035" \
  -filter_complex "[0:a]adelay=300|300,loudnorm=I=-16:TP=-1.5:LRA=7,apad=whole_dur=<dur>[v];[1:a]afade=t=in:d=0.6[amb];[v][amb]amix=inputs=2:normalize=0[out]" \
  -map "[out]" -ar 48000 -ac 2 track.wav
-ffmpeg -framerate 30 -i final2/%04d.jpg -i track.wav -c:v libx264 -pix_fmt yuv420p -crf 19 -c:a aac -b:a 160k -shortest -movflags +faststart out.mp4
+# encode PERSIS: jangan pakai -shortest (membuang frame)
+ffmpeg -framerate 30 -i frames/%04d.jpg -i track.wav -map 0:v -map 1:a -frames:v <dur×30> -t <dur> -r 30 \
+ -c:v libx264 -pix_fmt yuv420p -crf 19 -c:a aac -b:a 160k -movflags +faststart out.mp4
+bash scripts/qc.sh out.mp4 <dur> <detik_kartu>     # wajib LULUS
 ```
-Tanpa musik (aturan semua brand saat ini). Suara latar ruangan mencegah hening mati.
+Suara latar fade-in 0,6 dtk dan fade-out hanya **0,5 dtk terakhir**. Mix SFX: `mix_gua.py` / `mix_domino.py` (daftar event `e(file, detik, dB, durasi)`). Musik mengikuti skill brand (Ruma: tanpa musik). Suara latar ruangan mencegah hening mati.
 
 ## 7. Prinsip Visual Umum
 
@@ -190,10 +221,10 @@ Tanpa musik (aturan semua brand saat ini). Suara latar ruangan mencegah hening m
 
 ## 7a. Efek Suara (SFX) [DISEPAKATI]
 
-Pak Dir minta setiap gerakan punya suara. Pustaka SFX (ElevenLabs `eleven_text_to_sound_v2`, 1 variasi per efek, ±19 kredit) ada di `scripts/sfx/`: `sikat`, `whoosh` (perpindahan kamera), `pop` (objek muncul/angka berganti), `floss`, `scaler` (alat scaling, pelan dan tidak menakutkan), `crack` (karang rontok). Pakai ulang; buat baru hanya bila gerakannya baru.
+Pak Dir minta setiap gerakan punya suara. Pustaka SFX (ElevenLabs `eleven_text_to_sound_v2`, 1 variasi per efek, ±19 kredit) ada di `scripts/sfx/`: `brush` (sikat), `whoosh` (perpindahan kamera), `pop` (objek muncul/angka berganti), `floss`, `scaler` (alat scaling, pelan dan tidak menakutkan), `crack` (karang rontok), `click` (angka/label muncul), `fizz` (asam), `dive` (kamera menyelam/masuk), `pulse` (denyut saraf, lembut), `shimmer` (momen positif, kartu penutup), `book` (buku ditarik/miring), `snap` (benda pas masuk, mis. gigi pengganti). Pakai ulang; buat baru hanya bila gerakannya baru.
 - Penempatan: tepat di detik gerakan (bukan per kalimat). Whoosh di setiap perpindahan sudut kamera besar.
 - Level: narasi -16 LUFS; SFX -14 s/d -24 dB di bawahnya; suara latar ruangan tetap ada; `alimiter` di akhir. Tanpa musik.
-- Skrip mixing: lihat contoh di bagian 6 (daftar event `(file, detik, durasi, dB)` → `adelay` + `amix`).
+- Skrip mixing: `mix_gua.py` / `mix_domino.py` (daftar event `e(file, detik, dB, durasi)` → `adelay` + `amix normalize=0` + `alimiter`). Setiap angka/label muncul = `click`; setiap ganti set adegan = `shimmer` + `whoosh`.
 
 ## 7b. Anti-Monoton (pelajaran 160 Permukaan v1)
 
@@ -232,6 +263,7 @@ Setiap konten selesai dikirim sebagai satu paket:
 5. **Komentar pertama**: satu pertanyaan ringan untuk memancing diskusi.
 6. **Langkah unggah**: sampul dari rol kamera, atur crop grid 3:4, tanpa musik, lokasi Makassar, jam 19.00–21.00 WITA.
 7. Kalau mengganti video yang sudah terbit: **arsipkan** (jangan hapus) versi lama, dan **perbarui caption** bila isinya berubah.
+8. Hasil `qc.sh` (harus LULUS) disebut singkat di laporan. Caption disimpan di `output/<akun>-<NN>-caption.md`; video tidak masuk Git, ingatkan Pak Dir mengunduh.
 
 ## 10. Laporan ke Pak Dir
 
@@ -242,3 +274,59 @@ Kirim video dengan `SendUserFile` (display render), lalu jelaskan singkat:
 - Kredit yang terpakai.
 
 Ingatkan bahwa file di sesi cloud bersifat sementara dan perlu diunduh.
+
+## 11. Standar Kualitas Semua Brand dan Format [DISEPAKATI 17 Nov 2026]
+
+Berlaku untuk **semua video**: konten TOFU (@dalamgigi), **iklan Ruma Dental (MOFU/BOFU)**, dan **video UPG Dental Care**. Asal: bagian terbaik skill "motion-graphics-by-nalarka" yang sudah diuji di #02/#03 dan di-ACC Pak Dir. Aturan identitas tiap brand (musik, durasi, rasio, gaya) tetap mengikuti skill brand masing-masing.
+
+| Fitur | TOFU @dalamgigi | Iklan Ruma (MOFU/BOFU) | Video UPG |
+|---|---|---|---|
+| A. QC otomatis | Wajib | Wajib | Wajib |
+| B. Teks mengikuti kata | Subtitle kinetik per kata | Teks dua tingkat muncul tepat di kata kuncinya; harga/nama klinik pop | Subtitle dialog per kata (warna per karakter bila ada) |
+| C. Motion blur | Dive, whoosh, pindah kamera cepat | Wipe atap 3D → footage, zoom cepat | Transisi cepat / whip |
+
+**Penyesuaian per format**
+- **Footage asli** (iklan Ruma, UPG): footage diam yang disengaja (mis. papan logo) bisa terdeteksi "frame beku". Bila ≥1,5 dtk, beri zoom pelan (`scale ... 1+0.03*t`) supaya tidak beku; kalau memang disengaja, catat di laporan.
+- **Brand yang memakai musik** (bila skill brand mengizinkan, mis. UPG): QC loudness tetap -18…-13 LUFS; narasi/dialog harus dominan; hening mati tetap dilarang.
+- **Rasio lain** (4:5 Feed, 1:1): jalankan `qc.sh` lalu abaikan baris resolusi bila memang sengaja; jumlah frame dan durasi tetap harus persis.
+- Word timestamp: selalu transkripsi narasi/dialog final dengan **Scribe** (`creative_transcribe_audio`, gratis) lalu simpan ke cfg `"words"` (+ offset mulai narasi).
+
+### Rincian Teknis
+
+**11A. Cek kualitas otomatis (wajib sebelum kirim)**
+`scripts/qc.sh video.mp4 <durasi> <detik_kartu>` → codec H.264+AAC, 1080×1920, 30 fps CFR, durasi persis, jumlah frame = durasi×30, tanpa frame hitam, tanpa frame beku tak disengaja (kartu penutup diabaikan), tanpa hening mati, puncak < -0,5 dB, loudness -18…-13 LUFS. Harus "LULUS" sebelum dikirim.
+- Encode **tanpa `-shortest`**: pakai `-map 0:v -map 1:a -frames:v <durasi×30> -t <durasi>` (pelajaran: `-shortest` membuang 1–3 frame).
+- Suara latar fade-out hanya 0,5 dtk terakhir (pelajaran: fade 1,2 dtk membuat hening mati di kartu penutup).
+- Temuan pertama QC (#03): kamera langkah 3 diam 1,7 dtk → setiap shot wajib punya gerak pelan (drift), walau singkat.
+
+**11B. Subtitle/teks kinetik per kata**
+`scripts/kinetic.js` → `kineticSub(subEl, T, SUBS, WORDS)`. Kata muncul tepat saat diucapkan (naik halus 0,18 dtk), kata kunci `<b>` pop dengan overshoot; posisi kalimat tidak bergeser. `WORDS` = timestamp Scribe + offset narasi (0,3), disimpan di cfg sebagai `"words":[[mulai,selesai,"kata"],...]`. Kata layar yang beda dari ucapan (mis. "2×") otomatis diinterpolasi.
+
+**11C. Motion blur di gerakan cepat**
+`scripts/render_frames.js <page> <cfg> all|range A B|p t...` (+ `blend_blur.py`). Rentang di `cfg.blur=[[a,b],...]` dirender 3 sub-frame (shutter 180°) lalu dirata-rata. Pakai hanya di dive, whoosh, dan perpindahan kamera cepat (render 3× lebih lama di rentang itu).
+
+## 12. Jalur Produksi Tambahan [TERBUKTI 18 Nov 2026]
+
+Urutan wajib tetap sama: naskah OK → papan gambar ACC → (suara) → audit → render → QA frame + zona aman → kirim.
+
+### 12a. Transkripsi lokal (gratis)
+`python3 -I .claude/skills/produksi-video-klinik/scripts/stt.py medium <audio1.wav> [...]` → `stt.json` (waktu per kata) di folder audio pertama. Izin sudah ada di `.claude/settings.json`; jaringan huggingface sudah dibuka di lingkungan "Video Editing". Dipakai untuk rekaman asli (ucapan staf) dan narasi ElevenLabs (kunci waktu adegan + caption). ElevenLabs tidak bisa mengambil file langsung dari Drive (tipe file octet-stream).
+
+### 12b. Video orang bicara (admin/staf, suara asli) — `scripts/bicara/`
+1. Unduh klip dari Drive (`drive.usercontent.google.com/download?id=…&confirm=t`), transkripsi (12a), susun EDL dari waktu kata (buang salah ucap & ucapan berulang).
+2. Atribut brand lain di seragam → `blurlogo.py` (lacak mikrofon klip hitam → blur elips di kiri-bawahnya), sumber diproses ke 30 fps.
+3. Overlay per kondisi (`ov2.html` + `shot_states.js`/`shot_states_var.js`) → urutan per frame (`mkseq.py`, termasuk pudar kartu penutup) → `build2.py`/`build_var.py` (crossfade 0,24 dtk, zoom bergantian 1,00/1,08 + dorong 2%, whoosh/pop/ting, suara ruangan klinik asli, loudnorm -16).
+4. Hook "spil/tanya" → kotak "Balas komentar" di atas gestur tunjuk (tanpa nama akun). Subtitle 2–4 kata di atas kepala.
+5. Varian A/B dari satu rekaman: B (bicara + bukti klinik), C (dibuka cuplikan klinik 2,6 dtk).
+
+### 12c. Iklan footage + narasi + caption kinetik + stiker — `scripts/kinetik/`
+1. Narasi Ricky (2 versi) → pilih jeda terapi → transkripsi lokal → `plan.json` (EDL per kata, potongan caption, waktu stiker/kartu langkah/tombol).
+2. Data pasien di film rontgen → `filmdet.py` (deteksi lembar film per frame, blur label). Cek ≥6 titik per klip.
+3. `mkstates.py` (kondisi per frame + animasi pop) → `shotu.js` (render unik) → `build_k.py` (crossfade, zoom bergantian, whoosh tiap potongan, pop tiap stiker, suara ruangan, mix).
+4. Caption gaya label (kotak putih, teks Deep Teal, kata kunci Turquoise), stiker ikon (bukan emoji wajah).
+
+### 12d. Poster/desain statis
+Pakai skill `desain-grafis-ruma` (template resmi Poppins + Open Sans). Video tetap Montserrat.
+
+### 12e. Konektor
+Nama konektor ElevenLabs bisa berubah setelah masuk ulang (mis. `ElevenLabs-56894adb`). Bila konektor ditolak/kedaluwarsa: minta Pak Dir masuk ulang di claude.ai/customize/connectors; jangan memakai suara pengganti.
