@@ -1,0 +1,86 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--o:#E8771E;--d:#262626;--c:#FFF4E8;--p:#FCE3CC;--z:1}
+body{width:1080px;overflow:hidden;font-family:Inter,sans-serif;background:var(--c);position:relative;color:var(--d)}
+body.story{height:1920px}body.feed{height:1350px}
+.blob{position:absolute;border-radius:50%;background:var(--p)}
+.hero{position:absolute;left:0;top:0;width:1080px;object-fit:cover}
+.fade{position:absolute;left:0;top:0;width:1080px;background:linear-gradient(180deg,rgba(20,20,20,.5) 0%,rgba(20,20,20,0) 28%,rgba(255,244,232,0) 55%,var(--c) 100%)}
+.brand{position:absolute;left:60px;display:flex;align-items:center;gap:14px}
+.brand .lg{background:#fff;border-radius:18px;padding:8px 14px;box-shadow:0 4px 14px rgba(0,0,0,.25)}.brand img{width:96px;display:block}
+.brand span{background:var(--o);color:#fff!important;font-weight:900;font-size:26px;letter-spacing:6px;padding:6px 16px;border-radius:8px}
+.wrap{position:absolute;left:0;right:0;zoom:var(--z)}
+.mk{padding:0 60px}
+.mk p{font-size:84px;font-weight:900;line-height:1.16;color:#fff}
+.mk span,.mk em{display:inline-block;padding:0 16px;border-radius:12px;margin:3px 0}
+.mk span{background:rgba(20,20,20,.75)}.mk em{font-style:normal;background:var(--o)}
+.price{position:relative;margin:34px 80px 0;background:var(--o);border-radius:40px;padding:34px 36px 30px;text-align:center;color:#fff;box-shadow:0 18px 40px rgba(150,70,10,.3)}
+.price .m{font-size:38px;font-weight:800;letter-spacing:8px}
+.price .n{font-size:170px;font-weight:900;line-height:.95;letter-spacing:-6px}.price .n small{font-size:52px;letter-spacing:0}
+.pl{display:inline-block;background:#fff;color:var(--d);font-size:36px;font-weight:900;padding:10px 26px;border-radius:40px;margin-top:14px}.pl b{color:var(--o)}
+.price .fn{font-size:23px;font-weight:600;margin-top:8px;opacity:.92}
+.stamp{position:absolute;right:-30px;bottom:-90px;width:220px;height:220px;border-radius:50%;background:#fff;color:var(--o);border:8px dashed var(--o);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;transform:rotate(12deg);box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.stamp b{font-size:44px;line-height:1}.stamp i{font-style:normal;font-size:28px;color:var(--d)}
+.steps{display:flex;gap:12px;justify-content:center;margin:34px 50px 0}
+.steps div{background:#fff;border-radius:18px;overflow:hidden;display:flex;align-items:center;font-size:27px;font-weight:800;box-shadow:0 6px 16px rgba(0,0,0,.07)}
+.steps b{background:var(--o);color:#fff;width:52px;height:64px;display:flex;align-items:center;justify-content:center;font-size:32px}
+.steps span{padding:0 14px}
+.ben{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:26px 60px 0}
+.ben div{background:#fff;border-radius:40px;padding:12px 24px;font-size:30px;font-weight:800;box-shadow:0 6px 16px rgba(0,0,0,.07)}
+.ben .t{background:var(--d);color:#fff}
+.cta{margin:34px 80px 0;background:var(--o);border-radius:36px;padding:20px 28px;display:flex;align-items:center;gap:24px;box-shadow:0 10px 0 #b45a12}
+.wa{width:92px;height:92px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:52px;flex:none}
+.cta .t1{font-weight:800;font-size:28px;letter-spacing:2px;color:var(--d)}.cta .t1 b{background:#fff;padding:2px 12px;border-radius:8px;letter-spacing:4px}
+.cta .t2{font-weight:900;font-size:66px;color:var(--d);line-height:1.05}
+.loc{margin-top:22px;font-weight:700;font-size:29px;text-align:center;line-height:1.45}.loc b{color:var(--o)}
+/* chat */
+.chat{margin:0 60px;background:#F4EFE9;border-radius:34px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.chat .hd{background:var(--o);color:#fff;display:flex;align-items:center;gap:16px;padding:18px 24px}
+.chat .av{width:64px;height:64px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}.chat .av img{width:52px}
+.chat .nm{font-size:32px;font-weight:800}.chat .on{font-size:21px;opacity:.9}
+.chat .bd{padding:22px 22px 24px;display:flex;flex-direction:column;gap:14px}
+.in{align-self:flex-start;background:#fff;border-radius:6px 26px 26px 26px;padding:14px 22px;font-size:34px;font-weight:700;box-shadow:0 3px 8px rgba(0,0,0,.06)}
+.out{align-self:flex-end;background:var(--p);border-radius:26px 6px 26px 26px;padding:16px 22px;font-size:32px;font-weight:700;max-width:88%}
+.out b{color:var(--o)}
+.tbl{width:100%;border-collapse:collapse;margin-top:6px}
+.tbl td{font-size:32px;font-weight:800;padding:6px 0;border-bottom:2px dashed #e9c9aa}.tbl tr:last-child td{border:none}
+.tbl td:last-child{text-align:right;color:var(--o);font-size:40px;font-weight:900}
+.calc{display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap}
+.calc span{background:#fff;border-radius:14px;padding:8px 14px;font-size:30px;font-weight:900}
+.calc span.o{background:var(--o);color:#fff}
+.calc i{font-style:normal;font-weight:900;color:#b36b2c}
+</style></head><body><div id="r"></div>
+<script>
+const Q=new URLSearchParams(location.search);const AD=Q.get('ad'),SZ=Q.get('sz');document.body.className=SZ;
+const story=SZ==='story';
+const brand=t=>`<div class="brand" style="top:${t}px"><div class="lg"><img src="logo_upg_oranye.png"></div><span>HERTASNING</span></div>`;
+const cta=`<div class="cta"><div class="wa">💬</div><div><div class="t1">CHAT &amp; KETIK <b>BEHEL</b></div><div class="t2">0896-7341-5806</div></div></div>`;
+const loc=`<div class="loc">📍 <b>Jl. Letjen Hertasning No.50</b>, Makassar<br>⏰ Buka setiap hari 10.00–22.00 WITA</div>`;
+let h='';
+if(AD==='pov'){
+ const hh=story?1000:700;
+ h=`<img class="hero" src="behel_3489.jpg" style="height:${hh}px;object-position:50% 30%"><div class="fade" style="height:${hh}px"></div>${brand(story?230:40)}
+ <div class="wrap" style="top:${story?560:290}px;--z:${story?1:.82}">
+  <div class="mk"><p><span>Pasang behel</span><br><em>nggak harus nunggu</em><br><em>uang kumpul</em> <span>semua</span></p></div>
+  <div class="price"><div class="m">MULAI</div><div class="n">Rp3 jt<small>/rahang</small></div><div class="pl">DP 50% · sisanya cicil 2× <b>tanpa bunga</b></div><div class="fn">*behel metal per rahang · S&amp;K berlaku</div></div>
+  <div class="steps"><div><b>1</b><span>Konsultasi</span></div><div><b>2</b><span>Cetak gigi</span></div><div><b>3</b><span>Scaling</span></div><div><b>4</b><span>Dipasang</span></div></div>
+  <div class="ben"><div class="t">Nunggunya nyaman:</div><div>📖 Pojok baca</div><div>🍪 Camilan</div><div>🍦 Es krim</div><div>🧸 Pojok main anak</div><div>🕌 Mushola</div></div>
+  ${cta}${loc}</div>`;
+}else{
+ const hh=story?760:520;
+ h=`<img class="hero" src="suasana_3501.jpg" style="height:${hh}px;object-position:50% 57%"><div class="fade" style="height:${hh}px"></div>${brand(story?230:40)}
+ <div class="wrap" style="top:${story?420:180}px;--z:${story?1:.8}">
+  <div class="mk" style="margin-bottom:26px"><p style="font-size:70px"><span>3 pertanyaan</span> <em>terbanyak</em><br><span>di chat admin</span></p></div>
+  <div class="chat"><div class="hd"><div class="av"><img src="logo_upg_oranye.png"></div><div><div class="nm">Admin UPG Hertasning</div><div class="on">online</div></div></div>
+   <div class="bd">
+    <div class="in">Kak, pasang behel berapa?</div>
+    <div class="out"><table class="tbl"><tr><td>Metal</td><td>Rp3 jt</td></tr><tr><td>Keramik</td><td>Rp3,5 jt</td></tr><tr><td>Self&#8209;ligating</td><td>Rp4,5 jt</td></tr></table><div style="font-size:22px;color:#b36b2c;margin-top:4px">per rahang · harga mulai · S&amp;K berlaku</div></div>
+    <div class="in">Bisa dicicil nggak?</div>
+    <div class="out">Bisa! DP 50%, sisanya 2× <b>tanpa bunga</b>.<div class="calc"><span>Rp3 jt</span><i>→</i><span class="o">DP Rp1,5 jt</span><i>→</i><span class="o">2× Rp750 rb</span></div></div>
+    <div class="in">Udah termasuk apa aja?</div>
+    <div class="out">✓ Konsultasi dokter gigi ✓ Cetak gigi ✓ Scaling, lalu dipasang dokter gigi 😊</div>
+   </div></div>
+  ${cta}${loc}</div>`;
+}
+document.getElementById('r').innerHTML=`<div class="blob" style="width:600px;height:600px;right:-260px;bottom:-200px"></div>`+h;
+</script></body></html>
