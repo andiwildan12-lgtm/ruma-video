@@ -70,4 +70,5 @@ Belum diunduh: Scalling Hertasning (`1zY_xRIKdMUMNMhqjuQ5EWAabQc9z8GRR`, 20 klip
 ## 6. Poster Hertasning (19 Nov 2026)
 - `scripts/poster/poster.html?ad=pov|chat&sz=story|feed` + `shot.js` → `output/Hertasning_BehelPOV_*` & `Hertasning_BehelChat_*` (Story 1080x1920, Feed 1080x1350).
 - Gaya Hertasning (beda Antang): latar krem-peach #FFF4E8, logo putih langsung di atas gradasi gelap (TANPA kotak putih) + label oranye HERTASNING, judul marker oranye/gelap, kartu harga oranye dengan pil "DP 50% · cicil 2× tanpa bunga", tiket langkah 1–4, pil benefit, kartu chat (iklan chat).
+- **Revisi Pak Dir "terlalu ramai"**: poster cukup 1 pesan utama + harga + 1 baris isi paket + CTA + lokasi. Tiket langkah, pil benefit, tabel harga & kalkulator DIBUANG dari poster (cukup di video). Iklan chat → 3 tanya-jawab singkat.
 - Pelajaran audit: cap bulat "CICIL" menabrak judul/harga → diganti pil di dalam kartu; hero 3501 object-position 57% supaya wajah admin tidak tertutup judul.

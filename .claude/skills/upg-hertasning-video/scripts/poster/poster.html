@@ -49,6 +49,12 @@ body.story{height:1920px}body.feed{height:1350px}
 .calc span{background:#fff;border-radius:14px;padding:8px 14px;font-size:30px;font-weight:900}
 .calc span.o{background:var(--o);color:#fff}
 .calc i{font-style:normal;font-weight:900;color:#b36b2c}
+.inc{margin:28px 80px 0;text-align:center;font-size:34px;font-weight:700}.inc b{color:#8a3f0a}
+.qa{margin:22px 70px 0;display:flex;flex-direction:column;gap:10px}
+.qq{align-self:flex-start;background:#fff;border-radius:6px 28px 28px 28px;padding:14px 26px;font-size:38px;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.aa{align-self:flex-end;background:var(--o);color:#fff;border-radius:28px 6px 28px 28px;padding:16px 28px;font-size:44px;font-weight:900}
+.aa b{background:#fff;color:var(--o);padding:0 10px;border-radius:10px}
+.fn2{margin:14px 80px 0;text-align:right;font-size:22px;color:#8a3f0a;font-weight:600}
 </style></head><body><div id="r"></div>
 <script>
 const Q=new URLSearchParams(location.search);const AD=Q.get('ad'),SZ=Q.get('sz');document.body.className=SZ;
@@ -57,29 +63,23 @@ const brand=t=>`<div class="brand" style="top:${t}px"><img class="lgw" src="logo
 const cta=`<div class="cta"><div class="wa">💬</div><div><div class="t1">CHAT &amp; KETIK <b>BEHEL</b></div><div class="t2">0896-7341-5806</div></div></div>`;
 const loc=`<div class="loc">📍 <b>Jl. Letjen Hertasning No.50</b>, Makassar<br>⏰ Buka setiap hari 10.00–22.00 WITA</div>`;
 let h='';
+const incl=`<div class="inc">Sudah termasuk <b>konsultasi, cetak gigi &amp; scaling</b></div>`;
 if(AD==='pov'){
- const hh=story?1000:700;
+ const hh=story?1060:720;
  h=`<img class="hero" src="behel_3489.jpg" style="height:${hh}px;object-position:50% 30%"><div class="fade" style="height:${hh}px"></div>${brand(story?230:40)}
- <div class="wrap" style="top:${story?560:290}px;--z:${story?1:.82}">
+ <div class="wrap" style="top:${story?720:380}px;--z:${story?1:.86}">
   <div class="mk"><p><span>Pasang behel</span><br><em>nggak harus nunggu</em><br><em>uang kumpul</em> <span>semua</span></p></div>
   <div class="price"><div class="m">MULAI</div><div class="n">Rp3 jt<small>/rahang</small></div><div class="pl">DP 50% · sisanya cicil 2× <b>tanpa bunga</b></div><div class="fn">*behel metal per rahang · S&amp;K berlaku</div></div>
-  <div class="steps"><div><b>1</b><span>Konsultasi</span></div><div><b>2</b><span>Cetak gigi</span></div><div><b>3</b><span>Scaling</span></div><div><b>4</b><span>Dipasang</span></div></div>
-  <div class="ben"><div class="t">Nunggunya nyaman:</div><div>📖 Pojok baca</div><div>🍪 Camilan</div><div>🍦 Es krim</div><div>🧸 Pojok main anak</div><div>🕌 Mushola</div></div>
-  ${cta}${loc}</div>`;
+  ${incl}${cta}${loc}</div>`;
 }else{
- const hh=story?760:520;
+ const hh=story?900:600;
  h=`<img class="hero" src="suasana_3501.jpg" style="height:${hh}px;object-position:50% 57%"><div class="fade" style="height:${hh}px"></div>${brand(story?230:40)}
- <div class="wrap" style="top:${story?420:180}px;--z:${story?1:.8}">
-  <div class="mk" style="margin-bottom:26px"><p style="font-size:70px"><span>3 pertanyaan</span> <em>terbanyak</em><br><span>di chat admin</span></p></div>
-  <div class="chat"><div class="hd"><div class="av"><img src="logo_upg_putih.png"></div><div><div class="nm">Admin UPG Hertasning</div><div class="on">online</div></div></div>
-   <div class="bd">
-    <div class="in">Kak, pasang behel berapa?</div>
-    <div class="out"><table class="tbl"><tr><td>Metal</td><td>Rp3 jt</td></tr><tr><td>Keramik</td><td>Rp3,5 jt</td></tr><tr><td>Self&#8209;ligating</td><td>Rp4,5 jt</td></tr></table><div style="font-size:22px;color:#b36b2c;margin-top:4px">per rahang · harga mulai · S&amp;K berlaku</div></div>
-    <div class="in">Bisa dicicil nggak?</div>
-    <div class="out">Bisa! DP 50%, sisanya 2× <b>tanpa bunga</b>.<div class="calc"><span>Rp3 jt</span><i>→</i><span class="o">DP Rp1,5 jt</span><i>→</i><span class="o">2× Rp750 rb</span></div></div>
-    <div class="in">Udah termasuk apa aja?</div>
-    <div class="out">✓ Konsultasi dokter gigi ✓ Cetak gigi ✓ Scaling, lalu dipasang dokter gigi 😊</div>
-   </div></div>
+ <div class="wrap" style="top:${story?640:330}px;--z:${story?1:.86}">
+  <div class="mk"><p style="font-size:74px"><span>Paling sering</span><br><em>ditanya ke admin</em> <span>👇</span></p></div>
+  <div class="qa"><div class="qq">Berapa harganya?</div><div class="aa">Mulai <b>Rp3 jt</b>/rahang</div></div>
+  <div class="qa"><div class="qq">Bisa dicicil?</div><div class="aa">DP 50%, sisanya 2× <b>tanpa bunga</b></div></div>
+  <div class="qa"><div class="qq">Termasuk apa?</div><div class="aa">Konsultasi, cetak gigi &amp; scaling</div></div>
+  <div class="fn2">*behel metal per rahang · S&amp;K berlaku</div>
   ${cta}${loc}</div>`;
 }
 document.getElementById('r').innerHTML=`<div class="blob" style="width:600px;height:600px;right:-260px;bottom:-200px"></div>`+h;
