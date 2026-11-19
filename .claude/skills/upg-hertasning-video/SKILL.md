@@ -26,7 +26,7 @@ Lihat tabel di skill `upg-antang-video` bagian 0. Satu video = satu cabang. Foot
 ## 2a. Data dikonfirmasi Pak Dir (19 Nov 2026)
 - Isi paket behel Hertasning **sama dengan Antang**: konsultasi dokter gigi, cetak gigi, scaling (sebelum dipasang). Rontgen tidak disebut di iklan.
 - Cicilan 2× **per bulan, tanpa bunga** (boleh ditulis).
-- Suara narasi Hertasning: **Denis**.
+- Suara narasi Hertasning: **"Denis" = Denas – High class catchy storyteller** (voice_id `arwfiAiEfIHHZCwcYYx2`, eleven_v4). Dicocokkan 19 Nov 2026: nada iklan Hertasning lama ±125–142 Hz ≈ Denas 128 Hz (Tio 158 Hz). Tulis "U-Pe-Ge". Cek pelafalan "Hertasning" (transkrip membaca "Hartasning").
 - **Pembeda Hertasning: pojok baca, camilan, dan es krim** untuk pasien yang menunggu. Jangan pakai kata "gratis"/"free".
 
 ## 2b. Promo lain (dari desain Nov 2026)
@@ -62,5 +62,5 @@ Dicek 19 Nov 2026 lewat konektor Drive: subfolder Behel/Ortho (`1sVGv_szB3nWFQPz
 Belum diunduh: Scalling Hertasning (`1zY_xRIKdMUMNMhqjuQ5EWAabQc9z8GRR`, 20 klip), Bleaching, Tambal.
 
 ## 5. Naskah
-- `references/naskah-behel-hertasning-pov-01.md` — BOFU full footage + Denis, papan gambar v1 (dikerjakan duluan).
+- `references/naskah-behel-hertasning-pov-01.md` — BOFU full footage + Denis, papan gambar v1 (dikerjakan duluan). **Render v1** `output/upg-hertasning-behel-pov-v1.mp4` (41,6 dtk), skrip `scripts/behelPOV/` (ov.html, rend.js, mix.py). Pelajaran audit: klip 3500 mulai dtk 6 (papan "TUTUP" di pintu), 3480 mulai dtk 6 (papan FREE), camilan 3215 crop + blur pita bawah, mushola = foto IMG_9182. Kredit: narasi 2 versi ±1.546 + transkrip ±246.
 - `references/naskah-behel-hertasning-bicara-01.md` — v2: 3 konsep beda dari Ruma (Tebak Harga, POV tur "Ikut Aku", 3 Pertanyaan Chat WA).

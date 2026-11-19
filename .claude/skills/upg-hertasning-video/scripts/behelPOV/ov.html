@@ -1,0 +1,129 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--o:#E8771E;--d:#262626;--c:#FFF4E8;--p:#FCE3CC}
+body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#111;color:var(--d)}
+.L{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
+.sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.42) 0%,rgba(0,0,0,.06) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.3) 100%)}
+.a{position:absolute;opacity:0}
+.tag{top:300px;left:60px;display:flex;align-items:center;gap:12px}
+.tag img{width:96px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
+.tag span{background:#fff;color:var(--o);font-weight:900;font-size:24px;letter-spacing:5px;padding:5px 14px;border-radius:6px}
+.mk{left:60px;right:60px;top:430px}
+.mk p{font-size:74px;font-weight:900;line-height:1.18;color:#fff}
+.mk p span,.mk p em{display:inline-block;padding:0 14px;border-radius:10px;margin:3px 0;opacity:0}
+.mk p span{background:rgba(20,20,20,.62)}.mk p em{font-style:normal;background:var(--o)}
+.price{left:80px;right:80px;top:470px;background:var(--o);border-radius:40px;padding:40px 36px 34px;text-align:center;color:#fff;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.price .m{font-size:40px;font-weight:800;letter-spacing:8px}
+.price .n{font-size:170px;font-weight:900;line-height:.95;letter-spacing:-6px}
+.price .n small{font-size:52px;letter-spacing:0}
+.price .fn{font-size:24px;font-weight:600;margin-top:10px;opacity:.9}
+.stamp{position:absolute;right:10px;bottom:-200px;width:250px;height:250px;border-radius:50%;background:#fff;color:var(--o);border:8px dashed var(--o);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0}
+.stamp b{font-size:44px;line-height:1}.stamp i{font-style:normal;font-size:30px;color:var(--d)}
+.step{left:60px;top:420px;display:flex;align-items:center;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 12px 34px rgba(0,0,0,.3);transform-origin:left center}
+.step .no{background:var(--o);color:#fff;font-size:70px;font-weight:900;width:120px;height:120px;display:flex;align-items:center;justify-content:center}
+.step .tx{font-size:50px;font-weight:900;padding:0 34px}
+.prog{left:60px;top:560px;display:flex;gap:10px}
+.prog i{width:60px;height:10px;border-radius:6px;background:rgba(255,255,255,.55)}.prog i.on{background:var(--o)}
+.st{background:#fff;border-radius:22px;padding:18px 26px;font-size:46px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.3);display:flex;align-items:center;gap:14px;white-space:nowrap}
+.st .e{font-size:58px}
+.ttl{left:60px;top:300px}
+.ttl span{display:inline-block;background:var(--d);color:#fff;font-size:46px;font-weight:900;padding:12px 28px;border-radius:16px;transform:rotate(-2deg)}
+.chip{background:#fff;font-size:44px;font-weight:900;padding:14px 30px;border-radius:50px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.pill{left:0;right:0;top:560px;text-align:center}
+.pill span{display:inline-block;background:var(--o);color:#fff;font-size:44px;font-weight:900;padding:16px 36px;border-radius:50px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.pill span b{background:#fff;color:var(--o);padding:2px 12px;border-radius:30px;margin-left:6px}
+.bub{left:150px;right:150px;top:1000px;background:#fff;border-radius:40px 40px 40px 8px;padding:28px 36px;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.bub .h{font-size:26px;color:#777;font-weight:600}.bub .tx{font-size:92px;font-weight:900;letter-spacing:6px;height:110px}
+.bub .tx i{display:inline-block;width:8px;height:84px;background:var(--o);vertical-align:-8px;margin-left:8px}
+.arw{left:0;right:0;top:1190px;text-align:center;color:#fff;font-size:130px;font-weight:900;text-shadow:0 6px 20px rgba(0,0,0,.5);line-height:1}
+.end{inset:0;background:var(--c);overflow:hidden}
+.end .blob{position:absolute;width:700px;height:700px;border-radius:50%;background:var(--p);top:-200px;right:-260px}
+.end .blob2{position:absolute;width:520px;height:520px;border-radius:50%;background:var(--p);bottom:-160px;left:-200px}
+.end .in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding-top:320px;text-align:center}
+.end .in>*{opacity:0}
+.end img{width:300px}
+.end .hz{color:#fff;font-weight:900;letter-spacing:10px;font-size:34px;background:var(--o);padding:6px 18px 7px 28px;border-radius:10px;margin-top:10px}
+.end .t1{font-size:64px;font-weight:900;margin-top:46px}
+.end .t2{font-size:118px;font-weight:900;color:var(--o);line-height:1;letter-spacing:-3px}.end .t2 small{font-size:50px;color:#8a3f0a}
+.end .t3{font-size:38px;font-weight:800;background:var(--d);color:#fff;padding:10px 28px;border-radius:40px;margin-top:18px}
+.end .t4{font-size:56px;font-weight:900;margin-top:42px}
+.end .t5{font-size:32px;font-weight:700;margin-top:10px;line-height:1.5}
+</style></head><body>
+<img id="bp" class="L"><img id="bg" class="L"><div class="sh" id="sh"></div>
+<div class="a mk" id="hook"><p><span id="h1">Pasang behel</span><br><em id="h2">nggak harus nunggu</em><br><em id="h3">uang kumpul</em><span id="h4" style="margin-left:14px">semua</span></p></div>
+<div class="a tag" id="tag"><img src="../sb/logo_upg_putih.png"><span>HERTASNING</span></div>
+<div class="a price" id="price"><div class="m">MULAI</div><div class="n" id="pn">Rp3 jt<small>/rahang</small></div><div class="fn">*behel metal per rahang · S&amp;K berlaku</div><div class="stamp" id="stamp"><b>CICIL</b><i>tanpa bunga</i></div></div>
+<div class="a mk" id="alur"><p><span id="a1">Dari datang sampai</span><br><em id="a2">behel terpasang</em> <span id="a3" style="background:none;padding:0">👇</span></p></div>
+<div class="a st" id="sambut" style="left:60px;top:430px"><span class="e">👋</span>Disambut admin</div>
+<div class="a step" id="step"><div class="no" id="sno">1</div><div class="tx" id="stx">Konsultasi dokter gigi</div></div>
+<div class="a prog" id="prog"><i></i><i></i><i></i><i></i></div>
+<div class="a ttl" id="ttl"><span>Nunggunya juga nyaman</span></div>
+<div class="a st" id="b1" style="left:60px;top:430px"><span class="e">📖</span>Pojok baca</div>
+<div class="a st" id="b2" style="left:330px;top:560px"><span class="e">🍪</span>Camilan</div>
+<div class="a st" id="b3" style="left:140px;top:690px"><span class="e">🍦</span>Es krim</div>
+<div class="a st" id="b4" style="left:60px;top:430px"><span class="e">🧸</span>Pojok main anak</div>
+<div class="a st" id="b5" style="left:300px;top:560px"><span class="e">🕌</span>Mushola</div>
+<div class="a chip" id="c1" style="left:70px;top:420px">Metal</div>
+<div class="a chip" id="c2" style="left:290px;top:420px">Keramik</div>
+<div class="a chip" id="c3" style="left:560px;top:420px">Self&#8209;ligating</div>
+<div class="a pill" id="pill"><span>DP 50% · sisanya 2× <b id="tb">tanpa bunga</b></span></div>
+<div class="a mk" id="ctat" style="top:330px"><p><em id="ct1">Klik tombol chat</em></p></div>
+<div class="a bub" id="bub"><div class="h">Ketik:</div><div class="tx"><span id="typ"></span><i id="cur"></i></div></div>
+<div class="a arw" id="arw">↓</div>
+<div class="a end" id="end"><div class="blob"></div><div class="blob2"></div><div class="in"><img src="../sb/logo_upg_oranye.png"><div class="hz">HERTASNING</div><div class="t1">Pasang Behel</div><div class="t2">Rp3 jt<small>/rahang</small></div><div class="t3">DP 50% · cicil 2× tanpa bunga</div><div class="t4">💬 0896-7341-5806</div><div class="t5">📍 Jl. Letjen Hertasning No.50, Makassar<br>⏰ Setiap hari 10.00–22.00 WITA</div></div></div>
+<script>
+const SEG=[['s1',0,3.43],['s2',3.43,8.77],['s3',8.77,11.93],['s4',11.93,13.66],['s5a',13.66,14.66],['s5b',14.66,15.6],['s6',15.6,16.6],['s7',16.6,17.9],['s8',17.9,19.57],['s9',19.57,21.3],['s10',21.3,22.4],['s11',22.4,23.3],['s12',23.3,24.1],['s13',24.1,25.5],['s14',25.5,26.25],['s15',26.25,32.48],['s16',32.48,36.14],['end',36.14,41.6]];
+const HARD=new Set(['s5b','s6','s7','s10','s11','s12','s13','s14']);
+const $=id=>document.getElementById(id);const cl=x=>Math.max(0,Math.min(1,x));
+function pop(t,t0,d=.3){const k=cl((t-t0)/d);if(k<=0)return{o:0,s:.6};const s=k<.7?.6+.46*(k/.7):1.06-.06*((k-.7)/.3);return{o:cl(k*2.5),s}}
+function ap(el,p,ex=''){el.style.opacity=p.o;el.style.transform=`${ex} scale(${p.s})`}
+function win(t,a,b,f=.15){return cl((t-a)/f)*(1-cl((t-b+f)/f))}
+const fr=(s,i)=>`seg/${s}/${String(i+1).padStart(4,'0')}.jpg`;
+window.R=async function(t){
+ let si=SEG.findIndex(s=>t>=s[1]&&t<s[2]);if(si<0)si=SEG.length-1;const [sn,a,b]=SEG[si];
+ const bg=$('bg'),bp=$('bp');
+ if(sn!=='end'){bg.style.display='block';bg.src=fr(sn,Math.floor((t-a)*30+1e-6));
+   const z=1+0.04*((t-a)/(b-a))+(HARD.has(sn)?0.04:0.05)*(1-cl((t-a)/.3));bg.style.transform=`scale(${z})`;
+   if(si>0&&!HARD.has(sn)&&t-a<5/30){const p=SEG[si-1];bp.src=fr(p[0],Math.floor((p[2]-p[1])*30)-1);bp.style.display='block';bg.style.opacity=cl((t-a)*30/5+.2)}else{bp.style.display='none';bg.style.opacity=1}
+   $('sh').style.display='block';}else{bg.style.display='none';bp.style.display='none';$('sh').style.display='none'}
+ // hook
+ const hk=$('hook');hk.style.opacity=t<3.43?1:0;
+ [['h1',.15],['h2',1.3],['h3',2.1],['h4',2.6]].forEach(([id,t0])=>ap($(id),pop(t,t0,.25)));
+ // tag + price
+ $('tag').style.opacity=win(t,3.5,8.77);
+ const pr=$('price');if(t>=3.6&&t<8.77){const p=pop(t,3.6,.35);pr.style.opacity=p.o*(1-cl((t-8.6)/.17));pr.style.transform=`rotate(-1.5deg) scale(${p.s})`}else pr.style.opacity=0;
+ const pk=t>=5.94&&t<6.4?1+0.1*Math.sin(Math.PI*(t-5.94)/.46):1;$('pn').style.transform=`scale(${pk})`;
+ const sp=pop(t,7.9,.3);$('stamp').style.opacity=sp.o;$('stamp').style.transform=`rotate(${12+(1-sp.s)*40}deg) scale(${sp.s})`;
+ // alur
+ $('alur').style.opacity=t>=8.8&&t<11.93?1-cl((t-11.75)/.18):0;
+ [['a1',8.85],['a2',9.95],['a3',10.6]].forEach(([id,t0])=>ap($(id),pop(t,t0,.25)));
+ // sambut
+ if(t>=12.05&&t<13.66){ap($('sambut'),pop(t,12.05,.3),'rotate(-3deg)');$('sambut').style.opacity*=1-cl((t-13.5)/.16)}else $('sambut').style.opacity=0;
+ // langkah
+ const ST=[[13.7,'1','Konsultasi dokter gigi'],[15.62,'2','Cetak gigi'],[16.82,'3','Scaling'],[17.92,'4','Dipasang dokter gigi']];
+ if(t>=13.7&&t<19.57){let k=0;ST.forEach((s,i)=>{if(t>=s[0])k=i});const s=ST[k];$('sno').textContent=s[1];$('stx').textContent=s[2];
+   const p=pop(t,s[0],.25);$('step').style.opacity=(1-cl((t-19.4)/.17));$('step').style.transform=`scale(${p.s})`;
+   $('prog').style.opacity=1-cl((t-19.4)/.17);[...$('prog').children].forEach((e,i)=>e.classList.toggle('on',i<=k));}
+ else{$('step').style.opacity=0;$('prog').style.opacity=0}
+ // nyaman
+ const ny=t>=19.6&&t<26.25;$('ttl').style.opacity=ny?cl((t-19.6)/.2)*(1-cl((t-26.1)/.15)):0;
+ const B=[['b1',21.4,'rotate(-4deg)',23.3],['b2',22.46,'rotate(3deg)',23.3+1],['b3',23.38,'rotate(-2deg)',24.1],['b4',24.12,'rotate(-3deg)',26.25],['b5',25.66,'rotate(3deg)',26.25]];
+ B.forEach(([id,t0,r,t1])=>{const el=$(id);if(t>=t0&&t<t1){ap(el,pop(t,t0,.28),r);el.style.opacity*=1-cl((t-t1+.15)/.15)}else el.style.opacity=0});
+ // b1,b2 hilang saat ganti ke pojok main
+ if(t>=24.1){$('b1').style.opacity=0;$('b2').style.opacity=0}
+ // penawaran
+ [['c1',26.9,'rotate(-3deg)'],['c2',27.52,'rotate(2deg)'],['c3',28.28,'rotate(-2deg)']].forEach(([id,t0,r])=>{const el=$(id);if(t>=t0&&t<32.48){ap(el,pop(t,t0,.25),r);el.style.opacity*=1-cl((t-32.3)/.18)}else el.style.opacity=0});
+ if(t>=29.3&&t<32.48){ap($('pill'),pop(t,29.3,.3));$('pill').style.opacity*=1-cl((t-32.3)/.18)}else $('pill').style.opacity=0;
+ const tb=pop(t,31.7,.3);$('tb').style.display='inline-block';$('tb').style.transform=`scale(${t<31.7?1:tb.s})`;$('tb').style.opacity=t<31.7?0:1;
+ // cta
+ if(t>=32.5&&t<36.14){$('ctat').style.opacity=1;ap($('ct1'),pop(t,32.6,.3));ap($('bub'),pop(t,33.0,.3));
+   $('typ').textContent='BEHEL'.slice(0,Math.floor(cl((t-33.84)/.45)*5));$('cur').style.opacity=(Math.floor(t*3)%2)?1:.15;
+   const ar=$('arw');ar.style.opacity=cl((t-34.3)/.2);ar.style.transform=`translateY(${Math.abs(Math.sin((t-34.3)*5))*30}px)`;
+   const f=1-cl((t-35.98)/.16);['ctat','bub','arw'].forEach(i=>$(i).style.opacity*=f);}
+ else['ctat','bub','arw'].forEach(i=>$(i).style.opacity=0);
+ // end
+ const en=$('end');if(t>=36.14){en.style.opacity=cl((t-36.14)/.2);[...en.querySelector('.in').children].forEach((c,i)=>ap(c,pop(t,36.2+i*.12,.28)))}else en.style.opacity=0;
+ await Promise.all([...document.images].filter(i=>i.style.display!=='none'&&i.src).map(i=>i.complete?1:new Promise(r=>{i.onload=i.onerror=r})));
+}
+window.ready=true;
+</script></body></html>
