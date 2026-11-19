@@ -152,7 +152,7 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 
 | Topik | Jumlah peminta | Sumber (video #) | Tanggal pertama | Status |
 |---|---|---|---|---|
-| (belum ada) | | | | |
+| Proses bau mulut | ≥1 (komentar) | #04/#05 | 19 Nov 2026 | Naskah diajukan sebagai #06 |
 
 ## 9. Log Unggahan
 
