@@ -62,4 +62,5 @@ Dicek 19 Nov 2026 lewat konektor Drive: subfolder Behel/Ortho (`1sVGv_szB3nWFQPz
 Belum diunduh: Scalling Hertasning (`1zY_xRIKdMUMNMhqjuQ5EWAabQc9z8GRR`, 20 klip), Bleaching, Tambal.
 
 ## 5. Naskah
+- `references/naskah-behel-hertasning-pov-01.md` — BOFU full footage + Denis, papan gambar v1 (dikerjakan duluan).
 - `references/naskah-behel-hertasning-bicara-01.md` — v2: 3 konsep beda dari Ruma (Tebak Harga, POV tur "Ikut Aku", 3 Pertanyaan Chat WA).

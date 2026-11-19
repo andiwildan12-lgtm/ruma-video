@@ -1,0 +1,77 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--o:#E8771E;--d:#262626;--c:#FFF4E8;--p:#FCE3CC}
+body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#111;color:var(--d)}
+.bg{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
+.sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.08) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.35) 100%)}
+/* tag cabang */
+.tag{position:absolute;top:300px;left:60px;display:flex;align-items:center;gap:12px}
+.tag img{width:96px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
+.tag span{background:#fff;color:var(--o);font-weight:900;font-size:24px;letter-spacing:5px;padding:5px 14px;border-radius:6px}
+/* teks marker (gaya Hertasning) */
+.mk{position:absolute;left:60px;right:60px;top:430px}
+.mk p{font-size:74px;font-weight:900;line-height:1.18;color:#fff;text-shadow:0 3px 14px rgba(0,0,0,.45)}
+.mk p span{background:rgba(20,20,20,.62);padding:0 14px;border-radius:10px;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:none}
+.mk p em{font-style:normal;background:var(--o);padding:0 14px;border-radius:10px;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:none}
+/* kartu harga oranye */
+.price{position:absolute;left:80px;right:80px;top:470px;background:var(--o);border-radius:40px;padding:40px 36px 34px;text-align:center;color:#fff;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.price .m{font-size:40px;font-weight:800;letter-spacing:8px;opacity:.95}
+.price .n{font-size:170px;font-weight:900;line-height:.95;letter-spacing:-6px}
+.price .n small{font-size:52px;letter-spacing:0}
+.stamp{position:absolute;right:10px;bottom:-200px;width:250px;height:250px;border-radius:50%;background:#fff;color:var(--o);border:8px dashed var(--o);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;transform:rotate(12deg);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.stamp b{font-size:44px;line-height:1}.stamp i{font-style:normal;font-size:30px;color:var(--d)}
+.price .fn{font-size:24px;font-weight:600;margin-top:10px;opacity:.9}
+/* langkah bernomor (tiket) */
+.step{position:absolute;left:60px;top:420px;display:flex;align-items:center;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 12px 34px rgba(0,0,0,.3)}
+.step .no{background:var(--o);color:#fff;font-size:70px;font-weight:900;width:120px;height:120px;display:flex;align-items:center;justify-content:center}
+.step .tx{font-size:50px;font-weight:900;padding:0 34px}
+.prog{position:absolute;left:60px;top:560px;display:flex;gap:10px}
+.prog i{width:60px;height:10px;border-radius:6px;background:rgba(255,255,255,.55)}.prog i.on{background:var(--o)}
+/* stiker benefit (polaroid) */
+.st{position:absolute;background:#fff;border-radius:22px;padding:18px 26px;font-size:46px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.3);display:flex;align-items:center;gap:14px}
+.st .e{font-size:58px}
+.ttl{position:absolute;left:60px;right:60px;top:300px}
+.ttl span{display:inline-block;background:var(--d);color:#fff;font-size:46px;font-weight:900;padding:12px 28px;border-radius:16px;transform:rotate(-2deg)}
+/* opsi */
+.ops{position:absolute;left:60px;right:60px;top:420px;text-align:center}
+.ops .chip{display:inline-block;background:#fff;font-size:44px;font-weight:900;padding:14px 30px;border-radius:50px;margin:8px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.ops .pill{display:inline-block;background:var(--o);color:#fff;font-size:44px;font-weight:900;padding:16px 36px;border-radius:50px;margin-top:22px}
+/* cta */
+.bub{position:absolute;left:150px;right:150px;top:1000px;background:#fff;border-radius:40px 40px 40px 8px;padding:28px 36px;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.bub .h{font-size:26px;color:#777;font-weight:600}.bub .tx{font-size:92px;font-weight:900;letter-spacing:6px}
+.bub .tx i{display:inline-block;width:8px;height:84px;background:var(--o);vertical-align:-8px;margin-left:8px}
+.arw{position:absolute;left:0;right:0;top:1180px;text-align:center;color:#fff;font-size:130px;font-weight:900;text-shadow:0 6px 20px rgba(0,0,0,.5)}
+/* end */
+.end{position:absolute;inset:0;background:var(--c);display:flex;flex-direction:column;align-items:center;padding-top:320px;text-align:center}
+.end .blob{position:absolute;width:700px;height:700px;border-radius:50%;background:var(--p);top:-200px;right:-260px}
+.end .blob2{position:absolute;width:520px;height:520px;border-radius:50%;background:var(--p);bottom:-160px;left:-200px}
+.end img{width:300px;position:relative}
+.end .hz{position:relative;color:#fff;font-weight:900;letter-spacing:10px;font-size:34px;background:var(--o);padding:6px 18px 7px 28px;border-radius:10px;margin-top:10px}
+.end .t1{position:relative;font-size:64px;font-weight:900;margin-top:46px}
+.end .t2{position:relative;font-size:118px;font-weight:900;color:var(--o);line-height:1;letter-spacing:-3px}.end .t2 small{font-size:50px;color:#8a3f0a}
+.end .t3{position:relative;font-size:38px;font-weight:800;background:var(--d);color:#fff;padding:10px 28px;border-radius:40px;margin-top:18px}
+.end .t4{position:relative;font-size:56px;font-weight:900;margin-top:42px}
+.end .t5{position:relative;font-size:32px;font-weight:700;margin-top:10px;line-height:1.5}
+</style></head><body><div id="r"></div>
+<script>
+const P=+new URLSearchParams(location.search).get('p');
+const bg=f=>`<img class="bg" src="${f}"><div class="sh"></div>`;
+const tag='<div class="tag"><img src="logo_upg_putih.png"><span>HERTASNING</span></div>';
+const step=(n,t)=>`<div class="step"><div class="no">${n}</div><div class="tx">${t}</div></div><div class="prog">${[1,2,3,4].map(i=>`<i class="${i<=n?'on':''}"></i>`).join('')}</div>`;
+const S={
+1:bg('behel_3497.jpg')+`<div class="mk"><p><span>Pasang behel</span><br><em>nggak harus nunggu</em><br><em>uang kumpul</em> <span>semua</span></p></div>`,
+2:bg('suasana_3482.jpg')+tag+`<div class="price"><div class="m">MULAI</div><div class="n">Rp3 jt<small>/rahang</small></div><div class="fn">*behel metal per rahang · S&amp;K berlaku</div><div class="stamp"><b>CICIL</b><i>tanpa bunga</i></div></div>`,
+3:bg('suasana_3500.jpg')+`<div class="mk"><p><span>Dari datang sampai</span><br><em>behel terpasang</em> 👇</p></div>`,
+4:bg('suasana_3501.jpg')+`<div class="st" style="left:60px;top:430px;transform:rotate(-3deg)"><span class="e">👋</span>Disambut admin</div>`,
+5:bg('behel_3484.jpg')+step(1,'Konsultasi dokter gigi'),
+6:bg('behel_3486.jpg')+step(2,'Cetak gigi'),
+7:bg('scaling_3224.jpg')+step(3,'Scaling'),
+8:bg('behel_3489.jpg')+step(4,'Dipasang dokter gigi'),
+9:bg('suasana_3469.jpg')+`<div class="ttl"><span>Nunggunya juga nyaman</span></div><div class="st" style="left:60px;top:430px;transform:rotate(-4deg)"><span class="e">📖</span>Pojok baca</div><div class="st" style="left:300px;top:560px;transform:rotate(3deg)"><span class="e">🍪</span>Camilan</div>`,
+10:bg('suasana_3476.jpg')+`<div class="ttl"><span>Nunggunya juga nyaman</span></div><div class="st" style="left:60px;top:430px;transform:rotate(-4deg);opacity:.9"><span class="e">📖</span>Pojok baca</div><div class="st" style="left:300px;top:560px;transform:rotate(3deg);opacity:.9"><span class="e">🍪</span>Camilan</div><div class="st" style="left:140px;top:690px;transform:rotate(-2deg)"><span class="e">🍦</span>Es krim</div>`,
+11:bg('suasana_3474.jpg')+`<div class="ttl"><span>Nunggunya juga nyaman</span></div><div class="st" style="left:60px;top:430px;transform:rotate(-3deg)"><span class="e">🧸</span>Pojok main anak</div><div class="st" style="left:260px;top:560px;transform:rotate(3deg)"><span class="e">🕌</span>Mushola</div>`,
+12:bg('behel_3498.jpg')+`<div class="ops"><span class="chip">Metal</span><span class="chip">Keramik</span><span class="chip">Self&#8209;ligating</span><br><span class="pill">DP 50% · sisanya 2× tanpa bunga</span></div>`,
+13:bg('suasana_3504.jpg')+`<div class="mk" style="top:330px"><p><em>Klik tombol chat</em></p></div><div class="bub"><div class="h">Ketik:</div><div class="tx">BEHEL<i></i></div></div><div class="arw">↓</div>`,
+14:`<div class="end"><div class="blob"></div><div class="blob2"></div><img src="logo_upg_oranye.png"><div class="hz">HERTASNING</div><div class="t1">Pasang Behel</div><div class="t2">Rp3 jt<small>/rahang</small></div><div class="t3">DP 50% · cicil 2× tanpa bunga</div><div class="t4">💬 0896-7341-5806</div><div class="t5">📍 Jl. Letjen Hertasning No.50, Makassar<br>⏰ Setiap hari 10.00–22.00 WITA</div></div>`};
+document.getElementById('r').innerHTML=S[P];
+</script></body></html>
