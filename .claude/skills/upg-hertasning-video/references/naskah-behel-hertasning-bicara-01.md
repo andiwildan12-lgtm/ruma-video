@@ -1,58 +1,71 @@
-# Naskah Behel UPG Hertasning — Admin Bicara ke Kamera, 1 Rekaman → 3 Gaya (v1 draf, 19 Nov 2026)
+# Naskah Behel UPG Hertasning — 3 Konsep Beda (v2, 19 Nov 2026)
 
-Acuan: video autoedit.id "1 rekaman → banyak style" (Drive `1PvuEOaWdiV6EmG_Oc9-Xi2ms2UNIFJu0`) + pola Ruma "Spil Harga" (Jenis B/C).
-Data dikonfirmasi Pak Dir 19 Nov 2026: isi paket sama dengan Antang (konsultasi, cetak gigi, scaling); cicilan 2× per bulan tanpa bunga; suara narasi (bila ada) Denis.
-Keunggulan khas Hertasning (Pak Dir): **pojok baca, camilan, dan es krim** untuk pasien yang menunggu.
-Suara: **suara asli admin** (tanpa narasi AI, tanpa musik), SFX + suara ruangan pelan. ±40 dtk.
+Arahan Pak Dir: **jangan plek ketiplek Ruma.** v1 (format "Spil Harga" + kotak komentar IG + 3 gaya edit) diganti 3 konsep dengan format, hook, dan rasa yang berbeda.
+Data (dikonfirmasi Pak Dir 19 Nov 2026): isi paket sama Antang (konsultasi, cetak gigi, scaling sebelum pasang); mulai Rp3 jt/rahang (metal); DP 50%, cicil 2× per bulan **tanpa bunga**; pembeda: **pojok baca, camilan, es krim** untuk pasien yang menunggu. Kata "gratis/free" tidak dipakai.
 
-## A. Ucapan admin (rekam per kalimat, 2× take)
-| # | Ketukan | Ucapan | Gerak |
+## Pembeda dari Ruma & Antang
+| | Ruma | Antang | **Hertasning** |
 |---|---|---|---|
-| 1 | Hook | "Spil harga pasang behel di UPG Hertasning, dong!" | membaca komentar, jari menunjuk ke atas |
-| 2 | Keberatan | "Memang pasang behel harus mahal?" | ekspresi heran |
-| 3 | Belokan | "Eits, tunggu dulu." | tangan "stop", senyum |
-| 4 | Harga | "Di UPG Dental Care Hertasning, behel mulai tiga juta per rahang. Bisa dicicil: DP lima puluh persen, sisanya dua kali, tanpa bunga." | hitung dengan jari |
-| 5 | Isi paket | "Terus, sudah dapat apa aja? Sudah termasuk konsultasi dengan dokter gigi, cetak gigi, dan scaling sebelum dipasang." | menghitung 1-2-3 |
-| 6 | Pilihan | "Pilihannya ada metal, keramik, dan self-ligating, dipasang oleh dokter gigi." | — |
-| 7 | Nyaman (pembeda) | "Nunggu giliran juga nyaman: ada pojok baca, camilan, sampai es krim!" | senyum lebar |
-| 8 | Ajakan | "Masih ada yang mau ditanyakan? Klik tombol chat, ketik BEHEL, ya!" | jempol / menunjuk ke bawah |
+| Format | Admin "Spil harga" + kotak komentar IG | Narasi Tio + 3D / checklist | **Orang asli, interaktif: tebak harga, tur POV, chat WA** |
+| Hook | Balas komentar | Balas komentar / fakta | **Pertanyaan ke staf, POV, layar chat WA** |
+| Rasa | Tenang, premium | Lugas, meyakinkan | **Santai, seru, "nyaman nunggunya"** |
+| Motif visual | Krem/teal | Oranye + kartu putih | **Oranye UPG + stiker es krim & buku (gaya coretan)** |
+| Pembeda | — | Buka s/d 22.00 | **Pojok baca, camilan, es krim** |
 
-±85 kata ≈ 35–40 dtk.
-
-## B. Panduan rekam (untuk tim Hertasning)
-- HP vertikal 9:16, kamera belakang, 4K/1080p 30fps, setinggi mata, jarak ±1 m (kepala–dada).
-- Cahaya dari depan (hadap jendela/lampu), latar: area resepsionis atau dinding logo UPG yang rapi.
-- Suara: ruangan sepi (AC boleh, musik dimatikan); mikrofon klip bila ada.
-- Seragam UPG rapi (boleh terlihat — ini memang iklan UPG). Jangan ada data pasien/layar komputer di latar.
-- Tiap kalimat direkam terpisah, jeda 2 dtk sebelum & sesudah, minimal 2 take.
-
-## C. Footage pendukung (B-roll) Hertasning yang perlu direkam
-| Shot | Durasi | Untuk |
+---
+## Konsep 1 — "TEBAK HARGA" (BOFU, ±35 dtk)
+Admin bertanya ke 2–3 rekan (perawat/staf lain, bukan pasien) "Menurut kamu, pasang behel di sini berapa?" → tebakan beragam → admin bongkar harga.
+| # | Ucapan | Visual |
 |---|---|---|
-| Tampak depan klinik + papan nama (Jl. Letjen Hertasning No.50) | 5 dtk | brand/lokasi |
-| Papan logo / resepsionis menyapa | 5 dtk | brand |
-| Pojok baca (rak buku, pasien membaca) | 5 dtk | pembeda |
-| Camilan di ruang tunggu (diambil pasien) | 5 dtk | pembeda |
-| Es krim (freezer dibuka / pasien memegang es krim) | 5 dtk | pembeda |
-| Konsultasi dokter + pasien di meja | 5 dtk | isi paket |
-| Cetak gigi (model cetakan) | 4 dtk | isi paket |
-| Scaling | 4 dtk | isi paket |
-| Pemasangan behel di kursi, pasien pegang cermin (lebar, tanpa close-up mulut) | 5 dtk | bukti |
-| Pasien tersenyum lihat behel di cermin | 4 dtk | hasil |
-Izin wajah pasien wajib. Footage Antang **tidak boleh** dipakai.
+| 1 | Admin (ke kamera, berbisik): "Coba tanya teman-teman, pasang behel di UPG Hertasning berapa?" | jalan ke ruang staf, teks **TEBAK HARGA BEHEL** |
+| 2 | Staf A: "Hmm… sepuluh juta?" · Staf B: "Tujuh juta kali ya?" · Staf C: "Lima juta?" | potongan cepat, angka tebakan muncul besar lalu dicoret ❌ |
+| 3 | Admin: "Salah semua! Mulai tiga juta per rahang." | kartu harga **Rp3 jt/rahang** meledak, SFX "ding" |
+| 4 | Admin: "Bisa dicicil: DP lima puluh persen, sisanya dua kali, tanpa bunga." | pil **DP 50% · cicil 2× tanpa bunga** |
+| 5 | Admin: "Sudah termasuk konsultasi dokter gigi, cetak gigi, dan scaling." | 3 centang + footage singkat |
+| 6 | Staf A (kaget): "Serius? Murah juga ya." *(opsional, natural)* | reaksi |
+| 7 | Admin: "Klik tombol chat, ketik BEHEL, ya!" | panah ke tombol + kartu penutup Hertasning |
+Catatan: tebakan boleh lucu tapi jangan menyebut klinik lain.
 
-## D. 3 gaya edit dari 1 rekaman
-1. **Gaya 1 — Caption kinetik + stiker:** wajah admin penuh layar, zoom mendadak di kata kunci ("tiga juta", "tanpa bunga", "es krim"), caption 1–3 kata, stiker ikon (dompet, kalender, buku, es krim).
-2. **Gaya 2 — Bicara + bukti (selang-seling):** wajah admin diselingi footage tiap poin (konsultasi, cetak, scaling, pojok baca, camilan, es krim) + kartu harga & checklist. Setara Ruma Jenis B.
-3. **Gaya 3 — Dibuka cuplikan + judul besar:** 3 dtk pertama cuplikan pemasangan/es krim dengan kotak komentar, lalu admin masuk; judul tebal di atas, wajah sesekali di jendela kecil. Setara Ruma Jenis C.
+## Konsep 2 — "IKUT AKU KE UPG HERTASNING" (POV tur, MOFU+harga, ±45 dtk)
+Kamera dipegang admin/kreator (POV, jalan), fokus **kenyamanan dulu, harga di akhir**. Suara asli admin, santai seperti vlog.
+| # | Ucapan | Visual |
+|---|---|---|
+| 1 | "Ikut aku ke UPG Hertasning, tempat pasang behel yang nunggunya nggak bikin bosan." | masuk dari depan klinik (papan nama Jl. Letjen Hertasning) |
+| 2 | "Ini pojok bacanya…" | rak buku, tangan mengambil buku · stiker 📖 |
+| 3 | "…ada camilan…" | toples/rak camilan · stiker 🍪 |
+| 4 | "…dan ini favorit: es krim!" | freezer dibuka, es krim diambil · stiker 🍦 + zoom |
+| 5 | "Kalau sudah dipanggil, konsultasi dulu dengan dokter gigi, cetak gigi, scaling, baru behel dipasang." | footage cepat konsultasi → cetak → scaling → pemasangan |
+| 6 | "Harganya mulai tiga juta per rahang, bisa dicicil DP lima puluh persen, sisanya dua kali, tanpa bunga." | kartu harga di atas footage pasien senyum di cermin |
+| 7 | "Mau ke sini juga? Klik tombol chat, ketik BEHEL." | resepsionis melambai + kartu penutup |
 
-## E. Audit naskah
-- "Gratis/free" **tidak dipakai** (aturan iklan) → "ada pojok baca, camilan, sampai es krim".
-- Tanpa rontgen, garansi, "alat steril", biaya kontrol, janji hasil/durasi.
-- Hook berupa kotak komentar (bukan pertanyaan yang menuduh penonton) → aman.
-- Harga "*behel metal per rahang · S&K berlaku" di kartu harga.
+## Konsep 3 — "3 PERTANYAAN PALING SERING DI CHAT ADMIN" (BOFU, ±40 dtk)
+Bingkai **layar chat WhatsApp** (bukan komentar IG seperti Ruma). Tiap pertanyaan muncul sebagai gelembung chat masuk, admin menjawab ke kamera.
+| # | Gelembung chat masuk | Jawaban admin | Visual |
+|---|---|---|---|
+| 0 | — | "Ini tiga pertanyaan yang paling sering masuk ke chat admin UPG Hertasning soal behel." | admin pegang HP, judul **3 PERTANYAAN TERBANYAK** |
+| 1 | "Kak, behel berapa?" | "Mulai tiga juta per rahang." | kartu harga |
+| 2 | "Bisa dicicil nggak?" | "Bisa. DP lima puluh persen, sisanya dua kali, tanpa bunga." | pil cicilan |
+| 3 | "Nunggunya lama nggak, bosan?" | "Tenang, ada pojok baca, camilan, sampai es krim. Abis itu konsultasi dulu sama dokter gigi, cetak gigi, scaling, baru dipasang." | footage pojok baca → es krim → proses |
+| 4 | — | "Pertanyaan lain? Klik tombol chat, ketik BEHEL, kami jawab." | gelembung chat "BEHEL" terkirim ✓✓ + kartu penutup |
+Catatan: gelembung chat dibuat ulang (desain sendiri), tanpa nomor/nama pelanggan asli.
 
-## F. Validasi Pak Dir
-1. Camilan & es krim tersedia **setiap hari** untuk semua pasien? (bila tidak, ditambah "selama persediaan ada")
-2. Siapa admin Hertasning yang direkam? (sudah izin wajah untuk iklan)
-3. Kata kunci chat "BEHEL" juga dipakai untuk Hertasning? (admin Hertasning perlu template balasan)
+---
+## Efisiensi rekam
+Satu sesi rekam (±1 jam) cukup untuk ketiga konsep: admin bicara (Konsep 1, 2, 3), 2–3 staf menebak (Konsep 1), dan B-roll yang sama dipakai bersama.
+
+### B-roll Hertasning (±5 dtk per shot)
+Tampak depan + papan nama · resepsionis menyapa/melambai · **pojok baca** · **camilan** · **es krim (freezer dibuka, diambil)** · konsultasi dokter + pasien · cetak gigi · scaling · pemasangan behel (lebar, pasien pegang cermin) · pasien senyum di cermin. Izin wajah pasien & staf wajib. Footage Antang/Ruma tidak boleh dipakai.
+
+### Panduan rekam
+HP vertikal 4K/1080p 30fps; Konsep 1 & 3 setinggi mata (stabil), Konsep 2 dipegang sambil jalan pelan (mode stabil). Cahaya dari depan, musik ruangan dimatikan, tiap kalimat 2 take.
+
+## Audit naskah
+- Tanpa "gratis/free", rontgen, garansi, "alat steril", biaya kontrol, janji hasil/durasi, "tidak sakit".
+- Tidak menyebut/menjelekkan klinik lain (Konsep 1).
+- Hook bukan pertanyaan yang menuduh penonton: pertanyaan ditujukan ke staf (K1), ajakan POV (K2), pertanyaan dari chat (K3).
+- Kartu harga: "*behel metal per rahang · S&K berlaku".
+
+## Validasi Pak Dir
+1. Camilan & es krim tersedia setiap hari untuk semua pasien? (bila tidak: "selama persediaan ada")
+2. Admin & staf mana yang direkam (izin wajah)?
+3. Kata kunci "BEHEL" dipakai di Hertasning + template balasan admin?

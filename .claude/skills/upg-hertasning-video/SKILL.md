@@ -45,4 +45,4 @@ Catatan: video > 10 MB tidak bisa diunduh lewat konektor Drive.
 Dicek 19 Nov 2026 lewat konektor Drive: subfolder Behel/Ortho (`1sVGv_szB3nWFQPzPgG90S8qNNLEcdJYi`) & Scalling tampak **kosong/tidak terbaca**; hanya 1 klip bleaching (IMG_4710, 19 MB) di folder Agustus. **Belum ada** rekaman admin bicara ke kamera, pojok baca, camilan, es krim → perlu rekam baru (daftar shot di `references/naskah-behel-hertasning-bicara-01.md`).
 
 ## 5. Naskah
-- `references/naskah-behel-hertasning-bicara-01.md` — admin bicara, 1 rekaman → 3 gaya (draf v1).
+- `references/naskah-behel-hertasning-bicara-01.md` — v2: 3 konsep beda dari Ruma (Tebak Harga, POV tur "Ikut Aku", 3 Pertanyaan Chat WA).
