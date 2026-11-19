@@ -54,7 +54,7 @@ Aturan:
 - [ ] Render 6–12 frame probe dari seluruh durasi, lalu lihat lembar kontaknya.
 - [ ] Tidak ada objek terpotong, teks menutupi objek penting, atau teks keluar dari area aman.
 - [ ] Anti-monoton: kamera berganti tiap 2–4 detik, bentuk objek dikenali, suasana berubah per babak.
-- [ ] Logo dan identitas brand benar; tidak ada atribut brand lain.
+- [ ] Logo dan identitas brand benar; tidak ada atribut brand lain. **Logo tanpa kotak/latar putih** (lihat aturan logo di skill brand).
 - [ ] Footage: casting benar (pasien ≠ admin), tanpa data sensitif (password, wajah tanpa izin).
 - [ ] **Setiap kata kerja di narasi terlihat di gambar pada detik yang sama** (pelajaran Kunjungan Pertama v1: "dokter gigi memeriksa" tanpa adegan pemeriksaan).
 - [ ] Tidak ada benda yang Pak Dir minta tidak ditampilkan (contoh: rak sepatu).

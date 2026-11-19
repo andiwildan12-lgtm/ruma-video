@@ -17,6 +17,7 @@ Lihat tabel di skill `upg-antang-video` bagian 0. Satu video = satu cabang. Foot
 - Alamat: **Jl. Letjen Hertasning No.50, Makassar** (dari Frame Story UPG Dental)
 - Instagram: @upg.dentalcare
 - Logo: sama dengan Antang (`../upg-antang-video/assets/logo_upg_putih.png`)
+- **ATURAN LOGO [WAJIB, teguran Pak Dir 19 Nov 2026]: logo UPG tampil langsung TANPA kotak/lingkaran/latar putih.** Latar gelap/foto → `logo_upg_putih.png` + bayangan halus (perkuat gradasi gelap di belakangnya bila latar terang); latar krem/terang → `logo_upg_oranye.png`. Berlaku juga untuk avatar chat, stiker, sampul.
 
 ## 2. Harga behel
 - Mulai Rp3 juta per rahang (metal), DP 50%, sisanya cicil 2x; pilihan metal, keramik, self-ligating.
@@ -68,5 +69,5 @@ Belum diunduh: Scalling Hertasning (`1zY_xRIKdMUMNMhqjuQ5EWAabQc9z8GRR`, 20 klip
 
 ## 6. Poster Hertasning (19 Nov 2026)
 - `scripts/poster/poster.html?ad=pov|chat&sz=story|feed` + `shot.js` → `output/Hertasning_BehelPOV_*` & `Hertasning_BehelChat_*` (Story 1080x1920, Feed 1080x1350).
-- Gaya Hertasning (beda Antang): latar krem-peach #FFF4E8, logo oranye dalam kotak putih + label oranye HERTASNING, judul marker oranye/gelap, kartu harga oranye dengan pil "DP 50% · cicil 2× tanpa bunga", tiket langkah 1–4, pil benefit, kartu chat (iklan chat).
+- Gaya Hertasning (beda Antang): latar krem-peach #FFF4E8, logo putih langsung di atas gradasi gelap (TANPA kotak putih) + label oranye HERTASNING, judul marker oranye/gelap, kartu harga oranye dengan pil "DP 50% · cicil 2× tanpa bunga", tiket langkah 1–4, pil benefit, kartu chat (iklan chat).
 - Pelajaran audit: cap bulat "CICIL" menabrak judul/harga → diganti pil di dalam kartu; hero 3501 object-position 57% supaya wajah admin tidak tertutup judul.

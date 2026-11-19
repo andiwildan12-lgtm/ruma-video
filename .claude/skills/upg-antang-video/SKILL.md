@@ -34,6 +34,7 @@ Versi 0.1 (18 Nov 2026). Status: [USULAN] kecuali ditandai lain.
 
 ## 1a. Logo & warna [DISEPAKATI 18 Nov 2026]
 - **Logo UPG Antang = sama dengan Hertasning** (gigi garis + "UPG Dental Care"). File: `assets/logo_upg_putih.png` (putih transparan, untuk latar gelap), `assets/logo_upg_oranye.png`. Diekstrak dari Behel_Story Hertasning (resolusi sedang; minta file vektor bila perlu cetak besar).
+- **ATURAN LOGO [WAJIB, teguran Pak Dir 19 Nov 2026]: logo UPG tampil langsung TANPA kotak/lingkaran/latar putih.** Latar gelap/foto → `logo_upg_putih.png` + bayangan halus (perkuat gradasi gelap di belakangnya bila latar terang); latar krem/terang → `logo_upg_oranye.png`. Berlaku juga untuk avatar chat, stiker, sampul.
 - **Pembeda cabang di video**: label **ANTANG** di bawah logo + WA & alamat Antang. Jangan pakai frame story Hertasning (ada alamat Jl. Letjen Hertasning No.50).
 - Warna UPG: oranye `#E8771E`, gelap `#262626`, krem `#F7EEE3`, putih.
 

@@ -5,9 +5,9 @@ body{width:1080px;overflow:hidden;font-family:Inter,sans-serif;background:var(--
 body.story{height:1920px}body.feed{height:1350px}
 .blob{position:absolute;border-radius:50%;background:var(--p)}
 .hero{position:absolute;left:0;top:0;width:1080px;object-fit:cover}
-.fade{position:absolute;left:0;top:0;width:1080px;background:linear-gradient(180deg,rgba(20,20,20,.5) 0%,rgba(20,20,20,0) 28%,rgba(255,244,232,0) 55%,var(--c) 100%)}
+.fade{position:absolute;left:0;top:0;width:1080px;background:linear-gradient(180deg,rgba(20,20,20,.72) 0%,rgba(20,20,20,.35) 22%,rgba(20,20,20,0) 38%,rgba(255,244,232,0) 55%,var(--c) 100%)}
 .brand{position:absolute;left:60px;display:flex;align-items:center;gap:14px}
-.brand .lg{background:#fff;border-radius:18px;padding:8px 14px;box-shadow:0 4px 14px rgba(0,0,0,.25)}.brand img{width:96px;display:block}
+.brand .lgw{width:120px;display:block;filter:drop-shadow(0 2px 8px rgba(0,0,0,.55))}
 .brand span{background:var(--o);color:#fff!important;font-weight:900;font-size:26px;letter-spacing:6px;padding:6px 16px;border-radius:8px}
 .wrap{position:absolute;left:0;right:0;zoom:var(--z)}
 .mk{padding:0 60px}
@@ -36,7 +36,7 @@ body.story{height:1920px}body.feed{height:1350px}
 /* chat */
 .chat{margin:0 60px;background:#F4EFE9;border-radius:34px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.25)}
 .chat .hd{background:var(--o);color:#fff;display:flex;align-items:center;gap:16px;padding:18px 24px}
-.chat .av{width:64px;height:64px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}.chat .av img{width:52px}
+.chat .av{width:64px;display:flex;align-items:center;justify-content:center}.chat .av img{width:60px}
 .chat .nm{font-size:32px;font-weight:800}.chat .on{font-size:21px;opacity:.9}
 .chat .bd{padding:22px 22px 24px;display:flex;flex-direction:column;gap:14px}
 .in{align-self:flex-start;background:#fff;border-radius:6px 26px 26px 26px;padding:14px 22px;font-size:34px;font-weight:700;box-shadow:0 3px 8px rgba(0,0,0,.06)}
@@ -53,7 +53,7 @@ body.story{height:1920px}body.feed{height:1350px}
 <script>
 const Q=new URLSearchParams(location.search);const AD=Q.get('ad'),SZ=Q.get('sz');document.body.className=SZ;
 const story=SZ==='story';
-const brand=t=>`<div class="brand" style="top:${t}px"><div class="lg"><img src="logo_upg_oranye.png"></div><span>HERTASNING</span></div>`;
+const brand=t=>`<div class="brand" style="top:${t}px"><img class="lgw" src="logo_upg_putih.png"><span>HERTASNING</span></div>`;
 const cta=`<div class="cta"><div class="wa">💬</div><div><div class="t1">CHAT &amp; KETIK <b>BEHEL</b></div><div class="t2">0896-7341-5806</div></div></div>`;
 const loc=`<div class="loc">📍 <b>Jl. Letjen Hertasning No.50</b>, Makassar<br>⏰ Buka setiap hari 10.00–22.00 WITA</div>`;
 let h='';
@@ -71,7 +71,7 @@ if(AD==='pov'){
  h=`<img class="hero" src="suasana_3501.jpg" style="height:${hh}px;object-position:50% 57%"><div class="fade" style="height:${hh}px"></div>${brand(story?230:40)}
  <div class="wrap" style="top:${story?420:180}px;--z:${story?1:.8}">
   <div class="mk" style="margin-bottom:26px"><p style="font-size:70px"><span>3 pertanyaan</span> <em>terbanyak</em><br><span>di chat admin</span></p></div>
-  <div class="chat"><div class="hd"><div class="av"><img src="logo_upg_oranye.png"></div><div><div class="nm">Admin UPG Hertasning</div><div class="on">online</div></div></div>
+  <div class="chat"><div class="hd"><div class="av"><img src="logo_upg_putih.png"></div><div><div class="nm">Admin UPG Hertasning</div><div class="on">online</div></div></div>
    <div class="bd">
     <div class="in">Kak, pasang behel berapa?</div>
     <div class="out"><table class="tbl"><tr><td>Metal</td><td>Rp3 jt</td></tr><tr><td>Keramik</td><td>Rp3,5 jt</td></tr><tr><td>Self&#8209;ligating</td><td>Rp4,5 jt</td></tr></table><div style="font-size:22px;color:#b36b2c;margin-top:4px">per rahang · harga mulai · S&amp;K berlaku</div></div>
