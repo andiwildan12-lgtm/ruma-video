@@ -63,12 +63,20 @@ Dicek 19 Nov 2026 lewat konektor Drive: subfolder Behel/Ortho (`1sVGv_szB3nWFQPz
 Belum diunduh: Scalling Hertasning (`1zY_xRIKdMUMNMhqjuQ5EWAabQc9z8GRR`, 20 klip), Bleaching, Tambal.
 
 ## 5. Naskah
-- `references/naskah-behel-hertasning-pov-01.md` — BOFU full footage + Denis, papan gambar v1 (dikerjakan duluan). **Render v1** `output/upg-hertasning-behel-pov-v1.mp4` (41,6 dtk), skrip `scripts/behelPOV/` (ov.html, rend.js, mix.py). Pelajaran audit: klip 3500 mulai dtk 6 (papan "TUTUP" di pintu), 3480 mulai dtk 6 (papan FREE), camilan 3215 crop + blur pita bawah, mushola = foto IMG_9182. Kredit: narasi 2 versi ±1.546 + transkrip ±246.
-- `references/naskah-behel-hertasning-chat-01.md` — BOFU kedua "3 Pertanyaan di Chat Admin" (Denas), papan gambar v1 ACC → **render v1** `output/upg-hertasning-behel-chat-v1.mp4` (44,4 dtk), skrip `scripts/behelChat/`. Kredit: narasi 2 versi ±1.656 + transkrip ±266.
+- `references/naskah-behel-hertasning-pov-01.md` — BOFU full footage + Denis, papan gambar v1 (dikerjakan duluan). **Render v1** `output/upg-hertasning/upg-hertasning-behel-pov-v1.mp4` (41,6 dtk), skrip `scripts/behelPOV/` (ov.html, rend.js, mix.py). Pelajaran audit: klip 3500 mulai dtk 6 (papan "TUTUP" di pintu), 3480 mulai dtk 6 (papan FREE), camilan 3215 crop + blur pita bawah, mushola = foto IMG_9182. Kredit: narasi 2 versi ±1.546 + transkrip ±246.
+- `references/naskah-behel-hertasning-chat-01.md` — BOFU kedua "3 Pertanyaan di Chat Admin" (Denas), papan gambar v1 ACC → **render v1** `output/upg-hertasning/upg-hertasning-behel-chat-v1.mp4` (44,4 dtk), skrip `scripts/behelChat/`. Kredit: narasi 2 versi ±1.656 + transkrip ±266.
 - `references/naskah-behel-hertasning-bicara-01.md` — v2: 3 konsep beda dari Ruma (Tebak Harga, POV tur "Ikut Aku", 3 Pertanyaan Chat WA).
 
 ## 6. Poster Hertasning (19 Nov 2026)
-- `scripts/poster/poster.html?ad=pov|chat&sz=story|feed` + `shot.js` → `output/Hertasning_BehelPOV_*` & `Hertasning_BehelChat_*` (Story 1080x1920, Feed 1080x1350).
+- `scripts/poster/poster.html?ad=pov|chat&sz=story|feed` + `shot.js` → `output/upg-hertasning/Hertasning_BehelPOV_*` & `Hertasning_BehelChat_*` (Story 1080x1920, Feed 1080x1350).
 - Gaya Hertasning (beda Antang): latar krem-peach #FFF4E8, logo putih langsung di atas gradasi gelap (TANPA kotak putih) + label oranye HERTASNING, judul marker oranye/gelap, kartu harga oranye dengan pil "DP 50% · cicil 2× tanpa bunga", tiket langkah 1–4, pil benefit, kartu chat (iklan chat).
 - **Revisi Pak Dir "terlalu ramai"**: poster cukup 1 pesan utama + harga + 1 baris isi paket + CTA + lokasi. Tiket langkah, pil benefit, tabel harga & kalkulator DIBUANG dari poster (cukup di video). Iklan chat → 3 tanya-jawab singkat.
 - Pelajaran audit: cap bulat "CICIL" menabrak judul/harga → diganti pil di dalam kartu; hero 3501 object-position 57% supaya wajah admin tidak tertutup judul.
+
+## 7. Arsip produksi UPG HERTASNING (per 19 Nov 2026) — semua file di `output/upg-hertasning/`
+| Konten | Status | File |
+|---|---|---|
+| Behel BOFU POV "Dari Datang sampai Terpasang" (Denas, full footage) | Render v1 | `upg-hertasning-behel-pov-v1.mp4`, caption `...-pov-v1-caption.md`, sampul `cover-hertasning-behel-pov.jpg` |
+| Behel BOFU "3 Pertanyaan Terbanyak di Chat Admin" (Denas) | Render v1 (avatar logo diperbaiki) | `upg-hertasning-behel-chat-v1.mp4`, caption `...-chat-v1-caption.md`, sampul `cover-hertasning-behel-chat.jpg` |
+| Poster 2 iklan (versi lega, logo tanpa latar putih) | Revisi 2 | `Hertasning_BehelPOV_Story/Feed`, `Hertasning_BehelChat_Story/Feed` |
+Antrean: Konsep "Tebak Harga" (butuh rekaman staf), cek pelafalan "Hertasning" oleh Denas.

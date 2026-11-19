@@ -121,3 +121,12 @@ Belum ada: tangga lt. 2.
 - Scaling Antang: `references/naskah-scaling-antang-01.md` (v2 fokus konversi), papan gambar `references/papan-gambar-scaling-antang-v1.png`, render 3D `scripts/sc.html`
 - Behel Antang: `references/naskah-behel-antang-01.md`, papan gambar `references/papan-gambar-behel-antang-v1.png`
 - Pengucapan dipilih: **Versi A "U-Pe-Ge Dental Care"** (menyambung).
+
+## 7. Arsip produksi UPG ANTANG (per 19 Nov 2026) — semua file di `output/upg-antang/`
+| Konten | Status | File |
+|---|---|---|
+| Behel v1 (narasi Tio + 3D, "bisa dicicil") | ACC | `upg-antang-behel-v1.mp4`, caption `upg-antang-behel-v1-caption.md`, sampul `cover-behel-antang-a/b.png` |
+| Poster behel v1 | Disukai | `Behel_Antang_Story_1080x1920.png`, `Behel_Antang_Feed_1080x1350.png` |
+| Behel Jenis B "Dapat Apa Aja?" (kotak komentar + checklist) | Render v1, menunggu review | `upg-antang-behel-B-v1.mp4`, caption `upg-antang-behel-B-v1-caption.md`, sampul `cover-behel-antang-B.jpg`, Story `Behel_Antang_B_Story_1080x1920.png` |
+| Promo Scaling (Rp200 rb, kuota harian) | Papan gambar v1, **di-skip Pak Dir** (lanjut nanti) | `references/naskah-scaling-antang-01.md`, `references/papan-gambar-scaling-antang-v1.png`, `scripts/sc.html` |
+Antrean behel Antang: Jenis A "Spil Harga" (butuh rekaman admin), Jenis C "Hitung Cicilan", Feed Jenis B.
