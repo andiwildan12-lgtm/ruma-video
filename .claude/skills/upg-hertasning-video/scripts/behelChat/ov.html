@@ -1,0 +1,115 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--o:#E8771E;--d:#262626;--c:#FFF4E8;--p:#FCE3CC}
+body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#111;color:var(--d)}
+.L{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
+.sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.05) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.3) 100%)}
+.a{position:absolute;opacity:0}
+.chat{left:60px;right:60px;top:290px;background:#F4EFE9;border-radius:36px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.chat .hd{background:var(--o);color:#fff;display:flex;align-items:center;gap:18px;padding:20px 26px;position:relative}
+.chat .av{width:70px;height:70px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.chat .av img{width:58px}
+.chat .nm{font-size:34px;font-weight:800}.chat .on{font-size:22px;opacity:.9}
+.cnt{position:absolute;top:30px;right:26px;background:#fff;color:var(--o);font-weight:900;font-size:26px;border-radius:30px;padding:4px 14px}
+.chat .bd{padding:26px 24px 30px;display:flex;flex-direction:column;gap:16px;min-height:420px}
+.in,.out{opacity:0;transform-origin:left top}
+.in{align-self:flex-start;background:#fff;border-radius:6px 28px 28px 28px;padding:18px 26px;font-size:40px;font-weight:700;max-width:86%;box-shadow:0 3px 8px rgba(0,0,0,.08)}
+.out{align-self:flex-end;background:var(--p);border-radius:28px 6px 28px 28px;padding:18px 26px;font-size:38px;font-weight:800;max-width:86%;transform-origin:right top}
+.in small,.out small{display:block;text-align:right;font-size:20px;color:#999;font-weight:600;margin-top:4px}
+.out small{color:#b36b2c}
+.typing{align-self:flex-start;background:#fff;border-radius:6px 28px 28px 28px;padding:18px 26px;font-size:64px;letter-spacing:4px;font-weight:900;min-width:120px}
+.typing i{display:inline-block;width:7px;height:58px;background:var(--o);vertical-align:-6px;margin-left:6px}
+.q{left:60px;top:300px;max-width:880px;background:#fff;border-radius:6px 30px 30px 30px;padding:20px 30px;font-size:46px;font-weight:800;box-shadow:0 12px 34px rgba(0,0,0,.3);transform-origin:left top}
+.q .lb{display:block;font-size:22px;color:var(--o);font-weight:900;letter-spacing:2px;margin-bottom:6px}
+.tbl{left:70px;right:70px;top:500px;background:#fff;border-radius:30px;padding:26px 34px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.tbl .tt{font-size:28px;font-weight:900;color:#8a3f0a;letter-spacing:3px;margin-bottom:8px}
+.tbl .r{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:3px dashed #eedccb;font-size:46px;font-weight:800;opacity:0}
+.tbl .r.last{border:none}
+.tbl .r b{color:var(--o);font-size:62px;font-weight:900}
+.tbl .fn{font-size:22px;color:#8a3f0a;font-weight:600;margin-top:8px}
+.pill{left:0;right:0;top:520px;text-align:center}
+.pill span{display:inline-block;background:var(--o);color:#fff;font-size:50px;font-weight:900;padding:18px 40px;border-radius:60px;box-shadow:0 10px 26px rgba(0,0,0,.3)}
+.pill .tb{display:inline-block;margin-top:18px;background:#fff;color:var(--o);font-size:46px;font-weight:900;padding:12px 34px;border-radius:50px;opacity:0}
+.calc{left:70px;right:70px;top:500px;background:var(--d);color:#fff;border-radius:30px;padding:30px 36px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.calc .row{opacity:0}
+.calc .l{font-size:30px;font-weight:700;opacity:.8}
+.calc .v{font-size:76px;font-weight:900;letter-spacing:-1px;margin-bottom:6px}
+.calc .v.o{color:#FFA552}
+.calc .ar{font-size:40px;opacity:.6;margin:-6px 0 0}
+.calc .badge{display:inline-block;background:var(--o);color:#fff;font-size:40px;font-weight:900;padding:10px 28px;border-radius:40px;margin-top:6px}
+.ck{left:60px;top:470px;display:flex;flex-direction:column;gap:12px}
+.ck div{background:#fff;border-radius:40px;padding:12px 26px 12px 14px;font-size:40px;font-weight:800;display:flex;align-items:center;gap:14px;box-shadow:0 8px 20px rgba(0,0,0,.25);opacity:.45;transform-origin:left center}
+.ck div:before{content:'';width:52px;height:52px;border-radius:50%;background:#bbb;color:#fff;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:900}
+.ck div.on{opacity:1}.ck div.on:before{content:'✓';background:var(--o)}
+.st{background:#fff;border-radius:22px;padding:18px 26px;font-size:46px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.3);white-space:nowrap}
+.end{inset:0;background:var(--c);overflow:hidden}
+.end .blob{position:absolute;width:700px;height:700px;border-radius:50%;background:var(--p);top:-200px;right:-260px}
+.end .blob2{position:absolute;width:520px;height:520px;border-radius:50%;background:var(--p);bottom:-160px;left:-200px}
+.end .in2{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding-top:320px;text-align:center}
+.end .in2>*{opacity:0}
+.end img{width:300px}
+.end .hz{color:#fff;font-weight:900;letter-spacing:10px;font-size:34px;background:var(--o);padding:6px 18px 7px 28px;border-radius:10px;margin-top:10px}
+.end .t1{font-size:64px;font-weight:900;margin-top:46px}
+.end .t2{font-size:118px;font-weight:900;color:var(--o);line-height:1;letter-spacing:-3px}.end .t2 small{font-size:50px;color:#8a3f0a}
+.end .t3{font-size:38px;font-weight:800;background:var(--d);color:#fff;padding:10px 28px;border-radius:40px;margin-top:18px}
+.end .t4{font-size:56px;font-weight:900;margin-top:42px}
+.end .t5{font-size:32px;font-weight:700;margin-top:10px;line-height:1.5}
+</style></head><body>
+<img id="bp" class="L"><img id="bg" class="L"><div class="sh" id="sh"></div>
+<div class="a chat" id="chat1"><div class="hd"><div class="av"><img src="../sb/logo_upg_oranye.png"></div><div><div class="nm">Admin UPG Hertasning</div><div class="on">online</div></div><div class="cnt" id="cnt">3 pesan baru</div></div>
+ <div class="bd"><div class="in" id="m1">Kak, pasang behel berapa?<small>19.02</small></div><div class="in" id="m2">Bisa dicicil nggak?<small>19.02</small></div><div class="in" id="m3">Udah termasuk apa aja?<small>19.03</small></div></div></div>
+<div class="a q" id="q"><span class="lb" id="qlb">PERTANYAAN 1/3</span><span id="qtx">Kak, pasang behel berapa?</span></div>
+<div class="a tbl" id="tbl"><div class="tt">HARGA PER RAHANG</div><div class="r" id="r1">Metal<b>Rp3 jt</b></div><div class="r" id="r2">Keramik<b>Rp3,5 jt</b></div><div class="r last" id="r3">Self&#8209;ligating<b>Rp4,5 jt</b></div><div class="fn">*harga mulai · S&amp;K berlaku</div></div>
+<div class="a pill" id="pill"><span>DP 50% · sisanya 2×</span><br><div class="tb" id="ptb">tanpa bunga</div></div>
+<div class="a calc" id="calc"><div class="row" id="k1"><div class="l">Contoh: metal 1 rahang</div><div class="v">Rp3.000.000</div></div><div class="row" id="k2"><div class="ar">↓</div><div class="l">DP 50%</div><div class="v o">Rp1.500.000</div></div><div class="row" id="k3"><div class="ar">↓</div><div class="l">Sisanya 2× per bulan</div><div class="v o">2 × Rp750.000</div><div class="badge">tanpa bunga</div></div></div>
+<div class="a ck" id="ck"><div id="c1">Konsultasi dokter gigi</div><div id="c2">Cetak gigi</div><div id="c3">Scaling</div><div id="c4">Dipasang dokter gigi</div></div>
+<div class="a" id="ttl" style="left:60px;top:300px"><span style="display:inline-block;background:#262626;color:#fff;font-size:46px;font-weight:900;padding:12px 28px;border-radius:16px;transform:rotate(-2deg)">Nunggunya juga nyaman</span></div>
+<div class="a st" id="sa" style="left:60px;top:440px">🍪 Camilan</div>
+<div class="a st" id="sb" style="left:340px;top:580px">🍦 Es krim</div>
+<div class="a chat" id="chat2"><div class="hd"><div class="av"><img src="../sb/logo_upg_oranye.png"></div><div><div class="nm">Admin UPG Hertasning</div><div class="on">online</div></div></div>
+ <div class="bd"><div class="in" id="n1" style="opacity:1">Udah termasuk apa aja?<small>19.03</small></div><div class="out" id="n2" style="opacity:1">Konsultasi, cetak gigi &amp; scaling sudah termasuk ya Kak 😊<small>19.04 ✓✓</small></div><div class="typing in" id="n3"><span id="typ"></span><i id="cur"></i><small id="tm" style="opacity:0">19.05</small></div><div class="out" id="n4">Siap Kak, admin bantu atur jadwalnya ya 🙏<small>19.05 ✓✓</small></div></div></div>
+<div class="a end" id="end"><div class="blob"></div><div class="blob2"></div><div class="in2"><img src="../sb/logo_upg_oranye.png"><div class="hz">HERTASNING</div><div class="t1">Pasang Behel</div><div class="t2">Rp3 jt<small>/rahang</small></div><div class="t3">DP 50% · cicil 2× tanpa bunga</div><div class="t4">💬 0896-7341-5806</div><div class="t5">📍 Jl. Letjen Hertasning No.50, Makassar<br>⏰ Setiap hari 10.00–22.00 WITA</div></div></div>
+<script>
+const SEG=[['s1',0,5.84],['s2',5.84,13.89],['s3',13.89,25.66],['s4a',25.66,27.85],['s4b',27.85,29.2],['s5',29.2,30.2],['s6',30.2,31.1],['s7',31.1,32.74],['s8',32.74,36.25],['s9',36.25,39.5],['end',39.5,44.4]];
+const HARD=new Set(['s4b','s5','s6','s7']);
+const $=id=>document.getElementById(id);const cl=x=>Math.max(0,Math.min(1,x));
+function pop(t,t0,d=.3){const k=cl((t-t0)/d);if(k<=0)return{o:0,s:.6};const s=k<.7?.6+.46*(k/.7):1.06-.06*((k-.7)/.3);return{o:cl(k*2.5),s}}
+function ap(el,p,ex=''){el.style.opacity=p.o;el.style.transform=`${ex} scale(${p.s})`}
+const fo=(t,b,d=.17)=>1-cl((t-(b-d))/d);
+const fr=(s,i)=>`seg/${s}/${String(i+1).padStart(4,'0')}.jpg`;
+window.R=async function(t){
+ let si=SEG.findIndex(s=>t>=s[1]&&t<s[2]);if(si<0)si=SEG.length-1;const [sn,a,b]=SEG[si];
+ const bg=$('bg'),bp=$('bp');
+ if(sn!=='end'){bg.style.display='block';bg.src=fr(sn,Math.floor((t-a)*30+1e-6));
+   const z=1+0.035*((t-a)/(b-a))+(HARD.has(sn)?0.04:0.04)*(1-cl((t-a)/.3));bg.style.transform=`scale(${z})`;
+   if(si>0&&!HARD.has(sn)&&t-a<5/30){const p=SEG[si-1];bp.src=fr(p[0],Math.floor((p[2]-p[1])*30)-1);bp.style.display='block';bg.style.opacity=cl((t-a)*30/5+.2)}else{bp.style.display='none';bg.style.opacity=1}
+   $('sh').style.display='block';}else{bg.style.display='none';bp.style.display='none';$('sh').style.display='none'}
+ // hook chat
+ const c1=$('chat1');if(t<5.84){const p=pop(t,0.05,.3);c1.style.opacity=p.o*fo(t,5.84);c1.style.transform=`scale(${p.s})`;
+   [['m1',.35],['m2',.95],['m3',1.55]].forEach(([id,t0])=>ap($(id),pop(t,t0,.25)));$('cnt').style.opacity=cl((t-1.55)/.2)}else c1.style.opacity=0;
+ // pertanyaan
+ const Q=[[5.9,13.89,'1/3','Kak, pasang behel berapa?'],[13.95,25.66,'2/3','Bisa dicicil nggak?'],[25.72,32.74,'3/3','Udah termasuk apa aja?']];
+ const qi=Q.findIndex(x=>t>=x[0]&&t<x[1]);const q=$('q');
+ if(qi>=0){const x=Q[qi];$('qlb').textContent='PERTANYAAN '+x[2];$('qtx').textContent=x[3];const p=pop(t,x[0],.3);q.style.opacity=p.o*fo(t,x[1]);q.style.transform=`scale(${p.s})`}else q.style.opacity=0;
+ // tabel
+ const tb=$('tbl');if(t>=6.3&&t<13.89){const p=pop(t,6.3,.3);tb.style.opacity=p.o*fo(t,13.89);tb.style.transform=`scale(${p.s})`;
+   [['r1',8.0],['r2',10.3],['r3',11.98]].forEach(([id,t0])=>{const e=$(id);const k=cl((t-t0)/.25);e.style.opacity=.25+.75*k;e.style.transform=`translateX(${(1-k)*30}px)`})}else tb.style.opacity=0;
+ // cicilan
+ const pl=$('pill');if(t>=15.84&&t<20.25){ap(pl,pop(t,15.84,.3));pl.style.opacity*=fo(t,20.25);$('ptb').style.opacity=cl((t-19.04)/.2);$('ptb').style.transform=`scale(${pop(t,19.04,.3).s})`}else pl.style.opacity=0;
+ const ca=$('calc');if(t>=20.0&&t<25.66){ap(ca,pop(t,20.0,.3));ca.style.opacity*=fo(t,25.66);[['k1',20.3],['k2',21.68],['k3',23.16]].forEach(([id,t0])=>{$(id).style.opacity=cl((t-t0)/.25)})}else ca.style.opacity=0;
+ // checklist
+ const ck=$('ck');if(t>=26.0&&t<32.74){ck.style.opacity=cl((t-26)/.25)*fo(t,32.74);
+   [['c1',27.9],['c2',29.36],['c3',30.42],['c4',31.46]].forEach(([id,t0])=>{const e=$(id);const on=t>=t0;e.classList.toggle('on',on);const k=cl((t-t0)/.3);e.style.transform=`scale(${on&&k<1?1+0.08*Math.sin(Math.PI*k):1})`})}else ck.style.opacity=0;
+ // nyaman
+ [['sa',34.7,'rotate(-3deg)'],['sb',35.54,'rotate(3deg)']].forEach(([id,t0,r])=>{const e=$(id);if(t>=t0&&t<36.25){ap(e,pop(t,t0,.28),r);e.style.opacity*=fo(t,36.25)}else e.style.opacity=0});
+ $('ttl').style.opacity=t>=32.8&&t<36.25?cl((t-32.8)/.2)*fo(t,36.25):0;
+ // cta chat
+ const c2=$('chat2');if(t>=36.25&&t<39.5){const p=pop(t,36.3,.3);c2.style.opacity=p.o*fo(t,39.5);c2.style.transform=`scale(${p.s})`;
+   const n3=$('n3');n3.style.opacity=t>=37.2?1:0;$('typ').textContent='BEHEL'.slice(0,Math.floor(cl((t-38.5)/.45)*5));$('cur').style.opacity=t<38.95?((Math.floor(t*3)%2)?1:.2):0;$('tm').style.opacity=t>=38.95?1:0;
+   ap($('n4'),pop(t,39.0,.25));}else c2.style.opacity=0;
+ // end
+ const en=$('end');if(t>=39.5){en.style.opacity=cl((t-39.5)/.2);[...en.querySelector('.in2').children].forEach((c,i)=>ap(c,pop(t,39.56+i*.12,.28)))}else en.style.opacity=0;
+ await Promise.all([...document.images].filter(i=>i.style.display!=='none'&&i.src).map(i=>i.complete?1:new Promise(r=>{i.onload=i.onerror=r})));
+}
+window.ready=true;
+</script></body></html>
