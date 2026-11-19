@@ -23,6 +23,12 @@ Lihat tabel di skill `upg-antang-video` bagian 0. Satu video = satu cabang. Foot
 - Desain Hertasning: "belum termasuk foto rontgen (Rp500 rb) & biaya kontrol".
 - Desain lama memuat "Alat steril" → jangan dipakai lagi (klaim terlarang).
 
+## 2a. Data dikonfirmasi Pak Dir (19 Nov 2026)
+- Isi paket behel Hertasning **sama dengan Antang**: konsultasi dokter gigi, cetak gigi, scaling (sebelum dipasang). Rontgen tidak disebut di iklan.
+- Cicilan 2× **per bulan, tanpa bunga** (boleh ditulis).
+- Suara narasi Hertasning: **Denis**.
+- **Pembeda Hertasning: pojok baca, camilan, dan es krim** untuk pasien yang menunggu. Jangan pakai kata "gratis"/"free".
+
 ## 2b. Promo lain (dari desain Nov 2026)
 - Happy Hour Scaling: Rp200.000 (normal Rp250–350 rb), Senin–Jumat 10.00–14.00 WITA, wajib booking WA. Badge "ada garansi setelah perawatan".
 - Tambal gigi: mulai Rp250 rb-an, harga tergantung kondisi gigi, untuk dewasa & anak.
@@ -36,4 +42,7 @@ Catatan: video > 10 MB tidak bisa diunduh lewat konektor Drive.
 - UPG Hertasning (`190pm-2SPHtvJIK2KSY5C1SeqMbzyKRwq`, upgdentalcare)
 - Footage Hertasning (`1IoNwfaYyKP0HaOSmVDAgZIzgd1cFfSTT`)
 - Footage Hertasning - Agustus (`1PzkgDi_4MjtgTdDU8y9EP-TqUd-QDH6k`)
-Belum diinventaris.
+Dicek 19 Nov 2026 lewat konektor Drive: subfolder Behel/Ortho (`1sVGv_szB3nWFQPzPgG90S8qNNLEcdJYi`) & Scalling tampak **kosong/tidak terbaca**; hanya 1 klip bleaching (IMG_4710, 19 MB) di folder Agustus. **Belum ada** rekaman admin bicara ke kamera, pojok baca, camilan, es krim → perlu rekam baru (daftar shot di `references/naskah-behel-hertasning-bicara-01.md`).
+
+## 5. Naskah
+- `references/naskah-behel-hertasning-bicara-01.md` — admin bicara, 1 rekaman → 3 gaya (draf v1).
