@@ -63,4 +63,5 @@ Belum diunduh: Scalling Hertasning (`1zY_xRIKdMUMNMhqjuQ5EWAabQc9z8GRR`, 20 klip
 
 ## 5. Naskah
 - `references/naskah-behel-hertasning-pov-01.md` — BOFU full footage + Denis, papan gambar v1 (dikerjakan duluan). **Render v1** `output/upg-hertasning-behel-pov-v1.mp4` (41,6 dtk), skrip `scripts/behelPOV/` (ov.html, rend.js, mix.py). Pelajaran audit: klip 3500 mulai dtk 6 (papan "TUTUP" di pintu), 3480 mulai dtk 6 (papan FREE), camilan 3215 crop + blur pita bawah, mushola = foto IMG_9182. Kredit: narasi 2 versi ±1.546 + transkrip ±246.
+- `references/naskah-behel-hertasning-chat-01.md` — BOFU kedua "3 Pertanyaan di Chat Admin" (Denas), papan gambar v1.
 - `references/naskah-behel-hertasning-bicara-01.md` — v2: 3 konsep beda dari Ruma (Tebak Harga, POV tur "Ikut Aku", 3 Pertanyaan Chat WA).
