@@ -9,6 +9,11 @@ Panggil pengguna **"Pak Dir"** (dokter gigi, owner Ruma Dental & UPG Dental Care
 
 Strategi besar akun (tujuan, kanal, cara menang, fase): **`references/social-strategy.md`**. Siapa penontonnya (segmen, mitos, bank bahasa): **`references/audience.md`**. Baca keduanya sebelum merencanakan konten.
 
+## 00. ALUR BERLAKU SEKARANG [DISEPAKATI Pak Dir 20 Nov 2026 — menggantikan alur otomatis di bagian 12, 14b, 15 bila bertentangan]
+1. **Konten dibuat di HARI tayang** (tanggal ganjil, tayang 19.00 WITA; video jadi paling lambat 12.00 WITA) oleh chat produksi. Ada request topik di komentar → itu yang dibuat; tidak ada → topik cadangan (urutan: behel → mitos sikat keras → gigi kuning → tebak geraham → ngilu; draf di `references/paket-naskah-dalamgigi-21-29nov.md` & `naskah-behel-07.md`).
+2. **Video tidak lewat Google Drive.** Dikirim ke Pak Dir di chat; **Pak Dir mengunggah sendiri ke Instagram.** Claude TIDAK memposting Reel.
+3. Jadwal otomatis yang **masih aktif** (chat "Audit akun dan upload otomatis"): balas komentar tgl ganjil 20.22 (`trig_01TnPm9nDRoJYfowrQurgcZY`; request topik → papan status Drive) dan laporan mingguan Senin 07.35 (`trig_015b45txWH6yDG6PUv3nFFNR`). **Dimatikan 20 Nov:** posting otomatis (`trig_01Y5Drz2z5yXBaVX7W2Rx12a`) dan paket naskah mingguan (`trig_01RVnpTZLs6KoojaJQKqn7UA`). Chat produksi punya pengingat pagi 08.33 WITA tgl ganjil.
+
 ## 0. SINKRON ANTAR-CHAT [WAJIB, Pak Dir 20 Nov 2026]
 Pak Dir tidak mau menjadi "penghubung" antar-chat. Setiap chat yang mengerjakan @dalamgigi, **sebelum mulai kerja**:
 1. `git fetch origin` lalu gabungkan semua cabang `claude/*` yang mengubah `.claude/skills/dalamgigi/` atau `output/dalamgigi-*` ke cabang kerjanya (`git merge`), selesaikan konflik (ambil keduanya, jangan hapus kerja chat lain), commit & push.
@@ -213,6 +218,7 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 - v1 #01: hook lemah (layar kosong 4 detik), "benang gigi" tanpa cara, "scaling" tanpa penjelasan, "1 jam setahun" membingungkan, visual monoton (kotak-kotak, satu sudut kamera).
 - Narasi dipotong per kalimat + jeda panjang = kaku dan patah-patah (pelajaran iklan bleaching v1).
 
+<<<<<<< HEAD
 ## 12. SOP Unggah & Kelola Otomatis (Windsor.ai) [DISEPAKATI 18 Nov 2026]
 
 **Hak unggah tetap [DISEPAKATI Pak Dir 19 Nov 2026]:** setiap video @dalamgigi yang sudah lolos QC & naskahnya di-OK Pak Dir **langsung diunggah ke Drive dan diposting sesuai jadwal tanpa menunggu perintah lagi**. Pak Dir tidak memasukkan file ke Drive sendiri. Mulai #06, produksi **dan** posting dikerjakan di sesi "Audit akun dan upload otomatis" (punya Windsor, Drive, ElevenLabs, repo); sesi "Konten Dalam Gigi #02" hanya menyerahkan #05 lewat Drive.
@@ -384,6 +390,14 @@ Syarat teknis:
 - Windsor paket TRIAL: bila habis, posting otomatis berhenti → paket kirim tetap tersedia di Drive untuk diunggah manual.
 
 ## 16. Unggah ke Drive dari sesi produksi lain [DISEPAKATI 19 Nov 2026, digabung dari sesi "Konten Dalam Gigi"]
+=======
+## 13. Alur Hari Upload [DIPERBARUI 20 Nov 2026, menggantikan aturan Drive 19 Nov]
+>>>>>>> origin/claude/wonderful-planck-d8do7x
 
-Pak Dir: setiap video @dalamgigi yang naskahnya di-OK dan lolos `qc.sh` langsung diunggah (mp4 + sampul) ke Google Drive folder **Dalam Gigi/Siap Tayang** (ID `1yOvrc91wT-5wzd5JXix7oVdp8OwfRyVW`), lalu ID-nya dikirim ke sesi "Audit akun dan upload otomatis" yang memposting ke IG. Sesi produksi **tidak** memposting ke IG.
-Kendala teknis (19 Nov): konektor Drive dari sesi ini maksimal ±3 MB per panggilan (video 9–14 MB tidak bisa); share "anyoneWithLink" dan pesan antar-sesi butuh izin tambahan di pengaturan sesi. Sampul (<3 MB) bisa diunggah.
+Keputusan Pak Dir 20 Nov:
+- **Konten dibuat di hari upload.** Tayang 19.00 WITA → video harus jadi paling lambat **12.00 WITA**.
+- **Komentar didahulukan:** kalau ada request topik di komentar (lolos Uji Value), itu yang dibuat; topik cadangan di tabel rencana ditunda ke upload berikutnya. Tidak ada request → pakai topik cadangan.
+- **Pengingat:** scheduled task "Pengingat konten @dalamgigi" (`trig_01HMF5MWDpTMx9UFZKA3cdkr`), 08.33 WITA tiap tanggal ganjil, masuk ke chat produksi ini.
+- Target jam: naskah + papan di-OK ±10.30 → narasi + render (±30–45 mnt) → QC → kirim.
+- **Tidak diunggah ke Google Drive.** mp4 + sampul + caption dikirim langsung ke Pak Dir di chat; Pak Dir upload sendiri.
+- Topik cadangan disiapkan lebih awal sampai tahap papan gambar, supaya hari-H tinggal narasi + render.
