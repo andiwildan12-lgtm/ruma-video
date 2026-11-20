@@ -8,7 +8,7 @@ Perkiraan kredit ElevenLabs: ±5.500 karakter (2 take). Sisa ±74 rb.
 |---|---|---|---|---|
 | Sab 21 Nov | #06 | Utama · **Bau mulut** (sudah jadi di sesi lain, QC lulus, request penonton) | Sudah sikat gigi, / KOK MASIH BAU MULUT? | 73,9 dtk |
 | Sen 23 Nov | #07 | Pendek · Mitos vs Fakta | Sikat makin keras / MAKIN BERSIH? | ±20 dtk |
-| Rab 25 Nov | #08 | Utama · Behel | Gimana behel / MENGGESER GIGI? | ±45 dtk |
+| Rab 25 Nov | #07 | Utama · Behel (PAKAI naskah `naskah-behel-07.md` dari chat Konten Dalam Gigi; draf #06 Behel di bawah = arsip) | Gimana behel / MENGGESER GIGI? | ±45 dtk |
 | Jum 27 Nov | #09 | Pendek · 1 Fakta 1 Visual* | Rajin sikat gigi / KOK TETAP KUNING? | ±22 dtk |
 | Min 29 Nov | #10 | Pendek · Tebak | Gigi mana yang / PALING SERING BOLONG? | ±18 dtk |
 | Sel 1 Des | #11 | Utama · Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | ±55 dtk |

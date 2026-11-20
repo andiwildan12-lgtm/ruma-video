@@ -12,7 +12,7 @@ Strategi besar akun (tujuan, kanal, cara menang, fase): **`references/social-str
 ## 0. SINKRON ANTAR-CHAT [WAJIB, Pak Dir 20 Nov 2026]
 Pak Dir tidak mau menjadi "penghubung" antar-chat. Setiap chat yang mengerjakan @dalamgigi, **sebelum mulai kerja**:
 1. `git fetch origin` lalu gabungkan semua cabang `claude/*` yang mengubah `.claude/skills/dalamgigi/` atau `output/dalamgigi-*` ke cabang kerjanya (`git merge`), selesaikan konflik (ambil keduanya, jangan hapus kerja chat lain), commit & push.
-2. Baca **papan status di Drive: `Dalam Gigi/STATUS-dalamgigi.md`** (stok, jadwal tayang, menunggu ACC, siapa mengerjakan apa).
+2. Baca **papan status di Drive: `Dalam Gigi/STATUS-dalamgigi.md` (ID `1bxPL0EJGc90C05tEfb5BmdbBiwsNsWeb`)** (stok, jadwal tayang, menunggu ACC, siapa mengerjakan apa).
 3. Setiap selesai satu langkah (naskah, render, unggah, tayang): **perbarui papan status Drive + log skill**, commit & push.
 4. Jangan menggarap topik/nomor yang di papan status sudah dipegang chat lain.
 
