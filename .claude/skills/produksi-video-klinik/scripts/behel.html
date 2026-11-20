@@ -291,7 +291,7 @@ window.render=function(T){
   // push arrow on crowded tooth
   const showA=(T>=K.s1t&&T<K.t2)||(T>=K.t3&&T<K.kontrol)||(T>=K.s3&&T<K.telat);
   pushArrow.visible=showA&&ARCH;if(pushArrow.visible){const p=bracketPos(crowd).addScaledVector(crowd.nrm,0.25);p.y+=1.0;pushArrow.position.copy(p);pushArrow.quaternion.setFromUnitVectors(V(0,1,0),V(0,-1,0));
-    let sc=1;if(T>=K.t3&&T<K.kontrol)sc=1-0.65*weak;if(T>=K.s3)sc=cl(1.0,0.55,ease(P(T,K.kencang,0.6)));pushArrow.scale.setScalar(sc*(0.9+0.1*Math.sin(T*8)));}
+    let sc=1;if(T>=K.t3&&T<K.kontrol)sc=1-0.65*weak;if(T>=K.s3)sc=cl(0.8,0.45,ease(P(T,K.kencang,0.6)));pushArrow.scale.setScalar(sc*(0.9+0.1*Math.sin(T*8)));}
   // ---- diorama ----
   if(DIO){const sh=SHIFT*ease(P(T,K.tekan+1.6,3.0));dToothG.position.x=-sh;
     boneL.position.x=-1.68-sh;
@@ -318,8 +318,8 @@ window.render=function(T){
    [K.t1,t=>{const k=P(t,K.t1,K.t2-K.t1);return [atc(1.4,cl(6.0,5.2,k),cl(0.6,-0.3,k)),LKc(0.2)];}],
    [K.t2,t=>{const k=P(t,K.t2,K.bantal-K.t2);return [D(cl(0.3,-0.2,k),cl(1.2,0.6,k),cl(10,8.6,k)),D(0,0.1,0)];}],
    [K.bantal-0.1,t=>{const k=P(t,K.bantal,3);return [D(cl(0.8,0.4,k),-0.3,cl(6.4,5.8,k)),D(0,-0.6,0)];}],
-   [K.tekan-0.1,t=>{const k=P(t,K.tekan,5);return [D(cl(-0.4,-0.8,k),-0.4,cl(5.6,5.2,k)),D(-0.5,-0.6,0)];}],
-   [K.tarik-0.1,t=>{const k=P(t,K.tarik,5);return [D(cl(0.6,1.0,k),-0.4,cl(5.6,5.2,k)),D(0.3,-0.6,0)];}],
+   [K.tekan-0.1,t=>{const k=P(t,K.tekan,5);return [D(cl(-0.2,-0.5,k),0.2,cl(10.5,9.8,k)),D(-0.3,-0.3,0)];}],
+   [K.tarik-0.1,t=>{const k=P(t,K.tarik,5);return [D(cl(0.4,0.7,k),0.2,cl(10.5,9.8,k)),D(0.2,-0.3,0)];}],
    [K.rumah,t=>{const k=P(t,K.rumah,K.t3-K.rumah);return [H(cl(0.6,-0.4,k),cl(2.4,2.1,k),cl(13.5,12.5,k)),H(-0.3,0.1,0)];}],
    [K.t3,t=>{const k=P(t,K.t3,K.kontrol-K.t3);return [atc(1.3,cl(5.6,6.2,k),cl(-0.3,0.3,k)),LKc(0.15)];}],
    [K.s1-0.1,t=>{const k=P(t,K.s1,5);return [atc(1.4,cl(5.6,5.0,k),cl(0.5,0.0,k)),LKc(0.15)];}],
