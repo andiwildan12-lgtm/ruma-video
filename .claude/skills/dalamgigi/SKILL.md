@@ -17,7 +17,7 @@ Strategi besar akun (tujuan, kanal, cara menang, fase): **`references/social-str
 ## 0. SINKRON ANTAR-CHAT [WAJIB, Pak Dir 20 Nov 2026]
 Pak Dir tidak mau menjadi "penghubung" antar-chat. Setiap chat yang mengerjakan @dalamgigi, **sebelum mulai kerja**:
 1. `git fetch origin` lalu gabungkan semua cabang `claude/*` yang mengubah `.claude/skills/dalamgigi/` atau `output/dalamgigi-*` ke cabang kerjanya (`git merge`), selesaikan konflik (ambil keduanya, jangan hapus kerja chat lain), commit & push.
-2. Baca **papan status di Drive: `Dalam Gigi/STATUS-dalamgigi.md` (ID `1bxPL0EJGc90C05tEfb5BmdbBiwsNsWeb`)** (stok, jadwal tayang, menunggu ACC, siapa mengerjakan apa).
+2. Baca **papan status di Drive: `Dalam Gigi/STATUS-dalamgigi.md` v2 (ID `1JucnGhA9HTgA5rYbsp8jaTZ_Fe7BwJ7V`)** (stok, jadwal tayang, menunggu ACC, siapa mengerjakan apa).
 3. Setiap selesai satu langkah (naskah, render, unggah, tayang): **perbarui papan status Drive + log skill**, commit & push.
 4. Jangan menggarap topik/nomor yang di papan status sudah dipegang chat lain.
 
@@ -218,7 +218,6 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 - v1 #01: hook lemah (layar kosong 4 detik), "benang gigi" tanpa cara, "scaling" tanpa penjelasan, "1 jam setahun" membingungkan, visual monoton (kotak-kotak, satu sudut kamera).
 - Narasi dipotong per kalimat + jeda panjang = kaku dan patah-patah (pelajaran iklan bleaching v1).
 
-<<<<<<< HEAD
 ## 12. SOP Unggah & Kelola Otomatis (Windsor.ai) [DISEPAKATI 18 Nov 2026]
 
 **Hak unggah tetap [DISEPAKATI Pak Dir 19 Nov 2026]:** setiap video @dalamgigi yang sudah lolos QC & naskahnya di-OK Pak Dir **langsung diunggah ke Drive dan diposting sesuai jadwal tanpa menunggu perintah lagi**. Pak Dir tidak memasukkan file ke Drive sendiri. Mulai #06, produksi **dan** posting dikerjakan di sesi "Audit akun dan upload otomatis" (punya Windsor, Drive, ElevenLabs, repo); sesi "Konten Dalam Gigi #02" hanya menyerahkan #05 lewat Drive.
@@ -389,10 +388,7 @@ Syarat teknis:
 - Konektor ElevenLabs sering minta masuk ulang; bila putus, produksi narasi berhenti dan Pak Dir diberi tahu (tanpa suara pengganti).
 - Windsor paket TRIAL: bila habis, posting otomatis berhenti → paket kirim tetap tersedia di Drive untuk diunggah manual.
 
-## 16. Unggah ke Drive dari sesi produksi lain [DISEPAKATI 19 Nov 2026, digabung dari sesi "Konten Dalam Gigi"]
-=======
-## 13. Alur Hari Upload [DIPERBARUI 20 Nov 2026, menggantikan aturan Drive 19 Nov]
->>>>>>> origin/claude/wonderful-planck-d8do7x
+## 16. Alur Hari Upload [DIPERBARUI 20 Nov 2026 di chat produksi, menggantikan aturan Drive 19 Nov; lihat juga bagian 00]
 
 Keputusan Pak Dir 20 Nov:
 - **Konten dibuat di hari upload.** Tayang 19.00 WITA → video harus jadi paling lambat **12.00 WITA**.
