@@ -47,6 +47,16 @@ Aturan:
 - [ ] Anti-monoton: kamera berganti tiap 2–4 detik, bentuk objek dikenali, suasana berubah per babak.
 - [ ] Logo dan identitas brand benar; tidak ada atribut brand lain.
 - [ ] Footage: casting benar (pasien ≠ admin), tanpa data sensitif (password, wajah tanpa izin).
+- [ ] **Audit anatomi (pelajaran behel #07, 20 Nov) — cek SEBELUM papan dikirim, per frame:**
+  - Setiap gigi yang digeser/diputar/diangkat: **gusi ikut membungkus lehernya** (tidak ada leher terbuka, gigi melayang, atau celah gigi–gusi yang tidak disengaja).
+  - Tidak ada rongga/celah kosong antara akar, "bantalan" (jaringan pengikat), dan tulang. Gusi menempel di leher gigi, bukan balok terpisah.
+  - Gerakan yang sama harus **searah dan konsisten di semua adegan** (lengkung gigi ↔ irisan ↔ analogi). Kalau irisan menunjukkan geser ke samping, lengkung gigi juga geser keluar-masuk, bukan naik-turun.
+  - Bentuk kelainan dipilih yang paling umum di klinik (mis. gigi berjejal = menonjol keluar/masuk lengkung + sedikit miring, bukan terangkat), dan kamera dipilih supaya kelainannya terlihat (sudut ¾ dari atas bila perlu).
+- [ ] **Audit arah gaya:** panah/gaya datang dari sumber yang benar (dorongan behel = dari kawat/braket, setinggi braket), ukuran tidak menutupi objek, tidak terpotong tepi layar.
+- [ ] **Ada momen hasil/payoff yang terlihat jelas** (mis. gigi jadi rapi, gusi kembali sehat) ±1–2 detik sebelum panel CTA menutup layar.
+- [ ] Analogi 3D dibuat utuh dan langsung terbaca (rumah = dinding lengkap + atap menempel), bukan potongan yang membingungkan.
+- [ ] Label/tag tidak bertabrakan dengan angka pojok, panel, atau tepi atas layar.
+- [ ] Papan dicek **sebagai dokter gigi**, bukan hanya sebagai desainer: "apakah dokter gigi yang menonton akan menemukan hal yang tidak mungkin terjadi di mulut asli?"
 
 **Audit 3: Teknis dan sinkron (terakhir sebelum render penuh)**
 - [ ] Kunci waktu adegan dari **timestamp per kata (Scribe)**; subtitle cocok dengan kata yang diucapkan; `words` sudah di cfg.
