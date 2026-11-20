@@ -6,11 +6,14 @@ Perkiraan kredit ElevenLabs: ±5.500 karakter (2 take). Sisa ±74 rb.
 
 | Tayang | No | Format | Judul sampul | Durasi |
 |---|---|---|---|---|
-| Sab 21 Nov | #06 | Utama | Gimana behel / MENGGESER GIGI? | ±45 dtk |
+| Sab 21 Nov | #06 | Utama · **Bau mulut** (sudah jadi di sesi lain, QC lulus, request penonton) | Sudah sikat gigi, / KOK MASIH BAU MULUT? | 73,9 dtk |
 | Sen 23 Nov | #07 | Pendek · Mitos vs Fakta | Sikat makin keras / MAKIN BERSIH? | ±20 dtk |
-| Rab 25 Nov | #08 | Utama | Kenapa gigi / NGILU KENA DINGIN? | ±55 dtk |
+| Rab 25 Nov | #08 | Utama · Behel | Gimana behel / MENGGESER GIGI? | ±45 dtk |
 | Jum 27 Nov | #09 | Pendek · 1 Fakta 1 Visual* | Rajin sikat gigi / KOK TETAP KUNING? | ±22 dtk |
 | Min 29 Nov | #10 | Pendek · Tebak | Gigi mana yang / PALING SERING BOLONG? | ±18 dtk |
+| Sel 1 Des | #11 | Utama · Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | ±55 dtk |
+
+Revisi 20 Nov: #06 Bau mulut sudah diproduksi di sesi lain → Behel mundur ke 25 Nov, Ngilu ke 1 Des (nomor di bawah mengikuti judul, bukan urutan baru).
 
 *#09 diganti "Jawab Komentar" bila sampai 25 Nov ada usulan topik dari penonton.
 Urutan #07 → #08 sengaja: mitos sikat keras jadi pintu masuk ke video ngilu.
