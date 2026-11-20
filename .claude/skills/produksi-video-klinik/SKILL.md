@@ -63,6 +63,8 @@ Aturan:
   - Pengganti musik: suara asli ruangan klinik (klip footage tanpa bicara, volume ±0,09, lowpass) sebagai latar terus-menerus + suara asli footage bukti ±0,18. Jangan hening mati.
   - Subtitle **pendek 2–4 kata per potongan**, mengikuti waktu kata (transkripsi), satu kata kunci berlatar Turquoise.
   - Font & warna video Ruma **ikut panduan resmi Canva**: Montserrat (Neue Montreal belum ada filenya), teks Deep Teal #354B49, blok Turquoise #28CDBD, latar putih/Mint White #E8F8F6. Bukan Outfit/krem.
+  - **Panduan Canva versi 20 Nov 2026 (`DAHbTZUHi_Q`) untuk video Ruma:** subtitle maks. 2 baris × 5–7 kata; hook di sepertiga atas (0–3 dtk); 5 dtk terakhir logo + 1 ajakan sesuai funnel; cover maks. 6 kata. Gaya teks A (hook tanpa blok + subtitle pill putih) atau B (blok di kata kunci + subtitle putih di atas Deep Teal 30%). Editing: fade halus, slow zoom, **cut bersih**, **SFX/ambience sangat minim**, overlay clean, teks tipis tanpa stroke.
+  - Bentrok yang perlu diputuskan per video: whoosh/pop/ting di behel B v2 dan stiker pop di behel MOFU dibuat atas permintaan Pak Dir (18 Nov 2026), padahal panduan Ruma minta SFX sangat minim dan cut bersih. Default baru: ikut panduan, kecuali Pak Dir minta lain untuk video itu.
   - Lapisan teks dirender per frame (`ovseq/%04d.png`), bukan concat gambar diam (pernah terpotong di detik 32). Kartu penutup masuk dengan pudar ±0,3 dtk.
 - [ ] **Data pasien di footage** (label film rontgen: nama, tgl lahir; layar monitor; rekam medis) → wajib di-blur per frame. Film rontgen: `scripts/kinetik/filmdet.py` (deteksi lembar film per frame lewat warna hitam-netral HSV, blur 42%×30% pojok kiri atas; pelacakan pola tulisan TIDAK andal karena film berputar/tertutup tangan). Cek ≥6 titik per klip. Pelajaran behel MOFU: film rontgen 4389–4393 memuat nama pasien.
 - [ ] **Caption kinetik di atas footage**: pakai gaya label (kotak putih 96%, teks Deep Teal, kata kunci Turquoise), BUKAN teks putih + bayangan (tak terbaca di dinding klinik putih). Potongan 2–4 kata mengikuti waktu kata, masuk dengan pop skala; stiker ikon pop + bunyi pop (`scripts/kinetik/`).
@@ -326,7 +328,7 @@ Urutan wajib tetap sama: naskah OK → papan gambar ACC → (suara) → audit �
 4. Caption gaya label (kotak putih, teks Deep Teal, kata kunci Turquoise), stiker ikon (bukan emoji wajah).
 
 ### 12d. Poster/desain statis
-Pakai skill `desain-grafis-ruma` (template resmi Poppins + Open Sans). Video tetap Montserrat.
+Pakai skill `desain-grafis-ruma`. Font resmi Ruma sejak 20 Nov 2026 untuk grafis **dan** video: Neue Montreal + Montserrat (render lokal: Montserrat sampai file Neue Montreal berlisensi tersedia).
 
 ### 12e. Konektor
 Nama konektor ElevenLabs bisa berubah setelah masuk ulang (mis. `ElevenLabs-56894adb`). Bila konektor ditolak/kedaluwarsa: minta Pak Dir masuk ulang di claude.ai/customize/connectors; jangan memakai suara pengganti.
