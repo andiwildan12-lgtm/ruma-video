@@ -16,24 +16,15 @@ Sudah sikat gigi, tapi kok masih bau mulut? Sumbernya dicari lapis demi lapis �
 Permen mint & obat kumur cuma menutupi baunya sebentar, sumbernya tetap ada. Jadi bau mulut itu dicari sumbernya, bukan cuma ditutupi.
 
 Makasih buat yang sudah request topik ini di komentar 🙏
-Video berikutnya KAMU yang pilih ke mana kamera masuk:
-A = alur gigi geraham
-B = balik gigi depan bawah
-Ketik A atau B di komentar 👇 Pilihan terbanyak kita masuki. Simpan & follow @dalamgigi 🦷
+Mau dibahas apa lagi soal gigi? Tulis di komentar, nanti kita jawab lewat video. Simpan & follow @dalamgigi 🦷
 
 #dalamgigi #faktagigi #kesehatangigi #baumulut #sikatlidah #makassar
 
 ## Caption TikTok
 Sama, hashtag: #dalamgigi #faktagigi #baumulut #sikatlidah #edukasigigi #faktaunik #makassar
 
-## Komentar pertama (sematkan) — membuka voting serial "Jelajah Mulut" (#07)
-Episode berikutnya kamu yang pilih 👇
-A = alur gigi geraham
-B = balik gigi depan bawah
-Ketik A atau B. Voting ditutup 48 jam setelah tayang.
-
-## Hitung suara (admin)
-48 jam setelah tayang: hitung komentar berisi A / B (1 akun = 1 suara), screenshot 2–3 komentar asli (nama diburam), kirim hasilnya ke tim produksi. Jangan dibulatkan/direkayasa.
+## Komentar pertama (sematkan)
+Mau dibahas apa lagi soal gigi? Tulis di komentar, nanti kita jawab lewat video 👇
 
 ## Balasan ke penonton yang request (admin)
 "Ini videonya sudah jadi, sesuai request kakak 🙏 Semoga membantu ya!" (balas di komentar request aslinya + tautkan/sebut video #06)
