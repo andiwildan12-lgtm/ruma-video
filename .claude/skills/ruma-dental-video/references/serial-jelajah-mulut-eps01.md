@@ -1,28 +1,52 @@
-# Serial Interaktif @dalamgigi — "Jelajah Mulut" Eps 1: Lidah (DRAF, menunggu validasi Pak Dir)
+# Serial Interaktif @dalamgigi — "Jelajah Mulut" = konten #07 (DRAF, menunggu validasi Pak Dir)
 
-Konsep: penonton memilih ke mana kamera masuk berikutnya. Satu peta mulut dipakai ulang; lokasi yang sudah dikunjungi diberi tanda ✓, dua opsi berikutnya diberi pin A/B. Pemenang voting membuka episode berikutnya (dengan bukti komentar asli).
+Keputusan Pak Dir 20 Nov: #06 bau mulut tetap tayang; serial dimulai di #07; behel geser ke #08.
+Konsep: penonton memilih ke mana kamera masuk. Satu peta mulut dipakai ulang; lokasi dikunjungi = ✓, dua opsi berikutnya = pin A/B. Episode dibuka dengan hasil voting ASLI.
 
-## Naskah (±30 dtk, ±79 kata)
-| Dtk | Narasi | Kamera / visual | Teks layar |
+## Alur voting
+- Voting pertama dibuka di komentar sematan + caption #06: **A = alur gigi geraham, B = balik gigi depan bawah.** Tutup 48 jam.
+- Admin hitung (1 akun = 1 suara), screenshot 2–3 komentar asli (nama diburam). Sepi (<10) → tetap pakai hasil + polling Story. Tidak boleh rekayasa.
+- Kedua naskah disiapkan; yang dirender hanya pemenang.
+
+## Naskah A — Alur gigi geraham (±30 dtk)
+| Dtk | Narasi | Kamera | Teks layar |
 |---|---|---|---|
-| 0–5 | Ada yang minta bahas bau mulut. Coba tebak, kalau giginya sudah disikat, bagian mana yang belum kita lihat? | Kartu komentar muncul (username diburam) + balasan @dalamgigi; kamera tetap bergerak: tampak atas lengkung gigi bersih (sikat lewat, kilau teal), lalu menukik ke tengah mulut | Komentar "bau mulut min" → balasan "otw kak next konten" |
-| 5–7 | Lidah. Tepatnya bagian belakang. | Peta mulut sekilas (1 dtk): pin "Lidah" menyala → potong ke lidah 3D, kamera mendekat ke pangkal | EPS 1 · LIDAH |
-| 7–11 | Permukaannya berlekuk, jadi sisa makanan dan kuman nyangkut di sela-selanya. | Close-up miring: papila + lapisan putih, sisa makanan muncul satu-satu | tag: "lapisan putih" |
-| 11–17 | Di situ kuman mengurai sisa makanan jadi gas berbau belerang. Inilah sumber bau mulut yang paling sering. | Kuman bergerak, gelembung gas hijau pucat naik ke kamera | tag: "gas belerang" · teks: "sumber paling sering" |
-| 17–21 | Caranya: bersihkan lidah dari belakang ke depan, tiap sikat gigi. | Pembersih lidah menyapu belakang→depan, lapisan putih hilang | tag: "belakang → depan" |
-| 21–30 | Kalau lidah sudah bersih tapi masih bau, kita cek ke mana: sela gigi, atau amandel? Pilih di komentar. Follow, biar nggak ketinggalan hasilnya. | Peta mulut penuh: Lidah ✓; pin A (sela gigi) & B (amandel) berdenyut; tombol vote | A = SELA GIGI · B = AMANDEL · "Ketik A atau B" |
+| 0–4 | Kalian pilih A: alur gigi geraham. Ayo masuk. | Kartu hasil voting + 2 komentar asli; kamera sudah menukik dari tampak atas mulut | "A menang · xx%" |
+| 4–6 | (lanjutan) | Peta sekilas: pin geraham menyala | EPS 1 · ALUR GERAHAM |
+| 6–11 | Permukaan kunyah geraham penuh alur. Ada yang lebih sempit dari sehelai bulu sikat. | Close-up atas M1 (sculpt), kamera menyusur alur; bulu sikat 3D datang, tidak muat | "lebih sempit dari bulu sikat" |
+| 11–17 | Sisa makanan dan kuman masuk ke dasarnya. Makanya lubang gigi paling sering mulai di sini. | Potongan melintang alur (dari #02 "gua"): kuman turun, titik gelap muncul di dasar | "lubang sering mulai di sini" |
+| 17–22 | Caranya: sikat permukaan kunyah maju-mundur pendek. Untuk anak, alurnya bisa ditutup lapisan pelindung di dokter gigi. | Sikat maju-mundur; lapisan toska menutup alur | "maju-mundur pendek" · "lapisan pelindung alur" |
+| 22–30 | Selanjutnya kita masuk ke mana? A atau B? Ketik di komentar. Follow biar nggak ketinggalan. | Peta penuh: geraham ✓, pin A/B baru berdenyut | opsi baru |
+
+## Naskah B — Balik gigi depan bawah (±30 dtk)
+| Dtk | Narasi | Kamera | Teks layar |
+|---|---|---|---|
+| 0–4 | Kalian pilih B: balik gigi depan bawah. Ayo masuk. | Kartu hasil voting + komentar asli; kamera menukik | "B menang · xx%" |
+| 4–6 | (lanjutan) | Peta sekilas: pin gigi depan bawah menyala | EPS 1 · BALIK GIGI DEPAN BAWAH |
+| 6–12 | Tepat di bawah lidah, di belakang gigi depan bawah, ada muara kelenjar air liur. | Kamera dari dalam mulut menghadap ke depan, lidah terangkat; titik muara berdenyut | "muara air liur" |
+| 12–18 | Air liur membawa mineral, jadi plak di sini paling cepat mengeras jadi karang. | Pita plak (teknik #05) di sisi dalam gigi depan, berubah warna jadi karang | "plak → karang" |
+| 18–23 | Caranya: sikat bagian dalam dengan sikat diberdirikan, gerakan naik-turun. Karang yang sudah keras dibersihkan dokter gigi. | Sikat tegak naik-turun; scaler | "sikat berdiri, naik-turun" · "scaling" |
+| 23–30 | Selanjutnya kita masuk ke mana? A atau B? Ketik di komentar. Follow biar nggak ketinggalan. | Peta penuh: depan bawah ✓, pin A/B baru | opsi baru |
+
+## Opsi lanjutan (Eps 2), diusulkan
+Dari A: B-lama (balik gigi depan bawah) vs langit-langit/amandel. Dari B: alur geraham vs gusi geraham. Diputuskan saat naskah Eps 1 final.
 
 ## Aset dipakai ulang
-napas.html (lidah, papila, lapisan putih, sisa makanan, kuman, gas, pembersih lidah, tampak atas mulut, sikat + kilau), kinetic.js, tag(), panel CTA (chip → tombol A/B), fade krem, SFX (whoosh, dive, pop, fizz, shimmer, click), render_frames/qc/cover_make, suara Ricky.
+napas.html (tampak atas mulut, sikat + kilau, lidah), gusi.html (sculpt M1, pita plak/karang, gusi, scaler), gua.html #02 (potongan lubang), kinetic.js, tag(), panel CTA (chip → tombol A/B), fade krem, SFX, suara Ricky, render/qc/cover.
 
 ## Tambahan baru (paling sederhana)
-1. Kartu komentar (HTML overlay, gaya panel CTA).
-2. Peta mulut SVG 2D tampak atas (lengkung gigi, lidah, langit-langit, amandel) + status pin dari cfg (`visited`, `options`, `current`). Dipakai ulang tiap episode.
-Amandel 3D TIDAK perlu di Eps 1 (cukup pin di peta); baru dibuat jika B menang.
+1. Kartu hasil voting + komentar (HTML overlay, gaya panel CTA).
+2. Peta mulut SVG 2D tampak atas + status pin dari cfg (`visited`, `options`, `current`). Dipakai ulang tiap episode.
+3. Hanya untuk B: gigi depan bawah (bentuk seri sederhana, sculpt pipih) + muara air liur (titik berdenyut).
+4. Hanya untuk A: "bulu sikat" tunggal + lapisan pelindung alur (material toska).
 
 ## Aturan serial
-- Voting via komentar "A/B", komentar pertama disematkan; tenggat 48 jam; hitung jujur, tanpa rekayasa. Sepi (<10 suara) → tetap pakai hasil yang ada + polling Story sebagai pendukung.
 - Vote hanya memilih lokasi; isi medis tetap lewat audit + validasi Pak Dir.
-- Username pengomentar diburam kecuali ada izin (privasi kesehatan).
-- Tiap episode harus bisa dinikmati penonton baru (hook berdiri sendiri, peta berlabel).
-- Pengecualian aturan "jangan janji topik": khusus serial, janji bersyarat ("pilihan terbanyak") dan wajib ditepati.
+- Username diburam kecuali ada izin (privasi kesehatan).
+- Tiap episode harus bisa dinikmati penonton baru.
+- Pengecualian aturan "jangan janji topik": khusus serial, janji bersyarat dan wajib ditepati.
+
+## Validasi Pak Dir
+1. A: "ada alur yang lebih sempit dari sehelai bulu sikat" + "lubang paling sering mulai di alur" + sealant untuk anak.
+2. B: muara kelenjar air liur di bawah lidah belakang gigi depan bawah → karang paling cepat di sana.
+3. Opsi Eps 2.

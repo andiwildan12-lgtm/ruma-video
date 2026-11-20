@@ -141,11 +141,12 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | 04 | Sakit gigi hilang | Sakit gigi hilang / BERARTI SEMBUH? | Lanjutan #02: 4 tahap (lubang → saraf radang, analogi jari terjepit cincin → saraf mati, dikira sembuh → nanah, gusi bengkak) → 3 cara + tanda bahaya → **CTA "mau dibahas apa lagi?" + follow** | ✅ Terbit 18 Nov |
 | 05 | Gusi berdarah | Gusi berdarah / BERHENTI SIKAT? | Sisa makanan → plak (jam) → mineral air liur → karang (analogi kerak teko) → karang kasar, gusi meradang, berdarah → sikat miring, benang, scaling, 1–2 minggu → CTA. Ilustrasi M1 bawah, gusi bergelombang | 🎬 v2 jadi (74,6 dtk), QC lulus |
 | 06 | Bau mulut (request penonton) | Sudah sikat gigi, / KOK MASIH BAU MULUT? | Lapis demi lapis: 1 lidah (pangkal, tidur → air liur turun → gas belerang, sikat lidah belakang→depan + minum air) → 2 sela gigi & gusi (sisa makanan, karang, radang, lubang → benang + scaling/tambal) → 3 luar mulut (hidung, tenggorokan, lambung → dokter) → "dicari sumbernya, bukan cuma ditutupi" → CTA | 🎬 v1 jadi 20 Nov (73,9 dtk), QC lulus |
-| 07 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | Kenapa behel merapikan gigi + kenapa kontrol rutin menentukan progres (tulang dibongkar di satu sisi, dibangun di sisi lain) | Draf naskah, menunggu validasi Pak Dir |
-| 08 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
-| 09 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
-| 10 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
-| 11 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
+| 07 | Serial "Jelajah Mulut" Eps 1 (interaktif) | ditentukan pemenang voting | Voting dibuka di komentar sematan #06: A alur geraham / B balik gigi depan bawah. Dibuka dengan hasil voting asli + peta mulut; akhir 2 opsi baru. Lihat `references/serial-jelajah-mulut-eps01.md` | Draf, menunggu validasi + hasil voting |
+| 08 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | Kenapa behel merapikan gigi + kenapa kontrol rutin menentukan progres (tulang dibongkar di satu sisi, dibangun di sisi lain) | Draf naskah, menunggu validasi Pak Dir |
+| 09 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
+| 10 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
+| 11 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
+| 12 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
 
 ## 8b. Daftar Request Penonton [mulai #04]
 
