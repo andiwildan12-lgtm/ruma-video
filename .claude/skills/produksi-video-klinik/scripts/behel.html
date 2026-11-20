@@ -57,7 +57,7 @@ canvas{display:block}
 <path id="steps" d="M60 470 L170 470 L170 390 L280 390 L280 310 L390 310 L390 230 L500 230 L500 150 L610 150 L610 70 L640 70" fill="none" stroke="#0F4F4B" stroke-width="10" stroke-linejoin="round"/>
 <g font-family="Outfit" font-weight="700" font-size="28" fill="#06332F"><circle cx="170" cy="430" r="10" fill="#2CCDBD"/><circle cx="280" cy="350" r="10" fill="#2CCDBD"/><circle cx="390" cy="270" r="10" fill="#2CCDBD"/><circle cx="500" cy="190" r="10" fill="#2CCDBD"/><circle cx="610" cy="110" r="10" fill="#2CCDBD"/><text x="185" y="470">kontrol</text></g>
 <path id="flat" d="M390 230 L780 230" fill="none" stroke="#C7404A" stroke-width="10" stroke-dasharray="20 14" style="opacity:0"/>
-<text id="lama" x="560" y="215" font-family="Outfit" font-weight="700" font-size="36" fill="#C7404A" style="opacity:0">mandek → lebih lama</text></svg></div>
+<text id="lama" x="430" y="285" font-family="Outfit" font-weight="700" font-size="36" fill="#C7404A" style="opacity:0">mandek → lebih lama</text></svg></div>
 <div class="panel" id="cta"><div class="who"><div class="av"><img src="sym.png"></div><div class="nm">dalamgigi</div></div>
  <div class="q">Mau dibahas apa lagi soal gigi?</div><div class="ex">contoh:</div>
  <div class="chips"><div class="chip" id="c1">retainer</div><div class="chip" id="c2">gigi ngilu</div><div class="chip" id="c3">gigi sensitif</div></div></div>
@@ -362,7 +362,7 @@ window.render=function(T){
   if(gA||gB){const t0=gA?K.kontrol:K.telat,t1=gA?K.s1:K.cta;const o=Math.min(P(T,t0,0.35),1-P(T,t1-0.35,0.35));graf.style.display='block';graf.style.opacity=o;cvs.style.filter=`blur(${8*o}px)`;
     const st=document.getElementById('steps');const len=1400;st.style.strokeDasharray=len;st.style.strokeDashoffset=len*(1-ease(P(T,K.kontrol+0.3,2.2)));
     const fl=document.getElementById('flat');fl.style.opacity=gB?1:0;fl.style.strokeDasharray=600;fl.style.strokeDashoffset=600*(1-ease(P(T,K.telat+0.6,1.5)));
-    const tg2=document.getElementById('tgt');tg2.setAttribute('transform',`translate(${gB?180*ease(P(T,K.telat+2.2,1.2)):0},0)`);document.getElementById('lama').style.opacity=gB?P(T,K.telat+2.8,0.4):0;
+    const tg2=document.getElementById('tgt');tg2.setAttribute('transform',`translate(${gB?110*ease(P(T,K.telat+2.2,1.2)):0},0)`);document.getElementById('lama').style.opacity=gB?P(T,K.telat+2.8,0.4):0;
     document.getElementById('gt').textContent=gB?'Kalau telat kontrol':'Progres behel';}
   // CTA
   if(T>=K.cta&&T<K.card){const o=Math.min(P(T,K.cta+1.5,0.35),1-P(T,K.card-0.3,0.3));cta.style.display='block';cta.style.opacity=o;cvs.style.filter=`blur(${10*o}px)`;cta.style.transform=`translateY(${(1-ease(P(T,K.cta+1.5,0.5)))*40}px)`;
