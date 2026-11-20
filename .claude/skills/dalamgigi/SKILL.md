@@ -140,11 +140,12 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | 1 dicabut → 3 terdampak; analogi rak buku; tetangga miring, lawan turun; 3 cara (jangan buru-buru cabut/saluran akar, gigi pengganti, sikat sela) | ⏭️ Dilewati (kurang materi), arsip; bisa diolah ulang |
 | 04 | Sakit gigi hilang | Sakit gigi hilang / BERARTI SEMBUH? | Lanjutan #02: 4 tahap (lubang → saraf radang, analogi jari terjepit cincin → saraf mati, dikira sembuh → nanah, gusi bengkak) → 3 cara + tanda bahaya → **CTA "mau dibahas apa lagi?" + follow** | ✅ Terbit 18 Nov |
 | 05 | Gusi berdarah | Gusi berdarah / BERHENTI SIKAT? | Sisa makanan → plak (jam) → mineral air liur → karang (analogi kerak teko) → karang kasar, gusi meradang, berdarah → sikat miring, benang, scaling, 1–2 minggu → CTA. Ilustrasi M1 bawah, gusi bergelombang | 🎬 v2 jadi (74,6 dtk), QC lulus |
-| 06 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" (tulang dibongkar di satu sisi, dibangun di sisi lain) | Ide (berikutnya bila tak ada request) |
-| 07 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
-| 08 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
-| 09 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
-| 10 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
+| 06 | Bau mulut (request penonton) | Sudah sikat gigi, / KOK MASIH BAU MULUT? | Lapis demi lapis: 1 lidah (pangkal, tidur → air liur turun → gas belerang, sikat lidah belakang→depan + minum air) → 2 sela gigi & gusi (sisa makanan, karang, radang, lubang → benang + scaling/tambal) → 3 luar mulut (hidung, tenggorokan, lambung → dokter) → "dicari sumbernya, bukan cuma ditutupi" → CTA | 🎬 Render 20 Nov (74 dtk), papan di-OK |
+| 07 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | Kenapa behel merapikan gigi + kenapa kontrol rutin menentukan progres (tulang dibongkar di satu sisi, dibangun di sisi lain) | Draf naskah, menunggu validasi Pak Dir |
+| 08 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
+| 09 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
+| 10 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
+| 11 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
 
 ## 8b. Daftar Request Penonton [mulai #04]
 
@@ -152,7 +153,7 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 
 | Topik | Jumlah peminta | Sumber (video #) | Tanggal pertama | Status |
 |---|---|---|---|---|
-| Proses bau mulut | ≥1 (komentar) | #04/#05 | 19 Nov 2026 | Naskah diajukan sebagai #06 |
+| Proses bau mulut | ≥1 (komentar) | #04/#05 | 19 Nov 2026 | Dijawab di #06 (render 20 Nov) |
 
 ## 9. Log Unggahan
 
@@ -164,8 +165,9 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 | 03 | ⏭️ DILEWATI (keputusan Pak Dir 18 Nov: "kurang materinya") | `dalamgigi-03-efek-domino-v1.mp4` (69 dtk, QC lulus) | `cover-domino-a.png` | Caption `output/dalamgigi-03-caption.md`. Asumsi: definisi saluran akar, gigi pengganti tanpa sebut jenis |
 | 04 | 18 Nov 2026 (terbit) | `dalamgigi-04-sakit-hilang-v1.mp4` (75,5 dtk, QC lulus) | `cover-sakit-a.png` | Caption `output/dalamgigi-04-caption.md` (+ balasan admin). CTA request topik |
 | 05 | (belum diunggah) | `dalamgigi-05-gusi-berdarah-v2.mp4` (74,6 dtk, QC lulus; v1 diganti: geraham simetris, gusi bergelombang, papan v5 di-OK) | `cover-gusi-a.png` | Caption `output/dalamgigi-05-caption.md` (+ balasan admin). Ilustrasi M1 bawah |
+| 06 | (render 20 Nov) | `dalamgigi-06-bau-mulut-v1.mp4` (74 dtk) | `cover-bau-mulut.png` | Caption `output/dalamgigi-06-caption.md` (+ balasan ke pengusul). Adegan `napas.html`: lidah 3D (papila + lapisan putih instanced), panel siluet kepala (tanpa wajah). Narasi take B |
 
-Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`, #04 `naskah-sakit-04.md`, #05 `naskah-gusi-05.md`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
+Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`, #04 `naskah-sakit-04.md`, #05 `naskah-gusi-05.md`, #06 naskah di caption + `scripts/napas_cfg.json`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
 File video tidak masuk Git (sesi cloud sementara): selalu ingatkan Pak Dir mengunduh.
 
 ## 10. Ukuran Keberhasilan
