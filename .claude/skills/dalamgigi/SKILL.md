@@ -199,7 +199,12 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 - v1 #01: hook lemah (layar kosong 4 detik), "benang gigi" tanpa cara, "scaling" tanpa penjelasan, "1 jam setahun" membingungkan, visual monoton (kotak-kotak, satu sudut kamera).
 - Narasi dipotong per kalimat + jeda panjang = kaku dan patah-patah (pelajaran iklan bleaching v1).
 
-## 13. Unggah ke Drive (Siap Tayang) [DISEPAKATI 19 Nov 2026]
+## 13. Alur Hari Upload [DIPERBARUI 20 Nov 2026, menggantikan aturan Drive 19 Nov]
 
-Pak Dir: setiap video @dalamgigi yang naskahnya di-OK dan lolos `qc.sh` langsung diunggah (mp4 + sampul) ke Google Drive folder **Dalam Gigi/Siap Tayang** (ID `1yOvrc91wT-5wzd5JXix7oVdp8OwfRyVW`), lalu ID-nya dikirim ke sesi "Audit akun dan upload otomatis" yang memposting ke IG. Sesi produksi **tidak** memposting ke IG.
-Kendala teknis (19 Nov): konektor Drive dari sesi ini maksimal ±3 MB per panggilan (video 9–14 MB tidak bisa); share "anyoneWithLink" dan pesan antar-sesi butuh izin tambahan di pengaturan sesi. Sampul (<3 MB) bisa diunggah.
+Keputusan Pak Dir 20 Nov:
+- **Konten dibuat di hari upload.** Tayang 19.00 WITA → video harus jadi paling lambat **12.00 WITA**.
+- **Komentar didahulukan:** kalau ada request topik di komentar (lolos Uji Value), itu yang dibuat; topik cadangan di tabel rencana ditunda ke upload berikutnya. Tidak ada request → pakai topik cadangan.
+- **Pengingat:** scheduled task "Pengingat konten @dalamgigi" (`trig_01HMF5MWDpTMx9UFZKA3cdkr`), 08.33 WITA tiap tanggal ganjil, masuk ke chat produksi ini.
+- Target jam: naskah + papan di-OK ±10.30 → narasi + render (±30–45 mnt) → QC → kirim.
+- **Tidak diunggah ke Google Drive.** mp4 + sampul + caption dikirim langsung ke Pak Dir di chat; Pak Dir upload sendiri.
+- Topik cadangan disiapkan lebih awal sampai tahap papan gambar, supaya hari-H tinggal narasi + render.
