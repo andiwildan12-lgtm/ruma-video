@@ -125,7 +125,7 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 1. Ambil topik berikutnya dari tabel di bagian 8, atau dari permintaan Pak Dir. **Lolos Uji Value (bagian 1b)** dulu; sertakan hasilnya singkat saat mengajukan naskah.
 2. Tulis **naskah** (narasi + adegan + angka pojok + subtitle) sesuai formula bagian 3 dan aturan bagian 2. Sertakan daftar fakta medis yang perlu divalidasi.
 3. Pak Dir validasi / OK.
-4. Narasi ElevenLabs (2 take, satu generasi) → pilih take → **transkripsi Scribe** (timestamp per kata, gratis) → kunci waktu adegan + `words` di cfg.
+4. Narasi ElevenLabs **1 versi saja (generations_count: 1)**, keputusan Pak Dir 20 Nov: hemat kredit → **transkripsi Scribe** (timestamp per kata, gratis) → kunci waktu adegan + `words` di cfg.
 5. **Gerbang Audit 4 Lapis** (naskah/fakta → frame probe → sinkron teknis → setelah encode: `qc.sh` harus LULUS), tanpa saran baru; perbaiki sendiri. Tampilkan ke Pak Dir tabel "sebelum → sesudah" bila naskah diubah.
 6. Render penuh di latar → lembar kontak render penuh → mix SFX → encode tanpa `-shortest` → `qc.sh` → sampul.
 7. **Paket kirim**: video `dalamgigi-NN-topik-vN.mp4`, sampul, caption IG, caption TikTok, komentar pertama (file `output/dalamgigi-NN-caption.md`).

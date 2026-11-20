@@ -90,7 +90,7 @@ Durasi ±50–60 detik; alur yang mengalir lebih penting daripada angka pas. Tur
 - **Seluruh narasi dibuat dalam SATU generasi yang mengalir.** Jangan pakai `[long pause]` dan jangan memotong per kalimat lalu menempelkan per adegan. Cara itu terbukti membuat narasi kaku, terlalu banyak jeda, dan perpindahan adegan tidak nyambung (pelajaran iklan v1).
 - Tag nada di awal kalimat: `[conversational] [warmly]`, `[cheerfully]` untuk "kabar baiknya", `[warmly]` untuk gambaran hasil.
 - Bahasa santai dan sopan ("kamu", "nempel", "pas lihat foto", "ya"). Angka dan harga ditulis dengan kata.
-- Default 2 versi (±950 kredit per versi untuk ±50 detik; ±1.250–1.350 untuk ±65 detik). Unduh keduanya, pilih yang jedanya paling rapi.
+- **Default 1 versi saja (`generations_count: 1`)**, keputusan Pak Dir 20 Nov: 2 versi membuang kredit. ±950 kredit untuk ±50 detik; ±1.250–1.350 untuk ±65–75 detik. Generate ulang hanya kalau hasil Scribe menunjukkan kata salah/jeda rusak.
 - Target naskah TOFU ±150–170 kata ≈ 62–68 detik suara (Ricky ±2,5 kata/detik).
 - Panggil `creative_get_flow_run_status` sampai selesai, lalu unduh `content_url` dengan curl.
 
