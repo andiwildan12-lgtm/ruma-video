@@ -9,6 +9,13 @@ Panggil pengguna **"Pak Dir"** (dokter gigi, owner Ruma Dental & UPG Dental Care
 
 Strategi besar akun (tujuan, kanal, cara menang, fase): **`references/social-strategy.md`**. Siapa penontonnya (segmen, mitos, bank bahasa): **`references/audience.md`**. Baca keduanya sebelum merencanakan konten.
 
+## 0. SINKRON ANTAR-CHAT [WAJIB, Pak Dir 20 Nov 2026]
+Pak Dir tidak mau menjadi "penghubung" antar-chat. Setiap chat yang mengerjakan @dalamgigi, **sebelum mulai kerja**:
+1. `git fetch origin` lalu gabungkan semua cabang `claude/*` yang mengubah `.claude/skills/dalamgigi/` atau `output/dalamgigi-*` ke cabang kerjanya (`git merge`), selesaikan konflik (ambil keduanya, jangan hapus kerja chat lain), commit & push.
+2. Baca **papan status di Drive: `Dalam Gigi/STATUS-dalamgigi.md`** (stok, jadwal tayang, menunggu ACC, siapa mengerjakan apa).
+3. Setiap selesai satu langkah (naskah, render, unggah, tayang): **perbarui papan status Drive + log skill**, commit & push.
+4. Jangan menggarap topik/nomor yang di papan status sudah dipegang chat lain.
+
 Skill pendamping (wajib dibaca bersama):
 - `produksi-video-klinik` → teknik render 3D, narasi ElevenLabs, SFX, **Gerbang Audit 4 Lapis + QC otomatis**, teks kinetik, motion blur, paket kirim, sampul.
 - `ruma-dental-video` → identitas brand Ruma (warna, logo, suara Ricky, aturan iklan kesehatan).
@@ -147,11 +154,12 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | 03 | Gigi hilang, efek domino | Satu gigi hilang / GIGI LAIN IKUT GESER? | 1 dicabut → 3 terdampak; analogi rak buku; tetangga miring, lawan turun; 3 cara (jangan buru-buru cabut/saluran akar, gigi pengganti, sikat sela) | ⏭️ Dilewati (kurang materi), arsip; bisa diolah ulang |
 | 04 | Sakit gigi hilang | Sakit gigi hilang / BERARTI SEMBUH? | Lanjutan #02: 4 tahap (lubang → saraf radang, analogi jari terjepit cincin → saraf mati, dikira sembuh → nanah, gusi bengkak) → 3 cara + tanda bahaya → **CTA "mau dibahas apa lagi?" + follow** | ✅ Terbit 18 Nov |
 | 05 | Gusi berdarah | Gusi berdarah / BERHENTI SIKAT? | Sisa makanan → plak (jam) → mineral air liur → karang (analogi kerak teko) → karang kasar, gusi meradang, berdarah → sikat miring, benang, scaling, 1–2 minggu → CTA. Ilustrasi M1 bawah, gusi bergelombang | 🎬 v2 jadi (74,6 dtk), QC lulus |
-| 06 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | "Jawaban gampangnya: tarik. Tapi gigi tertanam di tulang…" (tulang dibongkar di satu sisi, dibangun di sisi lain) | Ide (berikutnya bila tak ada request) |
-| 07 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
-| 08 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
-| 09 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
-| 10 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
+| 06 | Bau mulut (request penonton) | Sudah sikat gigi, / KOK MASIH BAU MULUT? | Lapis demi lapis: 1 lidah (pangkal, tidur → air liur turun → gas belerang, sikat lidah belakang→depan + minum air) → 2 sela gigi & gusi (sisa makanan, karang, radang, lubang → benang + scaling/tambal) → 3 luar mulut (hidung, tenggorokan, lambung → dokter) → "dicari sumbernya, bukan cuma ditutupi" → CTA | 🎬 v1 jadi 20 Nov (73,9 dtk), QC lulus |
+| 07 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | Tulang dibongkar di sisi tertekan, dibangun di sisi tertarik (analogi pindah rumah bata demi bata) → dorongan kawat melemah → kontrol = setel ulang (grafik progres tangga) → CTA. Naskah `references/naskah-behel-07.md` | Draf, menunggu validasi Pak Dir |
+| 08 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
+| 09 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
+| 10 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
+| 11 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
 
 ## 8b. Daftar Request Penonton [mulai #04]
 
@@ -159,7 +167,7 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 
 | Topik | Jumlah peminta | Sumber (video #) | Tanggal pertama | Status |
 |---|---|---|---|---|
-| (belum ada) | | | | |
+| Proses bau mulut | ≥1 (komentar) | #04/#05 | 19 Nov 2026 | Dijawab di #06 (render 20 Nov) |
 
 ## 9. Log Unggahan
 
@@ -171,8 +179,9 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 | 03 | ⏭️ DILEWATI (keputusan Pak Dir 18 Nov: "kurang materinya") | `dalamgigi-03-efek-domino-v1.mp4` (69 dtk, QC lulus) | `cover-domino-a.png` | Caption `output/dalamgigi-03-caption.md`. Asumsi: definisi saluran akar, gigi pengganti tanpa sebut jenis |
 | 04 | 18 Nov 2026 (terbit 11.50 WITA, di luar jam utama) | `dalamgigi-04-sakit-hilang-v1.mp4` (75,5 dtk, QC lulus) | `cover-sakit-a.png` | Caption `output/dalamgigi-04-caption.md` (+ balasan admin). CTA request topik. Caption terbit tanpa #makassar & tanpa ajakan simpan/follow |
 | 05 | 19 Nov 2026 19.11 WITA (posting otomatis Windsor) | `dalamgigi-05-gusi-berdarah-v2.mp4` (74,6 dtk) | sampul: frame 1,5 dtk (`thumb_offset`), PNG tidak bisa dipakai | https://www.instagram.com/reel/Df68RvBDpuV/ · media_id 18042968876907330 · komentar pertama 18119640761114393. Video diunggah manual ke Drive oleh Pak Dir |
+| 06 | Jadwal Sab 21 Nov 19.07 WITA (menunggu video di Drive Siap Tayang; sampul sudah, ID `1MrzToT4yTMqBGAQnzlZ3VcpsKebOfRKd`) | `dalamgigi-06-bau-mulut-v1.mp4` (73,9 dtk, QC lulus) + `-drive.mp4` 9,5 MB | `cover-bau-mulut.png` | Caption `output/dalamgigi-06-caption.md` (+ balasan ke pengusul). Adegan `napas.html`: lidah 3D (papila + lapisan putih instanced), panel siluet kepala (tanpa wajah). Narasi take B |
 
-Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`, #04 `naskah-sakit-04.md`, #05 `naskah-gusi-05.md`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
+Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`, #04 `naskah-sakit-04.md`, #05 `naskah-gusi-05.md`, #06 naskah di caption + `scripts/napas_cfg.json`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
 File video tidak masuk Git (sesi cloud sementara): selalu ingatkan Pak Dir mengunduh.
 
 ## 10. Ukuran Keberhasilan
@@ -180,6 +189,8 @@ File video tidak masuk Git (sesi cloud sementara): selalu ingatkan Pak Dir mengu
 Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, % selesai, **disimpan**, **dibagikan**. Views minggu pertama belum patokan; akun baru butuh 5–10 video.
 
 ## 11. Pelajaran yang Tidak Boleh Diulang
+
+- **20 Nov: konsep serial interaktif/voting A-B ("Jelajah Mulut") ditolak Pak Dir** ("gak usah alur-alur"). Tetap format tunggal + CTA "Mau dibahas apa lagi?". Draf disimpan di `references/serial-jelajah-mulut-eps01.md` sebagai arsip.
 
 - **#05: Pak Dir minta proses plak/karang/gusi ditunjukkan di gigi geraham** (lebih jelas & paling sering terjadi di sana). Default untuk topik gusi/karang/lubang: tampak samping geraham bawah, gigi sisi seberang disembunyikan.
 - **#05: Pak Dir minta bentuk geraham dibuat betul-betul seperti asli.** Pakai fungsi `sculpt()` di `gusi.html` (mahkota menggembung, leher menyempit, 4–5 cusp menyatu + fisur; premolar 2 cusp). Plak/karang = salinan geometri gigi yang diperbesar sedikit dan dipotong (clipping) di tepi gusi, bukan kotak.
@@ -371,3 +382,8 @@ Syarat teknis:
 - File video tidak masuk Git; stok tayang ada di Drive `Dalam Gigi/Siap Tayang`, nama `dalamgigi-NN-topik-vN.mp4` + `-caption.md`. Setelah tayang → pindah ke `Dalam Gigi/Sudah Tayang`.
 - Konektor ElevenLabs sering minta masuk ulang; bila putus, produksi narasi berhenti dan Pak Dir diberi tahu (tanpa suara pengganti).
 - Windsor paket TRIAL: bila habis, posting otomatis berhenti → paket kirim tetap tersedia di Drive untuk diunggah manual.
+
+## 16. Unggah ke Drive dari sesi produksi lain [DISEPAKATI 19 Nov 2026, digabung dari sesi "Konten Dalam Gigi"]
+
+Pak Dir: setiap video @dalamgigi yang naskahnya di-OK dan lolos `qc.sh` langsung diunggah (mp4 + sampul) ke Google Drive folder **Dalam Gigi/Siap Tayang** (ID `1yOvrc91wT-5wzd5JXix7oVdp8OwfRyVW`), lalu ID-nya dikirim ke sesi "Audit akun dan upload otomatis" yang memposting ke IG. Sesi produksi **tidak** memposting ke IG.
+Kendala teknis (19 Nov): konektor Drive dari sesi ini maksimal ±3 MB per panggilan (video 9–14 MB tidak bisa); share "anyoneWithLink" dan pesan antar-sesi butuh izin tambahan di pengaturan sesi. Sampul (<3 MB) bisa diunggah.
