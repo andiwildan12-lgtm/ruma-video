@@ -34,4 +34,13 @@ Filter **antislop** (mode during, lihat CLAUDE.md) berlaku untuk setiap desain: 
 Teks/konsep OK Pak Dir → render → audit (zona aman, wajah utuh, blur, kontras, data resmi) → kirim feed + story → simpan ke `ruma-dental-video/desain-<layanan>/` dan catat revisi di `CATATAN-DRAF.md`.
 
 ## 5. Contoh terbit
-`desain-behel/`: spil-harga-admin, spil-harga-klinik, mofu-3-langkah (feed 4:5 + story 9:16), 18 Nov 2026.
+`desain-behel/`: spil-harga-admin, spil-harga-klinik, mofu-3-langkah (feed 4:5 + story 9:16), 18 Nov 2026. Dibuat dengan panduan versi 17 Nov (Poppins + Open Sans). **Keputusan Pak Dir 20 Nov 2026: tetap dipakai, tidak dirender ulang.**
+
+## 6. Pelajaran [TERBUKTI 20 Nov 2026]
+1. **Panduan Canva bisa berubah tanpa pemberitahuan.** Font grafis berubah dari Poppins + Open Sans ke Neue Montreal + Montserrat dalam 3 hari (17 → 20 Nov). Sebelum mulai desain atau video Ruma, cek tanggal versi di `references/panduan-visual-ruma.md` §15. Kalau Pak Dir mengirim link Canva baru, baca seluruhnya dulu dan catat perbedaannya di tabel versi.
+2. **Hasil yang sudah selesai tidak diulang saat panduan berubah.** Aturan baru berlaku untuk produksi berikutnya. Render ulang hanya kalau Pak Dir minta.
+3. **Font berbayar:** cek dulu file-nya ada atau tidak (Neue Montreal tidak ada di Google Fonts/npm). Tanpa file berlisensi, pakai font kedua dari pasangan resmi (Montserrat). Jangan ganti diam-diam ke font lain di luar panduan.
+4. **Ganti font = cek ulang tata letak.** Montserrat lebih lebar dari Poppins, jadi judul bisa bertambah satu baris (feed C dan M). Render semua varian feed + story, lalu cek luber, wajah terpotong, dan zona aman.
+5. **Ubah template langsung di sumbernya** (Edit di file HTML/CSS), bukan lewat script yang mengganti teks massal (antislop R-33). Tulis alasan di komentar template, misalnya "Montserrat = pengganti sementara Neue Montreal".
+6. **Kirim desain disertai laporan antislop** (kontras, klaim/angka berasal dari data resmi, tanpa tanda pisah panjang, alasan tiap keputusan visual).
+
