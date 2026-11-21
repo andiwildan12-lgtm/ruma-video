@@ -5,6 +5,8 @@ description: Identitas dan pedoman brand untuk video Klinik Gigi Ruma Dental (Ma
 
 # Pedoman Video Ruma Dental
 
+> **Anti-slop (21 Nov 2026):** semua naskah, teks layar, sampul, caption, dan balasan admin wajib lulus *Audit Tulisan Anti-Slop* di skill `produksi-video-klinik` bagian 2c (tanpa klaim/angka karangan, tanpa kata kosong, tanpa tanda pisah panjang, suara brand tetap ada).
+
 Versi: **1.3 (17 November 2026)**.
 Status:
 - **Iklan bleaching v2 di-ACC** → contoh acuan iklan MOFU/BOFU (bagian 10).

@@ -2,7 +2,7 @@
 Topik dari request komentar penonton (bau mulut).
 
 ## Caption Instagram
-Sudah sikat gigi, tapi kok masih bau mulut? Sumbernya dicari lapis demi lapis 👇
+Sudah sikat gigi, tapi kok masih bau mulut? Kita cari sumbernya lapis demi lapis 👇
 
 1️⃣ Lidah: permukaannya berbulu halus, sisa makanan nyangkut di pangkal lidah. Saat tidur air liur berkurang, kuman mengurainya jadi gas berbau belerang. Makanya paling terasa pas bangun pagi.
 → Bersihkan lidah dari belakang ke depan + cukup minum air.
@@ -13,7 +13,7 @@ Sudah sikat gigi, tapi kok masih bau mulut? Sumbernya dicari lapis demi lapis �
 3️⃣ Dari luar mulut: hidung, tenggorokan, lambung, kadang juga gula darah atau efek obat tertentu.
 → Yang ini periksa ke dokter.
 
-Permen mint & obat kumur cuma menutupi baunya sebentar, sumbernya tetap ada. Jadi bau mulut itu dicari sumbernya, bukan cuma ditutupi.
+Permen mint & obat kumur cuma menutupi baunya sebentar. Jadi cari sumbernya, jangan cuma ditutupi.
 
 Makasih buat yang sudah request topik ini di komentar 🙏
 Mau dibahas apa lagi soal gigi? Tulis di komentar, nanti kita jawab lewat video. Simpan & follow @dalamgigi 🦷

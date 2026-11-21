@@ -5,6 +5,8 @@ description: Semua tentang akun TOFU @dalamgigi (Instagram + TikTok) milik Klini
 
 # Akun @dalamgigi
 
+> **Anti-slop (21 Nov 2026):** semua naskah, teks layar, sampul, caption, dan balasan admin wajib lulus *Audit Tulisan Anti-Slop* di skill `produksi-video-klinik` bagian 2c (tanpa klaim/angka karangan, tanpa kata kosong, tanpa tanda pisah panjang, suara brand tetap ada).
+
 Panggil pengguna **"Pak Dir"** (dokter gigi, owner Ruma Dental & UPG Dental Care). Bahasa Indonesia tegas dan praktis. Kritis, audit sendiri sebelum mengirim.
 
 Skill pendamping (wajib dibaca bersama):

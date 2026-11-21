@@ -5,6 +5,8 @@ description: Identitas dan pedoman video UPG Dental Care (klinik gigi Makassar, 
 
 # Pedoman Video UPG Dental Care
 
+> **Anti-slop (21 Nov 2026):** semua naskah, teks layar, sampul, caption, dan balasan admin wajib lulus *Audit Tulisan Anti-Slop* di skill `produksi-video-klinik` bagian 2c (tanpa klaim/angka karangan, tanpa kata kosong, tanpa tanda pisah panjang, suara brand tetap ada).
+
 Versi **0.1 (17 Nov 2026), kerangka.** Panggil pengguna **"Pak Dir"**. Data brand yang belum diberikan ditandai **[TERBUKA]**: jangan dikarang, tanyakan ke Pak Dir saat pertama kali membuat video UPG.
 
 ## 1. Hubungan dengan Skill Lain

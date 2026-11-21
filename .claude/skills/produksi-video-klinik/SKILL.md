@@ -40,6 +40,7 @@ Aturan:
 - [ ] Funnel tepat: TOFU tanpa ajakan dan harga; MOFU/BOFU sesuai pola.
 - [ ] Aturan iklan kesehatan: tanpa menyiratkan kondisi penonton, tanpa menakut-nakuti, tanpa janji hasil, tanpa kata "gratis".
 - [ ] Narasi enak diucapkan, angka ditulis dengan kata, satu generasi mengalir.
+- [ ] **Audit tulisan anti-slop** (bagian 2c) lulus untuk naskah, teks layar, sampul, caption, komentar sematan, dan balasan admin.
 
 **Audit 2: Visual dan papan gambar (pakai frame probe)**
 - [ ] Render 6–12 frame probe dari seluruh durasi, lalu lihat lembar kontaknya.
@@ -68,6 +69,47 @@ Aturan:
 **Audit 4: Cek kualitas file jadi (setelah encode, sebelum kirim) [WAJIB SEMUA BRAND]**
 - [ ] `scripts/qc.sh video.mp4 <durasi> <detik_kartu>` → hasil **LULUS** (detail bagian 11A). Kalau ada [CEK], perbaiki dulu; jangan kirim video yang belum lulus.
 - [ ] Lembar kontak dari **render penuh** (bukan probe) sudah dilihat.
+
+## 2c. Audit Tulisan Anti-Slop [DISEPAKATI 21 Nov 2026, semua brand]
+
+Diadaptasi dari skill akun `antislop-copywriting` untuk Bahasa Indonesia dan klinik gigi. Berlaku untuk **semua teks yang dibaca/didengar orang**: narasi, teks layar, label, sampul, caption IG/TikTok, komentar sematan, balasan admin, iklan. Jalankan setelah draf, sebelum dikirim ke Pak Dir.
+
+**1. Jangan mengarang (paling penting untuk klinik)**
+- Tidak ada angka, persentase, lama waktu, nama, testimoni, gelar, atau "kata ahli" yang tidak berasal dari sumber/validasi Pak Dir. Kalau perlu angka tapi belum ada, tulis versi tanpa angka atau tanyakan.
+- Tidak ada klaim kosong: "terbaik", "nomor 1", "terpercaya ribuan pasien", "teknologi tercanggih", "dijamin", "100% aman". Ganti dengan apa yang benar-benar dilakukan/dirasakan.
+- Tidak menebak lalu menyajikannya sebagai fakta ("biasanya…", "kemungkinan…") tanpa dasar.
+
+**2. Kata kosong yang harus dibuang/diganti**
+- "revolusioner", "inovatif", "solusi terdepan", "level berikutnya", "transformasi", "maksimal", "luar biasa" (tanpa isi), "di era modern ini", "di zaman serba cepat", "tidak bisa dipungkiri", "perlu diketahui bahwa", "pada dasarnya", "yang terpenting adalah".
+- Pembuka basa-basi ("Yuk kita bahas…", "Simak sampai habis ya!", "Tahukah kamu…" berulang) → langsung ke isi.
+- Penutup kosong ("Semoga bermanfaat!", "Masa depan cerah menanti") → akhiri di fakta/CTA konkret.
+
+**3. Pola kalimat khas AI**
+- "Bukan hanya X, tapi juga Y" / "Ini bukan sekadar X, ini Y" dipakai berkali-kali.
+- Semua daftar dipaksa jadi tiga ("cepat, nyaman, dan aman") padahal isinya tidak tiga.
+- Rentetan kalimat pendek dramatis ("Tanpa sakit. Tanpa takut. Tanpa ragu.").
+- Kalimat "renungan" kosong ("Senyum adalah bahasa kepercayaan").
+- Perintah dramatis ("Baca sekali lagi.", "Ingat baik-baik ini.").
+- Mengganti-ganti sinonim supaya tidak berulang (gigi → geligi → deretan mutiara). Ulangi kata yang paling jelas.
+- Kalimat pasif tanpa pelaku kalau pelakunya diketahui ("karang dibersihkan" → "dokter gigi membersihkan karang").
+
+**4. Kebersihan teks**
+- **Tanpa tanda pisah panjang (—)** di teks yang tayang (caption, layar, sampul). Ganti dengan titik, koma, titik dua, atau kurung.
+- Tanpa HURUF KAPITAL untuk berteriak di tengah kalimat. Pengecualian: baris 2 sampul (gaya brand) dan satu kata aksen.
+- Tebal (bold) di subtitle hanya untuk 1–2 kata kunci per baris, bukan setiap istilah.
+- Tanpa tanda kutip untuk menekankan kata biasa; kutip hanya untuk ucapan, istilah yang dijelaskan, atau analogi.
+- Emoji: caption boleh secukupnya (angka 1️⃣2️⃣3️⃣ untuk langkah, 1–2 emoji di CTA); tidak di judul teks layar, tidak sebagai hiasan tiap baris.
+- Tanpa filler ("dalam rangka", "dikarenakan oleh fakta bahwa", "pada saat ini") dan tanpa tumpukan keraguan ("mungkin bisa saja barangkali").
+
+**5. Tetap ada suara**
+- Jangan disterilkan sampai datar. Suara Dalam Gigi: santai, hangat, "nggak", "bayangin", "kok bisa?". Suara Ruma: tenang, ramah, premium. Suara UPG: lihat skill upg-video. Analogi sehari-hari dipertahankan.
+- CTA spesifik pada tindakan ("Tulis di komentar, nanti kita jawab lewat video"), bukan "Hubungi kami sekarang!" generik.
+
+**6. Langkah akhir (draf → audit → final)**
+1. Baca keras-keras: terdengar seperti orang bicara?
+2. Tanya: "Apa yang membuat ini terasa buatan AI?" dan "Ada fakta/angka/nama yang tidak ada di sumber atau validasi Pak Dir?"
+3. Perbaiki, lalu cek terakhir: tidak ada "—" di teks tayang.
+Lapor ke Pak Dir cukup satu baris: "Audit tulisan: lulus, X hal dirapikan".
 
 ## 2b. Alur Satu Konten
 
