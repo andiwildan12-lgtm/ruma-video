@@ -24,3 +24,8 @@ Footage folder Scalling `1ieZcNOggEojQsC2T4a-knJcgAIKurj79`. Iklan Meta ±50 dtk
 2. Promo tanpa batas waktu → bahasakan **"khusus bulan ini"** (bisa dipakai terus; promo memang berlaku tiap bulan).
 3. Harga normal **dicoret**: ~~Rp250.000–350.000~~ → Rp200.000.
 Penutup standar: pesan "Scaling Rp200.000 | khusus bulan ini" + IG @rumadentalmks + WA + alamat. Logo pojok kiri atas sepanjang video.
+
+## Papan v2 (koreksi Pak Dir 21 Nov 2026)
+- Iklan: wajah pasien **tidak di-blur**; minta close-up pasien di-scaling; papan v1 memakai pasien yang juga resepsionis (folder Agustus) → "kesannya ala-ala".
+- Footage pasien diganti seluruhnya ke folder **Scalling Mei** (`1n4yV5HkHYZIl3zlAYbIVP058wFrijLU3`, satu pasien jilbab krem berbehel): 9741 (hook close-up), 9743→9744 (cek sendiri, bercermin), 9740 (close-up), 9742 (close-up), 9747→9732 (dijelaskan dulu → scaling), 9734 (mitos). Promo 4422 dan ajakan 4420 tetap (resepsionis tidak muncul sebagai pasien).
+- Papan: `papan-gambar-iklan-scaling-v3-2.png`, menunggu ACC.
