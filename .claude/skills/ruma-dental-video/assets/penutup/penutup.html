@@ -30,7 +30,7 @@ body{width:1080px;height:1920px;background:var(--mint);font-family:M,sans-serif;
 </div></div><script>
 const q=new URLSearchParams(location.search);
 const ps=q.get('pesan')||''; const pe=document.getElementById('pesan'); ps.split('|').forEach((x,i)=>{if(i)pe.appendChild(document.createElement('br'));pe.appendChild(document.createTextNode(x))}); if(!ps) document.getElementById('pesan').style.display='none';
-document.getElementById('ig').textContent=q.get('ig')||'[akun Instagram Ruma]';
+document.getElementById('ig').textContent=q.get('ig')||'@rumadentalmks';
 // animasi: tiap elemen masuk 0,25 dtk, jeda 0,22 dtk
 window.go=t=>{document.querySelectorAll('.el').forEach((e,i)=>{if(e.style.display==='none')return;const p=Math.max(0,Math.min(1,(t-0.1-0.22*i)/0.25));e.style.opacity=p;e.style.transform=`translateY(${(1-p)*14}px)`})};
 go(+(q.get('t')||4));

@@ -47,7 +47,8 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 11. **STANDAR SEMUA VIDEO RUMA (keputusan Pak Dir 21 Nov 2026, pelajaran 2 konten drg. Ainun):**
    - **Logo pojok kiri atas sepanjang video** (kecuali penutup): `assets/penutup/logo-pojok.html` → logo 64 px di kapsul putih 92%, x 72 / y 262. Judul hook dan label langkah mulai **y ≥ 360** (di bawah logo).
    - **Penutup seragam 4 dtk** di semua video (organik maupun iklan): `assets/penutup/penutup.html?pesan=...|...&ig=...` → pesan penutup video (opsional) → logo → tagline → Instagram · WhatsApp 0898-7735-463 · Jl. Rusa No. 65, Maricaya, Makassar. Ini pengecualian aturan no. 10: WA dan alamat **boleh/wajib** di penutup standar.
-   - Akun Instagram Ruma: **[belum diisi, tanya Pak Dir]**.
+   - Akun Instagram Ruma: **@rumadentalmks** (dari Pak Dir, 21 Nov 2026) → `penutup.html?ig=@rumadentalmks`.
+   - Dua konten drg. Ainun (konsultasi tambal v1, alat tambal v2) dibuat sebelum standar ini dan **tidak dirender ulang** (keputusan Pak Dir); standar berlaku untuk video berikutnya. Cek wajib sebelum papan gambar: logo pojok ada, judul/label di bawah logo, penutup memakai template ini.
 10. **Tujuan bawaan = konten organik** (Reels/TikTok akun Ruma). Perlakukan sebagai iklan Meta **hanya bila Pak Dir menyebut iklan** (keputusan 21 Nov 2026). Organik: tanpa harga/WA kecuali diminta, nada edukasi/cerita, close-up klinis boleh (wajah pasien tetap blur); aturan no. 8 hanya untuk iklan.
 6. **Casting footage:** orang yang tampil sebagai pasien **tidak boleh** muncul juga sebagai admin/resepsionis dalam video yang sama.
 7. Jangan menambahkan logo ke benda yang aslinya polos, dan jangan memakai stok video klinik lain seolah-olah Ruma.
@@ -62,6 +63,7 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 | Alamat lengkap | Jl. Rusa No. 65, Maricaya, Kec. Makassar, Kota Makassar, Sulawesi Selatan |
 | Alamat singkat (video) | Jl. Rusa No. 65, Maricaya, Makassar |
 | Nomor admin | WA 0898-7735-463 |
+| Instagram | **@rumadentalmks** |
 | Bleaching | Rp1.700.000, diskon 10% = **Rp1.530.000**, **sudah termasuk scaling**, tanpa batas waktu |
 | Tambal gigi | sewarna gigi, **mulai Rp250.000**, garansi setelah perawatan, dikerjakan dokter gigi |
 | Behel | **mulai Rp6 jutaan untuk rahang atas & bawah**, **Rp3 jt per rahang**, **cicilan Rp2 jt/bln × 3, tanpa bunga** (dikonfirmasi 18 Nov 2026). Sudah termasuk: pemasangan atas & bawah, scaling, cetak gigi, foto intra & ekstra oral, konsultasi dokter gigi, ortho kit |
