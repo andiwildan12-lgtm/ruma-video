@@ -43,7 +43,8 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 2. Karakter manusia hasil gambar/3D **tidak boleh punya mata dalam bentuk apa pun**. Ilustrasi senyum (bibir + gigi tanpa wajah) diperbolehkan.
 3. **Tanpa musik.** Suara latar ruangan yang sangat pelan dan efek suara benda boleh.
 4. Logo tidak dibuat atau digambar oleh AI. Pakai file logo resmi saat editing/render.
-5. Wajah pasien hanya dengan **izin pasien**. Footage yang sudah dikirim Pak Dir **sudah atas izin pasien**.
+5. Wajah pasien hanya dengan **izin pasien**. Footage yang sudah dikirim Pak Dir **sudah atas izin pasien**, tetapi **wajah pasien tetap di-blur bila berpotensi terlihat** (keputusan Pak Dir 21 Nov 2026). Wajah dokter/staf tidak di-blur.
+10. **Tujuan bawaan = konten organik** (Reels/TikTok akun Ruma). Perlakukan sebagai iklan Meta **hanya bila Pak Dir menyebut iklan** (keputusan 21 Nov 2026). Organik: tanpa harga/WA kecuali diminta, nada edukasi/cerita, close-up klinis boleh (wajah pasien tetap blur); aturan no. 8 hanya untuk iklan.
 6. **Casting footage:** orang yang tampil sebagai pasien **tidak boleh** muncul juga sebagai admin/resepsionis dalam video yang sama.
 7. Jangan menambahkan logo ke benda yang aslinya polos, dan jangan memakai stok video klinik lain seolah-olah Ruma.
 8. Iklan Meta: jangan menyiratkan tahu kondisi kesehatan penonton ("Gigimu berlubang?") dan jangan memancing rasa malu/tidak percaya diri. Tanpa foto sebelum-sesudah, tanpa janji tingkat putih tertentu, tanpa close-up klinis mulut asli.
@@ -157,6 +158,19 @@ Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
 - Konten TOFU = **edukasi murni**: tanpa ajakan ke klinik, tanpa "chat admin", tanpa harga. Brand cukup hadir lewat **kartu penutup logo + tagline** (seperti credit Studio AnakArsi).
 - Format yang disukai: gaya jktlagi "Bayangin…" (pengandaian → rantai angka → "sisanya?" → manfaat pribadi), angka besar di pojok kanan atas, subtitle kinetik per kata. Pegangan isi: **"Value dulu, baru konten"** + Uji Value 5 poin (skill `dalamgigi` bagian 1b). Contoh: #01–#03 di `references/`.
 - Durasi 50–70 detik.
+
+## 10d. Gaya 3 versi Ruma: cerita kasus / POV dari rekaman asli [DISEPAKATI 21 Nov 2026]
+Format POV/cerita yang meniru **struktur** konten "POV Nur FO" UPG (Gaya 3), tetapi **tampilan Ruma** (panduan melarang campur font/palet antar-brand):
+| Unsur Gaya 3 UPG | Versi Ruma |
+|---|---|
+| Judul retro slab krem-cokelat diketik + bunyi ketik | Judul Montserrat Deep Teal di label putih, kata kunci blok Turquoise, muncul fade halus |
+| Coretan tangan Caveat + panah | Garis tipis + label kecil Montserrat (tanpa stroke) |
+| Penghitung lencana | Penanda langkah "1/3 · 2/3 · 3/3" |
+| Kartu checklist berlabel | Kartu putih berlabel (mis. "pasien 20 th · tambal ulang"), video dokter mengecil di pojok |
+| SFX padat + backsound | Suara asli dokter + suara ruangan; tanpa musik; cut bersih |
+- Ucapan dokter = ucapan asli dari transkrip (tidak dikarang); label/teks tidak boleh melebihi ucapan atau yang terlihat di gambar.
+- Name tag cukup "drg. Nama". Penutup organik: logo Ruma + 1 ajakan ringan (mis. "Simpan untuk nanti"), tanpa harga/WA.
+- Proyek pertama: **Tambal ulang drg. Ainun** (`references/naskah-tambal-ulang-ainun-01.md`).
 
 ## 10c. Akun TOFU Ruma [DISEPAKATI, 16 Nov 2026; detail terkini di skill `dalamgigi`]
 
