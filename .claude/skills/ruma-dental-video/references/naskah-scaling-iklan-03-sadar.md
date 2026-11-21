@@ -33,3 +33,6 @@ Penutup standar: pesan "Scaling Rp200.000 | khusus bulan ini" + IG @rumadentalmk
 ## Papan v3 (koreksi Pak Dir: "muka adminnya kayak jutek, gak siap")
 Adegan promo: 4422 (admin menunduk) diganti **Penyambutan 9650 dtk 2,8** (resepsionis berdiri tersenyum, gestur menyambut, depan papan logo; folder Penyambutan Mei = pasien yang sama dengan Scalling Mei → alur nyambung). Kartu harga diturunkan ke area meja (y 1090) agar wajah utuh; subtitle di adegan ini ditiadakan (isi sudah di kartu). Papan: `papan-gambar-iklan-scaling-v3-3.png`.
 Pelajaran: pilih frame orang dengan **ekspresi siap/ramah** (senyum, menghadap kamera/pasien), bukan sedang menunduk/sibuk; elemen grafis tidak boleh menutup wajah.
+
+## Render v1 (papan v3 ACC "gas sih", 21 Nov 2026)
+`iklan-scaling-ruma-v1.mp4` 51,6 dtk, −15,9 LUFS, TP −2,0 dBFS. Narasi Ricky versi A (47,4 dtk; versi B salah ucap "galis/kuatanya"), flow ElevenLabs `FBeZHVWZkcjAggy3CAAt`, 2×873 kredit. Script: `produksi-video-klinik/scripts/iklan-footage-narasi/`.
