@@ -1,0 +1,56 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Poster Promo Scaling Ruma</title><style>
+/* Poster promo scaling Ruma v2 (21 Nov 2026), koreksi Pak Dir: "gambarnya kurang cocok, bikin model desain yang menjual
+   dan menarik tapi tidak menghilangkan value desain Ruma".
+   Prinsip: satu fokus (harga promo), foto manusia yang tenang (bukan close-up klinis), bingkai atap Ruma, banyak putih,
+   teks sedikit. Palet resmi: Deep Teal teks, Turquoise hanya blok, putih + Mint White. Montserrat = pengganti Neue Montreal.
+   go(K,'feed'|'story'); story = komposisi feed di zona aman (y 285-1635). Foto: tanpa wajah dokter (aturan poster). */
+@font-face{font-family:M;src:url(fonts/montserrat-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:M;src:url(fonts/montserrat-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:M;src:url(fonts/montserrat-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:M;src:url(fonts/montserrat-latin-700-normal.woff2);font-weight:700}
+:root{--deep:#354B49;--turq:#28CDBD;--mint:#E8F8F6;--muted:#5E6B67}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1350px;background:#fff;position:relative;overflow:hidden;font-family:M,sans-serif;color:var(--deep)}
+.f{position:absolute;left:0;top:0;width:1080px;height:1350px}
+.band{position:absolute;left:0;right:0;bottom:0;height:460px;background:var(--mint)}
+.hd{position:absolute;left:64px;right:64px;top:44px;display:flex;justify-content:space-between;align-items:center}
+.hd img{height:80px}
+.hd span{font:600 26px M;border:2.5px solid var(--turq);border-radius:40px;padding:8px 22px}
+/* foto berbingkai atap (motif logo Ruma) */
+.ph{position:absolute;left:44px;right:44px;top:150px;height:640px;clip-path:polygon(0 11%,50% 0,100% 11%,100% 100%,0 100%);border-radius:0 0 28px 28px;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+/* kartu harga = fokus tunggal */
+.price{position:absolute;left:64px;top:560px;width:640px;background:#fff;border-radius:26px;padding:26px 32px 28px;box-shadow:0 16px 40px rgba(53,75,73,.18)}
+.price .l{display:flex;align-items:center;gap:14px;font:600 27px M;white-space:nowrap}
+.price .l b{font:700 24px M;background:var(--turq);padding:8px 14px;border-radius:10px}
+.price .n{font:500 30px M;color:var(--muted);text-decoration:line-through;margin-top:14px}
+.price .p{font:700 100px/1 M;letter-spacing:-3px;margin-top:6px}
+.price .q{font:600 26px M;color:var(--muted);margin-top:10px}
+.h{position:absolute;left:64px;right:64px;top:910px}
+.h p{font:700 60px/1.12 M;letter-spacing:-1px}
+.h .k{display:inline-block;background:var(--turq);padding:2px 18px 8px;border-radius:12px;margin-top:8px}
+.v{position:absolute;left:64px;right:64px;top:1092px;display:flex;gap:12px;flex-wrap:wrap}
+.v span{font:600 26px M;background:#fff;padding:12px 18px;border-radius:12px}
+.ft{position:absolute;left:64px;right:64px;bottom:40px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.cta{font:700 36px M;background:var(--deep);color:#fff;padding:16px 30px 18px;border-radius:16px;white-space:nowrap}
+.cta small{display:block;font:600 26px M;color:#fff;margin-top:2px}
+.ad{font:500 24px/1.45 M;text-align:right}
+.ad i{display:block;font-style:normal;color:var(--muted);font-size:22px}
+</style></head><body><div id=root></div><script>
+const V={
+ /* K1: pasien duduk tenang, dinding daun sage (crop kanan agar wajah dokter tidak masuk) */
+ K1:{img:'sc_9723c.jpg',pos:'50% 50%',h1:'Karang gigi dibersihkan,',h2:'tenang di Ruma.'},
+ /* K2: resepsionis tersenyum menyambut di depan papan logo */
+ K2:{img:'sc_9650.jpg',pos:'40% 46%',h1:'Rajin sikat gigi, belum tentu',h2:'bebas karang.'}};
+function feed(v){return `<div class=f><div class=band></div>
+ <div class=hd><img src="card_logo.png" alt="Ruma Dental"><span>Klinik Gigi · Makassar</span></div>
+ <div class=ph><img src="${v.img}" style="object-position:${v.pos}" alt=""></div>
+ <div class=price><div class=l><b>Promo</b>Scaling · khusus bulan ini</div><p class=n>Rp250.000–350.000</p><p class=p>Rp200.000</p><p class=q>Kuota terbatas</p></div>
+ <div class=h><p>${v.h1}</p><p class=k>${v.h2}</p></div>
+ <div class=v><span>Dicek dulu</span><span>Dijelaskan dulu</span><span>Dikerjakan dokter gigi</span></div>
+ <div class=ft><div class=cta>Chat admin<small>WA 0898-7735-463</small></div><div class=ad>Jl. Rusa No. 65, Maricaya, Makassar<br>IG @rumadentalmks<i>Tempat Nyaman untuk Kembali Tersenyum</i></div></div></div>`}
+window.go=(k,fmt)=>{const v=V[k],r=document.getElementById('root');
+ if(fmt=='story'){document.body.style.height='1920px';
+  r.innerHTML=`<div style="position:absolute;left:0;top:285px;width:1080px;height:1350px">${feed(v)}</div><div style="position:absolute;left:0;right:0;top:1635px;bottom:0;background:#E8F8F6"></div>`;}
+ else{document.body.style.height='1350px';r.innerHTML=feed(v);}};
+</script></body></html>

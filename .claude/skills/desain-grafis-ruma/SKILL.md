@@ -30,6 +30,8 @@ Panggil **"Pak Dir"**. Panduan resmi: `references/panduan-visual-ruma.md` (**waj
 - Template lama `poster-*.html`, `ruma.css` (krem + Outfit) = **draf, jangan dipakai** sebelum disesuaikan ke palet/font resmi.
 
 - **`templates/scaling/gfx.html` + `shot.js`** (21 Nov 2026): poster iklan scaling (varian S, feed + story). Isi sama dengan video iklan scaling v1: hook "Rajin sikat gigi, belum tentu bebas karang.", harga ~~Rp250.000–350.000~~ Rp200.000 khusus bulan ini, kuota terbatas, 3 tanda perlu scaling, foto close-up scaling 9740 (tanpa wajah dokter), footer WA + IG @rumadentalmks + alamat.
+- **`templates/scaling/promo.html` + `shot_promo.js` (poster promo v2, DIPAKAI)**: koreksi Pak Dir atas v1 ("gambarnya kurang cocok, bikin model desain yang menjual dan menarik tapi tidak menghilangkan value desain Ruma"). Pola: **satu fokus = kartu harga besar** menimpa tepi bawah foto berbingkai atap; **foto manusia tersenyum** (resepsionis 9650 depan papan logo) bukan close-up klinis; judul 2 baris + 3 chip nilai (dicek · dijelaskan · dikerjakan dokter gigi); CTA Deep Teal. K1 (pasien menunduk, crop sempit) ditolak sendiri: kurang menarik.
+- **Pelajaran poster jualan Ruma:** (1) close-up mulut/alat = klinis, tidak menjual untuk poster; (2) pilih foto dengan ekspresi hangat menghadap kamera; (3) satu fokus (harga) yang paling besar; (4) teks maksimal judul 2 baris + chip; (5) wajah tidak tertutup kartu; (6) crop sumber dulu bila wajah dokter masuk frame.
 - **Story = susunan feed di zona aman** (opsi `sf:true`): komposisi feed 1080×1350 diletakkan di y 285–1635, atas putih, bawah Mint White. Pelajaran: template behel story menaruh logo di y 150 (di luar zona aman 270–1620) → untuk desain baru pakai cara ini.
 
 ## 4. Alur
@@ -37,7 +39,7 @@ Filter **antislop** (mode during, lihat CLAUDE.md) berlaku untuk setiap desain: 
 Teks/konsep OK Pak Dir → render → audit (zona aman, wajah utuh, blur, kontras, data resmi) → kirim feed + story → simpan ke `ruma-dental-video/desain-<layanan>/` dan catat revisi di `CATATAN-DRAF.md`.
 
 ## 5. Contoh terbit
-`desain-scaling/`: scaling-promo-feed-4x5, scaling-promo-story-9x16 (21 Nov 2026).
+`desain-scaling/`: **scaling-promo-v2-feed-4x5, scaling-promo-v2-story-9x16** (dipakai); v1 (close-up) diganti (21 Nov 2026).
 `desain-behel/`: spil-harga-admin, spil-harga-klinik, mofu-3-langkah (feed 4:5 + story 9:16), 18 Nov 2026. Dibuat dengan panduan versi 17 Nov (Poppins + Open Sans). **Keputusan Pak Dir 20 Nov 2026: tetap dipakai, tidak dirender ulang.**
 
 ## 6. Pelajaran [TERBUKTI 20 Nov 2026]
