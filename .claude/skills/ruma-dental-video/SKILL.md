@@ -176,6 +176,7 @@ Format POV/cerita yang meniru **struktur** konten "POV Nur FO" UPG (Gaya 3), tet
   2. **Ada ketegangan + jawaban?** Pertanyaan di hook harus dijawab di video.
   3. **Hook detik 0–1 = gambar/kalimat terkuat**, bukan pembukaan pelan atau dokter memperkenalkan kasus.
   4. **Ada visual puncak** (hasil akhir, momen paling jelas). Close-up gelap berulang tidak cukup.
+  6. **Hook harus mewakili SELURUH isi** (koreksi Pak Dir, konten 2 drg. Ainun: hook "Kenapa dokter gigi pakai kacamata ini?" padahal isi 5 alat → "tidak nyambung"). Uji: setiap poin di isi video harus menjawab pertanyaan hook; kalau hook hanya cocok untuk poin pertama, ganti hook (contoh v2: "Saat menambal gigi, dokter pakai apa saja?").
   5. Kalau ada yang gagal → usulkan **rekam tambahan singkat** (dokter menjawab 2–3 pertanyaan penonton, mic kerah, 5 menit) sebelum produksi, jangan dipaksakan.
 
 ## 10c. Akun TOFU Ruma [DISEPAKATI, 16 Nov 2026; detail terkini di skill `dalamgigi`]

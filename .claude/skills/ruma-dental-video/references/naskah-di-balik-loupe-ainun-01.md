@@ -12,3 +12,6 @@ Organik ±30 dtk, montase visual (2–4 dtk per gambar), suara asli alat/ruangan
 | 19–23 | VID 172352 (mata blur) | 5/5 Sinar biru · mengeraskan bahan tambal |
 | 23–27 | foto 0642 (kertas meja blur) | "Detail kecil, kami perhatikan." |
 | 27–30 | logo | Simpan untuk nanti |
+
+## v2 (koreksi Pak Dir 21 Nov 2026: "kenapa tidak nyambung, pertanyaan pertama kenapa, terus ada 2–5")
+Hook diganti menjadi **"Saat menambal gigi, / dokter pakai apa saja?"** supaya kelima langkah menjawab pertanyaan. Gambar, audio, label lain tetap. File: `organik-alat-tambal-ainun-v2.mp4` (30,2 dtk). Judul kerja konten: "Alat Tambal drg. Ainun".
