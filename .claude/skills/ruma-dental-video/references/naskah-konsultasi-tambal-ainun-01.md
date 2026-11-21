@@ -1,6 +1,6 @@
 # Naskah Konten 1: "Dijelaskan dulu, baru ditambal" (drg. Ainun) v1
 
-Status: naskah OK Pak Dir (21 Nov 2026), papan gambar v1 menunggu ACC (`papan-gambar-konsultasi-tambal-ainun-v1.png`). Organik, ±57 dtk, model referensi drg. Firdha (hook potongan ucapan → konsultasi/tindakan dengan obrolan asli + label langkah di atas → penjelasan dokter).
+Status: naskah OK Pak Dir (21 Nov 2026), papan v1 ACC ("gas coba") → **v1 dirender**: `organik-konsultasi-tambal-ainun-v1.mp4` 56,4 dtk, −15,9 LUFS, TP −1,5 dBFS (script `produksi-video-klinik/scripts/konsultasi-dokter/`). Organik, ±57 dtk, model referensi drg. Firdha (hook potongan ucapan → konsultasi/tindakan dengan obrolan asli + label langkah di atas → penjelasan dokter).
 Referensi: Drive `16pBr45GMz5-zdTh2gPdH6Hg4btDSq2km` (folder referensi Gaya 1 `1PvuEOaWdiV6EmG_Oc9-Xi2ms2UNIFJu0`).
 Footage: folder "Tambal gigi / drg. Ainun" `10CxQwnFCFQ8UkUBSYKkJyCvIYC2cA7Oh`. Konten 2 (model visual "Di balik loupe drg. Ainun") dikerjakan setelah ini.
 
