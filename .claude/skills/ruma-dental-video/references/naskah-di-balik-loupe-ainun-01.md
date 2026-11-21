@@ -1,5 +1,5 @@
 # Naskah Konten 2: "Di Balik Loupe drg. Ainun" v1
-Status: naskah disampaikan 21 Nov 2026; Pak Dir minta papan ("coba papan gambarnya") tanpa koreksi label → label dipakai sementara, **tetap perlu cek Pak Dir** sebelum unggah. Papan v1 menunggu ACC (`papan-gambar-di-balik-loupe-ainun-v1.png`).
+Status: naskah disampaikan 21 Nov 2026; Pak Dir minta papan ("coba papan gambarnya") tanpa koreksi label → label dipakai sementara, **tetap perlu cek Pak Dir** sebelum unggah. Papan v1 ACC ("gas render") → **v1 dirender**: `organik-di-balik-loupe-ainun-v1.mp4` 30,2 dtk, −16,0 LUFS, TP −1,2 dBFS.
 Organik ±30 dtk, montase visual (2–4 dtk per gambar), suara asli alat/ruangan + pop/whoosh, tanpa musik, tanpa ucapan dokter.
 
 | Dtk | Klip | Teks |
