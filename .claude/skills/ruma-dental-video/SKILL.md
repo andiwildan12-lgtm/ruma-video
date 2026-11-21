@@ -66,6 +66,7 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 | Instagram | **@rumadentalmks** |
 | Bleaching | Rp1.700.000, diskon 10% = **Rp1.530.000**, **sudah termasuk scaling**, tanpa batas waktu |
 | Tambal gigi | sewarna gigi, **mulai Rp250.000**, garansi setelah perawatan, dikerjakan dokter gigi |
+| Scaling | Normal **Rp250.000–350.000**; **promo Rp200.000, kuota terbatas** (Pak Dir, 21 Nov 2026; batas waktu/kuota belum disebut) |
 | Behel | **mulai Rp6 jutaan untuk rahang atas & bawah**, **Rp3 jt per rahang**, **cicilan Rp2 jt/bln × 3, tanpa bunga** (dikonfirmasi 18 Nov 2026). Sudah termasuk: pemasangan atas & bawah, scaling, cetak gigi, foto intra & ekstra oral, konsultasi dokter gigi, ortho kit |
 | SOP kunjungan | Biaya **selalu dijelaskan sebelum tindakan**; pasien boleh pulang tanpa tindakan (dikonfirmasi 18 Nov 2026) |
 
@@ -151,7 +152,7 @@ Setiap iklan baru: rumus 8 ketukan (`produksi-video-klinik` bagian 3) → checkl
 | Bleaching | Rp1.700.000 → Rp1.530.000 (diskon 10%), sudah termasuk scaling | ✅ ACC v2 | `naskah-bleaching-01.md` | – |
 | Tambal gigi | mulai Rp250.000, garansi setelah perawatan | Render v2, menunggu OK Pak Dir → paket kirim (15 dtk, sampul, teks Meta) | `naskah-tambal-01.md` | OK video v2 |
 | PSA | tanpa harga | Draf naskah v1 | `naskah-psa-01.md` | bius lokal, crown disebut/tidak, kunjungan & garansi, footage |
-| Scaling | belum ditentukan | Draf naskah v1 | `naskah-scaling-iklan-01.md` | harga, fakta gusi turun/mitos renggang, footage, penutup murni vs jembatan bleaching |
+| Scaling | normal Rp250–350 rb, promo Rp200.000 kuota terbatas | Naskah v3 full footage + Ricky (alur sadar-dulu) | `naskah-scaling-iklan-03-sadar.md` | tanda-tanda karang & fakta, batas promo, tampil harga coret |
 | Kunjungan pertama di Ruma (evergreen, semua layanan) | tanpa harga | Render v2 (49,5 dtk, `iklan-kunjungan-pertama-ruma-v2.mp4`): pemeriksaan di kursi dental ditambahkan | `naskah-kunjungan-pertama-01.md` | OK video v2 → paket kirim |
 | Behel "Spil Harga" (admin bicara, 1 rekaman → 3 jenis edit) | mulai Rp6 jutaan, cicilan Rp2 jt/bln × 3 tanpa bunga | Jenis C v1 dirender (`iklan-behel-spil-harga-C-v1.mp4`, dibuka cuplikan 4416); Jenis A dilewati (arahan Pak Dir). Render Jenis B v2 (36,8 dtk, `iklan-behel-spil-harga-B-v2.mp4`): transisi halus, SFX, suara ruangan, subtitle pendek, Montserrat + warna resmi | `transkrip-behel-admin.md` | OK video → Jenis A & C |
 | Behel MOFU caption kinetik + stiker (narasi Ricky, tanpa harga) | – | Render v1 (40,8 dtk, `iklan-behel-mofu-kinetik-v1.mp4`), suara Ricky versi B ±717 kredit/versi | `naskah-behel-kinetik-01.md` | ACC papan gambar → suara Ricky → render |
