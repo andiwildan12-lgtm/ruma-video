@@ -172,7 +172,8 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 
 | Topik | Jumlah peminta | Sumber (video #) | Tanggal pertama | Status |
 |---|---|---|---|---|
-| Proses bau mulut | ≥1 (komentar) | #04/#05 | 19 Nov 2026 | Dijawab di #06 (render 20 Nov) |
+| Proses bau mulut | 1 (@ryzenx_86) | #05 | 19 Nov 2026 | ✅ Tayang #06 21 Nov; pengusul sudah dibalas "Sudah kami jawab" |
+| (kandidat) Makanan nyangkut di geraham paling belakang + gusi berdarah saat dibersihkan | 1 (keluhan, bukan request langsung) | #05 | 20 Nov 2026 | Usul: video "Kenapa makanan sering nyangkut di gigi paling belakang?" (sela renggang, lubang, gusi menutupi gigi bungsu). Perlu OK Pak Dir |
 
 ## 9. Log Unggahan
 

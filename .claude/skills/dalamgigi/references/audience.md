@@ -57,6 +57,7 @@ Versi 1 · 19 Nov 2026. **Status: HIPOTESIS kerja.** Bukti nyata baru sedikit (3
 | ekstraksi | cabut gigi |
 | diskolorasi | gigi kuning, gigi cokelat, noda kopi/teh |
 
+Kata asli penonton (B, komentar 19–20 Nov): "kalo ada makanan nyangkut di bersihin malah berdarah", "gigi paling belakang bagian bawah", "pake siwak aja", "makin saya seringin flossing, ga berdarah lagi".
 Kalimat keberatan (dugaan): "nanti aja kalau sakit", "takut dibor", "pasti mahal", "nggak sakit kok", "malu ke dokter gigi giginya jelek".
 Dialek Makassar (mis. "ji", "mi", "kodong") **jangan dipakai di narasi** sebelum Pak Dir setuju; boleh di balasan komentar bila penonton memakainya.
 
