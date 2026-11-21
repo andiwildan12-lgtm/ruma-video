@@ -29,11 +29,15 @@ Panggil **"Pak Dir"**. Panduan resmi: `references/panduan-visual-ruma.md` (**waj
 - **`templates/behel/gfx.html` + `shot.js`** (terbukti, 18 Nov 2026): varian B (admin + kotak "Balas komentar" + kartu harga), C (foto perawatan + kartu harga), M (MOFU 3 langkah, tanpa harga), format feed & story. Ganti foto/teks per layanan di objek `V`.
 - Template lama `poster-*.html`, `ruma.css` (krem + Outfit) = **draf, jangan dipakai** sebelum disesuaikan ke palet/font resmi.
 
+- **`templates/scaling/gfx.html` + `shot.js`** (21 Nov 2026): poster iklan scaling (varian S, feed + story). Isi sama dengan video iklan scaling v1: hook "Rajin sikat gigi, belum tentu bebas karang.", harga ~~Rp250.000–350.000~~ Rp200.000 khusus bulan ini, kuota terbatas, 3 tanda perlu scaling, foto close-up scaling 9740 (tanpa wajah dokter), footer WA + IG @rumadentalmks + alamat.
+- **Story = susunan feed di zona aman** (opsi `sf:true`): komposisi feed 1080×1350 diletakkan di y 285–1635, atas putih, bawah Mint White. Pelajaran: template behel story menaruh logo di y 150 (di luar zona aman 270–1620) → untuk desain baru pakai cara ini.
+
 ## 4. Alur
 Filter **antislop** (mode during, lihat CLAUDE.md) berlaku untuk setiap desain: kontras WCAG, tanpa klaim/angka karangan, alasan tertulis per keputusan visual, laporan PASS/FAIL saat kirim. Identitas Ruma tetap menang bila bentrok.
 Teks/konsep OK Pak Dir → render → audit (zona aman, wajah utuh, blur, kontras, data resmi) → kirim feed + story → simpan ke `ruma-dental-video/desain-<layanan>/` dan catat revisi di `CATATAN-DRAF.md`.
 
 ## 5. Contoh terbit
+`desain-scaling/`: scaling-promo-feed-4x5, scaling-promo-story-9x16 (21 Nov 2026).
 `desain-behel/`: spil-harga-admin, spil-harga-klinik, mofu-3-langkah (feed 4:5 + story 9:16), 18 Nov 2026. Dibuat dengan panduan versi 17 Nov (Poppins + Open Sans). **Keputusan Pak Dir 20 Nov 2026: tetap dipakai, tidak dirender ulang.**
 
 ## 6. Pelajaran [TERBUKTI 20 Nov 2026]
