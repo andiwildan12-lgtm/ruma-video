@@ -43,14 +43,15 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 2. Karakter manusia hasil gambar/3D **tidak boleh punya mata dalam bentuk apa pun**. Ilustrasi senyum (bibir + gigi tanpa wajah) diperbolehkan.
 3. **Tanpa musik.** Suara latar ruangan yang sangat pelan dan efek suara benda boleh.
 4. Logo tidak dibuat atau digambar oleh AI. Pakai file logo resmi saat editing/render.
-5. Wajah pasien hanya dengan **izin pasien**. Footage yang sudah dikirim Pak Dir **sudah atas izin pasien**, tetapi **wajah pasien tetap di-blur bila berpotensi terlihat** (keputusan Pak Dir 21 Nov 2026). Wajah dokter/staf tidak di-blur.
+5. Wajah pasien hanya dengan **izin pasien**. Footage yang sudah dikirim Pak Dir **sudah atas izin pasien**. **Konten organik: wajah pasien di-blur** bila berpotensi terlihat. **Iklan: wajah pasien TIDAK di-blur** (keputusan Pak Dir 21 Nov 2026, iklan scaling). Wajah dokter/staf tidak di-blur.
 11. **STANDAR SEMUA VIDEO RUMA (keputusan Pak Dir 21 Nov 2026, pelajaran 2 konten drg. Ainun):**
    - **Logo pojok kiri atas sepanjang video** (kecuali penutup): `assets/penutup/logo-pojok.html` → logo 64 px di kapsul putih 92%, x 72 / y 262. Judul hook dan label langkah mulai **y ≥ 360** (di bawah logo).
    - **Penutup seragam 4 dtk** di semua video (organik maupun iklan): `assets/penutup/penutup.html?pesan=...|...&ig=...` → pesan penutup video (opsional) → logo → tagline → Instagram · WhatsApp 0898-7735-463 · Jl. Rusa No. 65, Maricaya, Makassar. Ini pengecualian aturan no. 10: WA dan alamat **boleh/wajib** di penutup standar.
    - Akun Instagram Ruma: **@rumadentalmks** (dari Pak Dir, 21 Nov 2026) → `penutup.html?ig=@rumadentalmks`.
    - Dua konten drg. Ainun (konsultasi tambal v1, alat tambal v2) dibuat sebelum standar ini dan **tidak dirender ulang** (keputusan Pak Dir); standar berlaku untuk video berikutnya. Cek wajib sebelum papan gambar: logo pojok ada, judul/label di bawah logo, penutup memakai template ini.
 10. **Tujuan bawaan = konten organik** (Reels/TikTok akun Ruma). Perlakukan sebagai iklan Meta **hanya bila Pak Dir menyebut iklan** (keputusan 21 Nov 2026). Organik: tanpa harga/WA kecuali diminta, nada edukasi/cerita, close-up klinis boleh (wajah pasien tetap blur); aturan no. 8 hanya untuk iklan.
-6. **Casting footage:** orang yang tampil sebagai pasien **tidak boleh** muncul juga sebagai admin/resepsionis dalam video yang sama.
+6. **Casting footage:** orang yang tampil sebagai pasien **tidak boleh** muncul juga sebagai admin/resepsionis dalam video yang sama. Pelajaran iklan scaling v3 (Pak Dir: "admin di meja sama yang di-scaling sama, kesannya konten ala-ala"): folder Scalling Agustus (`1ieZcNOg…`) memakai **satu orang sebagai resepsionis (4422/4427) sekaligus pasien (4324–4341)** → jangan dipakai bersamaan. Cek wajah semua orang lintas klip sebelum papan gambar.
+12. **Iklan boleh memakai close-up tindakan** bila Pak Dir memintanya (iklan scaling 21 Nov 2026: "kalau bisa ada video close-up pasien di-scaling"); risiko penolakan Meta disampaikan sekali, keputusan Pak Dir.
 7. Jangan menambahkan logo ke benda yang aslinya polos, dan jangan memakai stok video klinik lain seolah-olah Ruma.
 8. Iklan Meta: jangan menyiratkan tahu kondisi kesehatan penonton ("Gigimu berlubang?") dan jangan memancing rasa malu/tidak percaya diri. Tanpa foto sebelum-sesudah, tanpa janji tingkat putih tertentu, tanpa close-up klinis mulut asli.
 9. Angka dan fakta medis wajib masuk akal secara klinis; Pak Dir (dokter gigi) memvalidasi bila ragu.

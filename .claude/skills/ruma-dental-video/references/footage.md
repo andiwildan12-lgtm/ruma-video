@@ -165,3 +165,13 @@ Pasien sama dengan folder Penyambutan Pasien. Dokter bergaun ungu, topi, masker;
 | 9743 / 9744 | Pasien pegang cermin, dokter menunjukkan kondisi gigi | **Pakai** (9744 POV cermin: cadangan) |
 | 9746 | Asisten melepas celemek | Cadangan |
 | 9747 / 9748 | Dokter duduk menjelaskan ke pasien | **Pakai** |
+
+## Folder Scalling Mei 2026 (Ruma Dental Raw Footage → Scalling, id `1n4yV5HkHYZIl3zlAYbIVP058wFrijLU3`, 18 klip IMG_9723–9748, dicek 21 Nov 2026)
+Pasien: wanita jilbab krem, memakai behel (berbeda dari pasien/resepsionis folder Agustus). Dokter seragam mauve polos, asisten seragam biru motif roket (tanpa logo).
+| Klip | Isi | Catatan |
+|---|---|---|
+| 9723, 9746 | Pasien duduk, dokter pakai sarung tangan / pasang celemek | pembuka |
+| 9731–9739 | Scaling ultrasonik, sudut sedang, wajah pasien terlihat | iklan: wajah tidak di-blur |
+| **9740–9742** | **Close-up scaling** di gigi berbehel (alat + kaca mulut + penyedot) | close-up untuk iklan atas permintaan Pak Dir |
+| **9743–9744** | Pasien memegang cermin melihat giginya, pantulan cermin | cocok "cek sendiri" |
+| **9747–9748** | Dokter menjelaskan ke pasien (duduk berhadapan) | "dijelaskan dulu" |
