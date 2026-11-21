@@ -1,6 +1,6 @@
 # Naskah: Tambal Ulang drg. Ainun (Ruma, organik, Gaya 3 versi Ruma) v1
 
-Status: naskah OK, papan v1 **ACC** ("ok acc gaskan", 21 Nov 2026) → **v1 dirender**: `organik-tambal-ulang-ainun-v1.mp4` 40,4 dtk, -16 LUFS, TP -1,1 dBFS.
+Status: naskah OK, papan v1 **ACC** ("ok acc gaskan", 21 Nov 2026) → v1 dirender (cut bersih) → koreksi Pak Dir: suara bergema, kaku, tanpa bunyi perpindahan → **v2**: `organik-tambal-ulang-ainun-v2.mp4` 40,4 dtk, crossfade + punch-in + whoosh/pop/shimmer, subtitle 2–4 kata, suara dokter dibersihkan, −16,1 LUFS, TP −1,0 dBFS.
 Tujuan: Reels/TikTok organik akun Ruma (bukan iklan). ±42 dtk, 9:16. Tanpa musik, tanpa harga/WA.
 Footage: Drive folder "Tambal gigi / drg. Ainun" `10CxQwnFCFQ8UkUBSYKkJyCvIYC2cA7Oh` (72 file, 19–20 Nov 2026, DJI Mimo + HP). Interior Ruma (dinding sage, botol Ruma).
 

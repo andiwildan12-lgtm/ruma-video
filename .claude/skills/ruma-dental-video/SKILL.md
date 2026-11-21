@@ -163,11 +163,11 @@ Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
 Format POV/cerita yang meniru **struktur** konten "POV Nur FO" UPG (Gaya 3), tetapi **tampilan Ruma** (panduan melarang campur font/palet antar-brand):
 | Unsur Gaya 3 UPG | Versi Ruma |
 |---|---|
-| Judul retro slab krem-cokelat diketik + bunyi ketik | Judul Montserrat Deep Teal di label putih, kata kunci blok Turquoise, muncul fade halus |
+| Judul retro slab krem-cokelat diketik + bunyi ketik | Judul Montserrat Deep Teal di label putih, kata kunci blok Turquoise, muncul pop + bunyi pop |
 | Coretan tangan Caveat + panah | Garis tipis + label kecil Montserrat (tanpa stroke) |
 | Penghitung lencana | Penanda langkah "1/3 · 2/3 · 3/3" |
 | Kartu checklist berlabel | Kartu putih berlabel (mis. "pasien 20 th · tambal ulang"), video dokter mengecil di pojok |
-| SFX padat + backsound | Suara asli dokter + suara ruangan; tanpa musik; cut bersih |
+| SFX padat + backsound | Suara asli dokter (dibersihkan) + suara ruangan terus-menerus; tanpa musik; **crossfade + whoosh tiap perpindahan, pop saat teks muncul, punch-in antar-kalimat** (keputusan Pak Dir 21 Nov: v1 cut bersih dinilai kaku) |
 - Ucapan dokter = ucapan asli dari transkrip (tidak dikarang); label/teks tidak boleh melebihi ucapan atau yang terlihat di gambar.
 - Name tag cukup "drg. Nama". Penutup organik: logo Ruma + 1 ajakan ringan (mis. "Simpan untuk nanti"), tanpa harga/WA.
 - Proyek pertama: **Tambal ulang drg. Ainun** (`references/naskah-tambal-ulang-ainun-01.md`).
