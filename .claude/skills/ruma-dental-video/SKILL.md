@@ -171,6 +171,12 @@ Format POV/cerita yang meniru **struktur** konten "POV Nur FO" UPG (Gaya 3), tet
 - Ucapan dokter = ucapan asli dari transkrip (tidak dikarang); label/teks tidak boleh melebihi ucapan atau yang terlihat di gambar.
 - Name tag cukup "drg. Nama". Penutup organik: logo Ruma + 1 ajakan ringan (mis. "Simpan untuk nanti"), tanpa harga/WA.
 - Proyek pertama: **Tambal ulang drg. Ainun** (`references/naskah-tambal-ulang-ainun-01.md`).
+- **Pelajaran v1–v2 (Pak Dir 21 Nov: "tidak menarik, kayak asal bikin yang penting jadi")**: editing rapi tidak menyelamatkan isi yang lemah. Sebelum menulis naskah dari footage, **wajib uji isi dulu** dan laporkan jujur ke Pak Dir bila bahan tidak cukup:
+  1. **Ada nilai?** Penonton pulang tahu sesuatu (kenapa terjadi, apa bedanya, apa yang harus dijaga). Ucapan dokter yang hanya laporan kasus ("hari ini pasien 20 tahun…") = bukan nilai.
+  2. **Ada ketegangan + jawaban?** Pertanyaan di hook harus dijawab di video.
+  3. **Hook detik 0–1 = gambar/kalimat terkuat**, bukan pembukaan pelan atau dokter memperkenalkan kasus.
+  4. **Ada visual puncak** (hasil akhir, momen paling jelas). Close-up gelap berulang tidak cukup.
+  5. Kalau ada yang gagal → usulkan **rekam tambahan singkat** (dokter menjawab 2–3 pertanyaan penonton, mic kerah, 5 menit) sebelum produksi, jangan dipaksakan.
 
 ## 10c. Akun TOFU Ruma [DISEPAKATI, 16 Nov 2026; detail terkini di skill `dalamgigi`]
 
