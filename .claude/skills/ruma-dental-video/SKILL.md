@@ -44,6 +44,10 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 3. **Tanpa musik.** Suara latar ruangan yang sangat pelan dan efek suara benda boleh.
 4. Logo tidak dibuat atau digambar oleh AI. Pakai file logo resmi saat editing/render.
 5. Wajah pasien hanya dengan **izin pasien**. Footage yang sudah dikirim Pak Dir **sudah atas izin pasien**, tetapi **wajah pasien tetap di-blur bila berpotensi terlihat** (keputusan Pak Dir 21 Nov 2026). Wajah dokter/staf tidak di-blur.
+11. **STANDAR SEMUA VIDEO RUMA (keputusan Pak Dir 21 Nov 2026, pelajaran 2 konten drg. Ainun):**
+   - **Logo pojok kiri atas sepanjang video** (kecuali penutup): `assets/penutup/logo-pojok.html` → logo 64 px di kapsul putih 92%, x 72 / y 262. Judul hook dan label langkah mulai **y ≥ 360** (di bawah logo).
+   - **Penutup seragam 4 dtk** di semua video (organik maupun iklan): `assets/penutup/penutup.html?pesan=...|...&ig=...` → pesan penutup video (opsional) → logo → tagline → Instagram · WhatsApp 0898-7735-463 · Jl. Rusa No. 65, Maricaya, Makassar. Ini pengecualian aturan no. 10: WA dan alamat **boleh/wajib** di penutup standar.
+   - Akun Instagram Ruma: **[belum diisi, tanya Pak Dir]**.
 10. **Tujuan bawaan = konten organik** (Reels/TikTok akun Ruma). Perlakukan sebagai iklan Meta **hanya bila Pak Dir menyebut iklan** (keputusan 21 Nov 2026). Organik: tanpa harga/WA kecuali diminta, nada edukasi/cerita, close-up klinis boleh (wajah pasien tetap blur); aturan no. 8 hanya untuk iklan.
 6. **Casting footage:** orang yang tampil sebagai pasien **tidak boleh** muncul juga sebagai admin/resepsionis dalam video yang sama.
 7. Jangan menambahkan logo ke benda yang aslinya polos, dan jangan memakai stok video klinik lain seolah-olah Ruma.

@@ -1,0 +1,12 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Logo Pojok Ruma</title><style>
+/* LOGO POJOK STANDAR video Ruma (keputusan Pak Dir 21 Nov 2026): logo kecil kiri atas sepanjang video kecuali penutup.
+   Posisi x 72, y 262 (di dalam zona aman atas 250 px), tinggi logo 64 px di atas kapsul putih 92% supaya terbaca di footage gelap.
+   Konsekuensi tata letak: judul hook / label langkah mulai y >= 360 (di bawah logo). */
+@font-face{font-family:M;src:url(montserrat-latin-700-normal.woff2);font-weight:700}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:M,sans-serif;color:#354B49}
+.bg{position:absolute;inset:0;background:url(_contoh_bg.png) center/cover}
+.lp{position:absolute;left:72px;top:262px;background:rgba(255,255,255,.92);border-radius:14px;padding:10px 16px}
+.lp img{height:64px;display:block}
+.tag{position:absolute;left:72px;top:372px;font:700 32px/1 M;background:#28CDBD;padding:14px 20px;border-radius:12px}
+</style></head><body><div class=bg></div><div class=lp><img src="logo.png" alt="Ruma Dental"></div><div class=tag>cek foto rontgen</div></body></html>
