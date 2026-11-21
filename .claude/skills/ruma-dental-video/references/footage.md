@@ -148,7 +148,7 @@ Aturan: sebelum memakai klip dari folder mana pun, cek visual interior (Ruma = d
 | 9643 | Pasien turun/di samping mobil, depan klinik | Pakai (pulang/datang) |
 | 9644 / 9645 | Masuk pintu kaca ("TUTUP/CLOSED" terlihat di 9645) | 9644 pakai; 9645 cek tulisan |
 | 9647 | Lepas alas kaki di rak sepatu | **Tidak dipakai** (arahan Pak Dir) |
-| 9648–9657, 9763–9767 | Resepsionis di depan papan logo menyala, menyapa/mencatat | **Pakai** (sambutan; 9765/9767 = pamit) |
+| 9648–9657, 9763–9767 | Resepsionis di depan papan logo menyala, menyapa/mencatat | **Pakai** (sambutan; 9765/9767 = pamit). **Terbaik: 9650 dtk 2,8** (berdiri tersenyum, gestur menyambut). 4422 folder Agustus = admin menunduk, terkesan jutek → hindari |
 | 9660 / 9661 / 9670 | Pasien lain (baju hitam motif) | Cadangan, jangan dicampur dalam satu alur |
 | 9664–9668, 9673 | Ruang tunggu sofa sage, toples camilan, pasien membaca/ngobrol dengan staf | **Pakai** |
 | 9676 / 9710 | Staf memanggil pasien, membuka pintu ruang dokter | **Pakai** |

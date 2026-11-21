@@ -29,3 +29,7 @@ Penutup standar: pesan "Scaling Rp200.000 | khusus bulan ini" + IG @rumadentalmk
 - Iklan: wajah pasien **tidak di-blur**; minta close-up pasien di-scaling; papan v1 memakai pasien yang juga resepsionis (folder Agustus) → "kesannya ala-ala".
 - Footage pasien diganti seluruhnya ke folder **Scalling Mei** (`1n4yV5HkHYZIl3zlAYbIVP058wFrijLU3`, satu pasien jilbab krem berbehel): 9741 (hook close-up), 9743→9744 (cek sendiri, bercermin), 9740 (close-up), 9742 (close-up), 9747→9732 (dijelaskan dulu → scaling), 9734 (mitos). Promo 4422 dan ajakan 4420 tetap (resepsionis tidak muncul sebagai pasien).
 - Papan: `papan-gambar-iklan-scaling-v3-2.png`, menunggu ACC.
+
+## Papan v3 (koreksi Pak Dir: "muka adminnya kayak jutek, gak siap")
+Adegan promo: 4422 (admin menunduk) diganti **Penyambutan 9650 dtk 2,8** (resepsionis berdiri tersenyum, gestur menyambut, depan papan logo; folder Penyambutan Mei = pasien yang sama dengan Scalling Mei → alur nyambung). Kartu harga diturunkan ke area meja (y 1090) agar wajah utuh; subtitle di adegan ini ditiadakan (isi sudah di kartu). Papan: `papan-gambar-iklan-scaling-v3-3.png`.
+Pelajaran: pilih frame orang dengan **ekspresi siap/ramah** (senyum, menghadap kamera/pasien), bukan sedang menunduk/sibuk; elemen grafis tidak boleh menutup wajah.
