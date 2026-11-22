@@ -315,6 +315,19 @@ Total jangkauan ±17 ribu → hanya **18 follower** (0,1%). Masalah utama akun =
 5. Profil: ganti nama tampilan jadi **"Dalam Gigi | Fakta Gigi 3D"** (kolom nama ikut dicari di IG) [DISEPAKATI, eksekusi manual Pak Dir].
 6. Setiap evaluasi ditulis ringkas di log (bagian 9) + pelajaran baru di bagian 11.
 
+### 13b. Laporan Mingguan #1 (Senin 23 Nov 2026, data s.d. 22 Nov)
+Follower 44 (18 → 44 sejak 18 Nov) · 5 reel · total views 81,8 rb · perkiraan like ±1,7 rb (2,1%).
+| # | Views | Tonton rata2 | Skip | Simpan | Bagikan | ±Like |
+|---|---|---|---|---|---|---|
+| 01 | 13.083 | 24,2 dtk (37%) | 26,5% | 77 | 22 | ±290 |
+| 02 | 7.622 | 23,2 dtk (32%) | 28,6% | 57 | 46 | ±275 |
+| 04 | 2.279 | 17,9 dtk (24%) | 50,9% | 17 | 16 | ±60 |
+| 05 | **56.695** | 25,4 dtk (34%) | 31% | 161 | 97 | ±1.070 |
+| 06 (36 jam) | 2.092 | 21,5 dtk (29%) | 33,7% | 6 | 2 | ±35 |
+KPI 30 hari: views 82% ✅ · like 58% ⚠️ (rate 2,1% < 3%) · follower 9% ❌ (44/500).
+Temuan: (1) #05 viral 50 rb jangkauan tapi follower hanya +±20 → konversi follow ±0,05% = masalah utama; (2) hook kontra ("Justru bagian itu yang paling perlu disikat") & "kecil→besar" (#02) menang, pembuka "sakit" kalah (#04); (3) caption #06 dipangkas tanpa isi/cara → simpan 0,3% (terendah).
+Keputusan minggu ini: label seri + alasan follow di detik awal & penutup; caption kembali lengkap (isi + cara bernomor); hook pola kontra/pembalikan; sematkan #05, #01, #02 di grid.
+
 ## 14. Strategi Pertumbuhan & KPI (TOFU / Awareness) [DISEPAKATI 18 Nov 2026]
 
 **Tujuan akun:** awareness. Orang Makassar kenal & ingat "Dalam Gigi oleh Ruma Dental". **KPI utama: Views, Like, Follow.** Indikator pendukung (penyebab): skip <3 dtk, rata-rata tonton, simpan, bagikan, komentar.
