@@ -326,7 +326,10 @@ Follower 44 (18 → 44 sejak 18 Nov) · 5 reel · total views 81,8 rb · perkira
 | 06 (36 jam) | 2.092 | 21,5 dtk (29%) | 33,7% | 6 | 2 | ±35 |
 KPI 30 hari: views 82% ✅ · like 58% ⚠️ (rate 2,1% < 3%) · follower 9% ❌ (44/500).
 Temuan: (1) #05 viral 50 rb jangkauan tapi follower hanya +±20 → konversi follow ±0,05% = masalah utama; (2) hook kontra ("Justru bagian itu yang paling perlu disikat") & "kecil→besar" (#02) menang, pembuka "sakit" kalah (#04); (3) caption #06 dipangkas tanpa isi/cara → simpan 0,3% (terendah).
-Keputusan minggu ini: label seri + alasan follow di detik awal & penutup; caption kembali lengkap (isi + cara bernomor); hook pola kontra/pembalikan; sematkan #05, #01, #02 di grid.
+**Keputusan [DISEPAKATI Pak Dir 23 Nov 2026, "OK 123"] — berlaku untuk semua video mulai 23 Nov:**
+1. **Mesin follow:** label "DALAM GIGI #NN" di pojok tiap video & sampul; alasan follow di ±detik 3–5 DAN di penutup: "Follow, tiap 2 hari satu hal soal gigi yang jarang dibahas." Pak Dir menyematkan #05, #01, #02 di grid (manual).
+2. **Hook:** pola membalik anggapan ("justru…") atau "kecil ternyata besar". Jangan membuka dengan kata "sakit".
+3. **Caption lengkap** (bagian 6): hook → isi 2 baris → cara bernomor → pertanyaan komentar → simpan & follow → 5–7 hashtag dengan #makassar. Caption pendek dilarang (pelajaran #06: simpan 0,3%).
 
 ## 14. Strategi Pertumbuhan & KPI (TOFU / Awareness) [DISEPAKATI 18 Nov 2026]
 
