@@ -231,7 +231,7 @@ let K={},SUBS=[],WORDS=[];window.setup=o=>{K=o.K;SUBS=o.subs;WORDS=o.words||[];}
 function setNum(v,l,T,t0){num.style.opacity=v===''?0:Math.min(1,P(T,t0,0.25));nv.textContent=v;nl.textContent=l;}
 const scr=v=>{const p=v.clone().project(cam);return [(p.x+1)/2*W,(1-p.y)/2*H];};
 function tag(i,html,world,T,t0,t1,dy=-30){const el=tg[i];if(T<t0||T>=t1){el.style.display='none';return;}el.style.display='block';el.innerHTML=html;const [x,y]=scr(world);
-  el.style.left=Math.max(260,Math.min(W-260,x))+'px';let yy=y+dy;if(yy>980&&yy<1300)yy=yy<1140?975:1420;el.style.top=yy+'px';el.style.opacity=Math.min(P(T,t0,0.25),1-P(T,t1-0.25,0.25));}
+  el.style.left=Math.max(260,Math.min(W-260,x))+'px';let yy=Math.max(200,y+dy);if(yy>980&&yy<1300)yy=yy<1140?975:1420;el.style.top=yy+'px';el.style.opacity=Math.min(P(T,t0,0.25),1-P(T,t1-0.25,0.25));}
 
 window.render=function(T){
   potG.visible=false;
