@@ -289,7 +289,7 @@ window.render=function(T){
   fill.children[1].position.set(0,-0.2,0);fill.children[1].position.addScaledVector(V(0,0,0),0);
   if(fill.visible){fill.children[1].position.copy(V(0,-0.22,0.1));const s=0.75*Math.min(1,P(T,K.c2+0.3,0.4));fill.scale.setScalar(s);}
   // fix (tambalan baru menutup celah)
-  fix.visible=fixK>0.01;if(fix.visible){fix.position.copy(faceP);fix.lookAt(faceP.clone().add(tanD));fix.scale.set(1.0,1.0,0.25+0.6*fixK);fix.material.emissiveIntensity=0.35*(1-P(T,K.periksa+4,1));}
+  fix.visible=fixK>0.01;if(fix.visible){fix.position.copy(faceP);fix.lookAt(faceP.clone().add(tanD));fix.scale.set(1.0,1.0,0.25+0.6*fixK);fix.material.emissiveIntensity=0.3*(1-P(T,K.periksa+2.4,0.8));}
   // bacteria, blood, gum
   const inflK=T<K.kuman?0:(T<K.rutin?Math.min(1,P(T,K.kuman,1.2)):Math.max(0,1-P(T,K.rutin+0.4,3.0)));
   paintGum(0.85*inflK);
