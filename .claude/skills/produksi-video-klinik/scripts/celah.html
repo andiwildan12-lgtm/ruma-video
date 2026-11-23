@@ -268,6 +268,14 @@ function mkWedge(){const g=new THREE.Group();const w=new THREE.Mesh(wedgeG,wedge
   const L=[0.2,0.32,0.14,0.26,0.1];for(let i=0;i<5;i++){const l=L[i],dx=0.05*Math.sin(i*2.3),dz=0.06*Math.cos(i*1.7);const s=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(0,0,0),V(dx*0.5,l*0.45,dz*0.3),V(dx,l*0.8,dz),V(dx*1.6,l,dz*1.4)]),14,0.012+0.006*(i%2),6,false),wedgeM);s.position.set(0.05*Math.sin(i*1.3),0.72,0.2*(i/4-0.5));g.add(s);}
   archG.add(g);return g;}
 const wedge=mkWedge(),wedge2=mkWedge();
+
+// ---- v5: overhang ledge, cavity food, toothpick cycle ----
+const ledgeM=new THREE.MeshStandardMaterial({color:'#C9BFA6',roughness:0.5,emissive:'#6B5E45',emissiveIntensity:0.15});
+const ledge=new THREE.Mesh(new RoundedBoxGeometry(0.32,0.12,0.66,3,0.05),ledgeM);archG.add(ledge);
+const ledgeFood=[];for(let i=0;i<5;i++){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(0.045+0.015*(i%2),0),wedgeM);archG.add(m);ledgeFood.push(m);}
+const wedge3=mkWedge();
+const cavTop=new THREE.Mesh(new THREE.SphereGeometry(0.16,24,16),new THREE.MeshStandardMaterial({color:'#4A3426',roughness:0.8}));cavTop.scale.set(1.0,0.35,1.3);archG.add(cavTop);
+const cavRim=new THREE.Mesh(new THREE.SphereGeometry(0.2,24,16),new THREE.MeshStandardMaterial({color:'#B99A6C',roughness:0.9}));cavRim.scale.set(1.0,0.3,1.3);archG.add(cavRim);
 // ================= OVERLAY =================
 const nv=document.getElementById('nv'),nl=document.getElementById('nl'),num=document.getElementById('num'),sub=document.getElementById('sub'),card=document.getElementById('card'),fade=document.getElementById('fade');
 const cta=document.getElementById('cta'),fol=document.getElementById('fol'),clock=document.getElementById('clock'),cal=document.getElementById('cal'),calg=document.getElementById('calg');
@@ -294,7 +302,7 @@ window.render=function(T){
   if(C3){const k=ease(P(T,K.c3+0.2,0.8));T7.g.position.y-=0.3*k;T7.g.position.addScaledVector(tanD,-0.18*k);T7.g.rotateX(-0.6*k);}
   T6.g.scale.setScalar(1);if(C4){const k=ease(P(T,K.c4+0.3,0.8)),k2=ease(P(T,K.c4b+0.2,2.2));T6.g.visible=k<0.98;T6.g.scale.setScalar(Math.max(0.001,1-k));T7.g.position.addScaledVector(tanD,-0.8*k2-gap);T7.g.rotateX(-0.55*k2);}
   else T7.g.scale.setScalar(1);
-  const ghost=T>=K.c1&&T<K.c3;{const m=T6.g.children[0].material;m.transparent=true;m.opacity=ghost?0.45+0.55*(1-Math.min(P(T,K.c1,0.5),1-P(T,K.c3-0.4,0.4))):1;m.depthWrite=!ghost;}
+  const ghost=T>=K.c2&&T<K.c3;{const m=T6.g.children[0].material;m.transparent=true;m.opacity=ghost?0.45+0.55*(1-Math.min(P(T,K.c1,0.5),1-P(T,K.c3-0.4,0.4))):1;m.depthWrite=!ghost;}
   const gp=T5.g.position.clone().add(T6.g.position).multiplyScalar(0.5);gp.y=0;gumC.copy(gp);
   const n5=T5.nrm;
   // ---- food ----
@@ -338,6 +346,24 @@ window.render=function(T){
   // wedge replaces thin fiber
   wedge.visible=fiber.visible;fiber.visible=false;if(wedge.visible){wedge.position.copy(fiber.position);const m=new THREE.Matrix4().makeBasis(tanD,V(0,1,0),n5);wedge.quaternion.setFromRotationMatrix(m);wedge.scale.setScalar(Math.max(0.001,fiber.scale.x));}
   wedge2.visible=fiber2.visible;fiber2.visible=false;if(wedge2.visible){wedge2.position.copy(T5.g.position.clone().addScaledVector(tanD,T5.w*0.5+0.14).setY(0));const m=new THREE.Matrix4().makeBasis(tanD,V(0,1,0),n5);wedge2.quaternion.setFromRotationMatrix(m);wedge2.scale.set(0.8,0.75,1).multiplyScalar(Math.min(1,P(T,K.c4b+2.2,0.6))+0.001);}
+  // cause 1: contact lost by cavity
+  if(T>=K.kok&&T<K.c2){gap=T<K.c1b?-0.2:cl(-0.2,0.06,ease(P(T,K.c1b+0.3,1.6)));[T6,T7].forEach(t=>{t.g.position.copy(t.base).addScaledVector(tanD,gap);});}
+  if(cavG.visible){const g=T<K.c1b?cl(0.45,0.9,P(T,K.c1+0.4,2.5)):cl(0.9,1.35,P(T,K.c1b,1.6));cavG.scale.setScalar(g);}
+  wedge3.visible=T>=K.c1b+2.0&&T<K.c2;if(wedge3.visible){const gp3=T5.g.position.clone().add(T6.g.position).multiplyScalar(0.5);gp3.y=0;wedge3.position.copy(gp3);const m=new THREE.Matrix4().makeBasis(tanD,V(0,1,0),n5);wedge3.quaternion.setFromRotationMatrix(m);wedge3.scale.set(0.7,0.8,0.8).multiplyScalar(Math.min(1,back(P(T,K.c1b+2.0,0.6)))+0.001);}
+  {const vis=T>=K.c1&&T<K.c2;cavTop.visible=cavRim.visible=vis;if(vis){const g=T<K.c1b?cl(0.3,0.6,P(T,K.c1+0.4,2.5)):cl(0.6,0.8,P(T,K.c1b,1.6));const cp2=T5.g.position.clone().addScaledVector(tanD,T5.w*0.5-0.06).setY(0.7);cavTop.position.copy(cp2).add(V(0,0.02,0));cavRim.position.copy(cp2);cavTop.scale.set(1.0*g,0.35,1.3*g);cavRim.scale.set(1.0*g,0.3,1.3*g);}}
+  cavG.visible=false;
+  // cause 2b: overhang ledge
+  const ovh=T>=K.c2b&&T<K.c3;ledge.visible=ovh;ledgeFood.forEach(m=>m.visible=false);
+  if(ovh){const k=ease(P(T,K.c2b+0.2,0.8));const lp=T5.g.position.clone().addScaledVector(tanD,T5.w*0.5+0.02).setY(0.4);ledge.position.copy(lp);const m=new THREE.Matrix4().makeBasis(tanD,V(0,1,0),n5);ledge.quaternion.setFromRotationMatrix(m);ledge.scale.set(Math.max(0.001,k),1,1);
+    ledgeFood.forEach((f,i)=>{const kk=P(T,K.c2b+1.6+i*0.2,0.4);f.visible=kk>0.01;f.position.copy(lp).addScaledVector(tanD,0.06).addScaledVector(n5,(i-2)*0.11).add(V(0,-0.1-0.02*(i%2),0));f.scale.setScalar(Math.max(0.001,back(kk)));});
+    paintGum(0.8*ease(P(T,K.c2b+2.4,1.2)));}
+  filG.children.forEach(c=>{if(c.userData.spot)c.visible=false;});
+  // toothpick habit cycle: papilla recedes, gap grows
+  if(T>=K.luka&&T<K.rutin){const u=P(T,K.luka+0.2,4.5);gap=cl(0.06,0.22,ease(u));[T6,T7].forEach(t=>{t.g.position.copy(t.base).addScaledVector(tanD,gap);});gp.copy(T5.g.position).add(T6.g.position).multiplyScalar(0.5);gp.y=0;gumC.copy(gp);
+    pap.visible=true;const m=new THREE.Matrix4().makeBasis(tanD,V(0,1,0),n5);pap.quaternion.setFromRotationMatrix(m);pap.position.copy(gp).setY(0.2);pap.scale.set(0.5+0.4*u,0.12+0.5*(1-u),0.95);papM.color.set('#E28A90');
+    if(T<K.makin){pick.visible=true;const cyc=(T-K.luka)*1.6;const inK=0.5-0.5*Math.cos(cyc*Math.PI*2);pick.position.copy(gp).addScaledVector(n5,0.3+1.0*(1-inK)).setY(0.5+0.7*(1-inK));pick.quaternion.setFromUnitVectors(V(0,1,0),n5.clone().multiplyScalar(0.8).add(V(0,0.6,0)).normalize());}else pick.visible=false;
+    wedge.visible=T>=K.makin;if(wedge.visible){wedge.position.copy(gp);const mm=new THREE.Matrix4().makeBasis(tanD,V(0,1,0),n5);wedge.quaternion.setFromRotationMatrix(mm);const s=Math.min(1,back(P(T,K.makin,0.6)));wedge.scale.set(1.5*s+0.001,s+0.001,s+0.001);}
+    scratch.visible=false;}
   // ---- camera ----
   const C=gp.clone(),tan=tanD.clone();
   const at=(h,dist,sd)=>C.clone().addScaledVector(n5,dist).addScaledVector(tan,sd).setY(h);
@@ -345,7 +371,9 @@ window.render=function(T){
   const shots=[
    [0,t=>{const k=P(t,0,K.sehat);return [at(cl(1.6,1.3,k),cl(5.4,4.6,k),cl(-0.6,0.2,k)),LK(0.2)];}],
    [K.sehat,t=>{const k=P(t,K.sehat,K.kok-K.sehat);return [at(2.2,cl(4.8,4.4,k),cl(0.4,-0.2,k)),LK(0.35)];}],
-   [K.c1-0.1,t=>{const k=P(t,K.c1,K.c3-K.c1);const f=T5.g.position.clone().addScaledVector(tanD,T5.w*0.5).setY(0.45);return [f.clone().addScaledVector(n5,cl(3.0,2.6,k)).addScaledVector(tanD,cl(1.2,1.4,k)).add(V(0,1.7,0)),f.clone().add(V(0,-0.25,0))];}],
+   [K.c1-0.1,t=>{const k=P(t,K.c1,K.c2-K.c1);const f=gumC.clone().setY(0.6);return [f.clone().addScaledVector(n5,cl(1.6,1.3,k)).add(V(0,cl(3.4,3.0,k),0)),f.clone().addScaledVector(n5,0.55)];}],
+   [K.c2-0.1,t=>{const k=P(t,K.c2,K.c2b-K.c2);const f=T5.g.position.clone().addScaledVector(tanD,T5.w*0.5).setY(0.45);return [f.clone().addScaledVector(n5,cl(3.0,2.6,k)).addScaledVector(tanD,cl(1.2,1.4,k)).add(V(0,1.7,0)),f.clone().add(V(0,-0.25,0))];}],
+   [K.c2b-0.1,t=>{const k=P(t,K.c2b,K.c3-K.c2b);const f=T5.g.position.clone().addScaledVector(tanD,T5.w*0.5).setY(0.32);return [f.clone().addScaledVector(n5,cl(2.6,2.3,k)).addScaledVector(tanD,cl(1.5,1.7,k)).add(V(0,1.1,0)),f.clone().add(V(0,-0.2,0))];}],
    [K.c3-0.1,t=>{const k=P(t,K.c3,K.kunyah-K.c3);return [C3?at(1.5,cl(5.2,4.8,k),1.25):at(1.4,cl(5.4,5.0,k),0.2),C3?LK(0.25,1.15):LK(0.3,0.15)];}],
    [K.kunyah-0.1,t=>{const k=P(t,K.kunyah,K.darah-K.kunyah);return [at(cl(1.8,1.3,k),cl(4.6,3.8,k),cl(0.5,-0.3,k)),LK(0.25)];}],
    [K.darah-0.1,t=>{const k=P(t,K.darah,K.cara-K.darah);return [at(1.2,cl(3.6,3.3,k),cl(-0.4,0.2,k)),LK(0.25)];}],
@@ -354,7 +382,7 @@ window.render=function(T){
    [K.cta,t=>{const k=ease(P(t,K.cta,8));const a=-0.25+0.5*k;return [V(Math.sin(a)*0.5,cl(19,21,k),5.6+Math.cos(a)*0.5),V(0,0,-0.3)];}],
   ];
   let si=0;for(let i=0;i<shots.length;i++)if(T>=shots[i][0])si=i;
-  let [cp,lk]=shots[si][1](T);const hard=[8];
+  let [cp,lk]=shots[si][1](T);const hard=[shots.length-1];
   if(si>0&&!hard.includes(si)){const bl=ease(P(T,shots[si][0],1.2));if(bl<1){const [pp,pl]=shots[si-1][1](T);cp=pp.clone().lerp(cp,bl);lk=pl.clone().lerp(lk,bl);}}
   if(T>=K.cta)teeth.forEach(t=>t.g.visible=true);
   cam.position.copy(cp);cam.lookAt(lk);cam.updateMatrixWorld();
@@ -369,8 +397,8 @@ window.render=function(T){
   const G1=gp.clone().setY(1.35);
   if(T<K.sehat)tag(0,T<K.justru?'lidah ngorek-ngorek':'celah',G1,T,T<K.justru?K.ngorek+0.3:K.celah+0.2,T<K.justru?K.justru-0.05:K.sehat-0.05,-50);
   else if(T<K.kok)tag(0,T<K.papila?'rapat':(T<K.lewat?'gusi mengisi penuh sela':'meluncur lewat'),G1,T,T<K.papila?K.sehat+0.4:(T<K.lewat?K.papila+0.3:K.lewat+0.2),T<K.papila?K.papila-0.05:(T<K.lewat?K.lewat-0.05:K.kok-0.05),-50);
-  else if(T>=K.c1&&T<K.c2)tag(0,'lubang di sisi gigi',faceP.clone().setY(1.25),T,K.c1+0.4,K.c2-0.05,-50);
-  else if(T>=K.c2&&T<K.c3)tag(0,T<K.c2b?'tambalan tidak menyentuh gigi sebelah, ada celah':'pinggir tambalan bocor, lubang baru',faceP.clone().setY(1.25),T,K.c2+0.4,K.c3-0.05,-50);
+  else if(T>=K.c1&&T<K.c2)tag(0,T<K.c1b?'lubang tepat di titik tempel':(T<K.c1b+2.0?'dinding keropos, tempelnya hilang':'makanan masuk ke lubang & sela'),faceP.clone().setY(1.25),T,K.c1+0.4,K.c2-0.05,-50);
+  else if(T>=K.c2&&T<K.c3)tag(0,T<K.c2b?'tambalan tidak menyentuh gigi sebelah, ada celah':(T<K.c2b+1.6?'pinggir tambalan menonjol seperti tangga':'makanan nyangkut di bawahnya, gusi meradang'),faceP.clone().setY(1.25),T,K.c2+0.4,K.c3-0.05,-50);
   else if(C3)tag(0,'bungsu miring ke geraham sebelahnya',T7.base.clone().setY(0.62),T,K.c3+0.6,K.c4-0.05,-10);
   else if(C4)tag(0,T<K.c4b?'gigi dicabut':(T<K.c4b+2.2?'gigi belakang miring maju':'nempel nggak pas, makanan nyangkut'),T<K.c4b?T6.base.clone().setY(0.9):T5.g.position.clone().addScaledVector(tanD,0.9).setY(1.3),T,T<K.c4b?K.c4+0.4:(T<K.c4b+2.2?K.c4b+0.2:K.c4b+2.2),T<K.c4b?K.c4b-0.05:(T<K.c4b+2.2?K.c4b+2.15:K.kunyah-0.05),-40);
   else if(T>=K.kunyah&&T<K.kuman)tag(0,'serat makanan',G1,T,K.kunyah+1.4,K.kuman-0.05,-50);
@@ -378,7 +406,7 @@ window.render=function(T){
   else if(T>=K.takut&&T<K.tanda)tag(0,'jadi takut, akhirnya dihindari',G1,T,K.takut+0.3,K.tanda-0.05,-50);
   else if(T>=K.tanda&&T<K.cara)tag(0,'tanda radang, tetap dibersihkan',G1,T,K.tanda+0.3,K.cara-0.05,-50);
   else if(T>=K.cara&&T<K.cungkil)tag(0,T<K.cara+1.4?'benang gigi / sikat sela':'peluk sisi gigi bentuk C, naik-turun',G1.clone().setY(1.6),T,T<K.cara+1.4?K.cara+0.4:K.cara+1.4,T<K.cara+1.4?K.cara+1.38:K.cungkil-0.05,-50);
-  else if(T>=K.cungkil&&T<K.rutin)tag(0,T<K.lega?'tusuk gigi / peniti':(T<K.luka?'rasanya lega…':'✗ gusi luka, celah melebar'),G1.clone().setY(1.6),T,T<K.lega?K.cungkil+0.3:(T<K.luka?K.lega+0.1:K.luka+0.1),T<K.lega?K.lega-0.05:(T<K.luka?K.luka-0.05:K.rutin-0.05),-50);
+  else if(T>=K.cungkil&&T<K.rutin)tag(0,T<K.lega?'tusuk gigi / peniti':(T<K.luka?'rasanya lega…':(T<K.makin?'berulang: gusi turun, celah makin besar':'makin sering nyangkut')),G1.clone().setY(1.6),T,T<K.lega?K.cungkil+0.3:(T<K.luka?K.lega+0.1:K.luka+0.1),T<K.lega?K.lega-0.05:(T<K.luka?K.luka-0.05:K.rutin-0.05),-50);
   else if(T>=K.tutup&&T<K.periksa)tag(0,'celah tetap ada',G1.clone().setY(2.2),T,K.tutup+0.4,K.periksa-0.05,-40);
   else if(T>=K.periksa&&T<K.cta)tag(0,T<K.periksa+2.0?'periksa ke dokter gigi':'tambalan menutup celah ✓',G1.clone().setY(1.6),T,T<K.periksa+2.0?K.periksa+0.2:K.periksa+2.0,T<K.periksa+2.0?K.periksa+1.95:K.cta-0.05,-50);
   if(T>=K.rutin&&T<K.tutup){const o=Math.min(P(T,K.rutin,0.35),1-P(T,K.tutup-0.35,0.35));cal.style.display='block';cal.style.opacity=o;cvs.style.filter=`blur(${8*o}px)`;
