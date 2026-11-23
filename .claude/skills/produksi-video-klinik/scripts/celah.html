@@ -496,7 +496,7 @@ window.render=function(T){
   if(T>=K.t1&&T<K.kunyah)setNum('1','tahap · muncul celah',T,K.t1);else if(T>=K.kunyah&&T<K.kuman)setNum('2','tahap · makanan terjepit',T,K.kunyah);else if(T>=K.kuman&&T<K.takut)setNum('3','tahap · gusi meradang',T,K.kuman);else if(T>=K.cara&&T<K.rutin)setNum('1','cara',T,K.cara);else if(T>=K.rutin&&T<K.tutup)setNum('2','cara',T,K.rutin);else if(T>=K.tutup&&T<K.ingat)setNum('3','cara',T,K.tutup);else setNum('','',T,0);
   const lbl=document.getElementById('lbl');lbl.style.display=T<K.card?'block':'none';
   const fp=document.getElementById('fpill');const fo1=T>=K.fol1&&T<K.fol1+3.2;fp.style.display=fo1?'block':'none';if(fo1){fp.style.opacity=Math.min(P(T,K.fol1,0.3),1-P(T,K.fol1+2.9,0.3));fp.style.transform=`translateX(-50%) scale(${0.7+0.3*back(P(T,K.fol1,0.4))})`;}
-  {const mi=document.getElementById('micro');const on=T>=K.c1-0.4&&T<K.c2+0.3;mi.style.display=on?'block':'none';if(on){mi.style.opacity=Math.min(P(T,K.c1-0.4,0.4),1-P(T,K.c2-0.1,0.4));window.mkRender((T-K.c1)*9.2/Math.max(1,K.c2-K.c1-0.3));num.style.display='block';}}
+  {const mi=document.getElementById('micro');const on=T>=K.c1-0.4&&T<K.c2+0.3;mi.style.display=on?'block':'none';if(on){mi.style.opacity=Math.min(P(T,K.c1-0.4,0.4),1-P(T,K.c2-0.1,0.4));window.mkRender((T-K.c1)*7.4/Math.max(1,K.c2-K.c1-0.3));num.style.display='block';}}
   kineticSub(sub,T,SUBS,WORDS);
   card.style.display=T>=K.card?'flex':'none';card.style.opacity=P(T,K.card,0.5);
   let fo=T<0.3?1-P(T,0,0.3):0;for(const c of [K.zip,K.kuman]){if(T>=c-0.3&&T<c+0.5)fo=Math.max(fo,T<c?ease(P(T,c-0.3,0.3)):1-ease(P(T,c,0.5)));}fade.style.background='#FBF8F3';fade.style.opacity=fo;
