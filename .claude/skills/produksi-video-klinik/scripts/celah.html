@@ -313,7 +313,7 @@ window.render=function(T){
   else if(T<K.kok)tag(0,T<K.lewat?'rapat':'meluncur lewat',G1,T,T<K.lewat?K.sehat+0.4:K.lewat+0.2,T<K.lewat?K.lewat-0.05:K.kok-0.05,-50);
   else if(T>=K.c1&&T<K.c2)tag(0,'lubang di sisi gigi',faceP.clone().setY(1.25),T,K.c1+0.4,K.c2-0.05,-50);
   else if(T>=K.c2&&T<K.c3)tag(0,'tambalan kurang pas',faceP.clone().setY(1.25),T,K.c2+0.4,K.c3-0.05,-50);
-  else if(C3)tag(0,'bungsu miring ke M2',T7.base.clone().setY(0.62),T,K.c3+0.6,K.c4-0.05,-10);
+  else if(C3)tag(0,'bungsu miring ke geraham sebelahnya',T7.base.clone().setY(0.62),T,K.c3+0.6,K.c4-0.05,-10);
   else if(C4)tag(0,T<K.c4+1.2?'dicabut':'gigi bergeser',T<K.c4+1.2?T7.base.clone().setY(1.0):T6.base.clone().setY(1.3),T,T<K.c4+1.2?K.c4+0.2:K.c4+1.2,T<K.c4+1.2?K.c4+1.15:K.kunyah-0.05,-50);
   else if(T>=K.kunyah&&T<K.kuman)tag(0,'serat makanan',G1,T,K.kunyah+1.4,K.kuman-0.05,-50);
   else if(T>=K.kuman&&T<K.darah)tag(0,'gusi meradang',gp.clone().setY(0.6).addScaledVector(n5,0.5),T,K.kuman+0.6,K.darah-0.05,-60);

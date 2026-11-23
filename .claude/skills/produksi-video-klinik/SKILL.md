@@ -52,7 +52,7 @@ Aturan:
   - Setiap gigi yang digeser/diputar/diangkat: **gusi ikut membungkus lehernya** (tidak ada leher terbuka, gigi melayang, atau celah gigi–gusi yang tidak disengaja).
   - Tidak ada rongga/celah kosong antara akar, "bantalan" (jaringan pengikat), dan tulang. Gusi menempel di leher gigi, bukan balok terpisah.
   - Gerakan yang sama harus **searah dan konsisten di semua adegan** (lengkung gigi ↔ irisan ↔ analogi). Kalau irisan menunjukkan geser ke samping, lengkung gigi juga geser keluar-masuk, bukan naik-turun.
-  - **Gigi bungsu impaksi = miring ke depan menumpu ke M2 (mesioangular)**, sebagian masih tertutup gusi, dan harus terlihat jelas di frame (koreksi Pak Dir 23 Nov, #08).
+  - **Gigi bungsu impaksi = miring ke depan menumpu ke geraham sebelahnya (M2, mesioangular; istilah ini hanya untuk catatan internal)**, sebagian masih tertutup gusi, dan harus terlihat jelas di frame (koreksi Pak Dir 23 Nov, #08).
   - Bentuk kelainan dipilih yang paling umum di klinik (mis. gigi berjejal = menonjol keluar/masuk lengkung + sedikit miring, bukan terangkat), dan kamera dipilih supaya kelainannya terlihat (sudut ¾ dari atas bila perlu).
 - [ ] **Audit arah gaya:** panah/gaya datang dari sumber yang benar (dorongan behel = dari kawat/braket, setinggi braket), ukuran tidak menutupi objek, tidak terpotong tepi layar.
 - [ ] **Ada momen hasil/payoff yang terlihat jelas** (mis. gigi jadi rapi, gusi kembali sehat) ±1–2 detik sebelum panel CTA menutup layar.
@@ -93,6 +93,8 @@ Diadaptasi dari skill akun `antislop-copywriting` untuk Bahasa Indonesia dan kli
 - Perintah dramatis ("Baca sekali lagi.", "Ingat baik-baik ini.").
 - Mengganti-ganti sinonim supaya tidak berulang (gigi → geligi → deretan mutiara). Ulangi kata yang paling jelas.
 - Kalimat pasif tanpa pelaku kalau pelakunya diketahui ("karang dibersihkan" → "dokter gigi membersihkan karang").
+
+- **Tanpa istilah teknis dokter gigi di teks layar, narasi, sampul, dan caption** (koreksi Pak Dir 23 Nov): jangan "M1/M2/M3", "mesioangular", "interproksimal", "ligamen periodontal", "kalkulus". Pakai bahasa pasien: "geraham sebelahnya", "gigi bungsu", "sela gigi", "karang gigi". Istilah teknis hanya boleh di catatan internal/skill.
 
 **4. Kebersihan teks**
 - **Tanpa tanda pisah panjang (—)** di teks yang tayang (caption, layar, sampul). Ganti dengan titik, koma, titik dua, atau kurung.
