@@ -1,4 +1,4 @@
-# Naskah Konten 3 drg. Ainun: "Sebelum Ditambal, Kamu Berhak Tahu Dulu" v1 (23 Nov 2026) — naskah OK, papan v1 menunggu ACC (`papan-gambar-hak-pasien-ainun-v1.png`)
+# Naskah Konten 3 drg. Ainun: "Sebelum Ditambal, Kamu Berhak Tahu Dulu" v1 (23 Nov 2026) — naskah OK, papan v1 ACC ("render coba") → **v1 dirender**: `organik-hak-pasien-ainun-v1.mp4` 27,8 dtk, −16,0 LUFS, logo pojok tanpa latar putih
 Organik ±31 dtk. Hanya klip yang BELUM dipakai di konten 1 (konsultasi), konten 2 (alat/loupe), dan Tambal Ulang v1/v2.
 Peta klip terpakai sebelumnya: 0642, 0644 (38–46), 0645, 0650, 0651, 0668, 0680, 0695, 0671, 0687, 0708/0709/0712, VID 125349/130716/130953/131509/172352.
 
