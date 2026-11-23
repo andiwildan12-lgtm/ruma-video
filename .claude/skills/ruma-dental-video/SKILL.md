@@ -43,8 +43,15 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 2. Karakter manusia hasil gambar/3D **tidak boleh punya mata dalam bentuk apa pun**. Ilustrasi senyum (bibir + gigi tanpa wajah) diperbolehkan.
 3. **Tanpa musik.** Suara latar ruangan yang sangat pelan dan efek suara benda boleh.
 4. Logo tidak dibuat atau digambar oleh AI. Pakai file logo resmi saat editing/render.
-5. Wajah pasien hanya dengan **izin pasien**. Footage yang sudah dikirim Pak Dir **sudah atas izin pasien**.
-6. **Casting footage:** orang yang tampil sebagai pasien **tidak boleh** muncul juga sebagai admin/resepsionis dalam video yang sama.
+5. Wajah pasien hanya dengan **izin pasien**. Footage yang sudah dikirim Pak Dir **sudah atas izin pasien**. **Konten organik: wajah pasien di-blur** bila berpotensi terlihat. **Iklan: wajah pasien TIDAK di-blur** (keputusan Pak Dir 21 Nov 2026, iklan scaling). Wajah dokter/staf tidak di-blur.
+11. **STANDAR SEMUA VIDEO RUMA (keputusan Pak Dir 21 Nov 2026, pelajaran 2 konten drg. Ainun):**
+   - **Logo pojok kiri atas sepanjang video** (kecuali penutup): `assets/penutup/logo-pojok.html` → logo transparan 72 px, x 72 / y 262, **TANPA latar/kapsul putih** (koreksi Pak Dir setelah iklan scaling v1: "ada latar putihnya, waduh"); keterbacaan lewat bayangan lembut. Iklan scaling v1 & konten sebelumnya tidak diperbaiki (keputusan Pak Dir), berlaku untuk konten berikutnya. Judul hook dan label langkah mulai **y ≥ 360** (di bawah logo).
+   - **Penutup seragam 4 dtk** di semua video (organik maupun iklan): `assets/penutup/penutup.html?pesan=...|...&ig=...` → pesan penutup video (opsional) → logo → tagline → Instagram · WhatsApp 0898-7735-463 · Jl. Rusa No. 65, Maricaya, Makassar. Ini pengecualian aturan no. 10: WA dan alamat **boleh/wajib** di penutup standar.
+   - Akun Instagram Ruma: **@rumadentalmks** (dari Pak Dir, 21 Nov 2026) → `penutup.html?ig=@rumadentalmks`.
+   - Dua konten drg. Ainun (konsultasi tambal v1, alat tambal v2) dibuat sebelum standar ini dan **tidak dirender ulang** (keputusan Pak Dir); standar berlaku untuk video berikutnya. Cek wajib sebelum papan gambar: logo pojok ada, judul/label di bawah logo, penutup memakai template ini.
+10. **Tujuan bawaan = konten organik** (Reels/TikTok akun Ruma). Perlakukan sebagai iklan Meta **hanya bila Pak Dir menyebut iklan** (keputusan 21 Nov 2026). Organik: tanpa harga/WA kecuali diminta, nada edukasi/cerita, close-up klinis boleh (wajah pasien tetap blur); aturan no. 8 hanya untuk iklan.
+6. **Casting footage:** orang yang tampil sebagai pasien **tidak boleh** muncul juga sebagai admin/resepsionis dalam video yang sama. Pelajaran iklan scaling v3 (Pak Dir: "admin di meja sama yang di-scaling sama, kesannya konten ala-ala"): folder Scalling Agustus (`1ieZcNOg…`) memakai **satu orang sebagai resepsionis (4422/4427) sekaligus pasien (4324–4341)** → jangan dipakai bersamaan. Cek wajah semua orang lintas klip sebelum papan gambar.
+12. **Iklan boleh memakai close-up tindakan** bila Pak Dir memintanya (iklan scaling 21 Nov 2026: "kalau bisa ada video close-up pasien di-scaling"); risiko penolakan Meta disampaikan sekali, keputusan Pak Dir.
 7. Jangan menambahkan logo ke benda yang aslinya polos, dan jangan memakai stok video klinik lain seolah-olah Ruma.
 8. Iklan Meta: jangan menyiratkan tahu kondisi kesehatan penonton ("Gigimu berlubang?") dan jangan memancing rasa malu/tidak percaya diri. Tanpa foto sebelum-sesudah, tanpa janji tingkat putih tertentu, tanpa close-up klinis mulut asli.
 9. Angka dan fakta medis wajib masuk akal secara klinis; Pak Dir (dokter gigi) memvalidasi bila ragu.
@@ -57,8 +64,10 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 | Alamat lengkap | Jl. Rusa No. 65, Maricaya, Kec. Makassar, Kota Makassar, Sulawesi Selatan |
 | Alamat singkat (video) | Jl. Rusa No. 65, Maricaya, Makassar |
 | Nomor admin | WA 0898-7735-463 |
+| Instagram | **@rumadentalmks** |
 | Bleaching | Rp1.700.000, diskon 10% = **Rp1.530.000**, **sudah termasuk scaling**, tanpa batas waktu |
 | Tambal gigi | sewarna gigi, **mulai Rp250.000**, garansi setelah perawatan, dikerjakan dokter gigi |
+| Scaling | Normal **Rp250.000–350.000**; **promo Rp200.000, kuota terbatas** (Pak Dir, 21 Nov 2026; batas waktu/kuota belum disebut) |
 | Behel | **mulai Rp6 jutaan untuk rahang atas & bawah**, **Rp3 jt per rahang**, **cicilan Rp2 jt/bln × 3, tanpa bunga** (dikonfirmasi 18 Nov 2026). Sudah termasuk: pemasangan atas & bawah, scaling, cetak gigi, foto intra & ekstra oral, konsultasi dokter gigi, ortho kit |
 | SOP kunjungan | Biaya **selalu dijelaskan sebelum tindakan**; pasien boleh pulang tanpa tindakan (dikonfirmasi 18 Nov 2026) |
 
@@ -144,7 +153,7 @@ Setiap iklan baru: rumus 8 ketukan (`produksi-video-klinik` bagian 3) → checkl
 | Bleaching | Rp1.700.000 → Rp1.530.000 (diskon 10%), sudah termasuk scaling | ✅ ACC v2 | `naskah-bleaching-01.md` | – |
 | Tambal gigi | mulai Rp250.000, garansi setelah perawatan | Render v2, menunggu OK Pak Dir → paket kirim (15 dtk, sampul, teks Meta) | `naskah-tambal-01.md` | OK video v2 |
 | PSA | tanpa harga | Draf naskah v1 | `naskah-psa-01.md` | bius lokal, crown disebut/tidak, kunjungan & garansi, footage |
-| Scaling | belum ditentukan | Draf naskah v1 | `naskah-scaling-iklan-01.md` | harga, fakta gusi turun/mitos renggang, footage, penutup murni vs jembatan bleaching |
+| Scaling | normal Rp250–350 rb, promo Rp200.000 kuota terbatas | **Render v1** (`iklan-scaling-ruma-v1.mp4`, 51,6 dtk, full footage Mei + Ricky) | `naskah-scaling-iklan-03-sadar.md` | review Pak Dir |
 | Kunjungan pertama di Ruma (evergreen, semua layanan) | tanpa harga | Render v2 (49,5 dtk, `iklan-kunjungan-pertama-ruma-v2.mp4`): pemeriksaan di kursi dental ditambahkan | `naskah-kunjungan-pertama-01.md` | OK video v2 → paket kirim |
 | Behel "Spil Harga" (admin bicara, 1 rekaman → 3 jenis edit) | mulai Rp6 jutaan, cicilan Rp2 jt/bln × 3 tanpa bunga | Jenis C v1 dirender (`iklan-behel-spil-harga-C-v1.mp4`, dibuka cuplikan 4416); Jenis A dilewati (arahan Pak Dir). Render Jenis B v2 (36,8 dtk, `iklan-behel-spil-harga-B-v2.mp4`): transisi halus, SFX, suara ruangan, subtitle pendek, Montserrat + warna resmi | `transkrip-behel-admin.md` | OK video → Jenis A & C |
 | Behel MOFU caption kinetik + stiker (narasi Ricky, tanpa harga) | – | Render v1 (40,8 dtk, `iklan-behel-mofu-kinetik-v1.mp4`), suara Ricky versi B ±717 kredit/versi | `naskah-behel-kinetik-01.md` | ACC papan gambar → suara Ricky → render |
@@ -157,6 +166,26 @@ Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
 - Konten TOFU = **edukasi murni**: tanpa ajakan ke klinik, tanpa "chat admin", tanpa harga. Brand cukup hadir lewat **kartu penutup logo + tagline** (seperti credit Studio AnakArsi).
 - Format yang disukai: gaya jktlagi "Bayangin…" (pengandaian → rantai angka → "sisanya?" → manfaat pribadi), angka besar di pojok kanan atas, subtitle kinetik per kata. Pegangan isi: **"Value dulu, baru konten"** + Uji Value 5 poin (skill `dalamgigi` bagian 1b). Contoh: #01–#03 di `references/`.
 - Durasi 50–70 detik.
+
+## 10d. Gaya 3 versi Ruma: cerita kasus / POV dari rekaman asli [DISEPAKATI 21 Nov 2026]
+Format POV/cerita yang meniru **struktur** konten "POV Nur FO" UPG (Gaya 3), tetapi **tampilan Ruma** (panduan melarang campur font/palet antar-brand):
+| Unsur Gaya 3 UPG | Versi Ruma |
+|---|---|
+| Judul retro slab krem-cokelat diketik + bunyi ketik | Judul Montserrat Deep Teal di label putih, kata kunci blok Turquoise, muncul pop + bunyi pop |
+| Coretan tangan Caveat + panah | Garis tipis + label kecil Montserrat (tanpa stroke) |
+| Penghitung lencana | Penanda langkah "1/3 · 2/3 · 3/3" |
+| Kartu checklist berlabel | Kartu putih berlabel (mis. "pasien 20 th · tambal ulang"), video dokter mengecil di pojok |
+| SFX padat + backsound | Suara asli dokter (dibersihkan) + suara ruangan terus-menerus; tanpa musik; **crossfade + whoosh tiap perpindahan, pop saat teks muncul, punch-in antar-kalimat** (keputusan Pak Dir 21 Nov: v1 cut bersih dinilai kaku) |
+- Ucapan dokter = ucapan asli dari transkrip (tidak dikarang); label/teks tidak boleh melebihi ucapan atau yang terlihat di gambar.
+- Name tag cukup "drg. Nama". Penutup organik: logo Ruma + 1 ajakan ringan (mis. "Simpan untuk nanti"), tanpa harga/WA.
+- Proyek pertama: **Tambal ulang drg. Ainun** (`references/naskah-tambal-ulang-ainun-01.md`).
+- **Pelajaran v1–v2 (Pak Dir 21 Nov: "tidak menarik, kayak asal bikin yang penting jadi")**: editing rapi tidak menyelamatkan isi yang lemah. Sebelum menulis naskah dari footage, **wajib uji isi dulu** dan laporkan jujur ke Pak Dir bila bahan tidak cukup:
+  1. **Ada nilai?** Penonton pulang tahu sesuatu (kenapa terjadi, apa bedanya, apa yang harus dijaga). Ucapan dokter yang hanya laporan kasus ("hari ini pasien 20 tahun…") = bukan nilai.
+  2. **Ada ketegangan + jawaban?** Pertanyaan di hook harus dijawab di video.
+  3. **Hook detik 0–1 = gambar/kalimat terkuat**, bukan pembukaan pelan atau dokter memperkenalkan kasus.
+  4. **Ada visual puncak** (hasil akhir, momen paling jelas). Close-up gelap berulang tidak cukup.
+  6. **Hook harus mewakili SELURUH isi** (koreksi Pak Dir, konten 2 drg. Ainun: hook "Kenapa dokter gigi pakai kacamata ini?" padahal isi 5 alat → "tidak nyambung"). Uji: setiap poin di isi video harus menjawab pertanyaan hook; kalau hook hanya cocok untuk poin pertama, ganti hook (contoh v2: "Saat menambal gigi, dokter pakai apa saja?").
+  5. Kalau ada yang gagal → usulkan **rekam tambahan singkat** (dokter menjawab 2–3 pertanyaan penonton, mic kerah, 5 menit) sebelum produksi, jangan dipaksakan.
 
 ## 10c. Akun TOFU Ruma [DISEPAKATI, 16 Nov 2026; detail terkini di skill `dalamgigi`]
 

@@ -148,7 +148,7 @@ Aturan: sebelum memakai klip dari folder mana pun, cek visual interior (Ruma = d
 | 9643 | Pasien turun/di samping mobil, depan klinik | Pakai (pulang/datang) |
 | 9644 / 9645 | Masuk pintu kaca ("TUTUP/CLOSED" terlihat di 9645) | 9644 pakai; 9645 cek tulisan |
 | 9647 | Lepas alas kaki di rak sepatu | **Tidak dipakai** (arahan Pak Dir) |
-| 9648–9657, 9763–9767 | Resepsionis di depan papan logo menyala, menyapa/mencatat | **Pakai** (sambutan; 9765/9767 = pamit) |
+| 9648–9657, 9763–9767 | Resepsionis di depan papan logo menyala, menyapa/mencatat | **Pakai** (sambutan; 9765/9767 = pamit). **Terbaik: 9650 dtk 2,8** (berdiri tersenyum, gestur menyambut). 4422 folder Agustus = admin menunduk, terkesan jutek → hindari |
 | 9660 / 9661 / 9670 | Pasien lain (baju hitam motif) | Cadangan, jangan dicampur dalam satu alur |
 | 9664–9668, 9673 | Ruang tunggu sofa sage, toples camilan, pasien membaca/ngobrol dengan staf | **Pakai** |
 | 9676 / 9710 | Staf memanggil pasien, membuka pintu ruang dokter | **Pakai** |
@@ -165,3 +165,13 @@ Pasien sama dengan folder Penyambutan Pasien. Dokter bergaun ungu, topi, masker;
 | 9743 / 9744 | Pasien pegang cermin, dokter menunjukkan kondisi gigi | **Pakai** (9744 POV cermin: cadangan) |
 | 9746 | Asisten melepas celemek | Cadangan |
 | 9747 / 9748 | Dokter duduk menjelaskan ke pasien | **Pakai** |
+
+## Folder Scalling Mei 2026 (Ruma Dental Raw Footage → Scalling, id `1n4yV5HkHYZIl3zlAYbIVP058wFrijLU3`, 18 klip IMG_9723–9748, dicek 21 Nov 2026)
+Pasien: wanita jilbab krem, memakai behel (berbeda dari pasien/resepsionis folder Agustus). Dokter seragam mauve polos, asisten seragam biru motif roket (tanpa logo).
+| Klip | Isi | Catatan |
+|---|---|---|
+| 9723, 9746 | Pasien duduk, dokter pakai sarung tangan / pasang celemek | pembuka |
+| 9731–9739 | Scaling ultrasonik, sudut sedang, wajah pasien terlihat | iklan: wajah tidak di-blur |
+| **9740–9742** | **Close-up scaling** di gigi berbehel (alat + kaca mulut + penyedot) | close-up untuk iklan atas permintaan Pak Dir |
+| **9743–9744** | Pasien memegang cermin melihat giginya, pantulan cermin | cocok "cek sendiri" |
+| **9747–9748** | Dokter menjelaskan ke pasien (duduk berhadapan) | "dijelaskan dulu" |

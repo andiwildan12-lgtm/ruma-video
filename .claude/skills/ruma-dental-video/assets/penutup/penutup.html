@@ -1,0 +1,37 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Penutup Standar Ruma</title><style>
+/* PENUTUP STANDAR semua video Ruma Dental (keputusan Pak Dir 21 Nov 2026): seragam di setiap video.
+   Urutan: pesan penutup video (opsional, 1 kalimat) -> logo -> tagline -> 3 baris kontak (Instagram, WhatsApp, alamat).
+   Latar Mint White, teks Deep Teal, label kontak di blok Turquoise (teks Deep Teal, kontras 4,7:1).
+   Montserrat = pengganti sementara Neue Montreal. Durasi 4 dtk, elemen muncul bertahap.
+   Parameter URL: ?pesan=... ('|' = ganti baris)&ig=...&t=detik (t untuk tangkapan satu frame). */
+@font-face{font-family:M;src:url(montserrat-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:M;src:url(montserrat-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:M;src:url(montserrat-latin-700-normal.woff2);font-weight:700}
+:root{--deep:#354B49;--turq:#28CDBD;--mint:#E8F8F6}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;background:var(--mint);font-family:M,sans-serif;color:var(--deep);position:relative;overflow:hidden}
+.wrap{position:absolute;left:90px;right:150px;top:330px;bottom:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
+.pesan{font:700 54px/1.25 M;text-align:center}
+.logo{width:500px}
+.tag{font:600 32px/1.3 M;color:#5E6B67;text-align:center;margin-top:-10px}
+.kontak{display:flex;flex-direction:column;gap:18px;margin-top:18px;width:100%;max-width:760px}
+.row{display:flex;align-items:center;gap:20px;background:#fff;border-radius:18px;padding:18px 22px}
+.row b{flex:none;font:700 26px/1 M;background:var(--turq);padding:12px 14px;border-radius:10px;min-width:150px;text-align:center}
+.row span{font:600 34px/1.25 M}
+.el{opacity:0;transform:translateY(14px)}
+</style></head><body><div class=wrap>
+<p class="pesan el" id=pesan></p>
+<img class="logo el" src="logo.png" alt="Ruma Dental">
+<p class="tag el">Tempat Nyaman untuk Kembali Tersenyum</p>
+<div class=kontak>
+ <div class="row el"><b>Instagram</b><span id=ig></span></div>
+ <div class="row el"><b>WhatsApp</b><span>0898-7735-463</span></div>
+ <div class="row el"><b>Alamat</b><span>Jl. Rusa No. 65, Maricaya, Makassar</span></div>
+</div></div><script>
+const q=new URLSearchParams(location.search);
+const ps=q.get('pesan')||''; const pe=document.getElementById('pesan'); ps.split('|').forEach((x,i)=>{if(i)pe.appendChild(document.createElement('br'));pe.appendChild(document.createTextNode(x))}); if(!ps) document.getElementById('pesan').style.display='none';
+document.getElementById('ig').textContent=q.get('ig')||'@rumadentalmks';
+// animasi: tiap elemen masuk 0,25 dtk, jeda 0,22 dtk
+window.go=t=>{document.querySelectorAll('.el').forEach((e,i)=>{if(e.style.display==='none')return;const p=Math.max(0,Math.min(1,(t-0.1-0.22*i)/0.25));e.style.opacity=p;e.style.transform=`translateY(${(1-p)*14}px)`})};
+go(+(q.get('t')||4));
+</script></body></html>
