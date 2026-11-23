@@ -144,7 +144,8 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | 05 | Gusi berdarah | Gusi berdarah / BERHENTI SIKAT? | Sisa makanan → plak (jam) → mineral air liur → karang (analogi kerak teko) → karang kasar, gusi meradang, berdarah → sikat miring, benang, scaling, 1–2 minggu → CTA. Ilustrasi M1 bawah, gusi bergelombang | 🎬 v2 jadi (74,6 dtk), QC lulus |
 | 06 | Bau mulut (request penonton) | Sudah sikat gigi, / KOK MASIH BAU MULUT? | Lapis demi lapis: 1 lidah (pangkal, tidur → air liur turun → gas belerang, sikat lidah belakang→depan + minum air) → 2 sela gigi & gusi (sisa makanan, karang, radang, lubang → benang + scaling/tambal) → 3 luar mulut (hidung, tenggorokan, lambung → dokter) → "dicari sumbernya, bukan cuma ditutupi" → CTA | 🎬 v1 jadi 20 Nov (73,9 dtk), QC lulus |
 | 07 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | Tulang dibongkar di sisi tertekan, dibangun di sisi tertarik (analogi pindah rumah bata demi bata) → dorongan kawat melemah → kontrol = setel ulang (grafik progres tangga) → CTA. Naskah `references/naskah-behel-07.md` | ⛔ v1 DITAHAN (anatomi belum benar, lihat bagian 11); perbaikan menunggu instruksi Pak Dir, narasi tetap |
-| 08 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
+| 08 | Makanan nyangkut di gigi belakang (request penonton #05) | Makanan nyangkut / DI GIGI BELAKANG? | Celah antar geraham → 4 penyebab (lubang sisi, tambalan kurang pas, bungsu miring, gigi dicabut) → serat terjepit → gusi sela radang & berdarah → benang/sikat sela, jangan dicungkil → 1–2 minggu → periksa, tambalan menutup celah → CTA | Papan v1 dikirim 23 Nov, menunggu OK |
+| 09 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
 | 09 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
 | 10 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
 | 11 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
@@ -178,6 +179,8 @@ File video tidak masuk Git (sesi cloud sementara): selalu ingatkan Pak Dir mengu
 Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, % selesai, **disimpan**, **dibagikan**. Views minggu pertama belum patokan; akun baru butuh 5–10 video.
 
 ## 11. Pelajaran yang Tidak Boleh Diulang
+
+- **Bug lengkung rahang (ditemukan 23 Nov, #08):** di `gusi.html`/`napas.html`/`behel.html` lengkung `a=3.0,b=3.5,cz=-0.4` terlalu pendek, jadi M2 (k6) bertumpuk dengan M1 (k5) dan M3 salah posisi. Mulai `celah.html` pakai `a=3.0,b=4.8,cz=-1.4` (jarak M1–M2 benar ±1,1). Adegan baru wajib pakai nilai ini; cek posisi gigi sebelum membuat adegan sela/celah.
 
 - **#07 behel (20 Nov): papan dikirim dan dirender walau anatomi belum benar.** Temuan Pak Dir + audit: (1) gigi berjejal dibuat terangkat tapi gusi tidak ikut, jadi gigi tampak melayang; (2) di lengkung gigi bergerak naik-turun, di irisan tulang geser ke samping (tidak nyambung); (3) ada celah putih akar–tulang; (4) gusi di irisan berupa balok terpisah; (5) panah dorongan dari atas mahkota & terlalu besar; (6) tidak ada momen "gigi jadi rapi"; (7) rumah analogi hanya 2 dinding; (8) label bertabrakan. Aturan: jalankan **Audit anatomi** (skill produksi-video-klinik, Audit 2) sebelum papan dikirim, dan tulis hasil audit singkat di pesan papan. Perbaikan #07 **ditahan sampai instruksi Pak Dir** (usulan: gigi menonjol keluar lengkung + miring, gusi ikut, sudut ¾, celah diisi bantalan, gusi membungkus leher, panah dari arah kawat, +1,5 dtk gigi rapi, rumah utuh, label dirapikan; narasi tidak diulang).
 
