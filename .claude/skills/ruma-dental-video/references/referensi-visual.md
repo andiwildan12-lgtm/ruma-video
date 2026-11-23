@@ -53,3 +53,10 @@ Sumber: Reels "jktlagi", *"Bayangin kalau seluruh Jakarta tinggal di menara"*, �
 - Lengkung gigi 3D dilihat dari atas seperti peta kota.
 - Palet tetap Ruma (putih hangat, sage, teal); tidak memakai nuansa senja ungu referensi.
 - Contoh pertama: `naskah-scaling-160.md`.
+
+## Referensi "1 rekaman → 3 gaya" (autoedit.id, dikirim Pak Dir 18 Nov 2026, disukai ketiganya)
+Satu rekaman orang bicara ke kamera diedit jadi 3 gaya:
+1. **Caption kinetik + stiker**: wajah penuh layar, zoom mendadak di kata kunci, caption 1–3 kata dengan kata kunci di kotak terang, stiker/ikon muncul di sekitar wajah.
+2. **Selang-seling infografis**: potongan wajah diselingi kartu putih (checklist ✅ muncul satu per satu, timeline), wajah dalam bingkai kecil.
+3. **Judul besar + jendela kecil (PIP)**: judul hook tebal gaya poster di atas, layar utama berganti kartu/diagram, wajah di jendela kecil.
+Adaptasi Ruma: warna krem/teal, ikon (bukan emoji wajah: aturan tanpa mata), tanpa musik, tanpa "before/after", tanpa close-up mulut untuk iklan Meta. Dipakai untuk A/B test materi iklan dari satu rekaman.

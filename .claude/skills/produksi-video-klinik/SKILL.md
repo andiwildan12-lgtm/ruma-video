@@ -8,7 +8,9 @@ description: Teknik produksi video iklan dan konten klinik gigi (UPG Dental Care
 Skill ini berisi **cara kerja dan teknik** yang sudah terbukti: iklan bleaching Ruma Dental v2 (di-ACC 16 Nov 2026) dan konten TOFU @dalamgigi #01–#03 (16–17 Nov 2026). Versi skill: **1.3 (17 Nov 2026)**.
 **Identitas brand** (warna, logo, suara narator, data harga, aturan khusus) **tidak ada di sini**; ambil dari skill brand:
 - Ruma Dental → skill `ruma-dental-video`
-- UPG Dental Care → skill `upg-video` (kerangka; data brand masih [TERBUKA])
+- UPG Dental Care → skill di **repo `upg-video`** (bukan di repo ini): `upg-video` (umum), `upg-antang-video` (cabang Antang), `upg-hertasning-video` (cabang Hertasning).
+
+Satu video = satu klinik/cabang; data, WA, logo, dan footage tidak boleh tertukar. Materi UPG tidak disimpan di repo `ruma-video`.
 
 Kalau brand belum jelas, tanyakan dulu konten ini untuk klinik yang mana.
 
@@ -28,6 +30,14 @@ Kalau brand belum jelas, tanyakan dulu konten ini untuk klinik yang mana.
 Tujuan: **tidak ada render dua kali dan tidak ada video cacat terkirim.** Render penuh hanya boleh dimulai setelah Pak Dir bilang OK **dan** Audit 1–3 lulus; video hanya boleh dikirim setelah Audit 4 lulus.
 
 Aturan:
+- **URUTAN WAJIB, TIDAK BOLEH DILOMPATI:**
+  1. Naskah → **OK Pak Dir**
+  2. **Papan gambar** (gambar 9:16 per adegan dari frame probe, teks layar, narasi, footage yang dipakai) → kirim → **ACC Pak Dir**
+  3. Baru buat suara ElevenLabs + efek suara
+  4. Gerbang Audit 3 Lapis
+  5. Render penuh
+  (Pelajaran iklan tambal v1: papan gambar terlewat dan suara dibuat sebelum naskah OK.)
+- **Suara ElevenLabs, efek suara, dan render baru boleh dibuat SETELAH naskah DAN papan gambar di-ACC Pak Dir** (pelajaran iklan tambal: suara terlanjur dibuat lalu naskah berubah).
 - Setelah Pak Dir OK, **audit sendiri tanpa memberi saran atau ide baru**. Yang dicari hanya **kesalahan**, lalu langsung diperbaiki. Jangan membuka diskusi ulang.
 - Kalau ada temuan yang mengubah isi (fakta medis, data harga, naskah), **tanya Pak Dir dulu**. Selain itu, perbaiki sendiri.
 - Kalau naskah diubah saat audit (termasuk menambah CTA, memangkas, atau menjanjikan topik berikutnya), tampilkan tabel **"Sebelum → Sesudah → Alasan"** + narasi final, lalu **tunggu OK Pak Dir sebelum membuat narasi ElevenLabs dan render**. Persetujuan ide/cerita bukan persetujuan naskah final.
@@ -64,6 +74,22 @@ Aturan:
 - [ ] Analogi 3D dibuat utuh dan langsung terbaca (rumah = dinding lengkap + atap menempel), bukan potongan yang membingungkan.
 - [ ] Label/tag tidak bertabrakan dengan angka pojok, panel, atau tepi atas layar.
 - [ ] Papan dicek **sebagai dokter gigi**, bukan hanya sebagai desainer: "apakah dokter gigi yang menonton akan menemukan hal yang tidak mungkin terjadi di mulut asli?"
+- [ ] **Video orang bicara harus terasa natural (koreksi Pak Dir, behel Spil Harga v1 → v2):**
+  - Transisi: crossfade 0,24 dtk di semua potongan (xfade, handle 0,12 dtk per sisi), zoom bergantian 1,00/1,08 antar-kalimat admin + dorong pelan 2%, footage bukti dengan zoom pelan 4%.
+  - Bunyi transisi: whoosh pelan di setiap perpindahan ke/dari footage dan kartu; pop saat kartu harga/baris baru/kartu penutup; ting notifikasi saat kotak komentar muncul.
+  - Pengganti musik: suara asli ruangan klinik (klip footage tanpa bicara, volume ±0,09, lowpass) sebagai latar terus-menerus + suara asli footage bukti ±0,18. Jangan hening mati.
+  - Subtitle **pendek 2–4 kata per potongan**, mengikuti waktu kata (transkripsi), satu kata kunci berlatar Turquoise.
+  - Font & warna video Ruma **ikut panduan resmi Canva**: Montserrat (Neue Montreal belum ada filenya), teks Deep Teal #354B49, blok Turquoise #28CDBD, latar putih/Mint White #E8F8F6. Bukan Outfit/krem.
+  - **Panduan Canva versi 20 Nov 2026 (`DAHbTZUHi_Q`) untuk video Ruma:** subtitle maks. 2 baris × 5–7 kata; hook di sepertiga atas (0–3 dtk); 5 dtk terakhir logo + 1 ajakan sesuai funnel; cover maks. 6 kata. Gaya teks A (hook tanpa blok + subtitle pill putih) atau B (blok di kata kunci + subtitle putih di atas Deep Teal 30%). Editing: fade halus, slow zoom, **cut bersih**, **SFX/ambience sangat minim**, overlay clean, teks tipis tanpa stroke.
+  - **KEPUTUSAN PAK DIR (21 Nov 2026): standar natural di atas (crossfade, zoom bergantian/punch-in, whoosh tiap perpindahan, pop saat teks/stiker muncul, suara ruangan terus-menerus, subtitle 2–4 kata) WAJIB untuk semua video Ruma dari rekaman/footage**, menang atas tulisan Canva "cut bersih, SFX sangat minim". Pelajaran: Tambal Ulang v1 dibuat cut bersih tanpa bunyi → dinilai "kaku, tidak natural, tidak ada suara perpindahan". Jangan pernah menurunkan standar ini tanpa perintah Pak Dir untuk video tertentu.
+  - Lapisan teks dirender per frame (`ovseq/%04d.png`), bukan concat gambar diam (pernah terpotong di detik 32). Kartu penutup masuk dengan pudar ±0,3 dtk.
+- [ ] **Data pasien di footage** (label film rontgen: nama, tgl lahir; layar monitor; rekam medis) → wajib di-blur per frame. Film rontgen: `scripts/kinetik/filmdet.py` (deteksi lembar film per frame lewat warna hitam-netral HSV, blur 42%×30% pojok kiri atas; pelacakan pola tulisan TIDAK andal karena film berputar/tertutup tangan). Cek ≥6 titik per klip. Pelajaran behel MOFU: film rontgen 4389–4393 memuat nama pasien.
+- [ ] **Caption kinetik di atas footage**: pakai gaya label (kotak putih 96%, teks Deep Teal, kata kunci Turquoise), BUKAN teks putih + bayangan (tak terbaca di dinding klinik putih). Potongan 2–4 kata mengikuti waktu kata, masuk dengan pop skala; stiker ikon pop + bunyi pop (`scripts/kinetik/`).
+- [ ] **Zona aman iklan Meta 9:16 (Reels/Story)**: semua teks, logo, harga, kotak komentar, kartu penutup, DAN wajah/mulut pembicara di area y 270–1250, x 65–1015 (atas 14% & bawah 35% tertutup UI Meta). Cek dengan frame + kotak merah zona sebelum kirim. Kartu penutup disusun mulai y≈310, selesai ≤1250.
+- [ ] **Video orang bicara: subtitle di atas kepala, jangan menutupi wajah** (arahan Pak Dir, behel Spil Harga). Hook "spil/tanya" → kotak "Balas komentar" diam di dekat gestur tunjuk.
+- [ ] **Cek seragam/atribut brand lain di footage** (pelajaran behel: seragam bertuliskan UPG di konten Ruma). Solusi yang disetujui Pak Dir: **blur hanya area logo**, dilacak per frame (`scripts/bicara/blurlogo.py`: lacak mikrofon klip hitam → blur elips lembut di kiri-bawahnya). **Jangan pakai pita/gradasi yang menutup bagian bawah video** (dikira video blur). Klip lain yang memperlihatkan logo jelas (mis. resepsionis 4429) tidak dipakai.
+- [ ] **Setiap kata kerja di narasi terlihat di gambar pada detik yang sama** (pelajaran Kunjungan Pertama v1: "dokter gigi memeriksa" tanpa adegan pemeriksaan).
+- [ ] Tidak ada benda yang Pak Dir minta tidak ditampilkan (contoh: rak sepatu).
 
 **Audit 3: Teknis dan sinkron (terakhir sebelum render penuh)**
 - [ ] Kunci waktu adegan dari **timestamp per kata (Scribe)**; subtitle cocok dengan kata yang diucapkan; `words` sudah di cfg.
@@ -122,25 +148,57 @@ Lapor ke Pak Dir cukup satu baris: "Audit tulisan: lulus, X hal dirapikan".
 ## 2b. Alur Satu Konten
 
 1. **Ide dan funnel.** Pak Dir suka iklan **MOFU/BOFU**: edukasi yang menyatu dengan jualan.
-2. **Naskah** (narasi + teks layar + adegan). Audit sendiri: hook, logika medis, kapan brand disebut, alur perpindahan.
+2. **Naskah** dengan rumus 8 ketukan (bagian 3). Jalankan checklist 3a sendiri; kirim ke Pak Dir naskah + hasil audit + maks 4 hal yang perlu divalidasi.
 3. **Papan gambar** (HTML artifact): panel 9:16 per adegan, narasi, teks layar, bunyi, transisi, alur produksi.
 4. **Tes gaya** 5–9 detik untuk adegan baru.
 5. **Narasi ElevenLabs** (bagian 4) → **transkripsi Scribe** (bagian 5).
 6. **Gerbang Audit 1–3** (bagian 2), lalu **render penuh di latar** (bagian 6), lembar kontak render penuh, mix, encode, **Audit 4 (`qc.sh`)**, buat cover.
 7. **Review Pak Dir → revisi.** Setelah di-ACC, perbarui skill brand: naskah final dan pelajaran baru.
 
-## 3. Pola Naskah Iklan MOFU/BOFU yang Di-ACC
+## 3. Rumus Naskah Iklan MOFU/BOFU (8 Ketukan) [WAJIB]
 
-1. **Hook angka/kebiasaan** yang dekat dengan target (contoh: "Setahun, bisa 365 cangkir kopi").
-2. **Edukasi proses** ringkas dan visual.
-3. **Momen sadar** yang netral, tanpa memancing rasa malu.
-4. **"Kabar baiknya…"** → solusi.
-5. **Brand disebut di tengah video** dengan nama lengkap klinik, supaya edukasi dan jualan menyatu. Jangan kuliah dulu lalu jualan di akhir.
-6. **Bukti di klinik**: footage asli (datang, ruang tunggu, dokter mengerjakan, pasien tersenyum).
-7. **Gambaran hasil yang positif**.
-8. **Tawaran jelas, harga diucapkan**, ajakan lembut ("Chat admin, konsultasi dulu, ya").
+Disusun dari iklan bleaching v2 dan tambal v2 serta koreksi Pak Dir. Tujuan: penonton **berhenti menggulir → paham masalahnya → percaya → chat admin.**
+Orang tidak membeli perawatan, mereka membeli **lega**. Skrip menjawab berurutan: *Ini soal saya? → Kalau dibiarkan kenapa? → Ada jalan keluar? → Kenapa di sini, dan langkah pertamanya apa?*
 
-Durasi ±50–60 detik; alur yang mengalir lebih penting daripada angka pas. Turunan: 15 detik (retarget) dan 4:5 (Feed) bila diminta.
+| # | Ketukan | Isi | Contoh (tambal) |
+|---|---|---|---|
+| 1 | Hook fakta (0–4 dtk) | Fakta mengejutkan / menggugurkan anggapan | "Lubang gigi itu nggak pernah nutup sendiri." |
+| 2 | "Itu saya" | Gejala/kebiasaan ringan yang umum | "Awalnya cuma ngilu sedikit… jadi dicuekin." |
+| 3 | Yang terjadi di dalam | Edukasi visual 1–2 kalimat | "Di dalam, lubangnya melebar, makin dekat ke saraf." |
+| 4 | Dua jalan | Taruhan jelas, nada tenang | "Kalau masih kecil, cukup ditambal. Sampai saraf, bisa sakit berdenyut." |
+| 5 | Solusi + brand (+ harga bila ada) | Nama perawatan tegas + nama lengkap klinik **di tengah video** | "Solusinya, perawatan tambal gigi. Di Klinik Gigi Ruma Dental, mulai…" |
+| 6 | Alasan percaya | Bukti nyata, bukan pujian | Footage dokter, "dicek dulu", "dikerjakan dokter gigi" |
+| 7 | Hasil yang diinginkan | Gambaran hidup sesudahnya, positif | "Es teh pun aman lagi." |
+| 8 | Ajakan ringan + pengaman | Langkah terkecil + penurun risiko | "Ada garansi setelah perawatan. Chat admin, cek dulu, ya." |
+
+**6 aturan:**
+1. Hook selalu **fakta**, bukan pertanyaan pribadi ("Gigimu berlubang?" ✗).
+2. Taruhan nyata, **nada tenang**: tanpa darah, bengkak, nanah, kata "parah".
+3. Brand disebut **di tengah**, menyatu dengan solusi.
+4. Hilangkan **hambatan terbesar** per layanan:
+   - Tambal: "nanti saja" → dua jalan sekarang vs nanti.
+   - PSA: takut dicabut/sakit → "nggak selalu harus dicabut", "bius lokal" (bila valid).
+   - Crown/veneer: mahal, ragu → "dicek dulu, dijelaskan pilihan dan biayanya".
+   - Bungsu/cabut: takut → "dicek dulu", "dikerjakan dokter gigi".
+   - Anak: takut trauma → "pengalaman pertama yang menyenangkan".
+5. Ajakan = **langkah terkecil** ("cek dulu", "konsultasi dulu").
+6. Klaim **hanya yang bisa dibuktikan**. Dilarang: "nyaris nggak kelihatan", "tanpa sakit", "pasti selamat", "permanen", "steril", "terbaik", "dikeraskan dengan sinar", foto sebelum-sesudah. Aman: "sewarna gigi", "dicek dulu", "dikerjakan dokter gigi", "garansi setelah perawatan", "tujuannya…".
+
+**Bahasa:** santai dan dekat ("dicuekin", "cek dulu", "ya"); satu ide per kalimat (±12 kata); angka konkret; benda sehari-hari jadi benang cerita (es teh, kopi). Solusi disebut dengan pola Pak Dir: **"Solusinya, perawatan …"**.
+
+Durasi ±50 detik (±105–115 kata narasi + kartu 3 dtk). Turunan: 15 detik (retarget) dan 4:5 bila diminta.
+
+### 3a. Checklist Naskah — DIJALANKAN SENDIRI, BUKAN DIKIRIM KE PAK DIR [WAJIB]
+Pak Dir: *"Itu checklist kau yang checklist sendiri."* Sebelum naskah dikirim, centang sendiri lalu laporkan **hasilnya** (tabel "draf awal → masalah → diganti jadi") dan **hanya hal yang butuh validasi Pak Dir** (maks 4).
+- [ ] Hook fakta, terbaca ≤3 detik
+- [ ] Ada momen "itu saya"
+- [ ] Ada dua jalan / taruhan, nada tenang
+- [ ] Solusi tegas + "Klinik Gigi Ruma Dental" (nama lengkap) di tengah
+- [ ] Bukti nyata (footage/fakta), bukan pujian
+- [ ] Gambaran hasil positif, tanpa janji
+- [ ] Ajakan ringan + pengaman yang benar-benar berlaku
+- [ ] Tidak ada klaim terlarang; fakta medis yang belum pasti ditandai ⚠️, bukan dicentang
+- [ ] Jumlah kata cocok dengan durasi; data resmi (alamat, WA, harga) sesuai skill brand
 
 **Batasan iklan kesehatan (Meta):** jangan menyiratkan tahu kondisi penonton, tanpa foto sebelum-sesudah, tanpa janji hasil tertentu, tanpa close-up klinis mulut asli, hindari kata "gratis" untuk layanan medis. Fakta medis harus benar; Pak Dir (dokter gigi) memvalidasi bila ragu.
 
@@ -217,7 +275,8 @@ Suara latar fade-in 0,6 dtk dan fade-out hanya **0,5 dtk terakhir**. Mix SFX: `m
 
 - Satu fokus per layar. Teks dua tingkat (label kecil + poin utama), singkat, di area aman (hindari ±15% atas dan ±35% bawah).
 - Gerakan kamera pelan dan berlanjut antar-adegan. Angka berjalan untuk hook.
-- Ilustrasi gigi: **senyum** (bibir + deretan gigi, tanpa wajah/mata), lalu zoom ke satu gigi untuk proses. Jangan satu gigi berdiri sendiri.
+- Ilustrasi gigi: **senyum** (bibir + deretan gigi, tanpa wajah/mata), lalu zoom ke satu gigi untuk proses.
+- **Potongan gigi wajib bergaya buku pelajaran** (`scripts/molar.js`): geraham dengan mahkota bertonjol + dua akar, dipotong tegak dari depan, lapisan email putih / dentin krem / saraf merah muda, boleh berlabel. Jangan bentuk kapsul atau balok (v1 iklan tambal ditolak Pak Dir karena tidak dikenali).
 - Logo tampil alami di dalam adegan, dari file resmi; tidak dibuat AI.
 - Casting footage: orang yang tampil sebagai pasien tidak boleh muncul juga sebagai admin dalam video yang sama.
 - Lihat hasil sendiri sebelum mengirim: buat lembar kontak 12–16 frame dan periksa.
@@ -307,3 +366,43 @@ Berlaku untuk **semua video**: konten TOFU (@dalamgigi), **iklan Ruma Dental (MO
 
 **11C. Motion blur di gerakan cepat**
 `scripts/render_frames.js <page> <cfg> all|range A B|p t...` (+ `blend_blur.py`). Rentang di `cfg.blur=[[a,b],...]` dirender 3 sub-frame (shutter 180°) lalu dirata-rata. Pakai hanya di dive, whoosh, dan perpindahan kamera cepat (render 3× lebih lama di rentang itu).
+
+## 12. Jalur Produksi Tambahan [TERBUKTI 18 Nov 2026]
+
+Urutan wajib tetap sama: naskah OK → papan gambar ACC → (suara) → audit → render → QA frame + zona aman → kirim.
+
+### 12a. Transkripsi lokal (gratis)
+`python3 -I .claude/skills/produksi-video-klinik/scripts/stt.py medium <audio1.wav> [...]` → `stt.json` (waktu per kata) di folder audio pertama. Izin sudah ada di `.claude/settings.json`; jaringan huggingface sudah dibuka di lingkungan "Video Editing". Dipakai untuk rekaman asli (ucapan staf) dan narasi ElevenLabs (kunci waktu adegan + caption). ElevenLabs tidak bisa mengambil file langsung dari Drive (tipe file octet-stream).
+
+### 12b. Video orang bicara (admin/staf, suara asli) — `scripts/bicara/`
+1. Unduh klip dari Drive (`drive.usercontent.google.com/download?id=…&confirm=t`), transkripsi (12a), susun EDL dari waktu kata (buang salah ucap & ucapan berulang).
+2. Atribut brand lain di seragam → `blurlogo.py` (lacak mikrofon klip hitam → blur elips di kiri-bawahnya), sumber diproses ke 30 fps.
+3. Overlay per kondisi (`ov2.html` + `shot_states.js`/`shot_states_var.js`) → urutan per frame (`mkseq.py`, termasuk pudar kartu penutup) → `build2.py`/`build_var.py` (crossfade 0,24 dtk, zoom bergantian 1,00/1,08 + dorong 2%, whoosh/pop/ting, suara ruangan klinik asli, loudnorm -16).
+4. Hook "spil/tanya" → kotak "Balas komentar" di atas gestur tunjuk (tanpa nama akun). Subtitle 2–4 kata di atas kepala.
+5. Varian A/B dari satu rekaman: B (bicara + bukti klinik), C (dibuka cuplikan klinik 2,6 dtk).
+
+### 12c. Iklan footage + narasi + caption kinetik + stiker — `scripts/kinetik/`
+1. Narasi Ricky (2 versi) → pilih jeda terapi → transkripsi lokal → `plan.json` (EDL per kata, potongan caption, waktu stiker/kartu langkah/tombol).
+2. Data pasien di film rontgen → `filmdet.py` (deteksi lembar film per frame, blur label). Cek ≥6 titik per klip.
+3. `mkstates.py` (kondisi per frame + animasi pop) → `shotu.js` (render unik) → `build_k.py` (crossfade, zoom bergantian, whoosh tiap potongan, pop tiap stiker, suara ruangan, mix).
+4. Caption gaya label (kotak putih, teks Deep Teal, kata kunci Turquoise), stiker ikon (bukan emoji wajah).
+
+### 12d. Poster/desain statis
+Pakai skill `desain-grafis-ruma`. Font resmi Ruma sejak 20 Nov 2026 untuk grafis **dan** video: Neue Montreal + Montserrat (render lokal: Montserrat sampai file Neue Montreal berlisensi tersedia).
+
+### 12e. Konektor
+Nama konektor ElevenLabs bisa berubah setelah masuk ulang (mis. `ElevenLabs-56894adb`). Bila konektor ditolak/kedaluwarsa: minta Pak Dir masuk ulang di claude.ai/customize/connectors; jangan memakai suara pengganti.
+
+## 13. Pelajaran Gaya 3 versi Ruma [TERBUKTI 21 Nov 2026, Tambal Ulang drg. Ainun]
+- **Mencerahkan klip gelap bisa memunculkan wajah pasien** (mata pasien terlihat setelah gamma 1,35 di klip sinar biru). Cek ulang blur wajah **setelah** koreksi cahaya, bukan sebelum.
+- Klip gimbal bergerak: tandai posisi wajah tiap 0,5 dtk dari frame bergrid lalu interpolasi (lebih andal daripada deteksi wajah untuk pasien berbaring).
+- Kertas di meja dokter = kemungkinan dokumen pasien → blur kotak.
+- Whisper perlu `initial_prompt` konteks gigi + `word_timestamps` untuk subtitle presisi; kata yang tetap tidak jelas ditulis "…" (jangan ditebak).
+- Ucapan berulang di dua klip → pakai sekali saja (potong di cap waktu kata).
+- Garis penunjuk harus berakhir tepat di benda yang dimaksud; cek di 3 titik waktu karena orang bergerak.
+- **Suara bergema "seperti di dalam ruangan"** (koreksi Pak Dir v1): rekaman DJI Mimo di meja memakai **mic kamera** (stereo, fase ±0,6, RMS −38 dB) padahal dokter memakai mic kerah. Cek dulu: `aphasemeter` ≈1,0 = mic kerah/mono, ≈0,6 = mic kamera. Kalau mic kamera: minta file rekaman internal mic kerah (DJI Mic) ke Pak Dir; sementara bersihkan dengan rantai `VOICE` di `mix_v2.py` (mono, highpass 100, afftdn, potong 250 Hz −5 dB, angkat 3,2 kHz +4 dB, agate, kompresor) → noise floor turun ±9 dB.
+- Script: `scripts/gaya3-ruma/` (v2 = `build_v2.py` crossfade + punch-in, `ov2.html` subtitle 2–4 kata + pop, `mix_v2.py` suara bersih + SFX).
+
+- Model konsultasi dokter (hook ucapan → konsultasi → tindakan → pesan sesudahnya): `scripts/konsultasi-dokter/` (Ruma: Konsultasi Tambal drg. Ainun v1, 21 Nov 2026).
+
+- **Footage iPhone (HLG HDR 4K60)**: cukup `scale` biasa (hasil natural, sesuai grading Ruma clean-soft); jangan tonemap hable (terlalu hangat) atau zscale langsung (highlight terbakar). Pola iklan full footage + narasi Ricky: `scripts/iklan-footage-narasi/` (Iklan Scaling Ruma v1, 21 Nov 2026).

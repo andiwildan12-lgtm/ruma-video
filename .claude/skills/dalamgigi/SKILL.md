@@ -1,6 +1,6 @@
 ---
 name: dalamgigi
-description: Semua tentang akun TOFU @dalamgigi (Instagram + TikTok) milik Klinik Gigi Ruma Dental, Makassar. Gunakan SETIAP KALI Pak Dir menyebut Dalam Gigi, @dalamgigi, konten TOFU Ruma, konten edukasi gigi 3D, video "Kenapa/Gimana/Bayangin", sampul/caption/jadwal unggah akun ini, atau meminta konten berikutnya (#02, #03, …). Berisi identitas akun, aturan isi, formula video, gaya visual, sampul, caption, alur kerja, rencana 9 konten, dan log unggahan, supaya konten baru bisa langsung dikerjakan tanpa mengulang diskusi.
+description: Semua tentang akun TOFU @dalamgigi (Instagram + TikTok) milik Klinik Gigi Ruma Dental, Makassar. Gunakan SETIAP KALI Pak Dir menyebut Dalam Gigi, @dalamgigi, konten TOFU Ruma, konten edukasi gigi 3D, video "Kenapa/Gimana/Bayangin", sampul/caption/jadwal unggah akun ini, atau meminta konten berikutnya (#02, #03, …). Berisi identitas akun, aturan isi, formula video, gaya visual, sampul, caption, alur kerja, rencana 9 konten, log unggahan, SOP unggah otomatis IG via Windsor.ai, serta evaluasi & target performa, supaya konten baru bisa langsung dikerjakan tanpa mengulang diskusi.
 ---
 
 # Akun @dalamgigi
@@ -8,6 +8,20 @@ description: Semua tentang akun TOFU @dalamgigi (Instagram + TikTok) milik Klini
 > **Anti-slop (21 Nov 2026):** semua naskah, teks layar, sampul, caption, dan balasan admin wajib lulus *Audit Tulisan Anti-Slop* di skill `produksi-video-klinik` bagian 2c (tanpa klaim/angka karangan, tanpa kata kosong, tanpa tanda pisah panjang, suara brand tetap ada).
 
 Panggil pengguna **"Pak Dir"** (dokter gigi, owner Ruma Dental & UPG Dental Care). Bahasa Indonesia tegas dan praktis. Kritis, audit sendiri sebelum mengirim.
+
+Strategi besar akun (tujuan, kanal, cara menang, fase): **`references/social-strategy.md`**. Siapa penontonnya (segmen, mitos, bank bahasa): **`references/audience.md`**. Baca keduanya sebelum merencanakan konten.
+
+## 00. ALUR BERLAKU SEKARANG [DISEPAKATI Pak Dir 20 Nov 2026 — menggantikan alur otomatis di bagian 12, 14b, 15 bila bertentangan]
+1. **Konten dibuat di HARI tayang** (tanggal ganjil, tayang 19.00 WITA; video jadi paling lambat 12.00 WITA) oleh chat produksi. Ada request topik di komentar → itu yang dibuat; tidak ada → topik cadangan (urutan: behel → mitos sikat keras → gigi kuning → tebak geraham → ngilu; draf di `references/paket-naskah-dalamgigi-21-29nov.md` & `naskah-behel-07.md`).
+2. **Video tidak lewat Google Drive.** Dikirim ke Pak Dir di chat; **Pak Dir mengunggah sendiri ke Instagram.** Claude TIDAK memposting Reel.
+3. Jadwal otomatis yang **masih aktif** (chat "Audit akun dan upload otomatis"): balas komentar tgl ganjil 20.22 (`trig_01TnPm9nDRoJYfowrQurgcZY`; request topik → papan status Drive) dan laporan mingguan Senin 07.35 (`trig_015b45txWH6yDG6PUv3nFFNR`). **Dimatikan 20 Nov:** posting otomatis (`trig_01Y5Drz2z5yXBaVX7W2Rx12a`) dan paket naskah mingguan (`trig_01RVnpTZLs6KoojaJQKqn7UA`). Chat produksi punya pengingat pagi 08.33 WITA tgl ganjil.
+
+## 0. SINKRON ANTAR-CHAT [WAJIB, Pak Dir 20 Nov 2026]
+Pak Dir tidak mau menjadi "penghubung" antar-chat. Setiap chat yang mengerjakan @dalamgigi, **sebelum mulai kerja**:
+1. `git fetch origin` lalu gabungkan semua cabang `claude/*` yang mengubah `.claude/skills/dalamgigi/` atau `output/dalamgigi-*` ke cabang kerjanya (`git merge`), selesaikan konflik (ambil keduanya, jangan hapus kerja chat lain), commit & push.
+2. Baca **papan status di Drive: `Dalam Gigi/STATUS-dalamgigi.md` (selalu ambil file TERBARU dengan nama ini; versi lama dibuang ke sampah karena konektor tidak bisa menimpa isi file)** (stok, jadwal tayang, menunggu ACC, siapa mengerjakan apa).
+3. Setiap selesai satu langkah (naskah, render, unggah, tayang): **perbarui papan status Drive + log skill**, commit & push.
+4. Jangan menggarap topik/nomor yang di papan status sudah dipegang chat lain.
 
 Skill pendamping (wajib dibaca bersama):
 - `produksi-video-klinik` → teknik render 3D, narasi ElevenLabs, SFX, **Gerbang Audit 4 Lapis + QC otomatis**, teks kinetik, motion blur, paket kirim, sampul.
@@ -70,7 +84,7 @@ Editing **tetap dikerjakan Claude sampai video jadi** (animasi 3D, teks, SFX, tr
    - Pertanyaan harus **gampang dijawab tanpa mikir** (ya/tidak, A/B, angka, satu kata). Hindari pertanyaan terbuka yang berat atau yang membuat orang membuka kondisi kesehatan pribadi secara detail.
    - **Caption** ditutup pertanyaan yang sama + "Pertanyaan terbanyak kita jadikan video berikutnya" + ajakan simpan/follow. **Komentar pertama** (disematkan) = pertanyaan yang sama dari akun.
    - **Balas semua komentar ≤1 jam** setelah unggah (sinyal kuat ke algoritma); jawaban singkat, ramah, edukatif, tanpa jualan. Pertanyaan keluhan pribadi dijawab umum + "sebaiknya diperiksa langsung ke dokter gigi" (tanpa menyebut harga/promo).
-   - Unggah sebagai **Collab** dengan akun utama Ruma bila memungkinkan, dan bagikan ke Story akun Ruma.
+   - ~~Collab dengan akun Ruma & share ke Story Ruma~~ **tidak dipakai** (keputusan Pak Dir 18 Nov 2026: @dalamgigi berdiri sendiri).
    - Dilarang komentar palsu/akun bodong; dorong interaksi asli.
 
 ## 3. Formula Video
@@ -126,12 +140,17 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 
 1. Ambil topik berikutnya dari tabel di bagian 8, atau dari permintaan Pak Dir. **Lolos Uji Value (bagian 1b)** dulu; sertakan hasilnya singkat saat mengajukan naskah.
 2. Tulis **naskah** (narasi + adegan + angka pojok + subtitle) sesuai formula bagian 3 dan aturan bagian 2. Sertakan daftar fakta medis yang perlu divalidasi.
-3. Pak Dir validasi / OK.
-4. Narasi ElevenLabs **1 versi saja (generations_count: 1)**, keputusan Pak Dir 20 Nov: hemat kredit → **transkripsi Scribe** (timestamp per kata, gratis) → kunci waktu adegan + `words` di cfg.
+3. Pak Dir validasi / OK naskah.
+3b. **Papan gambar** (frame probe per adegan) dikirim → **ACC Pak Dir**. Tanpa ACC papan gambar: dilarang membuat suara atau render.
+4. Narasi ElevenLabs **1 versi saja (generations_count: 1)**, keputusan Pak Dir 20 Nov: hemat kredit → **transkripsi Scribe** (timestamp per kata) → kunci waktu adegan + `words` di cfg. Perbaikan kecil: sambung potongan TTS pendek.
 5. **Gerbang Audit 4 Lapis** (naskah/fakta → frame probe → sinkron teknis → setelah encode: `qc.sh` harus LULUS), tanpa saran baru; perbaiki sendiri. Tampilkan ke Pak Dir tabel "sebelum → sesudah" bila naskah diubah.
 6. Render penuh di latar → lembar kontak render penuh → mix SFX → encode tanpa `-shortest` → `qc.sh` → sampul.
-7. **Paket kirim**: video `dalamgigi-NN-topik-vN.mp4`, sampul, caption IG, caption TikTok, komentar pertama (file `output/dalamgigi-NN-caption.md`).
-8. Setelah terbit: perbarui **log unggahan** (bagian 9) dan status di tabel rencana.
+7. **Paket kirim**: video `dalamgigi-NN-topik-vN.mp4`, sampul, caption IG, caption TikTok, komentar pertama (file `output/dalamgigi-NN-caption.md`). Caption wajib lolos **Checklist Caption** (bagian 12d).
+8. **Unggah otomatis**: Claude sendiri mengunggah MP4 + sampul ke Google Drive (konektor Drive, folder `Dalam Gigi/Siap Tayang`, link publik) → posting IG via Windsor pada jadwal (bagian 12 & 15). Pak Dir tidak perlu kirim link. TikTok tetap manual.
+9. **Kelola**: +1 jam cek & balas komentar (bagian 12b); +24 jam dan +72 jam tarik data, isi log (bagian 9) dan tabel evaluasi (bagian 13).
+10. Setelah terbit: perbarui **log unggahan** (bagian 9) dan status di tabel rencana. Pelajaran baru → bagian 11.
+
+**Ritme [DISEPAKATI 19 Nov 2026, menggantikan "tiap hari"]: posting SELANG 1 HARI** (19 Nov, 21 Nov, 23 Nov, …) jam 19.00 WITA, ±15 Reel/30 hari, bergantian video utama ↔ Reel pendek (bagian 14b). Selalu ada **stok ≥2 konten jadi**. Fakta medis divalidasi Pak Dir **sekaligus seminggu sekali**.
 
 ## 8. Rencana Konten
 
@@ -156,7 +175,8 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 
 | Topik | Jumlah peminta | Sumber (video #) | Tanggal pertama | Status |
 |---|---|---|---|---|
-| Proses bau mulut | ≥1 (komentar) | #04/#05 | 19 Nov 2026 | Dijawab di #06 (render 20 Nov) |
+| Proses bau mulut | 1 (@ryzenx_86) | #05 | 19 Nov 2026 | ✅ Tayang #06 21 Nov; pengusul sudah dibalas "Sudah kami jawab" |
+| (kandidat) Makanan nyangkut di geraham paling belakang + gusi berdarah saat dibersihkan | 1 (keluhan, bukan request langsung) | #05 | 20 Nov 2026 | Usul: video "Kenapa makanan sering nyangkut di gigi paling belakang?" (sela renggang, lubang, gusi menutupi gigi bungsu). Perlu OK Pak Dir |
 
 ## 9. Log Unggahan
 
@@ -166,9 +186,9 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 
 | 02 | ±17 Nov 2026 (terbit) | `dalamgigi-02-lubang-gua-v1.mp4` (72 dtk, QC lulus) | `cover-lubang-a.png` | Caption `output/dalamgigi-02-caption.md`. Validasi tambahan: "mulai ngilu saat sampai dentin" |
 | 03 | ⏭️ DILEWATI (keputusan Pak Dir 18 Nov: "kurang materinya") | `dalamgigi-03-efek-domino-v1.mp4` (69 dtk, QC lulus) | `cover-domino-a.png` | Caption `output/dalamgigi-03-caption.md`. Asumsi: definisi saluran akar, gigi pengganti tanpa sebut jenis |
-| 04 | 18 Nov 2026 (terbit) | `dalamgigi-04-sakit-hilang-v1.mp4` (75,5 dtk, QC lulus) | `cover-sakit-a.png` | Caption `output/dalamgigi-04-caption.md` (+ balasan admin). CTA request topik |
-| 05 | (belum diunggah) | `dalamgigi-05-gusi-berdarah-v2.mp4` (74,6 dtk, QC lulus; v1 diganti: geraham simetris, gusi bergelombang, papan v5 di-OK) | `cover-gusi-a.png` | Caption `output/dalamgigi-05-caption.md` (+ balasan admin). Ilustrasi M1 bawah |
-| 06 | (belum diunggah; sampul di Drive ID `1MrzToT4yTMqBGAQnzlZ3VcpsKebOfRKd`, video unggah manual) | `dalamgigi-06-bau-mulut-v1.mp4` (73,9 dtk, QC lulus) + `-drive.mp4` 9,5 MB | `cover-bau-mulut.png` | Caption `output/dalamgigi-06-caption.md` (+ balasan ke pengusul). Adegan `napas.html`: lidah 3D (papila + lapisan putih instanced), panel siluet kepala (tanpa wajah). Narasi take B |
+| 04 | 18 Nov 2026 (terbit 11.50 WITA, di luar jam utama) | `dalamgigi-04-sakit-hilang-v1.mp4` (75,5 dtk, QC lulus) | `cover-sakit-a.png` | Caption `output/dalamgigi-04-caption.md` (+ balasan admin). CTA request topik. Caption terbit tanpa #makassar & tanpa ajakan simpan/follow |
+| 05 | 19 Nov 2026 19.11 WITA (posting otomatis Windsor) | `dalamgigi-05-gusi-berdarah-v2.mp4` (74,6 dtk) | sampul: frame 1,5 dtk (`thumb_offset`), PNG tidak bisa dipakai | https://www.instagram.com/reel/Df68RvBDpuV/ · media_id 18042968876907330 · komentar pertama 18119640761114393. Video diunggah manual ke Drive oleh Pak Dir |
+| 06 | 21 Nov 2026 (diunggah Pak Dir) | `dalamgigi-06-bau-mulut-v1.mp4` (73,9 dtk, QC lulus) + `-drive.mp4` 9,5 MB | `cover-bau-mulut.png` | Caption `output/dalamgigi-06-caption.md` (+ balasan ke pengusul). Adegan `napas.html`: lidah 3D (papila + lapisan putih instanced), panel siluet kepala (tanpa wajah). Narasi take B |
 | 07 | (DITAHAN, jangan diunggah) | `dalamgigi-07-behel-v1.mp4` (79,5 dtk, QC lulus) | `cover-behel.png` | Caption `output/dalamgigi-07-caption.md`. Adegan `behel.html`: braket+kawat, diorama gigi dalam tulang (bantalan, tulang diurai/dibangun), rumah bata, meter per, grafik tangga |
 | 08 | 23 Nov 2026 (dikirim, Pak Dir upload) | `dalamgigi-08-makanan-nyangkut-v1.mp4` (90 dtk, QC lulus) | `cover-makanan-nyangkut.png` | Caption `output/dalamgigi-08-caption.md` (format lengkap). Adegan `celah.html` (lengkung rahang diperbaiki). Request keluhan penonton #05 |
 
@@ -212,7 +232,193 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 - v1 #01: hook lemah (layar kosong 4 detik), "benang gigi" tanpa cara, "scaling" tanpa penjelasan, "1 jam setahun" membingungkan, visual monoton (kotak-kotak, satu sudut kamera).
 - Narasi dipotong per kalimat + jeda panjang = kaku dan patah-patah (pelajaran iklan bleaching v1).
 
-## 13. Alur Hari Upload [DIPERBARUI 20 Nov 2026, menggantikan aturan Drive 19 Nov]
+## 12. SOP Unggah & Kelola Otomatis (Windsor.ai) [DISEPAKATI 18 Nov 2026]
+
+**Hak unggah tetap [DISEPAKATI Pak Dir 19 Nov 2026]:** setiap video @dalamgigi yang sudah lolos QC & naskahnya di-OK Pak Dir **langsung diunggah ke Drive dan diposting sesuai jadwal tanpa menunggu perintah lagi**. Pak Dir tidak memasukkan file ke Drive sendiri. Mulai #06, produksi **dan** posting dikerjakan di sesi "Audit akun dan upload otomatis" (punya Windsor, Drive, ElevenLabs, repo); sesi "Konten Dalam Gigi #02" hanya menyerahkan #05 lewat Drive.
+
+**Semua otomatis [DISEPAKATI Pak Dir 19 Nov 2026]:** Claude menjalankan seluruh siklus tanpa menunggu perintah. Pak Dir hanya dihubungi lewat **PushNotification** bila perlu ACC (paket naskah mingguan, komentar sensitif) atau ada masalah (stok kosong, Windsor gagal, ElevenLabs putus).
+
+**Jadwal otomatis aktif (semua masuk ke sesi ini, zona Asia/Makassar):**
+| Jadwal | ID | Kapan |
+|---|---|---|
+| Paket naskah mingguan → notifikasi ACC | `trig_01RVnpTZLs6KoojaJQKqn7UA` | Kamis 10.13 |
+| Posting Reel | `trig_01Y5Drz2z5yXBaVX7W2Rx12a` | Tanggal ganjil 19.07 |
+| Balas komentar | `trig_01TnPm9nDRoJYfowrQurgcZY` | Tanggal ganjil 20.22 |
+| Laporan mingguan | `trig_015b45txWH6yDG6PUv3nFFNR` | Senin 07.35 |
+Catatan: tanggal 31 → tanggal 1 tayang dua hari berturut-turut (wajar).
+
+**Windsor trial [DISEPAKATI]:** dipakai sampai habis; begitu posting otomatis gagal, langsung beri tahu Pak Dir (posting manual dari paket Drive).
+
+Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Media** (`instagram`, account id `17841463796300521`). TikTok **tidak** bisa diposting lewat Windsor → tetap manual.
+
+### 12a. Pembagian Kerja
+
+| Tugas | Claude (otomatis) | Pak Dir / Admin (manual di HP, ±3 menit) |
+|---|---|---|
+| Posting Reel + caption + sampul (`create_video_post`) | ✅ | |
+| Jadwal tayang 19.00–21.00 WITA (`send_later` ke sesi ini) | ✅ | |
+| Komentar pertama dari akun (`create_comment`) | ✅ | **Sematkan (pin)** |
+| Tag lokasi Makassar, atur crop sampul di grid | | ✅ (edit postingan) |
+| Unggah ulang ke TikTok | | ✅ |
+| Balas komentar (`reply_to_comment`), sembunyikan spam (`hide_comment`) | ✅ sesuai 12b | Keluhan kesehatan pribadi → cek dulu |
+| Tarik data performa (+24 jam, +72 jam) | ✅ | |
+
+### 12b. Gerbang Persetujuan (wajib)
+
+1. **Tidak ada yang tayang tanpa "gas" Pak Dir** untuk paket final: video, sampul, caption persis, komentar pertama, jam tayang. Tampilkan semuanya sekali dalam satu pesan sebelum menjadwalkan.
+2. Persetujuan berlaku **per video**, bukan untuk seterusnya.
+3. Balasan komentar yang boleh langsung dikirim setelah video di-"gas": emoji/pujian ("Makasih! 🙏🦷"), usulan topik ("Siap, masuk daftar! 🙏"), pertanyaan umum yang jawabannya **sudah ada di video/caption**.
+4. Yang **ditahan dan dikirim ke Pak Dir dulu**: keluhan/kondisi kesehatan pribadi, pertanyaan medis di luar isi video, komentar negatif/kritik, pertanyaan harga/lokasi klinik (dijawab netral, tanpa promo; arahkan ke bio @rumadentalmks hanya bila ditanya).
+5. Spam/akun bodong/promosi orang lain → `hide_comment` (bukan hapus), laporkan di ringkasan.
+6. Dilarang: komentar palsu, like/komentar dari akun lain, menyebut harga/promo, membalas dengan diagnosis.
+
+### 12c. Langkah Teknis Unggah
+
+1. Claude unggah MP4 + sampul ke Google Drive lewat konektor (`create_file`, `base64Content` = referensi file `sha256:<hash>:<path>`, `disableConversionToGoogleType: true`, folder `Dalam Gigi/Siap Tayang`), lalu `share_file` `permissionId: "anyoneWithLink"`, role reader. (Cadangan: Pak Dir kirim link Drive manual.)
+2. Claude ubah ke link unduhan langsung (`https://drive.google.com/uc?export=download&id=<ID>`), cek dengan `curl -sIL` bahwa yang terambil `video/mp4` (bukan halaman HTML peringatan virus). Bila gagal (file besar / halaman peringatan) → minta Pak Dir posting manual, atau cari hosting publik lain; **jangan memaksa**.
+3. Sampul untuk `cover_url` harus **JPEG** publik. PNG dikonversi dulu (`ffmpeg -i cover.png -q:v 2 cover.jpg`). Tanpa sampul publik → pakai `thumb_offset` (ms) pada frame terbaik.
+4. Spesifikasi IG: MP4/MOV, ≤1 GB, 3 dtk–15 menit, 9:16; caption ≤2.200 karakter; `share_to_feed: true`.
+5. Jadwalkan dengan `send_later` pada jam tayang (zona `Asia/Makassar`); saat terpicu → `create_video_post` → tunggu selesai → ambil `media_id` & permalink lewat `get_data` → `create_comment` (komentar pertama) → kirim checklist manual 12a ke Pak Dir.
+6. **Trial Reel** (`trial_params`, hanya tampil ke non-follower) dipakai hanya untuk uji A/B atas izin Pak Dir (mis. dua versi hook).
+7. Windsor masih **paket TRIAL** (18 Nov 2026): data bisa tertunda (cache, tanpa `force_refresh`) dan koneksi bisa putus saat trial habis. Kalau aksi gagal → laporkan, Pak Dir unggah manual dari paket kirim.
+
+### 12c-2. Pelajaran Teknis Posting #05 (19 Nov 2026) [WAJIB]
+- **Konektor Drive Claude hanya bisa mengunggah ±3 MB per file** → video (10–15 MB) TIDAK bisa diunggah Claude ke Drive. Video harus diunggah manual ke `Dalam Gigi/Siap Tayang` (atau pakai hosting lain, mis. repo publik + GitHub Pages bila Pak Dir buat).
+- Link yang terbukti diterima Instagram: `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t` (file `anyoneWithLink` reader). Container ini tidak bisa mengecek link Drive (proxy memblokir), jadi cek izin dengan `get_file_permissions`.
+- `create_video_post` bisa **timeout 60 dtk padahal berhasil**. JANGAN ulang. Cek `media_count` (user_info, data segar) lalu ambil media_id dengan `get_data` `date_from`=hari ini (field berbeda dari tarikan sebelumnya supaya tidak kena cache).
+- Sampul `cover_url` harus JPEG publik; PNG di Drive tidak bisa → pakai `thumb_offset` (ms) atau unggah sampul JPEG (<3 MB, bisa lewat konektor).
+
+### 12d. Checklist Caption (sebelum tayang)
+
+- [ ] Kalimat pertama = hook yang sama dengan video
+- [ ] Daftar bernomor rapi (`1. ` dengan spasi), tiap anjuran ada caranya
+- [ ] Pertanyaan komentar sama dengan di video + "Pertanyaan terbanyak kita jadikan video berikutnya"
+- [ ] Ajakan **simpan + follow @dalamgigi** ada
+- [ ] Semua hashtag pakai `#` (pelajaran #01/#02: `scaling makassar` tanpa #), **#makassar wajib**
+- [ ] Tanpa harga, promo, "chat admin", ajakan ke klinik
+- [ ] ≤2.200 karakter
+
+## 13. Evaluasi & Target [USULAN 18 Nov 2026, dari audit 3 video pertama]
+
+**Patokan awal (audit 18 Nov):**
+
+| # | Views | Rata-rata tonton | Skip <3 dtk | Simpan | Bagikan | Jam tayang |
+|---|---|---|---|---|---|---|
+| 01 | 10.609 | 24,6 dtk / 66 (37%) | 26% | 57 | 15 | 18.16 |
+| 02 | 6.856 | 23,3 dtk / 72 (32%) | 28% | 49 | 36 | 16.44 |
+| 04 | 1.723 (<24 jam) | 19,4 dtk / 75 (26%) | 47% | 11 | 12 | 11.50 |
+
+Total jangkauan ±17 ribu → hanya **18 follower** (0,1%). Masalah utama akun = **penonton tidak jadi follower**, bukan jangkauan.
+
+**Target per video (cek +72 jam):**
+
+| Ukuran | Target | Bila gagal |
+|---|---|---|
+| Skip <3 dtk | ≤30% | Hook diganti: fakta + visual bergerak di detik 0, tanpa kalimat pembuka |
+| Rata-rata tonton | ≥40% durasi | Potong bagian proses yang mengulang |
+| Disimpan | ≥0,6% jangkauan | Solusi kurang konkret |
+| Dibagikan | ≥0,3% jangkauan | Kurang "oh ternyata" / kurang relatable |
+| Follower baru | ≥0,5% jangkauan | Perkuat ajakan follow + identitas seri |
+
+**Keputusan dari audit:**
+1. Ajakan follow wajib di video **dan** caption (sudah sejak #04/#05).
+2. **Uji durasi [DISEPAKATI]:** #06 (Behel menggeser gigi) dibuat versi **40–45 dtk** (satu proses inti + 2 cara). Bandingkan rata-rata tonton & % selesai dengan #01/#02 sebelum mengubah aturan durasi 50–70 dtk di bagian 2.
+3. Semua video tayang **19.00–21.00 WITA** (belum pernah terpenuhi di #01–#04).
+4. Pola #02 (benda kecil → ternyata besar di dalam) paling banyak dibagikan → prioritaskan topik yang punya "pembalikan" serupa.
+5. Profil: ganti nama tampilan jadi **"Dalam Gigi | Fakta Gigi 3D"** (kolom nama ikut dicari di IG) [DISEPAKATI, eksekusi manual Pak Dir].
+6. Setiap evaluasi ditulis ringkas di log (bagian 9) + pelajaran baru di bagian 11.
+
+### 13b. Laporan Mingguan #1 (Senin 23 Nov 2026, data s.d. 22 Nov)
+Follower 44 (18 → 44 sejak 18 Nov) · 5 reel · total views 81,8 rb · perkiraan like ±1,7 rb (2,1%).
+| # | Views | Tonton rata2 | Skip | Simpan | Bagikan | ±Like |
+|---|---|---|---|---|---|---|
+| 01 | 13.083 | 24,2 dtk (37%) | 26,5% | 77 | 22 | ±290 |
+| 02 | 7.622 | 23,2 dtk (32%) | 28,6% | 57 | 46 | ±275 |
+| 04 | 2.279 | 17,9 dtk (24%) | 50,9% | 17 | 16 | ±60 |
+| 05 | **56.695** | 25,4 dtk (34%) | 31% | 161 | 97 | ±1.070 |
+| 06 (36 jam) | 2.092 | 21,5 dtk (29%) | 33,7% | 6 | 2 | ±35 |
+KPI 30 hari: views 82% ✅ · like 58% ⚠️ (rate 2,1% < 3%) · follower 9% ❌ (44/500).
+Temuan: (1) #05 viral 50 rb jangkauan tapi follower hanya +±20 → konversi follow ±0,05% = masalah utama; (2) hook kontra ("Justru bagian itu yang paling perlu disikat") & "kecil→besar" (#02) menang, pembuka "sakit" kalah (#04); (3) caption #06 dipangkas tanpa isi/cara → simpan 0,3% (terendah).
+**Keputusan [DISEPAKATI Pak Dir 23 Nov 2026, "OK 123"] — berlaku untuk semua video mulai 23 Nov:**
+1. **Mesin follow:** label "DALAM GIGI #NN" di pojok tiap video & sampul; alasan follow di ±detik 3–5 DAN di penutup: "Follow, tiap 2 hari satu hal soal gigi yang jarang dibahas." Pak Dir menyematkan #05, #01, #02 di grid (manual).
+2. **Hook:** pola membalik anggapan ("justru…") atau "kecil ternyata besar". Jangan membuka dengan kata "sakit".
+3. **Caption lengkap** (bagian 6): hook → isi 2 baris → cara bernomor → pertanyaan komentar → simpan & follow → 5–7 hashtag dengan #makassar. Caption pendek dilarang (pelajaran #06: simpan 0,3%).
+
+## 14. Strategi Pertumbuhan & KPI (TOFU / Awareness) [DISEPAKATI 18 Nov 2026]
+
+**Tujuan akun:** awareness. Orang Makassar kenal & ingat "Dalam Gigi oleh Ruma Dental". **KPI utama: Views, Like, Follow.** Indikator pendukung (penyebab): skip <3 dtk, rata-rata tonton, simpan, bagikan, komentar.
+
+### 14a. KPI 30 hari (19 Nov – 18 Des 2026) — disesuaikan untuk ±15 Reel (selang 1 hari)
+Baseline: 3 video, ±19 rb views, rata-rata ±6 rb views/video 3D, 18 follower, like ±2,5% views.
+
+| KPI | Minimum | **Target** | Stretch |
+|---|---|---|---|
+| Total views / 30 hari | 60 rb | **100 rb** | 200 rb |
+| Median views video 3D utama | 3 rb | **5 rb** | 10 rb |
+| Like rate (like ÷ views) | 2,5% | **3%** | 4% |
+| Total like / 30 hari | 1.500 | **3.000** | 8.000 |
+| Follower (dari 18) | 250 | **500** | 1.000 |
+| Konversi follow (follower baru ÷ jangkauan) | 0,3% | **0,5%** | 1% |
+
+Mingguan (3–4 Reel): views ≥25 rb, follower +120. Catatan: API Windsor tidak memberi angka like langsung untuk reel → like = `media_reel_total_interactions` − simpan − bagikan − komentar (perkiraan); cocokkan dengan aplikasi bila selisih.
+
+### 14b. Format — FULL REELS motion 3D [DISEPAKATI 18 Nov 2026]
+Tanpa carousel/foto. Semua konten = Reel motion 3D gaya @dalamgigi (narasi Ricky, SFX, subtitle kinetik).
+
+**Jadwal selang 1 hari [DISEPAKATI 19 Nov 2026]:** urutan bergantian **Utama → Pendek → Utama → Pendek**. Tabel di bawah = menu format; hari diikuti tanggal tayang, bukan nama hari. Pendek dipilih bergilir: Mitos vs Fakta → Jawab Komentar → 1 Fakta 1 Visual → Tebak → Daur ulang.
+
+
+| Hari | Format Reel | Durasi | Biaya produksi |
+|---|---|---|---|
+| Senin | **Video 3D utama** (Kenapa/Gimana) | 40–60 dtk | Tinggi |
+| Selasa | **Mitos vs Fakta** (1 mitos → "faktanya…" → 1 visual proses) | 15–25 dtk | Sedang |
+| Rabu | **1 Fakta 1 Visual**, pakai ulang scene pustaka | 15–25 dtk | Rendah |
+| Kamis | **Video 3D utama** | 40–60 dtk | Tinggi |
+| Jumat | **Jawab Komentar** (pertanyaan penonton) | 20–35 dtk | Sedang |
+| Sabtu | **Tebak/kuis** ("Menurutmu gigi mana…?" jeda 2 dtk → jawaban) | 15–20 dtk | Rendah |
+| Minggu | **Daur ulang pemenang**: potongan video terbaik + hook baru, sebagai Trial Reel | 15–30 dtk | Rendah |
+
+Reel pendek (15–35 dtk) tetap lolos Uji Value (1b) versi ringkas: 1 proses + 1 cara. Aturan durasi 50–70 dtk (bagian 2) hanya untuk video utama, dan sedang diuji turun ke 40–45 dtk (bagian 13).
+
+Semua format tetap lolos Uji Value (1b), aturan isi (2), dan validasi fakta Pak Dir.
+
+### 14c. Mesin Follow (masalah utama: 0,1%)
+1. Identitas seri: label kecil "DALAM GIGI #NN" di pojok kiri atas tiap video/sampul; grid seragam (bagian 5).
+2. Ajakan follow dengan alasan: "Follow, tiap hari satu hal soal gigi yang jarang dibahas."
+3. Profil: 3 postingan disematkan di grid (#01, #02, terbaik terbaru); Sorotan Story "Mulai di sini".
+4. Siklus komentar → video: request penonton dijawab tiap Jumat, pengusul dibalas "Sudah kami jawab 🙌".
+
+### 14d. Distribusi & Uji
+- **Trial Reel**: uji 2 hook untuk topik yang sama; hook pemenang (skip lebih rendah) jadi versi utama.
+- TikTok: unggah ulang manual tiap video (format yang sama, hashtag TikTok).
+- **Tidak dipakai** (keputusan Pak Dir 18 Nov 2026): Collab/Story Ruma, boost berbayar, retarget iklan Ruma. Pertumbuhan murni organik.
+
+### 14e. Laporan
+- Harian (setelah unggah +1 jam): balas komentar, ringkasan singkat.
+- **Senin 07.35 WITA: laporan mingguan** [AKTIF, jadwal otomatis `trig_015b45txWH6yDG6PUv3nFFNR`, masuk ke sesi "Audit akun dan upload otomatis"] (views, like, follow vs target, 3 video terbaik/terburuk + penyebab, keputusan minggu ini).
+- Akhir 30 hari: evaluasi apakah ritme harian dipertahankan (kualitas > kuantitas bila median views turun >30%).
+
+## 15. Mesin Produksi Mingguan Otomatis [DISEPAKATI 19 Nov 2026]
+
+Tujuan: Pak Dir cukup **1 kali persetujuan per minggu**; sisanya (produksi, unggah, posting, balas komentar ringan, laporan) jalan sendiri.
+
+| Kapan | Siapa | Apa |
+|---|---|---|
+| Jumat | Claude | Siapkan **paket minggu depan**: 7 naskah (sesuai 14b) + papan gambar + daftar fakta medis yang perlu divalidasi, dalam 1 pesan |
+| Sabtu/Minggu | **Pak Dir** (±15 menit) | Balas "OK semua" atau koreksi per nomor. Ini satu-satunya gerbang manusia (fakta medis & nama Ruma) |
+| Minggu–Senin | Claude | Narasi ElevenLabs, render, QC 4 lapis, sampul, caption (checklist 12d) → unggah ke Drive `Dalam Gigi/Siap Tayang` |
+| Selang 1 hari 19.00 WITA | Claude (jadwal otomatis) | Posting reel hari itu + komentar pertama → kirim ringkasan singkat |
+| Hari tayang 20.15 WITA | Claude (jadwal otomatis) | Cek komentar, balas yang ringan (12b), tahan yang sensitif untuk Pak Dir |
+| Senin 07.35 WITA | Claude (jadwal otomatis, AKTIF) | Laporan mingguan |
+| HP Pak Dir (±1 menit/hari) | **Pak Dir/admin** | Sematkan komentar pertama, tag lokasi (opsional), unggah ulang ke TikTok |
+
+Syarat teknis:
+- **Satu sesi produksi + posting** (sesi "Audit akun dan upload otomatis") karena sesi ini yang memegang konektor Windsor, Drive, dan repo. Sesi lain tidak bisa saling ambil file (container terpisah); file video hanya bisa dipindah lewat Drive.
+- File video tidak masuk Git; stok tayang ada di Drive `Dalam Gigi/Siap Tayang`, nama `dalamgigi-NN-topik-vN.mp4` + `-caption.md`. Setelah tayang → pindah ke `Dalam Gigi/Sudah Tayang`.
+- Konektor ElevenLabs sering minta masuk ulang; bila putus, produksi narasi berhenti dan Pak Dir diberi tahu (tanpa suara pengganti).
+- Windsor paket TRIAL: bila habis, posting otomatis berhenti → paket kirim tetap tersedia di Drive untuk diunggah manual.
+
+## 16. Alur Hari Upload [DIPERBARUI 20 Nov 2026 di chat produksi, menggantikan aturan Drive 19 Nov; lihat juga bagian 00]
 
 Keputusan Pak Dir 20 Nov:
 - **Konten dibuat di hari upload.** Tayang 19.00 WITA → video harus jadi paling lambat **12.00 WITA**.
