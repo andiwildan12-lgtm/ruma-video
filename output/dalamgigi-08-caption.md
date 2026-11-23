@@ -2,24 +2,20 @@
 Topik dari keluhan penonton di komentar #05 (nama akun tidak disebut di video).
 
 ## Caption Instagram
-Gigi paling belakang justru paling sering jadi tempat makanan nyangkut. Biasanya karena ada celah yang nggak seharusnya ada 👇
+Makanan sering nyelip di geraham belakang, terus lidah sibuk ngorek-ngorek? Justru itu tanda ada celah yang nggak seharusnya ada 👇
 
-Gigi yang sehat saling menempel rapat, jadi makanan meluncur lewat. Kalau ada celah, serat makanan terdorong masuk tiap mengunyah, kuman memakannya, dan gusi di sela itu meradang. Makanya gusi berdarah saat dibersihkan.
+Gigi yang sehat menempel rapat, gusinya mengisi penuh selanya. Celah biasanya muncul karena lubang tepat di titik tempel gigi, atau tambalan yang jelek (nggak nyentuh gigi sebelah, atau pinggirnya menonjol). Tiap mengunyah, serat makanan terjepit di situ, kuman memakannya, dan gusi sela meradang sampai berdarah.
 
-Penyebab celah yang paling sering:
-1️⃣ Lubang di sisi gigi (nggak kelihatan dari atas)
-2️⃣ Tambalan yang bentuknya kurang pas
-3️⃣ Gigi bungsu miring atau baru keluar setengah
-4️⃣ Gigi bergeser karena ada gigi yang sudah dicabut
+Penyebab lain yang juga sering: gigi bungsu yang tumbuh miring, atau gigi bergeser miring setelah ada gigi yang dicabut.
 
 Yang bisa dilakukan:
 1️⃣ Setelah makan, bersihkan pelan dengan benang gigi atau sikat sela
-2️⃣ Jangan dicungkil pakai tusuk gigi atau peniti
-3️⃣ Kalau rutin, berdarahnya biasanya berkurang dalam 1–2 minggu
-4️⃣ Celahnya nggak menutup sendiri, jadi periksa ke dokter gigi untuk cari penyebabnya
+2️⃣ Jangan dicungkil pakai tusuk gigi atau peniti: gusi bisa makin turun dan celahnya makin besar
+3️⃣ Kalau rutin, berdarahnya biasanya reda dalam 1–2 minggu
+4️⃣ Celahnya nggak menutup sendiri, jadi periksa ke dokter gigi: lubang ditambal, tambalan yang jelek diperbaiki
 
 Kamu sering nyangkut di gigi sebelah mana? Tulis di komentar 👇
-Simpan biar nggak lupa, dan follow @dalamgigi: tiap 2 hari satu hal soal gigi yang jarang dibahas 🦷
+Simpan biar nggak lupa, dan follow @dalamgigi 🦷
 
 #dalamgigi #faktagigi #kesehatangigi #makanannyangkut #gusiberdarah #benanggigi #makassar
 
@@ -36,7 +32,7 @@ Balas komentar keluhan aslinya di #05: "Ini videonya sudah jadi, semoga membantu
 - Usulan topik → "Siap, masuk daftar! 🙏 Makasih idenya."
 - "Pakai tusuk gigi boleh nggak?" → "Sebaiknya benang gigi atau sikat sela ya, tusuk gigi bisa melukai gusi dan memperlebar celah 🙏"
 - "Gusiku berdarah terus" → "Coba bersihkan pelan tiap hari dengan benang gigi. Kalau 2 minggu belum membaik, periksa ke dokter gigi ya 🙏"
-- Tanya keluhan pribadi detail → "Perlu dilihat langsung supaya tepat. Sebaiknya diperiksa ke dokter gigi ya 🙏" (tanpa harga/promo)
+- "Tambalanku kayaknya jelek" → "Bisa dicek ke dokter gigi ya, tambalan yang menonjol atau nggak rapat bisa diperbaiki 🙏" (tanpa harga/promo)
 
 ## Langkah unggah
 Sampul `cover-makanan-nyangkut.png` → crop grid 3:4 → tanpa musik → lokasi Makassar → Collab dengan akun utama Ruma → 19.00 WITA → sematkan komentar pertama.
