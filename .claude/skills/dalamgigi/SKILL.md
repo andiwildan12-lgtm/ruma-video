@@ -204,6 +204,8 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 | 07 | (DITAHAN, jangan diunggah) | `dalamgigi-07-behel-v1.mp4` (79,5 dtk, QC lulus) | `cover-behel.png` | Caption `output/dalamgigi-07-caption.md`. Adegan `behel.html`: braket+kawat, diorama gigi dalam tulang (bantalan, tulang diurai/dibangun), rumah bata, meter per, grafik tangga |
 | 08 | v2 jadi 23 Nov (dikirim ke Pak Dir; v1 diganti) | `dalamgigi-08-makanan-nyangkut-v2.mp4` (88 dtk, QC lulus; formula pemenang, irisan gigi, resleting) | `cover-makanan-nyangkut.png` | Caption `output/dalamgigi-08-caption.md` (format lengkap). Adegan `celah.html` (lengkung rahang diperbaiki). Request keluhan penonton #05 |
 
+| 08 | 23 Nov 2026 (diunggah manual Pak Dir) | `dalamgigi-08-makanan-nyangkut-v2.mp4` (88 dtk) | `cover-makanan-nyangkut.png` | Dari keluhan @mwiwaiii (#05); pengeluh sudah dibalas 23 Nov. Windsor baca data terhenti 23 Nov (paket Free, 3 akun tersambung) |
+
 Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`, #04 `naskah-sakit-04.md`, #05 `naskah-gusi-05.md`, #06 naskah di caption + `scripts/napas_cfg.json`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
 File video tidak masuk Git (sesi cloud sementara): selalu ingatkan Pak Dir mengunduh.
 
