@@ -181,6 +181,8 @@ Cek 48–72 jam setelah terbit: bertahan lewat 3 detik, rata-rata waktu tonton, 
 
 ## 11. Pelajaran yang Tidak Boleh Diulang
 
+- **Prinsip "oh pantas, saya juga begitu" (Pak Dir 23 Nov):** tiap video harus menampilkan kebiasaan/pengalaman penonton yang dikenali (mis. lidah ngorek-ngorek setelah makan ayam, takut membersihkan gusi yang berdarah, tusuk gigi terasa lega). Tunjukkan di narasi DAN visual, lalu jelaskan akibatnya. Gerakan halus: tiap langkah ditahan ±2 dtk, kamera mengalir (blend 1,2 dtk). Gigi sehat digambar rapat dengan gusi sela (papila) mengisi penuh sampai titik kontak.
+
 - **#08 v1 (23 Nov), koreksi Pak Dir:** (1) jangan pakai kalimat "tiap 2 hari" di narasi/layar/caption, cukup "Follow Dalam Gigi, ya." / "Jangan lupa follow, ya."; (2) proses inti harus tergambar jelas dan halus: makanan tersangkut (dikunyah → tertekan → serat masuk pelan → tertahan), cara benang gigi (masuk maju-mundur → peluk sisi gigi bentuk C → naik-turun → sisi sebelahnya), gigi berlubang dilihat dari samping (gigi tetangga dibuat transparan), tambalan rusak (pinggir tidak rapat + menonjol + sisa makanan). Perbaikan narasi kecil: sambung potongan TTS pendek, jangan generate ulang semua.
 
 - **Bug lengkung rahang (ditemukan 23 Nov, #08):** di `gusi.html`/`napas.html`/`behel.html` lengkung `a=3.0,b=3.5,cz=-0.4` terlalu pendek, jadi M2 (k6) bertumpuk dengan M1 (k5) dan M3 salah posisi. Mulai `celah.html` pakai `a=3.0,b=4.8,cz=-1.4` (jarak M1–M2 benar ±1,1). Adegan baru wajib pakai nilai ini; cek posisi gigi sebelum membuat adegan sela/celah.
