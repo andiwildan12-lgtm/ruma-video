@@ -166,7 +166,7 @@ const minM=new THREE.MeshStandardMaterial({color:'#FFFFFF',roughness:0.4,emissiv
 const mins=[];for(let i=0;i<22;i++){const m=new THREE.Mesh(new THREE.OctahedronGeometry(0.03,0),minM);m.visible=false;m.userData={tgt:gumEdge(i).add(V(Math.sin(i*1.7)*0.3,0.05,0)),d:(i%11)*0.12};archG.add(m);mins.push(m);}
 const newPl=[];for(let i=0;i<14;i++){const m=new THREE.Mesh(new THREE.SphereGeometry(0.045,10,8),new THREE.MeshStandardMaterial({color:'#E6C463',roughness:0.8}));m.visible=false;m.userData={tgt:gumEdge(i).add(V(Math.sin(i*2.9)*0.28,0.08,0.05)),d:(i%7)*0.15};archG.add(m);newPl.push(m);}
 const bloodM=new THREE.MeshStandardMaterial({color:'#B5363D',roughness:0.3});
-const blood=[];for(let i=0;i<4;i++){const m=new THREE.Mesh(new THREE.SphereGeometry(0.05,14,10),bloodM);m.visible=false;m.userData={tgt:gumEdge(i+1).add(V((i-1.5)*0.2,-0.02,0.04))};archG.add(m);blood.push(m);}
+const blood=[];for(let i=0;i<2;i++){const m=new THREE.Mesh(new THREE.SphereGeometry(0.05,14,10),bloodM);m.visible=false;m.userData={tgt:gumEdge(i+1).add(V((i-1.5)*0.2,-0.02,0.04))};archG.add(m);blood.push(m);}
 // brush
 const brush=new THREE.Group();archG.add(brush);
 {const bm=new THREE.MeshStandardMaterial({color:'#A9BFA6',roughness:0.6});const head=new THREE.Mesh(new RoundedBoxGeometry(0.95,0.42,0.14,3,0.06),bm);head.position.z=0.12;brush.add(head);
@@ -246,6 +246,17 @@ const scratch=new THREE.Mesh(new THREE.CapsuleGeometry(0.025,0.18,4,8),new THREE
 {const sp=new THREE.Mesh(new THREE.CircleGeometry(0.09,24),new THREE.MeshBasicMaterial({color:'#3B2A20'}));sp.position.set(0.17,-0.12,0.006);sp.userData.spot=1;filG.add(sp);}
 
 const fiber2=new THREE.Mesh(fiber.geometry,fibM);fiber2.scale.setScalar(0.8);archG.add(fiber2);
+
+// ---- v4: food wedge filling the gap fully ----
+const wedgeG=(()=>{const g=new THREE.BoxGeometry(0.34,0.55,0.62,8,10,8);const p=g.attributes.position;const v=new THREE.Vector3();
+  for(let i=0;i<p.count;i++){v.fromBufferAttribute(p,i);const n=Math.sin(v.y*31+v.z*17)*0.012+Math.sin(v.z*43)*0.01;v.x+=n;v.z+=Math.sin(v.y*23)*0.008;if(v.y>0.25){v.y+=0.04*Math.sin(v.z*19)+0.03*Math.sin(v.z*41);}p.setXYZ(i,v.x,v.y,v.z);}g.computeVertexNormals();return g;})();
+const wedgeM=new THREE.MeshStandardMaterial({color:'#FFFFFF',roughness:0.92});
+const fibStripe=(()=>{const c=document.createElement('canvas');c.width=64;c.height=256;const x=c.getContext('2d');x.fillStyle='#DCC8A4';x.fillRect(0,0,64,256);for(let i=0;i<22;i++){x.strokeStyle=i%2?'#CFB994':'#E6D5B4';x.lineWidth=2+(i%3);x.beginPath();const xx=i*3;x.moveTo(xx,0);x.bezierCurveTo(xx+6,80,xx-6,170,xx+3,256);x.stroke();}const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t;})();
+wedgeM.map=fibStripe;wedgeM.clippingPlanes=[fibClip];
+function mkWedge(){const g=new THREE.Group();const w=new THREE.Mesh(wedgeG,wedgeM);w.position.y=0.5;w.castShadow=true;g.add(w);
+  for(let i=0;i<2;i++){const s=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(0,0,0),V(0.03*(i-1.5),0.12,0.05),V(-0.02,0.24,0.02*(i-1.5))]),12,0.022,6,false),wedgeM);s.position.set(0.03*(i-0.5),0.74,0.14*(i-0.5));g.add(s);}
+  archG.add(g);return g;}
+const wedge=mkWedge(),wedge2=mkWedge();
 // ================= OVERLAY =================
 const nv=document.getElementById('nv'),nl=document.getElementById('nl'),num=document.getElementById('num'),sub=document.getElementById('sub'),card=document.getElementById('card'),fade=document.getElementById('fade');
 const cta=document.getElementById('cta'),fol=document.getElementById('fol'),clock=document.getElementById('clock'),cal=document.getElementById('cal'),calg=document.getElementById('calg');
@@ -313,6 +324,9 @@ window.render=function(T){
   // gum scratch from toothpick
   scratch.visible=T>=K.luka&&T<K.rutin;if(scratch.visible){scratch.position.copy(gp).addScaledVector(n5,0.42).setY(0.36);scratch.rotation.set(0,0,1.2);scratch.scale.setScalar(Math.min(1,P(T,K.luka,0.4))+0.01);}
   fiber2.visible=C4&&T>=K.c4b+2.2;if(fiber2.visible){const p=T5.g.position.clone().addScaledVector(tanD,T5.w*0.5+0.1);fiber2.position.copy(p).setY(-0.1);fiber2.scale.setScalar(0.8*Math.min(1,P(T,K.c4b+2.2,0.6))+0.001);}
+  // wedge replaces thin fiber
+  wedge.visible=fiber.visible;fiber.visible=false;if(wedge.visible){wedge.position.copy(fiber.position);const m=new THREE.Matrix4().makeBasis(tanD,V(0,1,0),n5);wedge.quaternion.setFromRotationMatrix(m);wedge.scale.setScalar(Math.max(0.001,fiber.scale.x));}
+  wedge2.visible=fiber2.visible;fiber2.visible=false;if(wedge2.visible){wedge2.position.copy(T5.g.position.clone().addScaledVector(tanD,T5.w*0.5+0.14).setY(0));const m=new THREE.Matrix4().makeBasis(tanD,V(0,1,0),n5);wedge2.quaternion.setFromRotationMatrix(m);wedge2.scale.set(0.8,0.75,1).multiplyScalar(Math.min(1,P(T,K.c4b+2.2,0.6))+0.001);}
   // ---- camera ----
   const C=gp.clone(),tan=tanD.clone();
   const at=(h,dist,sd)=>C.clone().addScaledVector(n5,dist).addScaledVector(tan,sd).setY(h);
