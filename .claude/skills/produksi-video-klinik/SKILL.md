@@ -218,6 +218,8 @@ Pak Dir: *"Itu checklist kau yang checklist sendiri."* Sebelum naskah dikirim, c
 - Tag nada di awal kalimat: `[conversational] [warmly]`, `[cheerfully]` untuk "kabar baiknya", `[warmly]` untuk gambaran hasil.
 - Bahasa santai dan sopan ("kamu", "nempel", "pas lihat foto", "ya"). Angka dan harga ditulis dengan kata.
 - **Default 1 versi saja (`generations_count: 1`)**, keputusan Pak Dir 20 Nov: 2 versi membuang kredit. ±950 kredit untuk ±50 detik; ±1.250–1.350 untuk ±65–75 detik. Generate ulang hanya kalau hasil Scribe menunjukkan kata salah/jeda rusak.
+
+- **Bug mix audio (konten 3 drg. Ainun, 23 Nov 2026):** bila tidak ada lapisan yang mulai tepat di detik 0, keluaran `amix` mulai dari pts lapisan pertama → file audio lebih pendek (24,5 vs 27,8 dtk) dan semua suara maju 3,3 dtk. Wajib `amix=...,aresample=48000:async=1:first_pts=0,apad=whole_dur=T` (sudah dipasang di `mix_k1/k2/k3.py`). Selalu cek durasi WAV = durasi video sebelum digabung.
 - Target naskah TOFU ±150–170 kata ≈ 62–68 detik suara (Ricky ±2,5 kata/detik).
 - Panggil `creative_get_flow_run_status` sampai selesai, lalu unduh `content_url` dengan curl.
 
