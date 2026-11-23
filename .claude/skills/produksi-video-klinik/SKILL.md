@@ -102,6 +102,15 @@ Aturan:
 - [ ] `scripts/qc.sh video.mp4 <durasi> <detik_kartu>` → hasil **LULUS** (detail bagian 11A). Kalau ada [CEK], perbaiki dulu; jangan kirim video yang belum lulus.
 - [ ] Lembar kontak dari **render penuh** (bukan probe) sudah dilihat.
 
+## 2d. Prinsip dari Skill Publik GitHub (dipelajari 23 Nov 2026, atas permintaan Pak Dir)
+Sumber (dibaca, idenya diadaptasi, kodenya tidak disalin): `passeth/anatomy-motion` (video anatomi 3D untuk klinik, termasuk gigi) dan `howseen-ai/claude-motion-design` (motion design HTML + Playwright + ffmpeg, MIT).
+- **Micro scene / "menyelam"**: untuk proses DI DALAM gigi (lubang, saraf, karang di bawah gusi), kamera 3D masuk lalu pindah ke **irisan 2D** (email putih, dentin krem, saraf merah muda, gusi, tulang), proses digambar bertahap, lalu kembali ke 3D. Contoh: `scripts/micro_karies.html` (titik tempel → lubang di bawah titik tempel → menjalar → dinding runtuh, tempel hilang → makanan terjepit penuh → gusi sela radang).
+- **Hook = situasi yang dikenali penonton sudah tampil di frame 0**, bagian bermasalah langsung "menyala".
+- **Satu pertanyaan, satu rantai sebab, satu tindakan.** Gambar baru tiap 2–4 dtk; 2–3 sudut kamera yang masing-masing memperlihatkan hal baru; drift pelan saat menahan.
+- **Gerak natural**: tidak ada frame diam kecuali penutup; satu hal bergerak dalam satu waktu; easing halus (tidak linear, tidak memantul berlebihan); shot berikutnya masuk sudah bergerak searah keluarnya shot sebelumnya.
+- **Akurasi medis**: tiap klaim bisa ditelusuri ke sumber/validasi Pak Dir; kata kerja lunak bila bukti terbatas ("bisa", "biasanya"); tanpa janji sembuh; penutup kapan harus ke dokter gigi.
+- **Kritik sebelum render (wajib)**: ambil frame tiap ketukan, beri skor 1–10 untuk hook 2 dtk pertama, terbaca di layar kecil, gerak, variasi, akurasi anatomi, sinkron suara. Perbaiki yang ≤7, ulangi sampai semua ≥8. Jadilah sutradara yang keras, bukan pembuat yang bangga.
+
 ## 2c. Audit Tulisan Anti-Slop [DISEPAKATI 21 Nov 2026, semua brand]
 
 Diadaptasi dari skill akun `antislop-copywriting` untuk Bahasa Indonesia dan klinik gigi. Berlaku untuk **semua teks yang dibaca/didengar orang**: narasi, teks layar, label, sampul, caption IG/TikTok, komentar sematan, balasan admin, iklan. Jalankan setelah draf, sebelum dikirim ke Pak Dir.
