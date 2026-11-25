@@ -187,6 +187,17 @@ Format POV/cerita yang meniru **struktur** konten "POV Nur FO" UPG (Gaya 3), tet
   6. **Hook harus mewakili SELURUH isi** (koreksi Pak Dir, konten 2 drg. Ainun: hook "Kenapa dokter gigi pakai kacamata ini?" padahal isi 5 alat → "tidak nyambung"). Uji: setiap poin di isi video harus menjawab pertanyaan hook; kalau hook hanya cocok untuk poin pertama, ganti hook (contoh v2: "Saat menambal gigi, dokter pakai apa saja?").
   5. Kalau ada yang gagal → usulkan **rekam tambahan singkat** (dokter menjawab 2–3 pertanyaan penonton, mic kerah, 5 menit) sebelum produksi, jangan dipaksakan.
 
+## 10e. Pilar & format konten organik Ruma, dibedakan dari UPG [keputusan Pak Dir 25 Nov 2026]
+Pilar resmi per funnel dari `panduan-visual-terpadu` §7 (terkunci). Setiap analisis footage Ruma WAJIB memilih salah satu baris ini; jangan memakai pilar/format UPG ("Sehari di Klinik", pill emoji, caption per kata oranye, mosaik) dan jangan mengarang format baru.
+| Pilar Ruma | Funnel · CTA | Format | Contoh yang sudah ada | Syarat bahan |
+|---|---|---|---|---|
+| **Ruma Menjelaskan** | TOFU · Simpan untuk nanti | dokter menjelaskan/konsultasi dari rekaman asli: hook potongan ucapan → penjelasan dokter → pesan sesudahnya (model `produksi-video-klinik/scripts/konsultasi-dokter`) | Konsultasi Tambal drg. Ainun | ucapan dokter jelas, mic dekat |
+| **Kalau Ditunda** | TOFU · Simpan untuk nanti | cerita kasus Gaya 3 Ruma (§10d): kondisi yang ditunda → akibat → yang dilakukan dokter | Tambal Ulang drg. Ainun | kasus nyata + penjelasan sebab-akibat dari dokter |
+| **Disiapkan untukmu / Tur Klinik** | MOFU · Tanyakan langsung | "Di Balik …": langkah n/5 + nama alat/persiapan, suara asli alat | Di Balik Loupe drg. Ainun · Hak Pasien drg. Ainun | footage alat/ruangan/persiapan jelas, label dicek dokter |
+| **Cerita Pasien lintas usia / Before-After + konteks** | BOFU · Jadwalkan konsultasi | testimoni/hasil dengan konteks, tanpa klaim berlebihan | belum ada | izin tertulis pasien wajib |
+**Tidak dipakai untuk Ruma (sama dengan UPG):** montase jam rekam ("Berapa lama sih…?").
+**Rasa Ruma vs UPG:** Ruma = tenang, bersih, premium; Montserrat Deep Teal + blok Turquoise; blur halus (bukan mosaik); suara ruangan terus-menerus + crossfade/whoosh; penutup seragam 4 dtk dengan WA & alamat. UPG = ramah, hangat, ramai klinik nyata; pill emoji, caption per kata oranye, mosaik, penutup oranye tanpa WA.
+
 ## 10c. Akun TOFU Ruma [DISEPAKATI, 16 Nov 2026; detail terkini di skill `dalamgigi`]
 
 - **Platform utama: Instagram**, unggah ulang ke TikTok (dan YouTube Shorts bila sempat). Alasan: iklan Ruma berjalan di Meta, jadi penonton akun TOFU di IG bisa di-retarget ke iklan MOFU/BOFU (audiens interaksi IG, filter lokasi Makassar). Penonton TikTok tidak bisa di-retarget ke Meta.
