@@ -206,6 +206,8 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 
 | 08 | 23 Nov 2026 (diunggah manual Pak Dir) | `dalamgigi-08-makanan-nyangkut-v2.mp4` (88 dtk) | `cover-makanan-nyangkut.png` | Dari keluhan @mwiwaiii (#05); pengeluh sudah dibalas 23 Nov. Windsor baca data terhenti 23 Nov (paket Free, 3 akun tersambung) |
 
+| 09 | 25 Nov 2026 18.46 WITA (manual Pak Dir) | sikat keras → ngilu kena dingin | - | Caption tanpa #makassar & tanpa cara bernomor (melanggar keputusan 23 Nov #3). #08: 2 hashtag terakhir tanpa # (benanggigi makassar), simpan 2 / 1,4 rb views. Windsor pulih 25 Nov setelah akun Facebook dilepas |
+
 Naskah + hasil audit per konten (di `ruma-dental-video/references/`): #01 `naskah-scaling-160.md`, #02 `naskah-lubang-gua-02.md`, #03 `naskah-domino-03.md`, #04 `naskah-sakit-04.md`, #05 `naskah-gusi-05.md`, #06 naskah di caption + `scripts/napas_cfg.json`. Rencana dan caption #01: `rencana-konten-dalamgigi.md`.
 File video tidak masuk Git (sesi cloud sementara): selalu ingatkan Pak Dir mengunduh.
 
