@@ -187,6 +187,8 @@ Format POV/cerita yang meniru **struktur** konten "POV Nur FO" UPG (Gaya 3), tet
   6. **Hook harus mewakili SELURUH isi** (koreksi Pak Dir, konten 2 drg. Ainun: hook "Kenapa dokter gigi pakai kacamata ini?" padahal isi 5 alat → "tidak nyambung"). Uji: setiap poin di isi video harus menjawab pertanyaan hook; kalau hook hanya cocok untuk poin pertama, ganti hook (contoh v2: "Saat menambal gigi, dokter pakai apa saja?").
   5. Kalau ada yang gagal → usulkan **rekam tambahan singkat** (dokter menjawab 2–3 pertanyaan penonton, mic kerah, 5 menit) sebelum produksi, jangan dipaksakan.
 
+**Thumbnail otomatis (keputusan Pak Dir 25 Nov 2026):** begitu video Ruma/@dalamgigi final (tidak ada revisi / pindah ke konten berikutnya), Claude langsung membuat dan mengirim thumbnail sebelum lanjut. Aturan: skill bersama `produksi-video-klinik` 9 + 9a, palet/font Ruma. Template thumbnail organik Ruma belum ada: buat 1 contoh, minta ACC Pak Dir, lalu simpan aturannya di sini.
+
 ## 10e. Pilar & format konten organik Ruma, dibedakan dari UPG [keputusan Pak Dir 25 Nov 2026]
 Pilar resmi per funnel dari `panduan-visual-terpadu` §7 (terkunci). Setiap analisis footage Ruma WAJIB memilih salah satu baris ini; jangan memakai pilar/format UPG ("Sehari di Klinik", pill emoji, caption per kata oranye, mosaik) dan jangan mengarang format baru.
 | Pilar Ruma | Funnel · CTA | Format | Contoh yang sudah ada | Syarat bahan |
