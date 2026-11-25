@@ -1,0 +1,31 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Thumbnail Ruma</title><style>
+/* THUMBNAIL ORGANIK RUMA (contoh pertama, 25 Nov 2026, menunggu ACC Pak Dir).
+   Rumus cover seragam (produksi-video-klinik §9) disesuaikan identitas Ruma:
+   - latar = frame bersih dari video (tanpa subtitle/label; wajah pasien tetap blur untuk organik)
+   - gradasi Deep Teal di bawah (bukan hitam), judul 2 baris rata tengah, maks 6 kata
+   - baris 1 putih; baris 2 Deep Teal di atas blok Turquoise (TIDAK huruf kapital semua: panduan Ruma)
+   - logo kecil kiri atas TANPA latar putih (koreksi Pak Dir), bayangan halus
+   - semua teks di zona crop grid 3:4 (y 240-1680)
+   Parameter URL: ?img=..&l1=..&l2=..&pos=50%25%2030%25 */
+@font-face{font-family:M;src:url(montserrat-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:M;src:url(montserrat-latin-700-normal.woff2);font-weight:700}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:M,sans-serif;background:#354B49}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.gr{position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(to bottom,rgba(29,44,42,0) 0%,rgba(29,44,42,.55) 35%,rgba(29,44,42,.92) 75%,#1d2c2a 100%)}
+.lp{position:absolute;left:72px;top:262px}
+.lp img{height:80px;display:block;filter:drop-shadow(0 0 2px rgba(255,255,255,.9)) drop-shadow(0 2px 8px rgba(0,0,0,.45))}
+.t{position:absolute;left:70px;right:70px;top:1390px;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.t .a{font:700 76px/1.12 M;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.35)}
+.t .b{font:700 84px/1.1 M;color:#354B49;background:#28CDBD;padding:10px 30px 16px;border-radius:18px}
+</style></head><body>
+<div class=bg id=bg></div><div class=gr></div>
+<div class=lp><img src="logo.png" alt="Ruma Dental"></div>
+<div class=t><p class=a id=l1></p><p class=b id=l2></p></div>
+<script>
+const q=new URLSearchParams(location.search);
+document.getElementById('bg').style.backgroundImage=`url(${q.get('img')||'bg.jpg'})`;
+document.getElementById('bg').style.backgroundPosition=q.get('pos')||'50% 40%';
+document.getElementById('l1').textContent=q.get('l1')||'';
+document.getElementById('l2').textContent=q.get('l2')||'';
+</script></body></html>
