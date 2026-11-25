@@ -7,13 +7,14 @@ Sikat gigi keras-keras biar bersih? Justru itu yang bikin gigi ngilu kena dingin
 Bulu sikat keras + gosokan kuat lama-lama mengikis gusi sampai turun. Leher gigi yang terbuka nggak dilapisi email, isinya ribuan saluran mikro. Begitu kena dingin, cairan di saluran itu bergerak dan saraf langsung kaget. Itu rasa ngilunya.
 
 Yang bisa dilakukan:
-1️⃣ Pakai sikat berbulu lembut, pegang seperti pensil (jangan digenggam kuat)
-2️⃣ Gerakan pendek dan pelan, bulu sikat miring ke arah gusi
-3️⃣ Pakai pasta gigi khusus gigi sensitif, dan kalau ngilunya nggak hilang, periksa ke dokter gigi
+1. Pakai sikat berbulu lembut, pegang seperti pensil (jangan digenggam kuat)
+2. Gerakan pendek dan pelan, bulu sikat miring ke arah gusi
+3. Pakai pasta gigi khusus gigi sensitif, dan kalau ngilunya nggak hilang, periksa ke dokter gigi
 
 Bersih itu soal cara, bukan soal tenaga.
 
 Kamu tim sikat keras atau sikat lembut? Tulis di komentar 👇
+Pertanyaan terbanyak kita jadikan video berikutnya.
 Simpan biar nggak lupa, dan follow @dalamgigi 🦷
 
 #dalamgigi #faktagigi #kesehatangigi #gigingilu #gigisensitif #sikatgigi #makassar

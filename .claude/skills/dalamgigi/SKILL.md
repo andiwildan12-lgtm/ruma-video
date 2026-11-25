@@ -310,6 +310,7 @@ Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Me
 - [ ] Semua hashtag pakai `#` (pelajaran #01/#02: `scaling makassar` tanpa #), **#makassar wajib**
 - [ ] Tanpa harga, promo, "chat admin", ajakan ke klinik
 - [ ] ≤2.200 karakter
+- [ ] **Caption dikirim ke Pak Dir sebagai teks polos siap salin** (blok kode di chat, bukan hanya file .md), angka `1. 2. 3.` bukan emoji keycap, hashtag satu baris di akhir. Pelajaran 25 Nov: caption #08 terbit dengan `benanggigi makassar` tanpa #, #09 terbit tanpa cara bernomor & tanpa #makassar padahal file benar → bagian hilang saat disalin. Setelah terbit, cocokkan caption yang tayang dengan file.
 
 ## 13. Evaluasi & Target [USULAN 18 Nov 2026, dari audit 3 video pertama]
 
