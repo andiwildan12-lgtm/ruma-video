@@ -14,3 +14,7 @@
 | 6 | 25–32,7 | 153055 2,70–10,3 | "Kalau misalnya tambal sementara terus gak sakit, terus berhenti … perawatan, iya, harus sampai tambal permanen" | penanda: Pesan dokter |
 | 7 | 32,7–35,2 | frame tenang | (suasana ruangan) | Tambal sementara belum selesai. / **Lanjut sampai permanen.** |
 | 8 | 35,2–39,2 | penutup standar | — | pesan "Sudah tidak sakit?\|Lanjut sampai tambal permanen." |
+
+## Revisi saat render (25 Nov 2026)
+- Adegan 4 dipersingkat: 152148 33,9–36,8 dibuang (ada nama obat "parasetamol" + ucapan tidak jelas), 38,7–41 dibuang ("bengkak": medium vs large-v3 berbeda, pernah/enggak pernah). Sisa yang terverifikasi: "beberapa jam, sakit lagi" (36,9–38,65) dan "malam-malam tambah sakit" (43,45–45,3). Durasi akhir 35,35 dtk.
+- Pelajaran: blur titik kunci harus dicek dari frame di DALAM rentang potongan (klip b-roll 152411 12,4–15 sempat memperlihatkan wajah pasien karena titiknya diambil dari detik 7–8).
