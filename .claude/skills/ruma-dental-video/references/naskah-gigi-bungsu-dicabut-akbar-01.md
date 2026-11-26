@@ -8,7 +8,7 @@
 | # | Detik | Klip (dtk asli) | Ucapan asli (cap waktu per kata) | Teks layar |
 |---|---|---|---|---|
 | 1 | 0–3 | a0099 0,0–0,95 | Dokter: "Mulai sakitnya dari kapan?" | Judul: Ingat yang sakit gigi sampai ke kepala? / **Hari ini gigi bungsunya dicabut.** |
-| 2 | 3–8 | a0099 7,80–12,75 | "Ada riwayat penyakit jantung, alergi? Pernah cabut gigi sebelumnya?" — "Iya, pertama kali" | penanda: Ditanya riwayat dulu |
+| 2 | 3–8 | a0099 7,80–12,75 | "Ada riwayat penyakit jantung, alergi? Pernah cabut gigi sebelumnya?" — pasien: "Belum pernah" (diverifikasi ulang medium + large-v3; "pertama kali, berarti dong" = ucapan dokter sesudahnya, tidak dipakai) | penanda: Ditanya riwayat dulu |
 | 3 | 8–16 | a0106 0,0–4,5 + 7,5–11,3 (blur) | "Oh, ini juga perlu dicabut, gigi bungsu yang di sini … Kalau kita keluhkan; kalau tidak, jangan … satu-satu" | penanda: Tidak asal cabut |
 | 4 | 16–33 | a0102 0,0–6,2 + 13,26–20,1 + 21,2–24,8 | "Kalau makan tidak sampai di situ, kan ada dua gigi geraham di depannya yang dipakai mengunyah … mungkin satu dari seratus kali pengunyahan, satu saja mungkin kepakainya itu gigi bungsu … yang kedua, kalau disikat juga, dibersihkan, kurang efektif juga" | penanda: Kenapa sering bermasalah? |
 | 5 | 33–39 | a0112 0,0–2,0 + b-roll a0131/a0136 (blur) | "Atau kurang nyaman, angkat tangan kiri saja" + suara alat | penanda: Dicabut |
