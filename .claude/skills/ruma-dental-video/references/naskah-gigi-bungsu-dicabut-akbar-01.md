@@ -9,10 +9,13 @@
 |---|---|---|---|---|
 | 1 | 0–3 | a0099 0,0–0,95 | Dokter: "Mulai sakitnya dari kapan?" | Judul: Ingat yang sakit gigi sampai ke kepala? / **Hari ini gigi bungsunya dicabut.** |
 | 2 | 3–8 | a0099 7,80–12,75 | "Ada riwayat penyakit jantung, alergi? Pernah cabut gigi sebelumnya?" — "Iya, pertama kali" | penanda: Ditanya riwayat dulu |
-| 3 | 8–14 | a0099 27,54–33,3 | "Bu, saya izin, ini direkam, tapi dari belakang. Kalaupun ada dari depan, ketutup" | penanda: Izin dulu |
-| 4 | 14–31 | a0102 0,0–6,2 + 13,26–20,1 + 21,2–24,8 | "Kalau makan tidak sampai di situ, kan ada dua gigi geraham di depannya yang dipakai mengunyah … mungkin satu dari seratus kali pengunyahan, satu saja mungkin kepakainya itu gigi bungsu … yang kedua, kalau disikat juga, dibersihkan, kurang efektif juga" | penanda: Kenapa sering bermasalah? |
-| 5 | 31–37 | a0112 0,0–2,0 + b-roll a0131/a0136 (blur) | "Atau kurang nyaman, angkat tangan kiri saja" + suara alat | penanda: Dicabut |
-| 6 | 37–43 | a0149 0,0–5,9 | "Bukaannya sedikit, tidak perlu penjahitan, karena menstimulasi penyembuhan" | penanda: Selesai |
-| 7 | 43–45 | a0153 0,0–2,6 | "Oke, sudah selesai" | subtitle |
-| 8 | 45–47,5 | frame tenang | (suasana ruangan) | Dicek dulu, dijelaskan dulu, / **baru dicabut.** |
-| 9 | 47,5–51,5 | penutup standar | — | pesan "Sakit sampai kepala?\|Periksa dulu." |
+| 3 | 8–16 | a0106 0,0–4,5 + 7,5–11,3 (blur) | "Oh, ini juga perlu dicabut, gigi bungsu yang di sini … Kalau kita keluhkan; kalau tidak, jangan … satu-satu" | penanda: Tidak asal cabut |
+| 4 | 16–33 | a0102 0,0–6,2 + 13,26–20,1 + 21,2–24,8 | "Kalau makan tidak sampai di situ, kan ada dua gigi geraham di depannya yang dipakai mengunyah … mungkin satu dari seratus kali pengunyahan, satu saja mungkin kepakainya itu gigi bungsu … yang kedua, kalau disikat juga, dibersihkan, kurang efektif juga" | penanda: Kenapa sering bermasalah? |
+| 5 | 33–39 | a0112 0,0–2,0 + b-roll a0131/a0136 (blur) | "Atau kurang nyaman, angkat tangan kiri saja" + suara alat | penanda: Dicabut |
+| 6 | 39–45 | a0149 0,0–5,9 | "Bukaannya sedikit, tidak perlu penjahitan, karena menstimulasi penyembuhan" | penanda: Selesai |
+| 7 | 45–47 | a0153 0,0–2,6 | "Oke, sudah selesai" | subtitle |
+| 8 | 47–49,5 | frame tenang | (suasana ruangan) | Dicek dulu, dijelaskan dulu, / **baru dicabut.** |
+| 9 | 49,5–53,5 | penutup standar | — | pesan "Sakit sampai kepala?\|Periksa dulu." |
+
+## Revisi 26 Nov (Pak Dir)
+- Adegan 3 "izin direkam dari belakang" (a0099 27,5–33,3) diganti a0106: dokter melihat gigi bungsu lain, "kalau kita keluhkan; kalau tidak, jangan … satu-satu" (diverifikasi medium + large-v3; "jangan dulu" hanya terdengar di satu model, tidak dipakai). Durasi ±53,5 dtk.
