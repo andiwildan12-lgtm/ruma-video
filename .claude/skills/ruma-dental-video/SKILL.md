@@ -24,7 +24,7 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 
 - **Teknik produksi** (alur kerja, narasi ElevenLabs satu napas, gambar mengikuti suara, render 3D, footage, komposisi, audio, encode) ada di skill **`produksi-video-klinik`**. Selalu pakai keduanya bersamaan.
 - Skill ini hanya berisi **identitas Ruma**: semua yang membuat video terasa "Ruma" dan berbeda dari UPG.
-- Aset brand untuk render ada di `assets/`: `mug_logo.png` (logo tanpa tagline, untuk mug 3D), `card_logo.png` (logo transparan, untuk kartu), `logo.jpg` (logo asli), `font2.woff2` (Outfit). Salin ke folder kerja sebelum render.
+- Aset brand untuk render ada di `assets/`: `mug_logo.png` (logo tanpa tagline, untuk mug 3D), `card_logo.png` (logo transparan), dan `logo.jpg` (logo asli). `font2.woff2` (Outfit) adalah aset render lama. Untuk produksi baru, ikuti tipografi bagian 7.
 
 ## 2. Konteks Brand
 
@@ -84,7 +84,7 @@ Bahasa harga Ruma: tenang dan jelas ("Behel dengan tenang, cicilan tanpa bunga")
 ## 5. Logo
 
 - Simbol: gigi teal dengan atap rumah teal dan rumah/pintu abu-abu (rumah di dalam gigi).
-- Tulisan "Ruma Dental": teal, geometris tebal, huruf "a" satu ruang. Font sementara di video: **Outfit** (paling mirip). Nama font resmi, kode warna resmi, dan file vektor: [TERBUKA].
+- Tulisan "Ruma Dental" pada logo resmi berwarna teal, geometris tebal, dengan huruf "a" satu ruang. Gunakan aset logo resmi di atas footage, kartu penutup, dan papan gambar, dengan latar transparan.
 - **Logo tampil alami di dalam adegan**, tidak ditempel seperti stempel: mug kopi 3D berlogo, papan logo asli di dinding klinik (IMG_4420), kartu penutup. Terlihat dalam ±4 detik pertama dan minimal 3 kali per video.
 
 ## 6. Gaya Visual [DISEPAKATI]
@@ -102,9 +102,10 @@ Bahasa harga Ruma: tenang dan jelas ("Behel dengan tenang, cicilan tanpa bunga")
 
 ## 7. Teks Layar [DISEPAKATI]
 
+- Ikuti [panduan tipografi resmi Ruma](../desain-grafis-ruma/references/panduan-visual-ruma.md#4-tipografi-resmi): **Neue Montreal Bold** untuk judul dan angka harga utama, **Neue Montreal Regular** untuk subjudul, dan **Montserrat** untuk isi, subtitle, dan label pendukung. Selama file Neue Montreal berlisensi belum tersedia, pakai Montserrat untuk semua teks render lokal.
 - **Teks dua tingkat** di kiri atas (±20–30% dari atas layar):
-  - Baris 1: label kecil, kotak teal tua, teks putih (Outfit 500, ±58 px pada 1080 lebar).
-  - Baris 2: poin utama, kotak teal, teks teal sangat gelap (#06332F), tebal (Outfit 700, ±92 px).
+  - Baris 1: label kecil, kotak teal tua, teks putih (Montserrat 500, ±58 px pada 1080 lebar).
+  - Baris 2: poin utama, kotak teal, teks teal sangat gelap (#06332F), tebal (Neue Montreal Bold atau Montserrat 700, ±92 px).
 - Singkat (2–5 kata per baris), satu fokus per layar, muncul dengan gerakan naik.
 - Video harus tetap jelas tanpa suara. Hindari ±15% atas dan ±35% bawah layar untuk informasi penting.
 
@@ -161,6 +162,8 @@ Setiap iklan baru: rumus 8 ketukan (`produksi-video-klinik` bagian 3) → checkl
 | Crown, cabut gigi bungsu, cabut gigi, veneer, perawatan gigi anak, behel, gigi palsu | – | Antrean | – | data per layanan: harga, kunjungan, garansi, footage |
 
 Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
+
+**Acuan revisi Behel "Spil Harga".** Pak Dir memilih versi terbaru di repo sebagai dasar revisi. Untuk Jenis B, mulai dari [EDL Jenis B](references/edl-behel-spil-harga-B.json) dan papan gambar `papan-gambar-behel-spil-harga-B-v2.png`. Untuk Jenis C, mulai dari [EDL Jenis C](references/edl-behel-spil-harga-C.json) dan papan gambar `papan-gambar-behel-spil-harga-C-v1.png`. Pertahankan suara asli admin dan status review masing-masing versi. MP4 `ruma-01-behel-v1-review.mp4` yang dikirim lewat Drive Saya adalah arsip review lama.
 
 ## 10b. Konten TOFU [DISEPAKATI]
 
