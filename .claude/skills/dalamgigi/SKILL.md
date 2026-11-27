@@ -314,6 +314,7 @@ Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Me
 - [ ] Pertanyaan komentar sama dengan di video + "Pertanyaan terbanyak kita jadikan video berikutnya"
 - [ ] Ajakan **simpan + follow @dalamgigi** ada
 - [ ] Semua hashtag pakai `#` (pelajaran #01/#02: `scaling makassar` tanpa #), **#makassar wajib**
+- [ ] **Maksimal 5 hashtag, #makassar di antara 5 itu** (temuan 27 Nov: di #01, #02, #08, #10 yang diunggah manual, hashtag ke-6 dst. selalu kehilangan tanda #. Pola konsisten → batas 5 hashtag per postingan di Instagram). Urutan baku: #dalamgigi #faktagigi #makassar + 2 topik.
 - [ ] Tanpa harga, promo, "chat admin", ajakan ke klinik
 - [ ] ≤2.200 karakter
 - [ ] **Caption dikirim ke Pak Dir sebagai teks polos siap salin** (blok kode di chat, bukan hanya file .md), angka `1. 2. 3.` bukan emoji keycap, hashtag satu baris di akhir. Pelajaran 25 Nov: caption #08 terbit dengan `benanggigi makassar` tanpa #, #09 terbit tanpa cara bernomor & tanpa #makassar padahal file benar → bagian hilang saat disalin. Setelah terbit, cocokkan caption yang tayang dengan file.
