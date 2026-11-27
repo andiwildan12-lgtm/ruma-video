@@ -309,6 +309,7 @@ Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Me
 - [ ] Daftar bernomor rapi (`1. ` dengan spasi), tiap anjuran ada caranya
 - [ ] Pertanyaan komentar sama dengan di video + "Pertanyaan terbanyak kita jadikan video berikutnya"
 - [ ] Ajakan **simpan + follow @dalamgigi** ada
+- [ ] **MAKSIMAL 5 hashtag**, urutan baku `#dalamgigi #faktagigi #makassar` + 2 topik (temuan Audit 27 Nov: hashtag ke-6 dst. selalu kehilangan # saat diunggah, terjadi di #01, #02, #08, #10)
 - [ ] Semua hashtag pakai `#` (pelajaran #01/#02: `scaling makassar` tanpa #), **#makassar wajib**
 - [ ] Tanpa harga, promo, "chat admin", ajakan ke klinik
 - [ ] ≤2.200 karakter
