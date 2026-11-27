@@ -176,8 +176,8 @@ Unggah: sampul dari rol kamera, atur crop grid, tanpa musik, lokasi Makassar, ja
 | 06 | Bau mulut (request penonton) | Sudah sikat gigi, / KOK MASIH BAU MULUT? | Lapis demi lapis: 1 lidah (pangkal, tidur → air liur turun → gas belerang, sikat lidah belakang→depan + minum air) → 2 sela gigi & gusi (sisa makanan, karang, radang, lubang → benang + scaling/tambal) → 3 luar mulut (hidung, tenggorokan, lambung → dokter) → "dicari sumbernya, bukan cuma ditutupi" → CTA | 🎬 v1 jadi 20 Nov (73,9 dtk), QC lulus |
 | 07 | Behel menggeser gigi | Gimana behel / MENGGESER GIGI? | Tulang dibongkar di sisi tertekan, dibangun di sisi tertarik (analogi pindah rumah bata demi bata) → dorongan kawat melemah → kontrol = setel ulang (grafik progres tangga) → CTA. Naskah `references/naskah-behel-07.md` | ⛔ v1 DITAHAN (anatomi belum benar, lihat bagian 11); perbaikan menunggu instruksi Pak Dir, narasi tetap |
 | 08 | Makanan nyangkut di gigi belakang (request penonton #05) | Makanan nyangkut / DI GIGI BELAKANG? | Celah antar geraham → 4 penyebab (lubang sisi, tambalan kurang pas, bungsu miring, gigi dicabut) → serat terjepit → gusi sela radang & berdarah → benang/sikat sela, jangan dicungkil → 1–2 minggu → periksa, tambalan menutup celah → CTA | ✅ v1 jadi 23 Nov (90 dtk, QC lulus), dikirim ke Pak Dir untuk tayang 23 Nov 19.00 |
-| 09 | Ngilu kena dingin | Kenapa gigi / NGILU KENA DINGIN? | Saluran halus di lapisan dalam; penyebab bisa macam-macam | Ide |
-| 09 | 365 cangkir kopi | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
+| 09 | Sikat keras bikin ngilu (cadangan, tanpa request) | Sikat keras-keras / JUSTRU BIKIN NGILU? | Formula #05: gosok keras → 1 gusi terkikis turun (analogi panci antilengket + sabut kawat) → 2 leher gigi terbuka tanpa email, ribuan saluran mikro → 3 dingin → cairan bergerak → saraf kaget → "malah ganti sikat lebih keras" → 3 cara (bulu lembut pegang pensil · pendek pelan miring ke gusi · pasta sensitif, menetap → dokter) → "bersih itu soal cara, bukan soal tenaga" → CTA | ✅ v1 jadi 25 Nov (73,8 dtk) |
+| 10 | 365 cangkir kopi (✅ jadi 27 Nov) | Setahun 365 cangkir / GIGIMU IKUT NGOPI? | Noda menempel lalu meresap; permukaan vs lapisan dalam | Ide |
 | 10 | Gigi bungsu miring | Kenapa gigi bungsu / TUMBUH MIRING? | Rahang tidak cukup ruang | Ide |
 | 11 | Retainer | Behel lepas / GIGI BISA BALIK? | Gigi cenderung kembali; retainer menjaga hasil | Ide |
 
@@ -203,6 +203,8 @@ Isi dari komentar "mau dibahas apa lagi?". Topik dengan peminta terbanyak diprio
 | 06 | 21 Nov 2026 (diunggah Pak Dir) | `dalamgigi-06-bau-mulut-v1.mp4` (73,9 dtk, QC lulus) + `-drive.mp4` 9,5 MB | `cover-bau-mulut.png` | Caption `output/dalamgigi-06-caption.md` (+ balasan ke pengusul). Adegan `napas.html`: lidah 3D (papila + lapisan putih instanced), panel siluet kepala (tanpa wajah). Narasi take B |
 | 07 | (DITAHAN, jangan diunggah) | `dalamgigi-07-behel-v1.mp4` (79,5 dtk, QC lulus) | `cover-behel.png` | Caption `output/dalamgigi-07-caption.md`. Adegan `behel.html`: braket+kawat, diorama gigi dalam tulang (bantalan, tulang diurai/dibangun), rumah bata, meter per, grafik tangga |
 | 08 | v2 jadi 23 Nov (dikirim ke Pak Dir; v1 diganti) | `dalamgigi-08-makanan-nyangkut-v2.mp4` (88 dtk, QC lulus; formula pemenang, irisan gigi, resleting) | `cover-makanan-nyangkut.png` | Caption `output/dalamgigi-08-caption.md` (format lengkap). Adegan `celah.html` (lengkung rahang diperbaiki). Request keluhan penonton #05 |
+| 09 | v1 jadi 25 Nov (dikirim ke Pak Dir) | `dalamgigi-09-sikat-keras-v1.mp4` (73,8 dtk) | `cover-sikat-keras.png` | Caption `output/dalamgigi-09-caption.md`. Adegan `sikat.html`: sikat berbulu (tuft, mekar saat ditekan), resesi gusi + pita leher gigi kuning, panci + sabut kawat (lapisan terkelupas), irisan mikro SVG (saluran → saraf merah berkedip) |
+| 10 | v1 jadi 27 Nov (dikirim ke Pak Dir) | `dalamgigi-10-kopi-v1.mp4` (59,5 dtk, ≤60 dtk pertama; narasi atempo 1,07) | `cover-kopi.png` | Caption `output/dalamgigi-10-caption.md` (teks polos 1. 2. 3.). Adegan `kopi.html`: gigi seri bawah rapat + noda leher gigi, irisan permukaan SVG (selaput → zat warna → pori → lapisan), cangkir putih bercincin, es kopi + sedotan. Papan diaudit 2× sendiri sebelum dikirim |
 
 | 08 | 23 Nov 2026 (diunggah manual Pak Dir) | `dalamgigi-08-makanan-nyangkut-v2.mp4` (88 dtk) | `cover-makanan-nyangkut.png` | Dari keluhan @mwiwaiii (#05); pengeluh sudah dibalas 23 Nov. Windsor baca data terhenti 23 Nov (paket Free, 3 akun tersambung) |
 
@@ -299,6 +301,7 @@ Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Me
 7. Windsor masih **paket TRIAL** (18 Nov 2026): data bisa tertunda (cache, tanpa `force_refresh`) dan koneksi bisa putus saat trial habis. Kalau aksi gagal → laporkan, Pak Dir unggah manual dari paket kirim.
 
 ### 12c-2. Pelajaran Teknis Posting #05 (19 Nov 2026) [WAJIB]
+- **27 Nov (#10):** dicoba posting otomatis atas permintaan Pak Dir → gagal: video 3,9 MB (versi kecil 2-pass 450k, kualitas masih bersih) tetap di atas batas ±3,1 MB per panggilan, dan `share_file anyoneWithLink` ditolak sistem izin sesi. Pak Dir memilih unggah manual. Posting otomatis hanya bisa bila Pak Dir sendiri menaruh video di Drive + membuka akses link.
 - **Konektor Drive Claude hanya bisa mengunggah ±3 MB per file** → video (10–15 MB) TIDAK bisa diunggah Claude ke Drive. Video harus diunggah manual ke `Dalam Gigi/Siap Tayang` (atau pakai hosting lain, mis. repo publik + GitHub Pages bila Pak Dir buat).
 - Link yang terbukti diterima Instagram: `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t` (file `anyoneWithLink` reader). Container ini tidak bisa mengecek link Drive (proxy memblokir), jadi cek izin dengan `get_file_permissions`.
 - `create_video_post` bisa **timeout 60 dtk padahal berhasil**. JANGAN ulang. Cek `media_count` (user_info, data segar) lalu ambil media_id dengan `get_data` `date_from`=hari ini (field berbeda dari tarikan sebelumnya supaya tidak kena cache).
@@ -313,6 +316,7 @@ Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Me
 - [ ] Semua hashtag pakai `#` (pelajaran #01/#02: `scaling makassar` tanpa #), **#makassar wajib**
 - [ ] Tanpa harga, promo, "chat admin", ajakan ke klinik
 - [ ] ≤2.200 karakter
+- [ ] **Caption dikirim ke Pak Dir sebagai teks polos siap salin** (blok kode di chat, bukan hanya file .md), angka `1. 2. 3.` bukan emoji keycap, hashtag satu baris di akhir. Pelajaran 25 Nov: caption #08 terbit dengan `benanggigi makassar` tanpa #, #09 terbit tanpa cara bernomor & tanpa #makassar padahal file benar → bagian hilang saat disalin. Setelah terbit, cocokkan caption yang tayang dengan file.
 
 ## 13. Evaluasi & Target [USULAN 18 Nov 2026, dari audit 3 video pertama]
 

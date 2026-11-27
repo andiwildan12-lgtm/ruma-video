@@ -26,7 +26,7 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
 
 - **Teknik produksi** (alur kerja, narasi ElevenLabs satu napas, gambar mengikuti suara, render 3D, footage, komposisi, audio, encode) ada di skill **`produksi-video-klinik`**. Selalu pakai keduanya bersamaan.
 - Skill ini hanya berisi **identitas Ruma**: semua yang membuat video terasa "Ruma" dan berbeda dari UPG.
-- Aset brand untuk render ada di `assets/`: `mug_logo.png` (logo tanpa tagline, untuk mug 3D), `card_logo.png` (logo transparan, untuk kartu), `logo.jpg` (logo asli), `font2.woff2` (Outfit). Salin ke folder kerja sebelum render.
+- Aset brand untuk render ada di `assets/`: `mug_logo.png` (logo tanpa tagline, untuk mug 3D), `card_logo.png` (logo transparan), dan `logo.jpg` (logo asli). `font2.woff2` (Outfit) adalah aset render lama. Untuk produksi baru, ikuti tipografi bagian 7.
 
 ## 2. Konteks Brand
 
@@ -50,6 +50,7 @@ Persetujuan atas satu bagian hanya berlaku untuk bagian itu.
    - **Logo pojok kiri atas sepanjang video** (kecuali penutup): `assets/penutup/logo-pojok.html` → logo transparan 72 px, x 72 / y 262, **TANPA latar/kapsul putih** (koreksi Pak Dir setelah iklan scaling v1: "ada latar putihnya, waduh"); keterbacaan lewat bayangan lembut. Iklan scaling v1 & konten sebelumnya tidak diperbaiki (keputusan Pak Dir), berlaku untuk konten berikutnya. Judul hook dan label langkah mulai **y ≥ 360** (di bawah logo).
    - **Penutup seragam 4 dtk** di semua video (organik maupun iklan): `assets/penutup/penutup.html?pesan=...|...&ig=...` → pesan penutup video (opsional) → logo → tagline → Instagram · WhatsApp 0898-7735-463 · Jl. Rusa No. 65, Maricaya, Makassar. Ini pengecualian aturan no. 10: WA dan alamat **boleh/wajib** di penutup standar.
    - Akun Instagram Ruma: **@rumadentalmks** (dari Pak Dir, 21 Nov 2026) → `penutup.html?ig=@rumadentalmks`.
+   - **Suara transisi = "kertas dibalik" (UJI COBA, keputusan Pak Dir 26 Nov 2026, opsi D dari `contoh-suara-transisi.mp4`):** mulai konten setelah "Gigi bungsu dicabut, drg. Akbar", ganti whoosh dengan `produksi-video-klinik/scripts/sfx/sfx_book.mp3` di setiap perpindahan adegan (−12 dB, mulai 0,18 dtk sebelum batas) dan di punch-in antar-kalimat (−19 dB). Pop label, suara ruangan, shimmer penutup tetap. Video sebelumnya tetap whoosh (tidak dirender ulang). Opsi lain yang ditawarkan: B swish lembut, C klik halus, E chime pendek, F tanpa suara. Kalau Pak Dir menilai hasilnya, catat keputusan final di sini.
    - Dua konten drg. Ainun (konsultasi tambal v1, alat tambal v2) dibuat sebelum standar ini dan **tidak dirender ulang** (keputusan Pak Dir); standar berlaku untuk video berikutnya. Cek wajib sebelum papan gambar: logo pojok ada, judul/label di bawah logo, penutup memakai template ini.
 10. **Tujuan bawaan = konten organik** (Reels/TikTok akun Ruma). Perlakukan sebagai iklan Meta **hanya bila Pak Dir menyebut iklan** (keputusan 21 Nov 2026). Organik: tanpa harga/WA kecuali diminta, nada edukasi/cerita, close-up klinis boleh (wajah pasien tetap blur); aturan no. 8 hanya untuk iklan.
 6. **Casting footage:** orang yang tampil sebagai pasien **tidak boleh** muncul juga sebagai admin/resepsionis dalam video yang sama. Pelajaran iklan scaling v3 (Pak Dir: "admin di meja sama yang di-scaling sama, kesannya konten ala-ala"): folder Scalling Agustus (`1ieZcNOg…`) memakai **satu orang sebagai resepsionis (4422/4427) sekaligus pasien (4324–4341)** → jangan dipakai bersamaan. Cek wajah semua orang lintas klip sebelum papan gambar.
@@ -85,7 +86,7 @@ Bahasa harga Ruma: tenang dan jelas ("Behel dengan tenang, cicilan tanpa bunga")
 ## 5. Logo
 
 - Simbol: gigi teal dengan atap rumah teal dan rumah/pintu abu-abu (rumah di dalam gigi).
-- Tulisan "Ruma Dental": teal, geometris tebal, huruf "a" satu ruang. Font sementara di video: **Outfit** (paling mirip). Nama font resmi, kode warna resmi, dan file vektor: [TERBUKA].
+- Tulisan "Ruma Dental" pada logo resmi berwarna teal, geometris tebal, dengan huruf "a" satu ruang. Gunakan aset logo resmi di atas footage, kartu penutup, dan papan gambar, dengan latar transparan.
 - **Logo tampil alami di dalam adegan**, tidak ditempel seperti stempel: mug kopi 3D berlogo, papan logo asli di dinding klinik (IMG_4420), kartu penutup. Terlihat dalam ±4 detik pertama dan minimal 3 kali per video.
 
 ## 6. Gaya Visual [DISEPAKATI]
@@ -103,9 +104,10 @@ Bahasa harga Ruma: tenang dan jelas ("Behel dengan tenang, cicilan tanpa bunga")
 
 ## 7. Teks Layar [DISEPAKATI]
 
+- Ikuti [panduan tipografi resmi Ruma](../desain-grafis-ruma/references/panduan-visual-ruma.md#4-tipografi-resmi): **Neue Montreal Bold** untuk judul dan angka harga utama, **Neue Montreal Regular** untuk subjudul, dan **Montserrat** untuk isi, subtitle, dan label pendukung. Selama file Neue Montreal berlisensi belum tersedia, pakai Montserrat untuk semua teks render lokal.
 - **Teks dua tingkat** di kiri atas (±20–30% dari atas layar):
-  - Baris 1: label kecil, kotak teal tua, teks putih (Outfit 500, ±58 px pada 1080 lebar).
-  - Baris 2: poin utama, kotak teal, teks teal sangat gelap (#06332F), tebal (Outfit 700, ±92 px).
+  - Baris 1: label kecil, kotak teal tua, teks putih (Montserrat 500, ±58 px pada 1080 lebar).
+  - Baris 2: poin utama, kotak teal, teks teal sangat gelap (#06332F), tebal (Neue Montreal Bold atau Montserrat 700, ±92 px).
 - Singkat (2–5 kata per baris), satu fokus per layar, muncul dengan gerakan naik.
 - Video harus tetap jelas tanpa suara. Hindari ±15% atas dan ±35% bawah layar untuk informasi penting.
 
@@ -163,6 +165,8 @@ Setiap iklan baru: rumus 8 ketukan (`produksi-video-klinik` bagian 3) → checkl
 
 Hambatan utama per layanan ada di `produksi-video-klinik` bagian 3, aturan 4.
 
+**Acuan revisi Behel "Spil Harga".** Pak Dir memilih versi terbaru di repo sebagai dasar revisi. Untuk Jenis B, mulai dari [EDL Jenis B](references/edl-behel-spil-harga-B.json) dan papan gambar `papan-gambar-behel-spil-harga-B-v2.png`. Untuk Jenis C, mulai dari [EDL Jenis C](references/edl-behel-spil-harga-C.json) dan papan gambar `papan-gambar-behel-spil-harga-C-v1.png`. Pertahankan suara asli admin dan status review masing-masing versi. MP4 `ruma-01-behel-v1-review.mp4` yang dikirim lewat Drive Saya adalah arsip review lama.
+
 ## 10b. Konten TOFU [DISEPAKATI]
 
 - Konten TOFU = **edukasi murni**: tanpa ajakan ke klinik, tanpa "chat admin", tanpa harga. Brand cukup hadir lewat **kartu penutup logo + tagline** (seperti credit Studio AnakArsi).
@@ -188,6 +192,19 @@ Format POV/cerita yang meniru **struktur** konten "POV Nur FO" UPG (Gaya 3), tet
   4. **Ada visual puncak** (hasil akhir, momen paling jelas). Close-up gelap berulang tidak cukup.
   6. **Hook harus mewakili SELURUH isi** (koreksi Pak Dir, konten 2 drg. Ainun: hook "Kenapa dokter gigi pakai kacamata ini?" padahal isi 5 alat → "tidak nyambung"). Uji: setiap poin di isi video harus menjawab pertanyaan hook; kalau hook hanya cocok untuk poin pertama, ganti hook (contoh v2: "Saat menambal gigi, dokter pakai apa saja?").
   5. Kalau ada yang gagal → usulkan **rekam tambahan singkat** (dokter menjawab 2–3 pertanyaan penonton, mic kerah, 5 menit) sebelum produksi, jangan dipaksakan.
+
+**Thumbnail otomatis (keputusan Pak Dir 25 Nov 2026):** begitu video Ruma/@dalamgigi final (tidak ada revisi / pindah ke konten berikutnya), Claude langsung membuat dan mengirim thumbnail sebelum lanjut. Aturan: skill bersama `produksi-video-klinik` 9 + 9a, palet/font Ruma. Template thumbnail organik Ruma: `assets/thumbnail/thumb.html` (**ACC Pak Dir 25 Nov 2026**: "Keren sekali… thumbnailnya begini, saya suka"; dipakai: konsultasi tambal, alat tambal, hak pasien drg. Ainun → `ruma-dental-video/thumbnail/`). Rumus: frame bersih dari base video (organik: wajah pasien & nama di monitor sudah blur) → gradasi Deep Teal bawah → judul 2 baris rata tengah ≤6 kata (putih + blok Turquoise, tanpa huruf kapital semua) → logo kiri atas tanpa latar putih → teks di zona grid 3:4 (y 240–1680). Pilih frame dengan objek/aksi yang jelas (mis. dokter menunjuk rontgen, dokter ber-loupe menghadap kamera, pasien mengangkat cermin), bukan gestur canggung. Judul = versi ringkas hook video. Render: `python3 -m http.server` di folder kerja berisi thumb.html + logo + font + frame, lalu tangkap `thumb.html?img=..&l1=..&l2=..&pos=..` 1080×1920.
+
+## 10e. Pilar & format konten organik Ruma, dibedakan dari UPG [keputusan Pak Dir 25 Nov 2026]
+Pilar resmi per funnel dari `panduan-visual-terpadu` §7 (terkunci). Setiap analisis footage Ruma WAJIB memilih salah satu baris ini; jangan memakai pilar/format UPG ("Sehari di Klinik", pill emoji, caption per kata oranye, mosaik) dan jangan mengarang format baru.
+| Pilar Ruma | Funnel · CTA | Format | Contoh yang sudah ada | Syarat bahan |
+|---|---|---|---|---|
+| **Ruma Menjelaskan** | TOFU · Simpan untuk nanti | dokter menjelaskan/konsultasi dari rekaman asli: hook potongan ucapan → penjelasan dokter → pesan sesudahnya (model `produksi-video-klinik/scripts/konsultasi-dokter`) | Konsultasi Tambal drg. Ainun | ucapan dokter jelas, mic dekat |
+| **Kalau Ditunda** | TOFU · Simpan untuk nanti | cerita kasus Gaya 3 Ruma (§10d): kondisi yang ditunda → akibat → yang dilakukan dokter | Tambal Ulang drg. Ainun | kasus nyata + penjelasan sebab-akibat dari dokter |
+| **Disiapkan untukmu / Tur Klinik** | MOFU · Tanyakan langsung | "Di Balik …": langkah n/5 + nama alat/persiapan, suara asli alat | Di Balik Loupe drg. Ainun · Hak Pasien drg. Ainun | footage alat/ruangan/persiapan jelas, label dicek dokter |
+| **Cerita Pasien lintas usia / Before-After + konteks** | BOFU · Jadwalkan konsultasi | testimoni/hasil dengan konteks, tanpa klaim berlebihan | belum ada | izin tertulis pasien wajib |
+**Tidak dipakai untuk Ruma (sama dengan UPG):** montase jam rekam ("Berapa lama sih…?").
+**Rasa Ruma vs UPG:** Ruma = tenang, bersih, premium; Montserrat Deep Teal + blok Turquoise; blur halus (bukan mosaik); suara ruangan terus-menerus + crossfade/whoosh; penutup seragam 4 dtk dengan WA & alamat. UPG = ramah, hangat, ramai klinik nyata; pill emoji, caption per kata oranye, mosaik, penutup oranye tanpa WA.
 
 ## 10c. Akun TOFU Ruma [DISEPAKATI, 16 Nov 2026; detail terkini di skill `dalamgigi`]
 

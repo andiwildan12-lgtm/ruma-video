@@ -318,6 +318,13 @@ Prinsip (contoh acuan: akun howcomeid): **semua cover satu rumus**, sehingga gri
 - Teks berada di zona **crop grid 3:4** (y 240–1680 dari 1920) supaya tetap terbaca di grid profil.
 - Template: `scripts/cover.html` + `scripts/cover.js`.
 
+### 9a. Thumbnail wajib dikirim sebelum lanjut ke konten berikutnya [KEPUTUSAN DIR 25 Nov 2026, berlaku UPG · Ruma · GrowWith]
+Alur per konten: rancangan → ACC → render → audit 2× → kirim video → revisi (versi baru) sampai Dir oke/tidak ada revisi. **Begitu video dinyatakan final (Dir oke, tidak ada revisi, atau Dir pindah ke footage/konten berikutnya), Claude LANGSUNG membuat dan mengirim thumbnail video itu, sebelum mulai analisis/rancangan konten berikutnya.** Dir tidak perlu meminta.
+- Satu thumbnail per video final (bukan per versi revisi). Untuk video yang tidak diunggah, tanya singkat dulu atau lewati.
+- Aturan visual per brand: **UPG** → `upg-video/references/thumbnail.md` + template `upg-video/thumbnail/` (foto pengerjaan tanpa mosaik, wajah pasien tidak terlihat kecuali testimoni, judul putih + oranye, logo putih atas). **Ruma** → palet & font Ruma (`ruma-dental-video`, `desain-grafis-ruma`), cover seragam bagian 9 di atas; **GrowWith** → palet GrowWith (`panduan-visual-terpadu` §2, §11). Untuk brand yang belum punya template thumbnail ter-ACC: buat **1 contoh dulu**, minta ACC Dir, lalu simpan aturannya di skill brand itu sebelum dipakai massal.
+- Thumbnail ikut aturan privasi brand; thumbnail berisi wajah/nama pasien tidak disimpan di Git.
+- Laporan kirim video final selalu ditutup: "Thumbnail menyusul di pesan berikut" atau langsung disertakan.
+
 ## 9b. Aturan Isi (pelajaran video #01, v1→v3)
 
 1. **Hook = fakta paling mengejutkan di detik 0–3**, dengan visual yang sudah bergerak. Jangan dibuka dengan layar kosong atau kalimat pengantar.
@@ -398,6 +405,21 @@ Urutan wajib tetap sama: naskah OK → papan gambar ACC → (suara) → audit �
 3. `mkstates.py` (kondisi per frame + animasi pop) → `shotu.js` (render unik) → `build_k.py` (crossfade, zoom bergantian, whoosh tiap potongan, pop tiap stiker, suara ruangan, mix).
 4. Caption gaya label (kotak putih, teks Deep Teal, kata kunci Turquoise), stiker ikon (bukan emoji wajah).
 
+### 12f. Koreksi warna otomatis footage — `scripts/warna/koreksi_warna.py` [TERBUKTI 23 Nov 2026]
+Wajib untuk semua footage asli (UPG & Ruma) sebelum dipakai: tiap klip **diukur** (signalstats, 10 frame) lalu diberi resep sesuai kelasnya.
+- **NORMAL** (luma rata-rata ≥ 70): regang kontras dari persentil 10/90, terang dijaga natural, buang 40% warna cast (dinding kuning), `vibrance` (bukan saturasi rata, supaya baju hijau tidak makin norak), tajam ringan. Brand `upg` = hangat-dekat, kontras maks 1,30; `ruma` = clean-lembut, kontras maks 1,15 (sesuai skill `panduan-visual-terpadu`).
+- **GELAP** (25–70): kurangi bintik (`hqdn3d`) lalu angkat bayangan dengan gamma ke target terang (mis. 30 → ±65).
+- **SANGAT_GELAP** (< 25): resep gelap dengan batas angkat; tandai **cek dulu**, pakai hanya sebagai sisipan pendek.
+- Perintah: `ukur <klip…>` (tabel + `warna.json`), `banding <klip…> --out x.jpg` (sebelum|sesudah, kirim ke Pak Dir/Dir untuk dicek), `terapkan <in> <out> --brand upg|ruma`, `filter <klip>` (string -vf untuk skrip lain). Jalur EDUKASI UPG: `prep_klip.py … --warna upg`.
+- Penyebab gelap ada di syuting, bukan editing: lampu ruangan mati + kamera mengunci terang ke mulut pasien. Arahan syuting: lampu ruangan tetap menyala, tap wajah dokter untuk kunci terang, jangan arahkan kamera ke lampu unit.
+- Skill GitHub yang dicek (kajisho5/color-grading-skill, josiahsiegel ffmpeg-color-grading, browser-use/video-use) tidak dipasang: manual/tanpa pengukuran otomatis atau tidak terbaca; resep di sini dibuat sendiri.
+
+### 12g. Samarkan wajah/data pasien per frame: `scripts/privasi/samarkan.py` [TERBUKTI 23 Nov 2026]
+`samarkan.py <masuk> <keluar> <kotak.json> --gaya mosaik|blur`. kotak.json = daftar area `{"kf": [[t, x, y, w, h], ...]}` (detik & piksel klip), posisi diinterpolasi di antara keyframe sehingga kotak mengikuti wajah yang bergerak. **UPG = `mosaik`** (kotak-kotak bersudut bulat, keputusan Dir 23 Nov 2026), **Ruma = `blur`** (kabur halus). Cara cepat menentukan kotak: ambil 3 frame per potongan (awal/tengah/akhir) dengan grid, catat posisi wajah, jadikan keyframe. Jangan menutup mulut/area tindakan yang sedang diperlihatkan; mosaik hanya mata–hidung. Simpan klip asli di `work/clips-tanpa-mosaik/`.
+
+### 12h. Mosaik MATA saja (gigi terlihat): `scripts/privasi/samarkan_mata.py` [TERBUKTI 24 Nov 2026]
+Permintaan Dir: samarkan hanya mata pasien supaya penonton bisa melihat gigi. MediaPipe FaceLandmarker (`face_landmarker.task` di folder ini; `pip install mediapipe` + `apt-get install -y libegl1 libgles2`), dicari di area pasien (`cari.json` = format samarkan.py) yang diperbesar dengan rotasi 0/90/180/270 (pasien rebahan). Pita mata berputar menutup mata + alis; celah deteksi diinterpolasi ≤1 dtk, selebihnya kotak area penuh (aman). Terbukti 18–50 deteksi per klip scaling. **Wajib cek visual tiap 0,5 dtk**: wajah menyamping (bercermin) bisa meleset → tambah kotak manual berjendela waktu (`samarkan.py`, kunci `dari`/`sampai`). Wajah tertutup dokter / di tepi gambar → tetap kotak.
+
 ### 12d. Poster/desain statis
 Pakai skill `desain-grafis-ruma`. Font resmi Ruma sejak 20 Nov 2026 untuk grafis **dan** video: Neue Montreal + Montserrat (render lokal: Montserrat sampai file Neue Montreal berlisensi tersedia).
 
@@ -417,3 +439,5 @@ Nama konektor ElevenLabs bisa berubah setelah masuk ulang (mis. `ElevenLabs-5689
 - Model konsultasi dokter (hook ucapan → konsultasi → tindakan → pesan sesudahnya): `scripts/konsultasi-dokter/` (Ruma: Konsultasi Tambal drg. Ainun v1, 21 Nov 2026).
 
 - **Footage iPhone (HLG HDR 4K60)**: cukup `scale` biasa (hasil natural, sesuai grading Ruma clean-soft); jangan tonemap hable (terlalu hangat) atau zscale langsung (highlight terbakar). Pola iklan full footage + narasi Ricky: `scripts/iklan-footage-narasi/` (Iklan Scaling Ruma v1, 21 Nov 2026).
+
+- **Bug mix audio (konten 3 drg. Ainun, 23 Nov 2026):** bila tidak ada lapisan yang mulai tepat di detik 0, keluaran `amix` mulai dari pts lapisan pertama → file audio lebih pendek (24,5 vs 27,8 dtk) dan semua suara maju 3,3 dtk. Wajib `amix=...,aresample=48000:async=1:first_pts=0,apad=whole_dur=T` (sudah dipasang di `mix_k1/k2/k3.py`). Selalu cek durasi WAV = durasi video sebelum digabung.
