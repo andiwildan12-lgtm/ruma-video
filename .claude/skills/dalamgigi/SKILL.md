@@ -297,6 +297,7 @@ Akun IG @dalamgigi terhubung ke Claude lewat konektor **Windsor.ai for Social Me
 7. Windsor masih **paket TRIAL** (18 Nov 2026): data bisa tertunda (cache, tanpa `force_refresh`) dan koneksi bisa putus saat trial habis. Kalau aksi gagal → laporkan, Pak Dir unggah manual dari paket kirim.
 
 ### 12c-2. Pelajaran Teknis Posting #05 (19 Nov 2026) [WAJIB]
+- **27 Nov (#10):** dicoba posting otomatis atas permintaan Pak Dir → gagal: video 3,9 MB (versi kecil 2-pass 450k, kualitas masih bersih) tetap di atas batas ±3,1 MB per panggilan, dan `share_file anyoneWithLink` ditolak sistem izin sesi. Pak Dir memilih unggah manual. Posting otomatis hanya bisa bila Pak Dir sendiri menaruh video di Drive + membuka akses link.
 - **Konektor Drive Claude hanya bisa mengunggah ±3 MB per file** → video (10–15 MB) TIDAK bisa diunggah Claude ke Drive. Video harus diunggah manual ke `Dalam Gigi/Siap Tayang` (atau pakai hosting lain, mis. repo publik + GitHub Pages bila Pak Dir buat).
 - Link yang terbukti diterima Instagram: `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t` (file `anyoneWithLink` reader). Container ini tidak bisa mengecek link Drive (proxy memblokir), jadi cek izin dengan `get_file_permissions`.
 - `create_video_post` bisa **timeout 60 dtk padahal berhasil**. JANGAN ulang. Cek `media_count` (user_info, data segar) lalu ambil media_id dengan `get_data` `date_from`=hari ini (field berbeda dari tarikan sebelumnya supaya tidak kena cache).
