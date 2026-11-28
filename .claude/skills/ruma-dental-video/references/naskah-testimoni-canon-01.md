@@ -8,10 +8,12 @@
 
 | # | Detik | Sumber (dtk asli t_canon) | Ucapan asli Kak Canon | Teks layar |
 |---|---|---|---|---|
-| 1 | 0–6 | t_canon 52,6–58,3 | "Sudah punya pengalaman… dari Jakarta, Surabaya, Bali, sampai di sini juga" | Judul: Sudah perawatan gigi di banyak kota, / **ini kata Kak Canon soal Ruma.** + label nama "Kak Canon · pasien tambal gigi depan" |
+| 1 | 0–6 | t_canon 52,6–58,3 | "Sudah punya pengalaman… dari Jakarta, Surabaya, Bali, sampai di sini juga" | Judul: Sudah coba di banyak kota, / **ini kata Kak Canon.** + label nama "Kak Canon · pasien tambal gigi depan" |
 | 2 | 6–12 | t_canon 8,9–12,1 + 19,1–21,2 | "Aku pertama tahu itu dari review di Google … karena review di Google itu bagus" | kartu pertanyaan: Tahu Ruma dari mana? |
 | 3 | 12–19 | t_canon 62,4–69,9 (+ b-roll konsultasi a0354, blur) | "Masalah utama aku, gigi aku ini bakal terus berubah kalau misalnya tidak diselesaikan" | kartu pertanyaan: Masalahnya apa? |
 | 4 | 19–23 | t_canon 75,0–77,5 (b-roll tindakan a0384/a0394, blur) | "Terus masalahnya diselesaikan" | subtitle |
 | 5 | 23–26 | t_canon 84,0–89,8 | (pertanyaan) … "Oh, pasti." | kartu pertanyaan: Mau rekomendasikan Ruma? |
 | 6 | 26–28,5 | frame tenang testimoni | (suasana ruangan) | Terima kasih, Kak Canon. / **Masalahnya diselesaikan, bukan ditunda.** |
 | 7 | 28,5–32,5 | penutup standar | — | pesan "Gigi depan bermasalah?\|Periksa dulu." |
+
+Papan v1 (28 Nov): judul hook diringkas agar tidak menyentuh kepala; frame 'Oh, pasti' diganti 90,0 dtk (mata terbuka). **Papan & thumbnail testimoni TIDAK disimpan di Git** (wajah pasien tampil tanpa blur); hanya di folder kerja `ruma-dental-video/`.
