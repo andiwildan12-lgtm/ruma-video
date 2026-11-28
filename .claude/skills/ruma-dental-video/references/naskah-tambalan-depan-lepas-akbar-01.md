@@ -17,3 +17,7 @@
 | 8 | 51,5–55,5 | penutup standar | — | pesan "Tambalan gigi depan lepas?\|Periksa dulu." |
 
 Catatan: "gusinya" ditranskrip large-v3 sebagai "businya" (medium: "gusihnya") → dicek ulang saat papan.
+
+## Revisi papan v2 (28 Nov 2026, Pak Dir: "jadikan satu cerita, bagian yang kurang tambahkan papan motion")
+Alur: MASALAH (hook a0354 + keluhan a0353) → SEBAB (a0358 + **motion M1**: kotoran menempel di tepi tambalan → tambalan terbuka) → PENANGANAN (a0355 ngilu/bius + a0355 47,18–49,5 "Ini saya coba bersihkan juga, sekalian kalau bisa" + a0384 14,0–15,9 "Tinggal dihaluskan"; kartu bertambah "Yang dikerjakan": Dibersihkan · Ditambal ulang · Disinar · Dihaluskan) → HASIL (a0394 gusi + **motion M3**: tambalan lama berlebih, gusi menjauh → dirapikan, gusi kembali menutup) → Selesai (kelar + boleh langsung makan) → PESAN "Tambalan lepas atau berlebih? Dibersihkan, dirapikan." → penutup.
+Motion hanya memvisualkan ucapan drg. Akbar (tanpa klaim baru); ilustrasi flat palet Ruma. Kartu langkah diletakkan top 930 agar tidak menutupi wajah dokter.
