@@ -89,6 +89,13 @@ Editing **tetap dikerjakan Claude sampai video jadi** (animasi 3D, teks, SFX, tr
 
 ## 3. Formula Video
 
+### 3a-0. SYARAT TOPIK: "KEBIASAAN TERBALIK" [Pak Dir 28 Nov 2026] — wajib lolos sebelum naskah
+Topik hanya dipilih bila memenuhi salah satu:
+1. **Yang orang hindari, padahal justru harus dilakukan** (contoh pemenang #05: gusi berdarah dihindari saat sikat → justru harus disikat).
+2. **Yang orang lakukan, padahal justru bikin makin parah.**
+Penjelasannya harus di luar dugaan penonton (tidak bisa ditebak dari judul). Topik "pengetahuan umum" (kenapa kopi bikin kuning, kenapa ngilu) tanpa kebiasaan yang dibalik = DITOLAK. Data 28 Nov: #05 61,9 rb vs #06–#10 0,9–2,3 rb; yang turun adalah simpan & bagikan, bukan durasi tonton.
+Format ikut: teks hook besar di layar 0–2 dtk (gejala/kebiasaan langsung terlihat), ±45 dtk, ajakan bagikan ("kirim ke yang masih begini"), maks 5 hashtag.
+
 ### 3a. FORMULA PEMENANG (#05 Gusi berdarah, 56,7 rb views) — WAJIB jadi pola naskah [Pak Dir 23 Nov: "tetap pakai gaya konten yang tembus 50 rb"]
 Urutan narasi (target ≤75 dtk; retensi #05 34%, jangan lebih panjang):
 1. **Hook kontra/relatable (0–4 dtk):** satu kalimat yang membalik anggapan ("Justru…") atau momen yang penonton kenal sendiri ("…lidah sibuk ngorek-ngorek?"). Visual sudah bergerak di frame 1.
