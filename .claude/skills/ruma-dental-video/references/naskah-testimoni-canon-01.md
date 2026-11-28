@@ -17,3 +17,6 @@
 | 7 | 28,5–32,5 | penutup standar | — | pesan "Gigi depan bermasalah?\|Periksa dulu." |
 
 Papan v1 (28 Nov): judul hook diringkas agar tidak menyentuh kepala; frame 'Oh, pasti' diganti 90,0 dtk (mata terbuka). **Papan & thumbnail testimoni TIDAK disimpan di Git** (wajah pasien tampil tanpa blur); hanya di folder kerja `ruma-dental-video/`.
+
+## Status (28 Nov 2026)
+DIBATALKAN oleh Pak Dir: suara testimoni bergema/kurang jelas (rekaman jarak jauh di ruangan memantul); pembersihan ffmpeg tidak cukup. Pelajaran: testimoni perlu mic klip/HP dekat mulut pasien.
